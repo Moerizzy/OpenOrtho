@@ -858,18 +858,20 @@ class CentralWMSManager:
         """
         selected_downloaders = []
         for metadata in self.wms_metadata:
-            bounding_box = Polygon.from_bounds(*metadata['bounding_box'])
+            bounding_box = Polygon.from_bounds(*metadata["bounding_box"])
             if area_polygon.intersects(bounding_box).any():
                 wms = ExtendedWebMapService(
-                    url=metadata['url'],
-                    version=metadata['version'],
-                    resolution=metadata['resolution'],
-                    layer_name=metadata['layer_name'],
-                    crs=metadata['crs'],
-                    format=metadata['format'],
+                    url=metadata["url"],
+                    version=metadata["version"],
+                    resolution=metadata["resolution"],
+                    layer_name=metadata["layer_name"],
+                    crs=metadata["crs"],
+                    format=metadata["format"],
                 )
-                wms.bounding_box = metadata['bounding_box']
-                selected_downloaders.append(ImageDownloader(wms=wms, grid_spacing=metadata['resolution']))
+                wms.bounding_box = metadata["bounding_box"]
+                selected_downloaders.append(
+                    ImageDownloader(wms=wms, grid_spacing=metadata["resolution"])
+                )
         return selected_downloaders
 
     def preview_aoi(self, area_polygon: GeoSeries):
@@ -924,10 +926,12 @@ class CentralWMSManager:
             for future in futures:
                 future.result()
 
+
 class MultiServiceDownloader:
     """
     A class to manage multiple WMS services and download images for a given area.
     """
+
     def __init__(self, wms_metadata: list):
         self.wms_metadata = wms_metadata
         self.downloaders = []
@@ -939,18 +943,20 @@ class MultiServiceDownloader:
         """
         self.downloaders = []
         for metadata in self.wms_metadata:
-            bounding_box = Polygon.from_bounds(*metadata['bounding_box'])
+            bounding_box = Polygon.from_bounds(*metadata["bounding_box"])
             if area_polygon.intersects(bounding_box).any():
                 wms = ExtendedWebMapService(
-                    url=metadata['url'],
-                    version=metadata['version'],
-                    resolution=metadata['resolution'],
-                    layer_name=metadata['layer_name'],
-                    crs=metadata['crs'],
-                    format=metadata['format'],
+                    url=metadata["url"],
+                    version=metadata["version"],
+                    resolution=metadata["resolution"],
+                    layer_name=metadata["layer_name"],
+                    crs=metadata["crs"],
+                    format=metadata["format"],
                 )
-                wms.bounding_box = metadata['bounding_box']
-                downloader = ImageDownloader(wms=wms, grid_spacing=metadata['resolution'])
+                wms.bounding_box = metadata["bounding_box"]
+                downloader = ImageDownloader(
+                    wms=wms, grid_spacing=metadata["resolution"]
+                )
                 self.downloaders.append(downloader)
                 # Download images for the intersection area
                 sub_area = area_polygon.intersection(bounding_box)
