@@ -64,19 +64,21 @@ class AutoOrthophotoDownloader:
         "TH": "TH_CIR_Dop20_ImageDownloader",
     }
 
-    def __init__(self, grid_spacing: int, german_states_url: Optional[str] = None):
+    def __init__(self, grid_spacing: int, german_states_url: Optional[str] = None, extract_metadata: bool = True):
         """
         Initialize the AutoOrthophotoDownloader.
 
         Args:
             grid_spacing: The grid spacing in meters for the image download.
             german_states_url: URL to German federal states GeoJSON. If None, uses default.
+            extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
         """
         self.grid_spacing = grid_spacing
         self.german_states_url = (
             german_states_url
             or "https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/2_bundeslaender/4_niedrig.geo.json"
         )
+        self.extract_metadata = extract_metadata
         self._states_gdf = None
 
     def _load_german_states(self) -> GeoDataFrame:
@@ -216,8 +218,8 @@ class AutoOrthophotoDownloader:
                 # Get the appropriate downloader class
                 downloader_class = self._get_downloader_class(state_code, image_type)
 
-                # Instantiate the downloader
-                downloader = downloader_class(grid_spacing=self.grid_spacing)
+                # Instantiate the downloader with metadata extraction enabled
+                downloader = downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
 
                 # Create GeoSeries for the intersection
                 intersection_gs = gpd.GeoSeries([intersection_geom], crs="EPSG:25832")
@@ -329,9 +331,9 @@ class AutoOrthophotoDownloader:
                 rgb_downloader_class = self._get_downloader_class(state_code, "RGB")
                 cir_downloader_class = self._get_downloader_class(state_code, "CIR")
 
-                # Instantiate the downloaders
-                rgb_downloader = rgb_downloader_class(grid_spacing=self.grid_spacing)
-                cir_downloader = cir_downloader_class(grid_spacing=self.grid_spacing)
+                # Instantiate the downloaders with metadata extraction enabled
+                rgb_downloader = rgb_downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
+                cir_downloader = cir_downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
 
                 # Create RGBI downloader
                 rgbi_downloader = RGBIImageDownloader(rgb_downloader, cir_downloader)
@@ -375,6 +377,7 @@ def auto_download_orthophotos(
     filename_prefix: Optional[str] = None,
     mask: Optional[Union[GeoSeries, GeoDataFrame]] = None,
     buffer_size: int = 0,
+    extract_metadata: bool = True,
 ) -> Dict[str, AreaDataset]:
     """
     Convenience function to automatically download orthophotos.
@@ -391,6 +394,7 @@ def auto_download_orthophotos(
         filename_prefix: Optional prefix for filenames
         mask: Optional mask to limit downloads to specific areas
         buffer_size: Buffer size around the area (default: 0)
+        extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles (default: True)
 
     Returns:
         Dictionary mapping state names to their AreaDataset results
@@ -403,16 +407,17 @@ def auto_download_orthophotos(
         >>> # Load your area of interest
         >>> area = gpd.read_file('my_area.geojson')
         >>>
-        >>> # Automatically download RGB orthophotos
+        >>> # Automatically download RGB orthophotos with metadata
         >>> results = auto_download_orthophotos(
         ...     area_name="my_area",
         ...     area_polygon=area.geometry,
         ...     out_path=Path("./downloads"),
         ...     grid_spacing=1000,
-        ...     image_type="RGB"
+        ...     image_type="RGB",
+        ...     extract_metadata=True
         ... )
     """
-    auto_downloader = AutoOrthophotoDownloader(grid_spacing=grid_spacing)
+    auto_downloader = AutoOrthophotoDownloader(grid_spacing=grid_spacing, extract_metadata=extract_metadata)
 
     if image_type == "RGB":
         return auto_downloader.download_rgb_images_auto(

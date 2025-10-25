@@ -7,6 +7,7 @@ Python library for downloading orthophotos from German WMS services with automat
 - Automatically detects which German state(s) your area falls into
 - RGB, CIR (Color Infrared), and RGBI (4-band merged)
 - Supports all 16 German federal states
+- 📊 Automatic STAC metadata generation for each downloaded tile
 
 ## Quick Start
 
@@ -41,22 +42,47 @@ downloader.download_rgb_images_auto(
 
 ## Coverage by Federal State
 
-| Bundesland             | RGB | CIR |
-|------------------------|:---:|:---:|
-| Saarland               | ✅  | ✅  |
-| Mecklenburg-Vorpommern | ✅  | ✅  |
-| Rheinland-Pfalz        | ✅  | ✅  |
-| Sachsen                | ✅  | ✅  |
-| Thüringen              | ✅  | ✅  |
-| Sachsen-Anhalt         | ✅  |     |
-| Nordrhein-Westfalen    | ✅  | ✅  |
-| Hessen                 | ✅  | ✅  |
-| Hamburg                | ✅  | ✅  |
-| Bremen                 | ✅  |     |
-| Brandenburg            | ✅  | ✅  |
-| Niedersachsen          | ✅  |     |
-| Schleswig-Holstein     | ✅  |     |
-| Bayern                 | ✅  | ✅  |
+| Bundesland             | RGB | CIR | Metadata |
+|------------------------|:---:|:---:|:--------:|
+| Baden-Württemberg      |  ✅   | ✅    | ✅       |
+| Bayern                 | ✅  | ✅  | ✅       |
+| Berlin                 |  ✅   |  ✅   | ✅       |
+| Brandenburg            | ✅  | ✅  | ✅       |
+| Bremen                 | ✅  |  ❌   | ❌       |
+| Hamburg                |   ❌  |   ❌  | ❌       |
+| Hessen                 | ✅  | ✅  | ✅       |
+| Mecklenburg-Vorpommern | ✅  | ✅  | ✅       |
+| Niedersachsen          | ✅  | ❌    | ✅       |
+| Nordrhein-Westfalen    | ✅  | ✅  | ✅       |
+| Rheinland-Pfalz        | ✅  | ✅  | ✅       |
+| Saarland               | ✅  | ✅  | ✅       |
+| Sachsen                | ✅  | ✅  | ✅       |
+| Sachsen-Anhalt         | ✅  | ❌    | ✅       |
+| Schleswig-Holstein     | ✅  | ❌    | ✅       |
+| Thüringen              | ✅  | ✅  | ✅       |
+
+**Metadata includes:** Acquisition date, tile number, flight information, ground resolution, and more (varies by state).
+
+## Image Quality by State
+
+| Bundesland             | Compression | No Compression |
+|------------------------|:-----------:|:--------------:|
+| Baden-Württemberg      |    ✅       |             |
+| Bayern                 |           |      ✅        |
+| Berlin                 |     ✅      |              |
+| Brandenburg            |     ✅     |              |
+| Bremen                 |    ✅       |      ✅        |
+| Hamburg                |    ✅       |      ✅        |
+| Hessen                 |    ✅       |             |
+| Mecklenburg-Vorpommern |    ✅       |              |
+| Niedersachsen          |    ✅       |              |
+| Nordrhein-Westfalen    |    ✅       |      ✅        | -> Orginal 10 GSD
+| Rheinland-Pfalz        |    ✅       |              |
+| Saarland               |    ✅       |      ✅        |
+| Sachsen                |    ✅       |      ✅        |
+| Sachsen-Anhalt         |    ✅       |      ✅        |
+| Schleswig-Holstein     |    ✅       |              |
+| Thüringen              |    ✅       |      ✅        |
 
 ## Requirements
 
