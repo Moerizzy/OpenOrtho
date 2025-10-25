@@ -24,6 +24,9 @@ from tenacity import retry, stop_after_attempt, wait_fixed, before_sleep_log
 from time import perf_counter
 from typing import List, Optional
 
+from orthophotos_downloader.metadata.metadata_extractor import TileMetadataExtractor
+from orthophotos_downloader.metadata.stac_generator import STACItemGenerator
+
 logger = logging.getLogger(__name__)
 
 
@@ -240,13 +243,17 @@ class ImageDownloader:
         height_px: The height of each grid tile in pixels.
     """
 
-    def __init__(self, wms: ExtendedWebMapService, grid_spacing: int):
+    def __init__(self, wms: ExtendedWebMapService, grid_spacing: int, 
+                 state_code: Optional[str] = None, 
+                 extract_metadata: bool = True):
         """
         Initialize the ImageDownloader object.
 
         Args:
             wms: The WebMapService object used for downloading images.
             grid_spacing: The spacing between grid points (i.e. height and width of grid tiles) in meters.
+            state_code: Optional German state code (e.g., 'BY', 'NW') for metadata extraction.
+            extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
 
         Raises:
             ValueError: If `grid_spacing` is not a multiple of the resolution of the provided WMS.
@@ -258,6 +265,19 @@ class ImageDownloader:
         # the width and height in pixels are defined by the resolution of the dataset
         self.width_px: int = int(self.grid_spacing / self.wms.resolution)
         self.height_px: int = int(self.grid_spacing / self.wms.resolution)
+        
+        # Metadata extraction setup
+        self.state_code = state_code
+        self.extract_metadata = extract_metadata
+        self.metadata_extractor = None
+        self.stac_generator = None
+        
+        if self.extract_metadata and self.state_code:
+            self.metadata_extractor = TileMetadataExtractor(
+                wms_url=self.wms.wms.url,
+                state_code=self.state_code
+            )
+            self.stac_generator = STACItemGenerator()
 
         # check if grid_spacing / wms.resolution is an integer
         if Decimal(str(grid_spacing)) % Decimal(str(wms.resolution)) != 0:
@@ -421,6 +441,8 @@ class ImageDownloader:
                         height_px=self.height_px,
                         mask=mask,
                         driver=driver,
+                        metadata_extractor=self.metadata_extractor,
+                        stac_generator=self.stac_generator,
                     )
                 )
                 logger.info(
@@ -469,6 +491,8 @@ class ImageDownloader:
         mask: Optional[GeoSeries] = None,
         driver: str = "GTiff",
         max_tile_size_px: int = 2500,
+        metadata_extractor: Optional[TileMetadataExtractor] = None,
+        stac_generator: Optional[STACItemGenerator] = None,
     ) -> Image:
         """
         Downloads a single image from a Web Map Service (WMS) using the specified parameters.
@@ -486,6 +510,8 @@ class ImageDownloader:
             mask: An optional GeoSeries (of length 1) to generate a binary mask for the image.
             driver: The rasterio driver to use (default is "GTiff").
             max_tile_size_px: Maximum allowed image width or height (in pixels) per WMS request.
+            metadata_extractor: Optional TileMetadataExtractor for extracting tile metadata.
+            stac_generator: Optional STACItemGenerator for creating STAC items.
 
         Returns:
             An Image instance with metadata about the downloaded (and possibly merged) image.
@@ -496,7 +522,8 @@ class ImageDownloader:
         """
         if width_px <= max_tile_size_px and height_px <= max_tile_size_px:
             return ImageDownloader._download_tile(
-                img_path, bounding_box, wms, width_px, height_px, mask, driver
+                img_path, bounding_box, wms, width_px, height_px, mask, driver,
+                metadata_extractor, stac_generator
             )
         else:
             return ImageDownloader._download_tiled_image(
@@ -508,6 +535,8 @@ class ImageDownloader:
                 mask,
                 driver,
                 max_tile_size_px,
+                metadata_extractor,
+                stac_generator,
             )
 
     @staticmethod
@@ -519,6 +548,8 @@ class ImageDownloader:
         height_px: int,
         mask: Optional[GeoSeries] = None,
         driver: str = "GTiff",
+        metadata_extractor: Optional[TileMetadataExtractor] = None,
+        stac_generator: Optional[STACItemGenerator] = None,
     ) -> Image:
         """
         Downloads a single image tile from a WMS server and saves it as a GeoTIFF file.
@@ -526,6 +557,9 @@ class ImageDownloader:
         This method sends a GetMap request to the given WMS using the specified bounding box
         and pixel dimensions. It saves the result as a 3-band GeoTIFF. Optionally, it can also
         generate and save a binary mask based on an input geometry.
+        
+        If metadata_extractor and stac_generator are provided, also extracts metadata
+        and creates a STAC item for the tile.
 
         Args:
             img_path: The output path where the image will be saved.
@@ -535,6 +569,8 @@ class ImageDownloader:
             height_px: The height of the image in pixels.
             mask: An optional GeoSeries (of length 1) for generating a binary mask image.
             driver: The rasterio driver to use (e.g., "GTiff").
+            metadata_extractor: Optional TileMetadataExtractor for extracting tile metadata.
+            stac_generator: Optional STACItemGenerator for creating STAC items.
 
         Returns:
             An Image instance with metadata about the downloaded image.
@@ -580,6 +616,34 @@ class ImageDownloader:
             metadata.update({"count": 1})
             with rasterio.open(mask_path, "w", nbits=1, **metadata) as dst:
                 dst.write(mask_img, 1)
+        
+        # Extract metadata and create STAC item if extractors are provided
+        if metadata_extractor is not None and stac_generator is not None:
+            try:
+                # Calculate center point of tile for metadata query
+                center_x = (bounding_box.bounds[0] + bounding_box.bounds[2]) / 2
+                center_y = (bounding_box.bounds[1] + bounding_box.bounds[3]) / 2
+                
+                # Extract metadata from WMS and GeoTIFF
+                tile_metadata = metadata_extractor.extract_tile_metadata(
+                    tile_path=img_path,
+                    center_x=center_x,
+                    center_y=center_y,
+                    crs=wms.crs
+                )
+                
+                # Create and save STAC item
+                stac_path = img_path.with_suffix('.json')
+                stac_generator.create_and_save_stac_item(
+                    tile_path=img_path,
+                    metadata=tile_metadata,
+                    output_path=stac_path
+                )
+                logger.debug(f"Created STAC item: {stac_path}")
+                
+            except Exception as e:
+                logger.warning(f"Failed to create metadata/STAC for {img_path}: {e}")
+        
         return Image(
             image_path=img_path,
             mask_path=mask_path,
@@ -604,6 +668,8 @@ class ImageDownloader:
         mask: Optional[GeoSeries],
         driver: str,
         max_tile_size_px: int,
+        metadata_extractor: Optional[TileMetadataExtractor] = None,
+        stac_generator: Optional[STACItemGenerator] = None,
     ) -> Image:
         """
         Downloads a large image by splitting it into smaller subtiles, downloading each tile individually,
@@ -694,6 +760,33 @@ class ImageDownloader:
             ds.close()
         for p in tile_paths:
             p.unlink(missing_ok=True)
+
+        # Extract metadata and create STAC item if extractors are provided
+        if metadata_extractor is not None and stac_generator is not None:
+            try:
+                # Calculate center point of merged tile for metadata query
+                center_x = (bounding_box.bounds[0] + bounding_box.bounds[2]) / 2
+                center_y = (bounding_box.bounds[1] + bounding_box.bounds[3]) / 2
+                
+                # Extract metadata from WMS and GeoTIFF
+                tile_metadata = metadata_extractor.extract_tile_metadata(
+                    tile_path=img_path,
+                    center_x=center_x,
+                    center_y=center_y,
+                    crs=wms.crs
+                )
+                
+                # Create and save STAC item
+                stac_path = img_path.with_suffix('.json')
+                stac_generator.create_and_save_stac_item(
+                    tile_path=img_path,
+                    metadata=tile_metadata,
+                    output_path=stac_path
+                )
+                logger.debug(f"Created STAC item: {stac_path}")
+                
+            except Exception as e:
+                logger.warning(f"Failed to create metadata/STAC for {img_path}: {e}")
 
         return Image(
             image_path=img_path,
@@ -997,6 +1090,9 @@ class RGBIImageDownloader:
         self.rgb_downloader = rgb_downloader
         self.cir_downloader = cir_downloader
         self.grid_spacing = rgb_downloader.grid_spacing
+        # Use metadata extractor and STAC generator from RGB downloader if available
+        self.metadata_extractor = rgb_downloader.metadata_extractor
+        self.stac_generator = rgb_downloader.stac_generator
 
     def download_rgbi_images_from_polygon(
         self,
@@ -1074,6 +1170,33 @@ class RGBIImageDownloader:
 
                 # Clean up temporary files
                 ImageDownloader.delete_images(temp_path)
+
+                # Extract metadata and create STAC item if extractors are provided
+                if self.metadata_extractor is not None and self.stac_generator is not None:
+                    try:
+                        # Calculate center point of tile for metadata query
+                        center_x = (tile.geometry.bounds[0] + tile.geometry.bounds[2]) / 2
+                        center_y = (tile.geometry.bounds[1] + tile.geometry.bounds[3]) / 2
+                        
+                        # Extract metadata from WMS and GeoTIFF
+                        tile_metadata = self.metadata_extractor.extract_tile_metadata(
+                            tile_path=rgbi_path,
+                            center_x=center_x,
+                            center_y=center_y,
+                            crs=self.rgb_downloader.wms.crs
+                        )
+                        
+                        # Create and save STAC item
+                        stac_path = rgbi_path.with_suffix('.json')
+                        self.stac_generator.create_and_save_stac_item(
+                            tile_path=rgbi_path,
+                            metadata=tile_metadata,
+                            output_path=stac_path
+                        )
+                        logger.debug(f"Created STAC item for RGBI: {stac_path}")
+                        
+                    except Exception as e:
+                        logger.warning(f"Failed to create metadata/STAC for RGBI {rgbi_path}: {e}")
 
                 # Save image metadata
                 images.append(

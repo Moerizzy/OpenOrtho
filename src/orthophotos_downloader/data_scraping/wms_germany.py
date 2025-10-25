@@ -12,11 +12,12 @@ class BW_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BadenWuertembergRGBDop20ImageDownloader.
         Args:
             grid_spacing: The grid spacing in meters for the image download.
+            extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
         """
         # Define the parameters specific for the DOP20 WMS
         wms = ExtendedWebMapService(
@@ -28,7 +29,7 @@ class BW_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BW', extract_metadata=extract_metadata)
 
 
 class BW_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -39,7 +40,7 @@ class BW_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BadenWuertembergRGBDop20ImageDownloader.
         Args:
@@ -55,7 +56,7 @@ class BW_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BW', extract_metadata=extract_metadata)
 
 
 class BY_RGB_Dop40_ImageDownloader(ImageDownloader):
@@ -66,7 +67,7 @@ class BY_RGB_Dop40_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BayernDop40ImageDownloader.
         Args:
@@ -82,7 +83,7 @@ class BY_RGB_Dop40_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BW', extract_metadata=extract_metadata)
 
 
 class BY_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -93,11 +94,12 @@ class BY_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BayernDop20ImageDownloader.
         Args:
             grid_spacing: The grid spacing in meters for the image download.
+            extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
         """
         # Define the parameters specific for the DOP20 WMS
         wms = ExtendedWebMapService(
@@ -109,7 +111,7 @@ class BY_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BY', extract_metadata=extract_metadata)
 
 
 class BY_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -120,7 +122,7 @@ class BY_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BayernDop20ImageDownloader.
         Args:
@@ -136,20 +138,20 @@ class BY_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BY', extract_metadata=extract_metadata)
 
 
 class BE_RGB_Dop20_ImageDownloader(ImageDownloader):
     """
-    A class for downloading images from the Brandenburg DOP20 WMS service.
-    The WMS specifications are automatically set to the Brandenburg DOP20 service.
+    A class for downloading images from the Berlin DOP20 WMS service.
+    The WMS specifications are automatically set to the Berlin DOP20 service.
     Attributes:
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
-        Initialize the BrandenburgDop20ImageDownloader.
+        Initialize the BE_RGB_Dop20_ImageDownloader.
         Args:
             grid_spacing: The grid spacing in meters for the image download.
         """
@@ -163,7 +165,7 @@ class BE_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BE', extract_metadata=extract_metadata)
 
 
 class BE_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -174,7 +176,7 @@ class BE_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BE_CIR_Dop20_ImageDownloader.
         Args:
@@ -190,7 +192,7 @@ class BE_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BE', extract_metadata=extract_metadata)
 
 
 class BB_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -201,7 +203,7 @@ class BB_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BrandenburgDop20ImageDownloader.
         Args:
@@ -217,7 +219,7 @@ class BB_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BB', extract_metadata=extract_metadata)
 
 
 class BB_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -228,7 +230,7 @@ class BB_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BrandenburgDopCIR20ImageDownloader.
         Args:
@@ -244,7 +246,7 @@ class BB_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BB', extract_metadata=extract_metadata)
 
 
 class HB_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -255,7 +257,7 @@ class HB_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BremenDop20ImageDownloader.
         Args:
@@ -271,7 +273,7 @@ class HB_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='BB', extract_metadata=extract_metadata)
 
 
 # Bremerhaven and Bremen are implemented in diffrent WMS (same state)
@@ -283,7 +285,7 @@ class BHV_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the BremenDop20ImageDownloader.
         Args:
@@ -299,7 +301,7 @@ class BHV_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='HB', extract_metadata=extract_metadata)
 
 
 class HH_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -310,7 +312,7 @@ class HH_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the HamburgDop20ImageDownloader.
         Args:
@@ -326,7 +328,7 @@ class HH_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='HH', extract_metadata=extract_metadata)
 
 
 class HH_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -337,7 +339,7 @@ class HH_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the HamburgDop20ImageDownloader.
         Args:
@@ -353,7 +355,7 @@ class HH_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='HH', extract_metadata=extract_metadata)
 
 
 class HE_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -364,7 +366,7 @@ class HE_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the HessenDop20ImageDownloader.
         Args:
@@ -380,7 +382,7 @@ class HE_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='HE', extract_metadata=extract_metadata)
 
 
 class HE_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -391,7 +393,7 @@ class HE_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the HessenDop20ImageDownloader.
         Args:
@@ -407,7 +409,7 @@ class HE_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='HE', extract_metadata=extract_metadata)
 
 
 class MV_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -419,7 +421,7 @@ class MV_RGB_Dop20_ImageDownloader(ImageDownloader):
     TODO: Watermarks in the right left corner of the image. Height 10px, width 100px.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the MecklenburgVorpommernDop20ImageDownloader.
         Args:
@@ -435,7 +437,7 @@ class MV_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='MV', extract_metadata=extract_metadata)
 
 
 class MV_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -447,7 +449,7 @@ class MV_CIR_Dop20_ImageDownloader(ImageDownloader):
     TODO: Watermarks in the right left corner of the image. Height 10px, width 100px.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the MecklenburgVorpommernDop20ImageDownloader.
         Args:
@@ -463,7 +465,7 @@ class MV_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='MV', extract_metadata=extract_metadata)
 
 
 class NI_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -474,7 +476,7 @@ class NI_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SchleswigHolsteinDop20ImageDownloader.
         Args:
@@ -490,7 +492,7 @@ class NI_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='NI', extract_metadata=extract_metadata)
 
 
 class NW_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -501,7 +503,7 @@ class NW_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the NRWDop20ImageDownloader.
         Args:
@@ -517,7 +519,7 @@ class NW_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='NW', extract_metadata=extract_metadata)
 
 
 class NW_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -528,7 +530,7 @@ class NW_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the NRWDop20ImageDownloader.
         Args:
@@ -544,7 +546,7 @@ class NW_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='NW', extract_metadata=extract_metadata)
 
 
 class RP_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -555,7 +557,7 @@ class RP_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the RheinlandPfalzDop20ImageDownloader.
         Args:
@@ -571,7 +573,7 @@ class RP_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='RP', extract_metadata=extract_metadata)
 
 
 class RP_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -582,7 +584,7 @@ class RP_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the RheinlandPfalzDop20ImageDownloader.
         Args:
@@ -598,7 +600,7 @@ class RP_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='RP', extract_metadata=extract_metadata)
 
 
 class SL_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -609,7 +611,7 @@ class SL_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SaarlandDop20ImageDownloader.
         Args:
@@ -617,15 +619,15 @@ class SL_RGB_Dop20_ImageDownloader(ImageDownloader):
         """
         # Define the parameters specific for the DOP20 WMS
         wms = ExtendedWebMapService(
-            url="https://geoportal.saarland.de/freewms/dop2020",
+            url="https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1",
             version="1.1.1",
             resolution=0.2,
-            layer_name="sl_dop2020",
+            layer_name="sl_dop20_rgb",
             crs="EPSG:25832",
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='SL', extract_metadata=extract_metadata)
 
 
 class SL_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -636,7 +638,7 @@ class SL_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SaarlandDop20ImageDownloader.
         Args:
@@ -644,7 +646,7 @@ class SL_CIR_Dop20_ImageDownloader(ImageDownloader):
         """
         # Define the parameters specific for the DOP20 WMS
         wms = ExtendedWebMapService(
-            url="https://geoportal.saarland.de/freewms/dop2023?",
+            url="https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1",
             version="1.1.1",
             resolution=0.2,
             layer_name="sl_dop20_cir",
@@ -652,7 +654,7 @@ class SL_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='SL', extract_metadata=extract_metadata)
 
 
 class ST_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -663,7 +665,7 @@ class ST_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SachsenAnhaltDop20ImageDownloader.
         Args:
@@ -679,7 +681,7 @@ class ST_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='ST', extract_metadata=extract_metadata)
 
 
 class SN_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -690,7 +692,7 @@ class SN_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SachsenDop20ImageDownloader.
         Args:
@@ -706,7 +708,7 @@ class SN_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='SN', extract_metadata=extract_metadata)
 
 
 class SN_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -717,7 +719,7 @@ class SN_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SachsenDop20ImageDownloader.
         Args:
@@ -733,7 +735,7 @@ class SN_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='SN', extract_metadata=extract_metadata)
 
 
 class SH_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -744,7 +746,7 @@ class SH_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the SchleswigHolsteinDop20ImageDownloader.
         Args:
@@ -760,7 +762,7 @@ class SH_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='SH', extract_metadata=extract_metadata)
 
 
 class TH_RGB_Dop20_ImageDownloader(ImageDownloader):
@@ -771,7 +773,7 @@ class TH_RGB_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the ThueringenDop20ImageDownloader.
         Args:
@@ -787,7 +789,7 @@ class TH_RGB_Dop20_ImageDownloader(ImageDownloader):
             format="image/tiff",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='TH', extract_metadata=extract_metadata)
 
 
 class TH_CIR_Dop20_ImageDownloader(ImageDownloader):
@@ -798,7 +800,7 @@ class TH_CIR_Dop20_ImageDownloader(ImageDownloader):
         grid_spacing: The grid spacing in meters for the image download.
     """
 
-    def __init__(self, grid_spacing: int):
+    def __init__(self, grid_spacing: int, extract_metadata: bool = True):
         """
         Initialize the ThueringenDop20ImageDownloader.
         Args:
@@ -814,7 +816,7 @@ class TH_CIR_Dop20_ImageDownloader(ImageDownloader):
             format="image/png",
         )
 
-        super().__init__(wms=wms, grid_spacing=grid_spacing)
+        super().__init__(wms=wms, grid_spacing=grid_spacing, state_code='TH', extract_metadata=extract_metadata)
 
 
 class BKG_RGB_Dop20_ImageDownloader(ImageDownloader):
