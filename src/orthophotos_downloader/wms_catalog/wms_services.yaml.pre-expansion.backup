@@ -1,0 +1,1704 @@
+version: '1.0'
+last_updated: '2025-10-29'
+services:
+- id: BW_RGB_DOP20_current
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_C?
+  version: 1.1.1
+  layer_name: IMAGES_DOP_20_RGB
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Baden-Württemberg DOP20 RGB - Latest imagery
+  direct_download: false
+  source: LGL Baden-Württemberg
+  metadata:
+    metadata_service_url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_Bildflugkacheln_Aktualitaet?
+    metadata_layer: v_dop_20_bildflugkacheln
+    metadata_description: Baden-Württemberg dedicated metadata service with flight
+      info
+    metadata_extra_params: &id001
+      FORMAT: image/png
+    metadata_wms_version: 1.1.1
+- id: BW_CIR_DOP20_current
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_CIR
+  version: 1.1.1
+  layer_name: IMAGES_DOP_20_CIR
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Baden-Württemberg DOP20 CIR - Latest imagery
+  direct_download: false
+  source: LGL Baden-Württemberg
+  metadata:
+    metadata_service_url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_Bildflugkacheln_Aktualitaet?
+    metadata_layer: v_dop_20_bildflugkacheln
+    metadata_description: Baden-Württemberg dedicated metadata service with flight
+      info
+    metadata_extra_params: *id001
+    metadata_wms_version: 1.1.1
+- id: BY_RGB_DOP20_current
+  state_code: BY
+  state_name: Bayern
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+  version: 1.1.1
+  layer_name: by_dop20c
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Bayern DOP20 RGB - Latest imagery
+  direct_download: true
+  tile_url_pattern: https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop20c&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}
+  source: Bayerische Vermessungsverwaltung
+  metadata:
+    metadata_layer: by_dop20_info
+    metadata_description: Bayern metadata layer in same WMS service
+    metadata_wms_version: 1.1.1
+- id: BY_CIR_DOP20_current
+  state_code: BY
+  state_name: Bayern
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+  version: 1.1.1
+  layer_name: by_dop20cir
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Bayern DOP20 CIR - Latest imagery
+  direct_download: true
+  tile_url_pattern: https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop20cir&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}
+  source: Bayerische Vermessungsverwaltung
+  metadata:
+    metadata_layer: by_dop20_info
+    metadata_description: Bayern metadata layer in same WMS service
+    metadata_wms_version: 1.1.1
+- id: BY_RGB_DOP40_current
+  state_code: BY
+  state_name: Bayern
+  type: RGB
+  resolution: 0.4
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://geoservices.bayern.de/od/wms/dop/v1/dop40?
+  version: 1.1.1
+  layer_name: by_dop40c
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Bayern DOP40 RGB - Latest imagery
+  direct_download: true
+  tile_url_pattern: https://geoservices.bayern.de/od/wms/dop/v1/dop40?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop40c&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}
+  source: Bayerische Vermessungsverwaltung
+  metadata:
+    metadata_layer: by_dop20_info
+    metadata_description: Bayern metadata layer in same WMS service
+    metadata_wms_version: 1.1.1
+- id: BE_RGB_DOP20_current
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+  version: 1.3.0
+  layer_name: bebb_dop20c
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Berlin DOP20 RGB - Latest imagery (shared with Brandenburg)
+  direct_download: false
+  source: Geobasis Berlin/Brandenburg
+  metadata:
+    metadata_service_url: https://isk.geobasis-bb.de/ows/aktualitaeten_wms?
+    metadata_layer: bb_dop_info
+    metadata_description: Berlin dedicated metadata service with orthophoto info (shared
+      with Brandenburg)
+    metadata_info_format: text/plain
+    metadata_wms_version: 1.3.0
+- id: BE_CIR_DOP20_current
+  state_code: BE
+  state_name: Berlin
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+  version: 1.3.0
+  layer_name: bb_dop20cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Berlin DOP20 CIR - Latest imagery (shared with Brandenburg)
+  direct_download: false
+  source: Geobasis Berlin/Brandenburg
+  metadata:
+    metadata_service_url: https://isk.geobasis-bb.de/ows/aktualitaeten_wms?
+    metadata_layer: bb_dop_info
+    metadata_description: Berlin dedicated metadata service with orthophoto info (shared
+      with Brandenburg)
+    metadata_info_format: text/plain
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_current
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+  version: 1.3.0
+  layer_name: bebb_dop20c
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Brandenburg DOP20 RGB - Latest imagery (shared with Berlin)
+  direct_download: false
+  source: Geobasis Berlin/Brandenburg
+  metadata:
+    metadata_service_url: https://isk.geobasis-bb.de/ows/aktualitaeten_wms?
+    metadata_layer: bb_dop_info
+    metadata_description: Brandenburg dedicated metadata service with orthophoto info
+      (shared with Berlin)
+    metadata_info_format: text/plain
+    metadata_wms_version: 1.3.0
+- id: BB_CIR_DOP20_current
+  state_code: BB
+  state_name: Brandenburg
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+  version: 1.3.0
+  layer_name: bb_dop20cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Brandenburg DOP20 CIR - Latest imagery (shared with Berlin)
+  direct_download: false
+  source: Geobasis Berlin/Brandenburg
+  metadata:
+    metadata_service_url: https://isk.geobasis-bb.de/ows/aktualitaeten_wms?
+    metadata_layer: bb_dop_info
+    metadata_description: Brandenburg dedicated metadata service with orthophoto info
+      (shared with Berlin)
+    metadata_info_format: text/plain
+    metadata_wms_version: 1.3.0
+- id: HB_RGB_DOP20_2023
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.2
+  year: 2023
+  temporal_coverage: '2023'
+  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  version: 1.3.0
+  layer_name: DOP20_2023_HB
+  crs: EPSG:25832
+  format: image/tiff
+  availability: Bremen city
+  description: Bremen DOP20 RGB 2023
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP20_2023
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.2
+  year: 2023
+  temporal_coverage: '2023'
+  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  version: 1.3.0
+  layer_name: DOP20_2023_BHV
+  crs: EPSG:25832
+  format: image/tiff
+  availability: Bremerhaven city
+  description: Bremerhaven DOP20 RGB 2023
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HH_RGB_DOP20_current
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://geodienste.hamburg.de/HH_WMS_DOP
+  version: 1.3.0
+  layer_name: 1
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+- id: HH_CIR_DOP20_current
+  state_code: HH
+  state_name: Hamburg
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://geodienste.hamburg.de/HH_WMS_DOP
+  version: 1.3.0
+  layer_name: 4
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+- id: HE_RGB_DOP20_current
+  state_code: HE
+  state_name: Hessen
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2017-current
+  url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+  version: 1.1.1
+  layer_name: dop20
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Hessen DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Hessische Verwaltung für Bodenmanagement und Geoinformation
+  metadata:
+    metadata_service_url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+    metadata_layer: wms_he_dop
+    metadata_description: Dedicated Hessen metadata service with detailed acquisition
+      info
+    metadata_wms_version: 1.3.0
+- id: HE_CIR_DOP20_current
+  state_code: HE
+  state_name: Hessen
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2017-current
+  url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+  version: 1.1.1
+  layer_name: dop20cir
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Hessen DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Hessische Verwaltung für Bodenmanagement und Geoinformation
+  metadata:
+    metadata_service_url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+    metadata_layer: wms_he_dop
+    metadata_description: Dedicated Hessen metadata service with detailed acquisition
+      info
+    metadata_wms_version: 1.3.0
+- id: MV_RGB_DOP20_current
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geodaten-mv.de/dienste/adv_dop
+  version: 1.1.1
+  layer_name: mv_dop
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Mecklenburg-Vorpommern DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für innere Verwaltung Mecklenburg-Vorpommern
+  metadata:
+    metadata_layer: mv_dop_info
+    metadata_description: Mecklenburg-Vorpommern metadata layer
+    metadata_wms_version: 1.3.0
+- id: MV_CIR_DOP20_current
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geodaten-mv.de/dienste/gdimv_dopcir
+  version: 1.3.0
+  layer_name: gdimv_dopcir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Mecklenburg-Vorpommern DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Landesamt für innere Verwaltung Mecklenburg-Vorpommern
+  metadata:
+    metadata_layer: mv_dop_info
+    metadata_description: Mecklenburg-Vorpommern metadata layer
+    metadata_wms_version: 1.3.0
+- id: NI_RGB_DOP20_current
+  state_code: NI
+  state_name: Niedersachsen
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&
+  version: 1.1.1
+  layer_name: dop
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Niedersachsen DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für Geoinformation und Landesvermessung Niedersachsen
+  metadata:
+    metadata_service_url: https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&
+    metadata_layer: ni_dop20_info
+    metadata_description: Niedersachsen metadata service returning HTML
+    metadata_extra_params:
+      FORMAT: image/png
+      STYLES: ''
+    metadata_info_format: text/html
+    metadata_wms_version: 1.3.0
+- id: NW_RGB_DOP_current
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.1
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://www.wms.nrw.de/geobasis/wms_nw_dop
+  version: 1.3.0
+  layer_name: nw_dop_rgb
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Nordrhein-Westfalen DOP10 RGB - Latest imagery
+  direct_download: false
+  source: Geobasis NRW
+  metadata:
+    metadata_layer: nw_dop_utm_info
+    metadata_description: Nordrhein-Westfalen metadata layer
+    metadata_wms_version: 1.1.1
+- id: NW_CIR_DOP_current
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: CIR
+  resolution: 0.1
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.wms.nrw.de/geobasis/wms_nw_dop
+  version: 1.3.0
+  layer_name: nw_dop_cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Nordrhein-Westfalen DOP10 CIR - Latest imagery
+  direct_download: false
+  source: Geobasis NRW
+  metadata:
+    metadata_layer: nw_dop_utm_info
+    metadata_description: Nordrhein-Westfalen metadata layer
+    metadata_wms_version: 1.1.1
+- id: RP_RGB_DOP20_current
+  state_code: RP
+  state_name: Rheinland-Pfalz
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geoportal.rlp.de/mapbender/php/wms.php?layer_id=54775&withChilds=1&
+  version: 1.1.1
+  layer_name: rp_dop
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Rheinland-Pfalz DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz
+  metadata:
+    metadata_layer: rp_dop20_info
+    metadata_description: Rheinland-Pfalz metadata layer
+    metadata_wms_version: 1.3.0
+- id: RP_CIR_DOP20_current
+  state_code: RP
+  state_name: Rheinland-Pfalz
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=38922&withChilds=1
+  version: 1.3.0
+  layer_name: DOP_CIR
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Rheinland-Pfalz DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz
+  metadata:
+    metadata_layer: rp_dop20_info
+    metadata_description: Rheinland-Pfalz metadata layer
+    metadata_wms_version: 1.3.0
+- id: SL_RGB_DOP20_current
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://geoportal.saarland.de/freewms/truedop?
+  version: 1.1.1
+  layer_name: TrueDOP
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Saarland TrueDOP (DOP20) RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für Kataster-, Vermessungs- und Kartenwesen
+  metadata:
+    metadata_service_url: https://geoportal.saarland.de/freewms/truedop?
+    metadata_layer: sl_dop_info
+    metadata_description: Saarland metadata service
+    metadata_extra_params: &id002
+      STYLES: ''
+    metadata_info_format: text/html
+    metadata_wms_version: 1.1.1
+- id: SL_CIR_DOP20_current
+  state_code: SL
+  state_name: Saarland
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1
+  version: 1.1.1
+  layer_name: DOP_CIR
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Saarland DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Landesamt für Vermessung, Geoinformation und Landentwicklung Saarland
+  metadata:
+    metadata_service_url: https://geoportal.saarland.de/freewms/truedop?
+    metadata_layer: sl_dop_info
+    metadata_description: Saarland metadata service
+    metadata_extra_params: *id002
+    metadata_info_format: text/html
+    metadata_wms_version: 1.1.1
+- id: SN_RGB_DOP20_current
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?
+  version: 1.1.1
+  layer_name: sn_dop_020
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Sachsen DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Staatsbetrieb Geobasisinformation und Vermessung Sachsen
+  metadata:
+    metadata_layer: sn_dop_020_info
+    metadata_description: Sachsen metadata layer
+    metadata_wms_version: 1.3.0
+- id: SN_CIR_DOP20_current
+  state_code: SN
+  state_name: Sachsen
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?
+  version: 1.1.1
+  layer_name: sn_dop_020_cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Sachsen DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Staatsbetrieb Geobasisinformation und Vermessung Sachsen
+  metadata:
+    metadata_layer: sn_dop_020_info
+    metadata_description: Sachsen metadata layer
+    metadata_wms_version: 1.3.0
+- id: ST_RGB_DOP20_current
+  state_code: ST
+  state_name: Sachsen-Anhalt
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS/guest?
+  version: 1.1.1
+  layer_name: ST_DOP_WMS_P_LSA
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Sachsen-Anhalt DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Sachsen-Anhalt
+  metadata:
+    metadata_service_url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_Kacheluebersicht/guest?
+    metadata_layer: Aktualität_der_Orthophotos41668
+    metadata_description: Sachsen-Anhalt metadata service
+    metadata_info_format: text/html
+    metadata_wms_version: 1.1.1
+- id: SH_RGB_DOP20_current
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2019-current
+  url: https://dienste.gdi-sh.de/WMS_SH_DOP20col_OpenGBD?
+  version: 1.1.1
+  layer_name: sh_dop20_rgb
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  metadata:
+    metadata_service_url: https://service.gdi-sh.de/WMS_SH_MD_DOP?
+    metadata_layer: DOP20
+    metadata_description: Schleswig-Holstein dedicated metadata WMS service
+    metadata_wms_version: 1.1.1
+- id: TH_RGB_DOP20_current
+  state_code: TH
+  state_name: Thüringen
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+  version: 1.1.1
+  layer_name: th_dop
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Thüringen DOP20 RGB - Latest imagery
+  direct_download: false
+  source: Thüringer Landesamt für Bodenmanagement und Geoinformation
+  metadata:
+    metadata_layer: th_dop_info
+    metadata_description: Thüringen metadata layer
+    metadata_wms_version: 1.1.1
+- id: TH_CIR_DOP20_current
+  state_code: TH
+  state_name: Thüringen
+  type: CIR
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+  version: 1.1.1
+  layer_name: th_dop20cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Thüringen DOP20 CIR - Latest imagery
+  direct_download: false
+  source: Thüringer Landesamt für Bodenmanagement und Geoinformation
+  metadata:
+    metadata_layer: th_dop_info
+    metadata_description: Thüringen metadata layer
+    metadata_wms_version: 1.1.1
+- id: BKG_RGB_DOP20_current
+  state_code: DE
+  state_name: Germany (BKG)
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2018-current
+  url: https://sg.geodatenzentrum.de/wms_dop__{uuid}?
+  version: 1.1.1
+  layer_name: rgb
+  crs: EPSG:25832
+  format: image/tiff
+  availability: Germany-wide
+  description: BKG DOP20 RGB - Nationwide coverage (requires UUID authentication)
+  direct_download: false
+  requires_auth: true
+  auth_type: uuid
+  source: Bundesamt für Kartographie und Geodäsie
+- id: BW_RGB_DOP20_historic
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_TIME
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos für Zeitschieberegler
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: historic
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos für Zeitschieberegler
+      - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_1960_1969
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: 1960-1969
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1960-1969
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1960-1969
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: 1960-1969
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1960-1969 -
+      metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_1970_1979
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: 1970-1979
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1970-1979?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1970-1979
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: 1970-1979
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1970-1979 -
+      metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_1980
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: '1980'
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1980-1989?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1980 - 1989
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: '1980'
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1980 - 1989
+      - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_1990
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: '1990'
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1990-1999?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1990 - 1999
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: '1990'
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos in Grau 1990 - 1999
+      - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_2000
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: '2000'
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_2010-2019?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS LGL-BW HIST Digitale Orthophotos in Grau 2000 - 2009
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: '2000'
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS LGL-BW HIST Digitale Orthophotos in Grau 2000 - 2009
+      - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BW_RGB_DOP20_historic_1
+  state_code: BW
+  state_name: Baden-Württemberg
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_HIST_DOP_20_RGB
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS Historische Digitale Orthophotos in Farbe 20 cm Bodenauflösung
+  direct_download: false
+  source: Baden-Württemberg - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: BY_RGB_DOP20_historic
+  state_code: BY
+  state_name: Bayern
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://www.ldbv.bayern.de/vermessung/luftbilder/recherchestation.html
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Luftbildrecherchestation
+  direct_download: false
+  source: Bayern - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: BY_RGB_DOP20_historic_1
+  state_code: BY
+  state_name: Bayern
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://geoservices.bayern.de/od/wms/histdop/v1/histdop
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digitale Orthophotos – historische (BVV)
+  direct_download: false
+  source: Bayern - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: BE_RGB_DOP20_historic
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://isk.geobasis-bb.de/ows/aktualitaeten_wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB Aktualitäten-LGB
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: BE_RGB_DOP20_2005_2010
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: 2005-2010
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2005-2010
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: 2005-2010
+- id: BE_RGB_DOP20_2009_2012
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: 2009-2012
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2009-2012
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: 2009-2012
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2009-2012 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BE_RGB_DOP20_2013_2015
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: 2013-2015
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2013-2015
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: 2013-2015
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2013-2015 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BE_RGB_DOP20_2016_2018
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: 2016-2018
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2016-2018
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: 2016-2018
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2016-2018 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BE_RGB_DOP20_2019_2021
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: 2019-2021
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2019-2021
+  direct_download: false
+  source: Berlin - Historic
+  requires_auth: false
+  temporal_coverage: 2019-2021
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2019-2021 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_1953
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: '1953'
+  url: https://isk.geobasis-bb.de/mapproxy/dop100g_1953/service/wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB DOP100G1953
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: '1953'
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB DOP100G1953 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_1992_1997
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 1992-1997
+  url: https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB DOP50g 1992-1997
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 1992-1997
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB DOP50g 1992-1997 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_2001_2009
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2001-2009
+  url: https://isk.geobasis-bb.de/mapproxy/dop40g_2001_2009/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB DOP40g 2001-2009
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2001-2009
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB DOP40g 2001-2009 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_2005_2010
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2005-2010
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2005-2010
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2005-2010
+- id: BB_RGB_DOP20_2009_2012
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2009-2012
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2009-2012
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2009-2012
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2009-2012 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_2013_2015
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2013-2015
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2013-2015
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2013-2015
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2013-2015 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_2016_2018
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2016-2018
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2016-2018
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2016-2018
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2016-2018 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: BB_RGB_DOP20_2019_2021
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: 2019-2021
+  url: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS BB-BE DOP20 2019-2021
+  direct_download: false
+  source: Brandenburg - Historic
+  requires_auth: false
+  temporal_coverage: 2019-2021
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS BB-BE DOP20 2019-2021 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: HB_RGB_DOP20_historic
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: http://gdi1.geo.bremen.de/mapproxy/bv_kat/service?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische Luftbilder Bremen
+  direct_download: false
+  source: Bremen - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: HH_RGB_DOP20_historic
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://metaver.de/trefferanzeige?docuuid=DD10AFD3-5530-4FD4-933D-5FC71D14B8C7#detail_links
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digitale Orthophotos Hamburg
+  direct_download: false
+  source: Hamburg - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: HE_RGB_DOP20_historic
+  state_code: HE
+  state_name: Hessen
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://www.geoportal.hessen.de/mapbender/php/mod_showMetadata.php/../wms.php?layer_id=38491&PHPSESSID=2l9oroffsk2trpq61in9li24de&VERSION=1.1.1&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS_HE_HistDOP
+  direct_download: false
+  source: Hessen - Historic
+  requires_auth: false
+  temporal_coverage: historic
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS_HE_HistDOP - metadata layer
+    metadata_wms_version: 1.3.0
+- id: MV_RGB_DOP20_1991
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: '1991'
+  url: https://www.geodaten-mv.de/dienste/dop1991_wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS_MV_DOP_1991
+  direct_download: false
+  source: Mecklenburg-Vorpommern - Historic
+  requires_auth: false
+  temporal_coverage: '1991'
+- id: MV_RGB_DOP20_historic
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: http://www.geodaten-mv.de/dienste/doparchiv_wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS Historische Orthophotos MV (WMS_MV_DOP_Historisch)
+  direct_download: false
+  source: Mecklenburg-Vorpommern - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: MV_RGB_DOP20_1953
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: '1953'
+  url: http://www.geodaten-mv.de/dienste/dop1953_wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS_MV_DOP_1953
+  direct_download: false
+  source: Mecklenburg-Vorpommern - Historic
+  requires_auth: false
+  temporal_coverage: '1953'
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS_MV_DOP_1953 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: NI_RGB_DOP20_historic
+  state_code: NI
+  state_name: Niedersachsen
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://opendata.lgln.niedersachsen.de/doorman/noauth/doph_wms
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS_NI_DOP20_Historisch
+  direct_download: false
+  source: Niedersachsen - Historic
+  requires_auth: false
+  temporal_coverage: historic
+- id: NW_RGB_DOP20_historic
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS NW HIST DOP
+  direct_download: false
+  source: Nordrhein-Westfalen - Historic
+  requires_auth: false
+  temporal_coverage: historic
+  metadata:
+    metadata_layer: null
+    metadata_description: WMS NW HIST DOP - metadata layer
+    metadata_wms_version: 1.3.0
+- id: RP_RGB_DOP20_historic
+  state_code: RP
+  state_name: Rheinland-Pfalz
+  type: RGB
+  resolution: 0.2
+  year: historic
+  url: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=74145&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Luftbild RP historisch (Layer pro Jahr)
+  direct_download: false
+  source: Rheinland-Pfalz - Historic
+  requires_auth: false
+  temporal_coverage: historic
+  metadata:
+    metadata_layer: null
+    metadata_description: Luftbild RP historisch (Layer pro Jahr) - metadata layer
+    metadata_wms_version: 1.3.0
+- id: SL_RGB_DOP20_2022
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2022'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46337&VERSION=1.1.1&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2022)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2022'
+- id: SL_RGB_DOP20_2021
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2021'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=44413&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2021)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2021'
+- id: SL_RGB_DOP20_2020
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2020'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2020)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2020'
+- id: SL_RGB_DOP20_2019
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2019'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42876&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2019)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2019'
+- id: SL_RGB_DOP20_2018
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2018'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2018)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2018'
+- id: SL_RGB_DOP20_2017
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2017'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2017)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2017'
+- id: SL_RGB_DOP20_2016
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2016'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42768&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2016)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2016'
+- id: SL_RGB_DOP20_2015
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2015'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2015)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2015'
+- id: SL_RGB_DOP20_2014
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2014'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=41419&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2014)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2014'
+- id: SL_RGB_DOP20_2013
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2013'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2013)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2013'
+- id: SL_RGB_DOP20_2012
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2012'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=39050&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2012)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2012'
+- id: SL_RGB_DOP20_2011
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2011'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2011)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2011'
+- id: SL_RGB_DOP20_2010
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2010'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=35002&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2010)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2010'
+- id: SL_RGB_DOP20_2009
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2009'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2009)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2009'
+- id: SL_RGB_DOP20_2008
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2008'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2008)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2008'
+- id: SL_RGB_DOP20_2006
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2006'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2006)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2006'
+- id: SL_RGB_DOP20_2003
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2003'
+  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36412&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: WMS SL DOP20 (2003)
+  direct_download: false
+  source: Saarland - Historic
+  requires_auth: false
+  temporal_coverage: '2003'
+- id: SN_RGB_DOP20_2021_2022
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2021-2022
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2021_2022/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2021-2022
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2021-2022
+  metadata:
+    metadata_layer: null
+    metadata_description: Historische DOP 2021-2022 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: SN_RGB_DOP20_2018_2020
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2018-2020
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2018_2020/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2018-2020
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2018-2020
+  metadata:
+    metadata_layer: null
+    metadata_description: Historische DOP 2018-2020 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: SN_RGB_DOP20_2015_2017
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2015-2017
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2015_2017/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2015-2017
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2015-2017
+  metadata:
+    metadata_layer: null
+    metadata_description: Historische DOP 2015-2017 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: SN_RGB_DOP20_2012_2014
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2012-2014
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2012_2014/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2012-2014
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2012-2014
+  metadata:
+    metadata_layer: null
+    metadata_description: Historische DOP 2012-2014 - metadata layer
+    metadata_wms_version: 1.3.0
+- id: SN_RGB_DOP20_2009_2011
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2009-2011
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2009_2011/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2009-2011
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2009-2011
+- id: SN_RGB_DOP20_2006_2008
+  state_code: SN
+  state_name: Sachsen
+  type: RGB
+  resolution: 0.2
+  year: 2006-2008
+  url: https://geodienste.sachsen.de/wms_geosn_dop_2006_2008/guest?Request=GetCapabilities&Service=WMS
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Historische DOP 2006-2008
+  direct_download: false
+  source: Sachsen - Historic
+  requires_auth: false
+  temporal_coverage: 2006-2008
+- id: TH_RGB_DOP20_1946
+  state_code: TH
+  state_name: Thüringen
+  type: RGB
+  resolution: 0.2
+  year: '1946'
+  url: https://wms.geo.admin.ch/?VERSION=1.3.0
+  version: 1.3.0
+  layer_name: null
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: SWISSIMAGE HIST 1946
+  direct_download: false
+  source: Thüringen - Historic
+  requires_auth: false
+  temporal_coverage: '1946'

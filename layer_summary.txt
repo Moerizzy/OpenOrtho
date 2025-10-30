@@ -1,0 +1,48 @@
+CRITICAL FINDINGS - SERVICES NEED EXPANSION
+
+Services with MULTIPLE YEARLY LAYERS that need separate catalog entries:
+
+1. **NW_RGB_DOP20_historic** - 72 yearly layers (1951-2023) 
+   - Currently has 1 entry, needs 72 entries!
+   - Each year: nw_hist_dop_YYYY
+
+2. **BY_RGB_DOP20_historic_1** - 22 yearly layers (2003-2024)
+   - Currently has 1 entry, needs 22 entries!
+   - Each year: by_dop_YYYY_h + by_dop_YYYY_h_info (metadata!)
+
+3. **RP_RGB_DOP20_historic** - 63 layers (1994-2024)
+   - 31 yearly layers + 31 info layers
+   - Each year: rp_dop20_rgb_YYYY + rp_dop20_info_YYYY (metadata!)
+
+4. **NI_RGB_DOP20_historic** - 33 layers (2005-2022)
+   - 16 yearly layers + 16 info layers
+   - Each year: ni_dop20h_rgb_YYYY + ni_dop20h_rgb_YYYY_info (metadata!)
+
+5. **MV_RGB_DOP20_historic** - 23 yearly layers (2002-2024)
+   - Each year: rgbYYYY
+
+6. **BW_RGB_DOP20_1960_1969** - 10 yearly layers (1960-1969)
+   - Each year: YYYY
+
+7. **BW_RGB_DOP20_1970_1979** - 10 yearly layers (1970-1979)
+
+8. **BW_RGB_DOP20_1980** - 10 yearly layers (1980-1989)
+
+9. **BW_RGB_DOP20_1990** - 10 yearly layers (1990-1999)
+
+10. **BW_RGB_DOP20_2000** - 10 yearly layers (2010-2019)
+
+11. **BW_RGB_DOP20_historic_1** - 14 layers (2010-2023)
+    - Each: YYYY-YYYY_DOP_20_RGB
+
+12. **BE_RGB_DOP20_historic** - 71 layers with many _info metadata layers!
+
+METADATA LAYERS IDENTIFIED:
+
+- Bayern (BY): All historic years have matching _info layers!
+- Rheinland-Pfalz (RP): All years have rp_dop20_info_YYYY
+- Niedersachsen (NI): All years have ni_dop20h_rgb_YYYY_info
+- Current services: Many have _info layers already identified
+
+RECOMMENDATION:
+Create expanded catalog with separate entries for each year, including metadata layers!

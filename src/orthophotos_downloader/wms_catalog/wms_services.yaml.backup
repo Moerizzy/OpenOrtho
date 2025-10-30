@@ -1,0 +1,488 @@
+# WMS Catalog for German Orthophotos
+# This catalog contains WMS service definitions for downloading orthophotos
+# Organized by state, year, and image type
+#
+# Structure:
+# - services: List of WMS service definitions
+#   - id: Unique identifier (state_type_resolution_year)
+#   - state_code: Two-letter state code (BW, BY, etc.)
+#   - state_name: Full state name
+#   - type: Image type (RGB or CIR)
+#   - resolution: Resolution in meters (0.2, 0.4, etc.)
+#   - year: Year or year range for the imagery
+#   - url: WMS service URL
+#   - version: WMS version (1.1.1 or 1.3.0)
+#   - layer_name: WMS layer name
+#   - crs: Coordinate reference system (EPSG:25832, etc.)
+#   - format: Image format (image/png, image/tiff, etc.)
+#   - availability: Coverage information (state-wide, partial, etc.)
+#   - temporal_coverage: Time period covered
+#   - description: Human-readable description
+#   - direct_download: Whether direct tile download is available
+#   - tile_url_pattern: URL pattern for direct downloads (if available)
+#   - source: Source organization/agency
+
+version: "1.0"
+last_updated: "2025-10-29"
+
+services:
+  # Baden-Württemberg (BW)
+  - id: BW_RGB_DOP20_current
+    state_code: BW
+    state_name: Baden-Württemberg
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2020-current"
+    url: "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_C?"
+    version: "1.1.1"
+    layer_name: IMAGES_DOP_20_RGB
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Baden-Württemberg DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "LGL Baden-Württemberg"
+    
+  - id: BW_CIR_DOP20_current
+    state_code: BW
+    state_name: Baden-Württemberg
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2020-current"
+    url: "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_CIR"
+    version: "1.1.1"
+    layer_name: IMAGES_DOP_20_CIR
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Baden-Württemberg DOP20 CIR - Latest imagery"
+    direct_download: false
+    source: "LGL Baden-Württemberg"
+
+  # Bayern (BY)
+  - id: BY_RGB_DOP20_current
+    state_code: BY
+    state_name: Bayern
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2020-current"
+    url: "https://geoservices.bayern.de/od/wms/dop/v1/dop20?"
+    version: "1.1.1"
+    layer_name: by_dop20c
+    crs: EPSG:25832
+    format: image/tiff
+    availability: state-wide
+    description: "Bayern DOP20 RGB - Latest imagery"
+    direct_download: true
+    tile_url_pattern: "https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop20c&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}"
+    source: "Bayerische Vermessungsverwaltung"
+    
+  - id: BY_CIR_DOP20_current
+    state_code: BY
+    state_name: Bayern
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2020-current"
+    url: "https://geoservices.bayern.de/od/wms/dop/v1/dop20?"
+    version: "1.1.1"
+    layer_name: by_dop20cir
+    crs: EPSG:25832
+    format: image/tiff
+    availability: state-wide
+    description: "Bayern DOP20 CIR - Latest imagery"
+    direct_download: true
+    tile_url_pattern: "https://geoservices.bayern.de/od/wms/dop/v1/dop20?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop20cir&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}"
+    source: "Bayerische Vermessungsverwaltung"
+    
+  - id: BY_RGB_DOP40_current
+    state_code: BY
+    state_name: Bayern
+    type: RGB
+    resolution: 0.4
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://geoservices.bayern.de/od/wms/dop/v1/dop40?"
+    version: "1.1.1"
+    layer_name: by_dop40c
+    crs: EPSG:25832
+    format: image/tiff
+    availability: state-wide
+    description: "Bayern DOP40 RGB - Latest imagery"
+    direct_download: true
+    tile_url_pattern: "https://geoservices.bayern.de/od/wms/dop/v1/dop40?SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop40c&STYLES=&FORMAT=image/tiff&TRANSPARENT=false&VERSION=1.1.1&WIDTH={width}&HEIGHT={height}&SRS=EPSG:25832&BBOX={bbox}"
+    source: "Bayerische Vermessungsverwaltung"
+
+  # Berlin (BE)
+  - id: BE_RGB_DOP20_current
+    state_code: BE
+    state_name: Berlin
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms"
+    version: "1.3.0"
+    layer_name: bebb_dop20c
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Berlin DOP20 RGB - Latest imagery (shared with Brandenburg)"
+    direct_download: false
+    source: "Geobasis Berlin/Brandenburg"
+    
+  - id: BE_CIR_DOP20_current
+    state_code: BE
+    state_name: Berlin
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms"
+    version: "1.3.0"
+    layer_name: bb_dop20cir
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Berlin DOP20 CIR - Latest imagery (shared with Brandenburg)"
+    direct_download: false
+    source: "Geobasis Berlin/Brandenburg"
+
+  # Brandenburg (BB)
+  - id: BB_RGB_DOP20_current
+    state_code: BB
+    state_name: Brandenburg
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms"
+    version: "1.3.0"
+    layer_name: bebb_dop20c
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Brandenburg DOP20 RGB - Latest imagery (shared with Berlin)"
+    direct_download: false
+    source: "Geobasis Berlin/Brandenburg"
+    
+  - id: BB_CIR_DOP20_current
+    state_code: BB
+    state_name: Brandenburg
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms"
+    version: "1.3.0"
+    layer_name: bb_dop20cir
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Brandenburg DOP20 CIR - Latest imagery (shared with Berlin)"
+    direct_download: false
+    source: "Geobasis Berlin/Brandenburg"
+
+  # Bremen (HB)
+  - id: HB_RGB_DOP20_2023
+    state_code: HB
+    state_name: Bremen
+    type: RGB
+    resolution: 0.2
+    year: 2023
+    temporal_coverage: "2023"
+    url: "https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0"
+    version: "1.3.0"
+    layer_name: DOP20_2023_HB
+    crs: EPSG:25832
+    format: image/tiff
+    availability: Bremen city
+    description: "Bremen DOP20 RGB 2023"
+    direct_download: false
+    source: "Landesamt GeoInformation Bremen"
+    
+  - id: BHV_RGB_DOP20_2023
+    state_code: HB
+    state_name: Bremen (Bremerhaven)
+    type: RGB
+    resolution: 0.2
+    year: 2023
+    temporal_coverage: "2023"
+    url: "https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0"
+    version: "1.3.0"
+    layer_name: DOP20_2023_BHV
+    crs: EPSG:25832
+    format: image/tiff
+    availability: Bremerhaven city
+    description: "Bremerhaven DOP20 RGB 2023"
+    direct_download: false
+    source: "Landesamt GeoInformation Bremen"
+
+  # Hamburg (HH)
+  - id: HH_RGB_DOP20_current
+    state_code: HH
+    state_name: Hamburg
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2020-current"
+    url: "https://geodienste.hamburg.de/HH_WMS_DOP"
+    version: "1.3.0"
+    layer_name: 1
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Hamburg DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesbetrieb Geoinformation und Vermessung Hamburg"
+
+  # Hessen (HE)
+  - id: HE_RGB_DOP20_current
+    state_code: HE
+    state_name: Hessen
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2017-current"
+    url: "https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&"
+    version: "1.1.1"
+    layer_name: dop20
+    crs: EPSG:25832
+    format: image/tiff
+    availability: state-wide
+    description: "Hessen DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Hessische Verwaltung für Bodenmanagement und Geoinformation"
+
+  # Mecklenburg-Vorpommern (MV)
+  - id: MV_RGB_DOP20_current
+    state_code: MV
+    state_name: Mecklenburg-Vorpommern
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://www.geodaten-mv.de/dienste/adv_dop"
+    version: "1.1.1"
+    layer_name: mv_dop
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Mecklenburg-Vorpommern DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für innere Verwaltung Mecklenburg-Vorpommern"
+
+  # Niedersachsen (NI)
+  - id: NI_RGB_DOP20_current
+    state_code: NI
+    state_name: Niedersachsen
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&"
+    version: "1.1.1"
+    layer_name: dop
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Niedersachsen DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für Geoinformation und Landesvermessung Niedersachsen"
+
+  # Nordrhein-Westfalen (NW)
+  - id: NW_RGB_DOP_current
+    state_code: NW
+    state_name: Nordrhein-Westfalen
+    type: RGB
+    resolution: 0.1
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://www.wms.nrw.de/geobasis/wms_nw_dop"
+    version: "1.3.0"
+    layer_name: nw_dop_rgb
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Nordrhein-Westfalen DOP10 RGB - Latest imagery"
+    direct_download: false
+    source: "Geobasis NRW"
+
+  # Rheinland-Pfalz (RP)
+  - id: RP_RGB_DOP20_current
+    state_code: RP
+    state_name: Rheinland-Pfalz
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://www.geoportal.rlp.de/mapbender/php/wms.php?layer_id=54775&withChilds=1&"
+    version: "1.1.1"
+    layer_name: rp_dop
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Rheinland-Pfalz DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz"
+
+  # Saarland (SL)
+  - id: SL_RGB_DOP20_current
+    state_code: SL
+    state_name: Saarland
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://geoportal.saarland.de/freewms/truedop?"
+    version: "1.1.1"
+    layer_name: TrueDOP
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Saarland TrueDOP (DOP20) RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für Kataster-, Vermessungs- und Kartenwesen"
+
+  # Sachsen (SN)
+  - id: SN_RGB_DOP20_current
+    state_code: SN
+    state_name: Sachsen
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?"
+    version: "1.1.1"
+    layer_name: sn_dop_020
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Sachsen DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Staatsbetrieb Geobasisinformation und Vermessung Sachsen"
+    
+  - id: SN_CIR_DOP20_current
+    state_code: SN
+    state_name: Sachsen
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?"
+    version: "1.1.1"
+    layer_name: sn_dop_020_cir
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Sachsen DOP20 CIR - Latest imagery"
+    direct_download: false
+    source: "Staatsbetrieb Geobasisinformation und Vermessung Sachsen"
+
+  # Sachsen-Anhalt (ST)
+  - id: ST_RGB_DOP20_current
+    state_code: ST
+    state_name: Sachsen-Anhalt
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS/guest?"
+    version: "1.1.1"
+    layer_name: ST_DOP_WMS_P_LSA
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Sachsen-Anhalt DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für Vermessung und Geoinformation Sachsen-Anhalt"
+
+  # Schleswig-Holstein (SH)
+  - id: SH_RGB_DOP20_current
+    state_code: SH
+    state_name: Schleswig-Holstein
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2019-current"
+    url: "https://dienste.gdi-sh.de/WMS_SH_DOP20col_OpenGBD?"
+    version: "1.1.1"
+    layer_name: sh_dop20_rgb
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Schleswig-Holstein DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Landesamt für Vermessung und Geoinformation Schleswig-Holstein"
+
+  # Thüringen (TH)
+  - id: TH_RGB_DOP20_current
+    state_code: TH
+    state_name: Thüringen
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20"
+    version: "1.1.1"
+    layer_name: th_dop
+    crs: EPSG:25832
+    format: image/tiff
+    availability: state-wide
+    description: "Thüringen DOP20 RGB - Latest imagery"
+    direct_download: false
+    source: "Thüringer Landesamt für Bodenmanagement und Geoinformation"
+    
+  - id: TH_CIR_DOP20_current
+    state_code: TH
+    state_name: Thüringen
+    type: CIR
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20"
+    version: "1.1.1"
+    layer_name: th_dop20cir
+    crs: EPSG:25832
+    format: image/png
+    availability: state-wide
+    description: "Thüringen DOP20 CIR - Latest imagery"
+    direct_download: false
+    source: "Thüringer Landesamt für Bodenmanagement und Geoinformation"
+
+  # BKG - Federal Agency
+  - id: BKG_RGB_DOP20_current
+    state_code: DE
+    state_name: Germany (BKG)
+    type: RGB
+    resolution: 0.2
+    year: latest
+    temporal_coverage: "2018-current"
+    url: "https://sg.geodatenzentrum.de/wms_dop__{uuid}?"
+    version: "1.1.1"
+    layer_name: rgb
+    crs: EPSG:25832
+    format: image/tiff
+    availability: Germany-wide
+    description: "BKG DOP20 RGB - Nationwide coverage (requires UUID authentication)"
+    direct_download: false
+    requires_auth: true
+    auth_type: uuid
+    source: "Bundesamt für Kartographie und Geodäsie"
+
+# Historical/Archive Services (Examples - more can be added)
+# Note: Availability of historical data varies by state
+# These are examples and should be verified/expanded based on actual services
+
+# Example historical services (to be expanded):
+# - id: BY_RGB_DOP20_2020
+#   state_code: BY
+#   temporal_coverage: "2020"
+#   ...
+# - id: NW_RGB_DOP_2018
+#   state_code: NW
+#   temporal_coverage: "2018"
+#   ...

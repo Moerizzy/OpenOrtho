@@ -1,0 +1,91 @@
+﻿State;State Code;Year;Name;Link;Layers;;;;;Notes;Formate;;;;;;;;
+;;;;;RGB;CIR;IR;PAN ;META;;PNG;PNG32;PNG24;PNG8;TIFF;GIF;SVG;WebP;JPEG
+Baden-Württemberg;BW;1960 - heute;WMS LGL-BW HIST Digitale Orthophotos für Zeitschieberegler;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_TIME;x;;;x;;TimeSlider;x;;;x;;;;;x
+;;1960 - 1969;WMS LGL-BW HIST Digitale Orthophotos in Grau 1960-1969;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1960-1969;;;;x;;1960 - 1967 not available;x;;;x;;;;;x
+;; 1970 - 1979;WMS LGL-BW HIST Digitale Orthophotos in Grau 1970-1979;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1970-1979?;;;;x;;;x;;;x;;;;;x
+;; 1980 - 1989;WMS LGL-BW HIST Digitale Orthophotos in Grau 1980 - 1989;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1980-1989?;;;;x;;;x;;;x;;;;;x
+;;1990 - 1999;WMS LGL-BW HIST Digitale Orthophotos in Grau 1990 - 1999;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1990-1999?;;;;x;;;x;;;x;;;;;x
+;;2000 - 2009;WMS LGL-BW HIST Digitale Orthophotos in Grau 2000 - 2009;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_2010-2019?;x;;;x;;;x;;;x;;;;;x
+;;2007 - 2022;WMS Historische Digitale Orthophotos in Farbe 20 cm Bodenauflösung;https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_HIST_DOP_20_RGB;x;;;;;;x;;;x;;;;;x
+Bayern;BY;1941 - 2024;Luftbildrecherchestation;https://www.ldbv.bayern.de/vermessung/luftbilder/recherchestation.html;;;;;;Only online tool for viewing;;;;;;;;;
+;;2003 - 2024;Digitale Orthophotos – historische (BVV);https://geoservices.bayern.de/od/wms/histdop/v1/histdop;x;;;;x;For the years 2003 to 2005, the DOP are available with a soil resolution of 40 cm, from 2006 with a soil resolution of 20 cm.;x;;;;x;;;;x
+Berlin;BE;1953 - 2024;WMS BB Aktualitäten-LGB;https://isk.geobasis-bb.de/ows/aktualitaeten_wms;;;;;x;;x;;;;x;;;;x
+;;2005 - 2010;WMS BB-BE DOP20 2005-2010;https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?;x;;;;;;x;;;;x;;;;x
+;;2009 - 2012;WMS BB-BE DOP20 2009-2012;https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2013 - 2015;WMS BB-BE DOP20 2013-2015;https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2016 - 2018;WMS BB-BE DOP20 2016-2018;https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2019 - 2021;WMS BB-BE DOP20 2019-2021;https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?;x;;;x;;;x;;;;x;;;;x
+Brandenburg;BB;1953;WMS BB DOP100G1953;https://isk.geobasis-bb.de/mapproxy/dop100g_1953/service/wms;;;;x;;1m GSD;x;;;;x;;;;x
+;;1992 - 1997;WMS BB DOP50g 1992-1997;https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms?;;;;x;;50cm GSD;x;;;;x;;;;x
+;;2001 - 2009;WMS BB DOP40g 2001-2009;https://isk.geobasis-bb.de/mapproxy/dop40g_2001_2009/service/wms?;;;;x;;40cm GSD;x;;;;x;;;;x
+;;2005 - 2010;WMS BB-BE DOP20 2005-2010;https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?;x;;;;;;x;;;;x;;;;x
+;;2009 - 2012;WMS BB-BE DOP20 2009-2012;https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2013 - 2015;WMS BB-BE DOP20 2013-2015;https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2016 - 2018;WMS BB-BE DOP20 2016-2018;https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?;x;;;x;;;x;;;;x;;;;x
+;;2019 - 2021;WMS BB-BE DOP20 2019-2021;https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?;x;;;x;;;x;;;;x;;;;x
+Bremen;HB;1951 - 1997;Historische Luftbilder Bremen;http://gdi1.geo.bremen.de/mapproxy/bv_kat/service?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0;;;;;;Access Restricted;;;;;;;;;
+Hamburg;HH;2013 - 2022;Digitale Orthophotos Hamburg;https://metaver.de/trefferanzeige?docuuid=DD10AFD3-5530-4FD4-933D-5FC71D14B8C7#detail_links;;;;;;Download ZIP archives;;;;;;;;;
+Hessen;HE;1952 - 1967;WMS_HE_HistDOP;https://www.geoportal.hessen.de/mapbender/php/mod_showMetadata.php/../wms.php?layer_id=38491&PHPSESSID=2l9oroffsk2trpq61in9li24de&VERSION=1.1.1&withChilds=1;;;;x;x;;x;;;x;x;;;;x
+Mecklenburg-Vorpommern;MV;1991;WMS_MV_DOP_1991;https://www.geodaten-mv.de/dienste/dop1991_wms;;x;;;x;40cm GSD;x;;x;x;x;;;;x
+;;2002 - 2024;WMS Historische Orthophotos MV (WMS_MV_DOP_Historisch);http://www.geodaten-mv.de/dienste/doparchiv_wms;x;;;;;;x;;;;;x;;;x
+;;1953;WMS_MV_DOP_1953;http://www.geodaten-mv.de/dienste/dop1953_wms;;;;x;x;80cm GSD;x;;x;x;x;;;;x
+Niedersachsen;NI;2005 - 2021;WMS_NI_DOP20_Historisch;https://opendata.lgln.niedersachsen.de/doorman/noauth/doph_wms;x;;;;x;;x;;;x;x;;x;;x
+Nordrhein-Westfalen;NW;1951 - 2023;WMS NW HIST DOP;https://www.wms.nrw.de/geobasis/wms_nw_hist_dop;x;;;x;x;;x;;;x;x;;;;x
+Rheinland-Pfalz;RP;1994 - 2024;Luftbild RP historisch (Layer pro Jahr);https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=74145&withChilds=1;x;;;x;x;;x;;;;x;;;x;x
+Saarland;SL;2022;WMS SL DOP20 (2022);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46337&VERSION=1.1.1&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2021;WMS SL DOP20 (2021);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=44413&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2020;WMS SL DOP20 (2020);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2019;WMS SL DOP20 (2019);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42876&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2018;WMS SL DOP20 (2018);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2017;WMS SL DOP20 (2017);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2016;WMS SL DOP20 (2016);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42768&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2015;WMS SL DOP20 (2015);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2014;WMS SL DOP20 (2014);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=41419&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2013;WMS SL DOP20 (2013);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2012;WMS SL DOP20 (2012);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=39050&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2011;WMS SL DOP20 (2011);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2010;WMS SL DOP20 (2010);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=35002&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2009;WMS SL DOP20 (2009);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2008;WMS SL DOP20 (2008);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;;x;;;x;x;;x;;x
+;;2006;WMS SL DOP20 (2006);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;40cm GSD;x;;;x;x;;x;;x
+;;2003;WMS SL DOP20 (2003);https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36412&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1;x;x;x;;x;40cm GSD;x;;;x;x;;x;;x
+Sachsen;SN;2021 - 2022;Historische DOP 2021-2022;https://geodienste.sachsen.de/wms_geosn_dop_2021_2022/guest?Request=GetCapabilities&Service=WMS;x;x;;x;x;;x;x;x;x;x;x;x;;x
+;;2018 - 2020;Historische DOP 2018-2020;https://geodienste.sachsen.de/wms_geosn_dop_2018_2020/guest?Request=GetCapabilities&Service=WMS;x;x;;x;x;;x;x;x;x;x;x;x;;x
+;;2015 - 2017;Historische DOP 2015-2017;https://geodienste.sachsen.de/wms_geosn_dop_2015_2017/guest?Request=GetCapabilities&Service=WMS;x;x;;x;x;;x;x;x;x;x;x;x;;x
+;;2012 - 2014;Historische DOP 2012-2014;https://geodienste.sachsen.de/wms_geosn_dop_2012_2014/guest?Request=GetCapabilities&Service=WMS;x;x;;x;x;;x;x;x;x;x;x;x;;x
+;;2009 - 2011;Historische DOP 2009-2011;https://geodienste.sachsen.de/wms_geosn_dop_2009_2011/guest?Request=GetCapabilities&Service=WMS;x;;;;x;;x;x;x;x;x;x;x;;x
+;;2006 - 2008;Historische DOP 2006-2008;https://geodienste.sachsen.de/wms_geosn_dop_2006_2008/guest?Request=GetCapabilities&Service=WMS;x;;;;x;;x;x;x;x;x;x;x;;x
+;;1995 - 2004;Historische DOP 1995-2004;;;;;x;x;One layer 2000-2004 and one 1995 - 2000;x;x;x;x;x;x;x;;x
+Sachsen-Anhalt;ST;2014 - 2019;;https://geodatenportal.sachsen-anhalt.de/gfds/de/gdp-dop20-auswahl-historie.html;;;;;;Download service only;;;;;;;;;
+Schleswig-Holstein;SH;;;;;;;;;Not available;;;;;;;;;
+Thüringen;TH;1945 - 2023;;https://geoportal.thueringen.de/gdi-th/download-offene-geodaten/download-luftbilder-und-orthophotos;;;;;;No WMS. Single download only.;;;;;;;;;
+Outside Germany;;;;;;;;;;;;;;;;;;;
+Schweiz;;1946;SWISSIMAGE HIST 1946;https://wms.geo.admin.ch/?VERSION=1.3.0;;;;;;;;;;;;;;;
+Hannover;;1957 - heute;;https://e-government.hannover-stadt.de/geonetwork/srv/ger/catalog.search#/search?resultType=details&sortBy=relevance&from=1&to=20;;;;;;No WMS. Download only;;;;;;;;;
+Ratingen und Umgebung;;1927 - 1969;;https://gdi.regioit.de/portal/home/item.html?id=b57153f7030b4b8a9d9bac31351c1566;;;;;;Only Viewer;;;;;;;;;
+Brandenburg-Viewer;;1953 - heute;;https://www.arcgis.com/apps/webappviewer/index.html?id=5e7438aa1ab047b4971feaae6603c0b4;;;;;;Only Viewer;;;;;;;;;
+Rhein-Ruhr Viewer;;1926 - heute;;https://luftbilder.geoportal.ruhr/;;;;;;Only Viewer;;;;;;;;;
+Duisburg WMS;;1926 - heute;;https://opendata-duisburg.de/dataset/historische-luftbilder;;;;;;WMS services for every year;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;

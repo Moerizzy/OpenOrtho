@@ -1,0 +1,5382 @@
+WMS LAYERS ANALYSIS
+====================================================================================================
+Total services: 87
+Analysis date: 2025-10-29
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_current
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_C?
+Current layer: IMAGES_DOP_20_RGB
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 2020-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - IMAGES_DOP_20_RGB (queryable: False)
+    Title: Digitale Orthophotos 20 cm Farbe grenzscharf - Landesgrenze
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'IMAGES_DOP_20_RGB' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BW_CIR_DOP20_current
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_CIR
+Current layer: IMAGES_DOP_20_CIR
+State: BW - Baden-Württemberg
+Type: CIR
+Temporal coverage: 2020-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - IMAGES_DOP_20_CIR (queryable: False)
+    Title: Digitale Orthophotos 20 cm Infrarot (CIR) grenzscharf - Landesgrenze
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'IMAGES_DOP_20_CIR' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BY_RGB_DOP20_current
+====================================================================================================
+URL: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+Current layer: by_dop20c
+State: BY - Bayern
+Type: RGB
+Temporal coverage: 2020-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (1):
+  - DOP20
+    Title: Digitales Orthophoto 20cm (BVV)
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - by_dop20_info
+    Title: Metadaten DOP
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (3):
+  - by_dop20c (queryable: False)
+    Title: DOP 20 (Farbe)
+  - by_dop20g (queryable: False)
+    Title: DOP 20 (Graustufen)
+  - by_dop20cir (queryable: False)
+    Title: DOP 20 (Colorinfrarot)
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'by_dop20c' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BY_CIR_DOP20_current
+====================================================================================================
+URL: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+Current layer: by_dop20cir
+State: BY - Bayern
+Type: CIR
+Temporal coverage: 2020-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (1):
+  - DOP20
+    Title: Digitales Orthophoto 20cm (BVV)
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - by_dop20_info
+    Title: Metadaten DOP
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (3):
+  - by_dop20c (queryable: False)
+    Title: DOP 20 (Farbe)
+  - by_dop20g (queryable: False)
+    Title: DOP 20 (Graustufen)
+  - by_dop20cir (queryable: False)
+    Title: DOP 20 (Colorinfrarot)
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'by_dop20cir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BY_RGB_DOP40_current
+====================================================================================================
+URL: https://geoservices.bayern.de/od/wms/dop/v1/dop40?
+Current layer: by_dop40c
+State: BY - Bayern
+Type: RGB
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (1):
+  - DOP40
+    Title: Digitales Orthophoto 40cm (BVV)
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - by_dop40_info
+    Title: Metadaten DOP
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (2):
+  - by_dop40c (queryable: False)
+    Title: DOP 40 (Farbe)
+  - by_dop40g (queryable: False)
+    Title: DOP 40 (Graustufen)
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'by_dop40c' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_current
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+Current layer: bebb_dop20c
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - bebb_dop20c (queryable: False)
+    Title: DOP20c BB-BE (WMS)
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'bebb_dop20c' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BE_CIR_DOP20_current
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+Current layer: bb_dop20cir
+State: BE - Berlin
+Type: CIR
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - bb_dop20cir (queryable: False)
+    Title: DOP20cir BB-BE (WMS)
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'bb_dop20cir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_current
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+Current layer: bebb_dop20c
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - bebb_dop20c (queryable: False)
+    Title: DOP20c BB-BE (WMS)
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'bebb_dop20c' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BB_CIR_DOP20_current
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+Current layer: bb_dop20cir
+State: BB - Brandenburg
+Type: CIR
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - bb_dop20cir (queryable: False)
+    Title: DOP20cir BB-BE (WMS)
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'bb_dop20cir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: HB_RGB_DOP20_2023
+====================================================================================================
+URL: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+Current layer: DOP20_2023_HB
+State: HB - Bremen
+Type: RGB
+Temporal coverage: 2023
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - DOP20 2023 Land Bremen
+    Title: DOP20 2023 Land Bremen
+  - DOP20_2023_HB
+    Title: DOP20 2023 Bremen
+  - DOP20_2023_BHV
+    Title: DOP20 2023 Bremerhaven
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2023
+
+====================================================================================================
+SERVICE: BHV_RGB_DOP20_2023
+====================================================================================================
+URL: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+Current layer: DOP20_2023_BHV
+State: HB - Bremen (Bremerhaven)
+Type: RGB
+Temporal coverage: 2023
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - DOP20 2023 Land Bremen
+    Title: DOP20 2023 Land Bremen
+  - DOP20_2023_HB
+    Title: DOP20 2023 Bremen
+  - DOP20_2023_BHV
+    Title: DOP20 2023 Bremerhaven
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2023
+
+====================================================================================================
+SERVICE: HH_RGB_DOP20_current
+====================================================================================================
+URL: https://geodienste.hamburg.de/HH_WMS_DOP
+Current layer: 1
+State: HH - Hamburg
+Type: RGB
+Temporal coverage: 2020-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: HH_CIR_DOP20_current
+====================================================================================================
+URL: https://geodienste.hamburg.de/HH_WMS_DOP
+Current layer: 4
+State: HH - Hamburg
+Type: CIR
+Temporal coverage: 2020-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: HE_RGB_DOP20_current
+====================================================================================================
+URL: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+Current layer: dop20
+State: HE - Hessen
+Type: RGB
+Temporal coverage: 2017-current
+
+TOTAL LAYERS: 12
+
+📸 IMAGE LAYERS (1):
+  - wms_he_dop
+    Title: WMS HE DOP
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (2):
+  - he_dop_rgb_info
+    Title: DOP rgb Info
+  - he_dop_cir_info
+    Title: DOP cir Info
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (9):
+  - he_dop20_rgb (queryable: False)
+    Title: DOP20 rgb
+  - el_dop320_rgb (queryable: False)
+    Title: el_dop320_rgb
+  - el_dop5000_rgb (queryable: False)
+    Title: el_dop5000_rgb
+  - he_dop_rgb (queryable: False)
+    Title: DOP rgb
+  - el_alk_tk (queryable: False)
+    Title: el_alk_tk
+  - he_dop_alk_t (queryable: False)
+    Title: DOP rgb - ALK t
+  - he_dop20_cir (queryable: False)
+    Title: DOP20 cir
+  - el_dop320_cir (queryable: False)
+    Title: el_dop320 cir
+  - he_dop_cir (queryable: False)
+    Title: DOP cir
+
+💡 RECOMMENDATIONS:
+  ℹ️  2 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  WARNING: Current layer 'dop20' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: HE_CIR_DOP20_current
+====================================================================================================
+URL: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+Current layer: dop20cir
+State: HE - Hessen
+Type: CIR
+Temporal coverage: 2017-current
+
+TOTAL LAYERS: 12
+
+📸 IMAGE LAYERS (1):
+  - wms_he_dop
+    Title: WMS HE DOP
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (2):
+  - he_dop_rgb_info
+    Title: DOP rgb Info
+  - he_dop_cir_info
+    Title: DOP cir Info
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (9):
+  - he_dop20_rgb (queryable: False)
+    Title: DOP20 rgb
+  - el_dop320_rgb (queryable: False)
+    Title: el_dop320_rgb
+  - el_dop5000_rgb (queryable: False)
+    Title: el_dop5000_rgb
+  - he_dop_rgb (queryable: False)
+    Title: DOP rgb
+  - el_alk_tk (queryable: False)
+    Title: el_alk_tk
+  - he_dop_alk_t (queryable: False)
+    Title: DOP rgb - ALK t
+  - he_dop20_cir (queryable: False)
+    Title: DOP20 cir
+  - el_dop320_cir (queryable: False)
+    Title: el_dop320 cir
+  - he_dop_cir (queryable: False)
+    Title: DOP cir
+
+💡 RECOMMENDATIONS:
+  ℹ️  2 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  WARNING: Current layer 'dop20cir' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: MV_RGB_DOP20_current
+====================================================================================================
+URL: https://www.geodaten-mv.de/dienste/adv_dop
+Current layer: mv_dop
+State: MV - Mecklenburg-Vorpommern
+Type: RGB
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - mv_dop_info
+    Title: Digitale Orthophotos Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (2):
+  - WMS_MV_DOP (queryable: True)
+    Title: Digitale Orthophotos
+  - mv_dop (queryable: False)
+    Title: Digitale Orthophotos
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'mv_dop' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: MV_CIR_DOP20_current
+====================================================================================================
+URL: https://www.geodaten-mv.de/dienste/gdimv_dopcir
+Current layer: gdimv_dopcir
+State: MV - Mecklenburg-Vorpommern
+Type: CIR
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (1):
+  - gdimv_dopcir_wms
+    Title: Digitale Orthophotos CIR (40 cm)
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (1):
+  - gdimv_dopcir_metadaten
+    Title: Digitale Orthophotos CIR (Metadaten)
+
+📁 PARENT/GROUP LAYERS (1):
+  - gdimv_dopcir (queryable: False)
+    Title: Digitale Orthophotos CIR (Karte)
+
+💡 RECOMMENDATIONS:
+  🔍 1 metadata/aktualitaet layers found!
+  ⚠️  Current layer 'gdimv_dopcir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: NI_RGB_DOP20_current
+====================================================================================================
+URL: https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&
+Current layer: dop
+State: NI - Niedersachsen
+Type: RGB
+Temporal coverage: 2018-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: NW_RGB_DOP_current
+====================================================================================================
+URL: https://www.wms.nrw.de/geobasis/wms_nw_dop
+Current layer: nw_dop_rgb
+State: NW - Nordrhein-Westfalen
+Type: RGB
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - nw_dop_utm_info
+    Title: DOP Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_NW_DOP (queryable: True)
+    Title: WMS NW DOP
+  - nw_dop_rgb (queryable: False)
+    Title: DOP Farbe
+  - nw_dop_cir (queryable: False)
+    Title: DOP Colorinfrarot
+  - nw_dop_nir (queryable: False)
+    Title: DOP Nahes Infrarot
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'nw_dop_rgb' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: NW_CIR_DOP_current
+====================================================================================================
+URL: https://www.wms.nrw.de/geobasis/wms_nw_dop
+Current layer: nw_dop_cir
+State: NW - Nordrhein-Westfalen
+Type: CIR
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - nw_dop_utm_info
+    Title: DOP Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_NW_DOP (queryable: True)
+    Title: WMS NW DOP
+  - nw_dop_rgb (queryable: False)
+    Title: DOP Farbe
+  - nw_dop_cir (queryable: False)
+    Title: DOP Colorinfrarot
+  - nw_dop_nir (queryable: False)
+    Title: DOP Nahes Infrarot
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'nw_dop_cir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: RP_RGB_DOP20_current
+====================================================================================================
+URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?layer_id=54775&withChilds=1&
+Current layer: rp_dop
+State: RP - Rheinland-Pfalz
+Type: RGB
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 18
+
+📸 IMAGE LAYERS (2):
+  - FPLAN.07131011.0
+    Title: Umringe der Flächennutzungspläne von Berg_(07131)
+  - BPLAN.07131011.0
+    Title: Umringe der Bebauungspläne von Berg
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (16):
+  - OWS.07131011 (queryable: False)
+    Title: Berg
+  - FPLAN.07131011 (queryable: False)
+    Title: Flächennutzungspläne
+  - FPLAN.377.0 (queryable: False)
+    Title: Flächennutzungs- und Landschaftsplan der VG Altenahr
+  - FPLAN.382.0 (queryable: False)
+    Title: Flächennutzungs- und Landschaftsplan der VG Altenahr - Teilbereich Berg
+  - BPLAN.07131011 (queryable: False)
+    Title: Bebauungspläne
+  - BPlan.07131011.12.0 (queryable: False)
+    Title: Bürgerhaus Dorfplatz Freisheim
+  - BPlan.07131011.12.1 (queryable: False)
+    Title: Bürgerhaus Dorfplatz Freisheim 1. vereinf. Änderung
+  - BPlan.07131011.13.0 (queryable: False)
+    Title: Am alten Graben, 2. Änderung
+  - BPlan.07131011.13.3 (queryable: False)
+    Title: Am alten Graben 2. vereinf. Änderung
+  - BPlan.07131011.14.0 (queryable: False)
+    Title: Sportplatzweg
+  - BPlan.07131011.1004.0 (queryable: False)
+    Title: Ergänzungssatzung Berg
+  - BPlan.07131011.1005.0 (queryable: False)
+    Title: Klarstellungssatzung in Verbindung mit Ergänzungssatzung
+  - BPlan.07131011.1006.0 (queryable: False)
+    Title: Klarstellungssatzung Am Eichenbusch
+  - BPlan.07131011.1007.0 (queryable: False)
+    Title: Klarstellungssatzung Vischeler Straße
+  - BPlan.07131011.1025.0 (queryable: False)
+    Title: Klarstellungssatzung Markusstraße-Freisheim
+  - BPlan.07131011.1051.0 (queryable: False)
+    Title: Klarstellungssatzung in Verbindung mit Ergänzungssatzung
+
+💡 RECOMMENDATIONS:
+  ⚠️  WARNING: Current layer 'rp_dop' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: RP_CIR_DOP20_current
+====================================================================================================
+URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=38922&withChilds=1
+Current layer: DOP_CIR
+State: RP - Rheinland-Pfalz
+Type: CIR
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (1):
+  - OGC:WMS
+    Title: Luftbild RP (CIR)
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (1):
+  - rp_dopcir_metadaten
+    Title: Luftbild RP (CIR) Metadaten
+
+📁 PARENT/GROUP LAYERS (1):
+  - rp_dopcir (queryable: False)
+    Title: Luftbild RP (CIR)
+
+💡 RECOMMENDATIONS:
+  🔍 1 metadata/aktualitaet layers found!
+  ⚠️  WARNING: Current layer 'DOP_CIR' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_current
+====================================================================================================
+URL: https://geoportal.saarland.de/freewms/truedop?
+Current layer: TrueDOP
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop_info
+    Title: Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_SL_TrueDOP20 (queryable: True)
+    Title: WMS SL TrueDOP20
+  - sl_dop20_rgb (queryable: False)
+    Title: SL DOP20rgb
+  - sl_dop20_cir (queryable: False)
+    Title: SL DOP20cir
+  - sl_dop20_ir (queryable: False)
+    Title: SL DOP20ir
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  WARNING: Current layer 'TrueDOP' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: SL_CIR_DOP20_current
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1
+Current layer: DOP_CIR
+State: SL - Saarland
+Type: CIR
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop_info
+    Title: Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_SL_TrueDOP20 (queryable: True)
+    Title: WMS SL TrueDOP20
+  - sl_dop20_rgb (queryable: False)
+    Title: SL DOP20rgb
+  - sl_dop20_cir (queryable: False)
+    Title: SL DOP20cir
+  - sl_dop20_ir (queryable: False)
+    Title: SL DOP20ir
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  WARNING: Current layer 'DOP_CIR' not found in GetCapabilities!
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_current
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?
+Current layer: sn_dop_020
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2019-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: SN_CIR_DOP20_current
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?
+Current layer: sn_dop_020_cir
+State: SN - Sachsen
+Type: CIR
+Temporal coverage: 2019-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: ST_RGB_DOP20_current
+====================================================================================================
+URL: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS/guest?
+Current layer: ST_DOP_WMS_P_LSA
+State: ST - Sachsen-Anhalt
+Type: RGB
+Temporal coverage: 2019-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: SH_RGB_DOP20_current
+====================================================================================================
+URL: https://dienste.gdi-sh.de/WMS_SH_DOP20col_OpenGBD?
+Current layer: sh_dop20_rgb
+State: SH - Schleswig-Holstein
+Type: RGB
+Temporal coverage: 2019-current
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - sh_dop20_rgb (queryable: False)
+    Title: SH DOP20 RGB
+
+💡 RECOMMENDATIONS:
+  ⚠️  Current layer 'sh_dop20_rgb' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: TH_RGB_DOP20_current
+====================================================================================================
+URL: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+Current layer: th_dop
+State: TH - Thüringen
+Type: RGB
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - th_dop_info
+    Title: DOP Metainformationen
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (3):
+  - th_dop20cir (queryable: False)
+    Title: DOP Infrarot
+  - th_dop20pan (queryable: False)
+    Title: DOP Grau
+  - th_dop (queryable: False)
+    Title: DOP Farbe
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'th_dop' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: TH_CIR_DOP20_current
+====================================================================================================
+URL: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+Current layer: th_dop20cir
+State: TH - Thüringen
+Type: CIR
+Temporal coverage: 2018-current
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - th_dop_info
+    Title: DOP Metainformationen
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (3):
+  - th_dop20cir (queryable: False)
+    Title: DOP Infrarot
+  - th_dop20pan (queryable: False)
+    Title: DOP Grau
+  - th_dop (queryable: False)
+    Title: DOP Farbe
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  ⚠️  Current layer 'th_dop20cir' is a parent layer (might not work for GetMap)!
+
+====================================================================================================
+SERVICE: BKG_RGB_DOP20_current
+====================================================================================================
+URL: https://sg.geodatenzentrum.de/wms_dop__{uuid}?
+Current layer: rgb
+State: DE - Germany (BKG)
+Type: RGB
+Temporal coverage: 2018-current
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_historic
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_TIME
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - Time (queryable: False)
+    Title: Zeitschieberegler Historische Digitale Orthophotos
+
+💡 RECOMMENDATIONS:
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_1960_1969
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1960-1969
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 1960-1969
+
+TOTAL LAYERS: 10
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (10):
+  - 1960
+    Title: 1960 noch nicht verfügbar
+  - 1961
+    Title: 1961 noch nicht verfügbar
+  - 1962
+    Title: 1962 noch nicht verfügbar
+  - 1963
+    Title: 1963 noch nicht verfügbar
+  - 1964
+    Title: 1964 noch nicht verfügbar
+  - 1965
+    Title: 1965 noch nicht verfügbar
+  - 1966
+    Title: 1966 noch nicht verfügbar
+  - 1967
+    Title: 1967 noch nicht verfügbar
+  - 1968
+    Title: 1968 Historisches Digitales Orthophoto Straßendatenflug
+  - 1969
+    Title: 1969 Historisches Digitales Orthophoto
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 10 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_1970_1979
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1970-1979?
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 1970-1979
+
+TOTAL LAYERS: 10
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (10):
+  - 1970
+    Title: 1970 Historisches Digitales Orthophoto
+  - 1971
+    Title: 1971 Historisches Digitales Orthophoto
+  - 1972
+    Title: 1972 Historisches Digitales Orthophoto
+  - 1973
+    Title: 1973 Historisches Digitales Orthophoto
+  - 1974
+    Title: 1974 Historisches Digitales Orthophoto
+  - 1975
+    Title: 1975 Historisches Digitales Orthophoto
+  - 1976
+    Title: 1976 Historisches Digitales Orthophoto
+  - 1977
+    Title: 1977 Historisches Digitales Orthophoto
+  - 1978
+    Title: 1978 Historisches Digitales Orthophoto
+  - 1979
+    Title: 1979 Historisches Digitales Orthophoto
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 10 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_1980
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1980-1989?
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 1980
+
+TOTAL LAYERS: 10
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (10):
+  - 1980
+    Title: 1980 Historisches Digitales Orthophoto
+  - 1981
+    Title: 1981 Historisches Digitales Orthophoto
+  - 1982
+    Title: 1982 Historisches Digitales Orthophoto
+  - 1983
+    Title: 1983 Historisches Digitales Orthophoto
+  - 1984
+    Title: 1984 Historisches Digitales Orthophoto
+  - 1985
+    Title: 1985 Historisches Digitales Orthophoto
+  - 1986
+    Title: 1986 Historisches Digitales Orthophoto
+  - 1987
+    Title: 1987 Historisches Digitales Orthophoto
+  - 1988
+    Title: 1988 Historisches Digitales Orthophoto
+  - 1989
+    Title: 1989 Historisches Digitales Orthophoto
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 10 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_1990
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1990-1999?
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 1990
+
+TOTAL LAYERS: 10
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (10):
+  - 1990
+    Title: 1990 Historisches Digitales Orthophoto
+  - 1991
+    Title: 1991 noch nicht verfügbar
+  - 1992
+    Title: 1992 noch nicht verfügbar
+  - 1993
+    Title: 1993 noch nicht verfügbar
+  - 1994
+    Title: 1994 noch nicht verfügbar
+  - 1995
+    Title: 1995 Historisches Digitales Orthophoto
+  - 1996
+    Title: 1996 Historisches Digitales Orthophoto
+  - 1997
+    Title: 1997 Historisches Digitales Orthophoto
+  - 1998
+    Title: 1998 Historisches Digitales Orthophoto
+  - 1999
+    Title: 1999 Historisches Digitales Orthophoto
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 10 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_2000
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_2010-2019?
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: 2000
+
+TOTAL LAYERS: 10
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (10):
+  - 2010
+    Title: 2010 noch nicht verfügbar
+  - 2011
+    Title: 2011 noch nicht verfügbar
+  - 2012
+    Title: 2012 noch nicht verfügbar
+  - 2013
+    Title: 2013 vorläufiges Historisches Digitales Orthophoto
+  - 2014
+    Title: 2014 Historisches Digitales Orthophoto
+  - 2015
+    Title: 2015 Historisches Digitales Orthophoto
+  - 2016
+    Title: 2016 Historisches Digitales Orthophoto
+  - 2017
+    Title: 2017 Historisches Digitales Orthophoto
+  - 2018
+    Title: 2018 Historisches Digitales Orthophoto
+  - 2019
+    Title: 2019 Historisches Digitales Orthophoto
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 10 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019
+
+====================================================================================================
+SERVICE: BW_RGB_DOP20_historic_1
+====================================================================================================
+URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_HIST_DOP_20_RGB
+Current layer: None
+State: BW - Baden-Württemberg
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 14
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (14):
+  - 2010-2007_DOP_20_RGB
+    Title: 2010-2007 Historische DOP 20cm Farbe landesweit
+  - 2011-2008_DOP_20_RGB
+    Title: 2011-2008 Historische DOP 20cm Farbe landesweit
+  - 2012-2010_DOP_20_RGB
+    Title: 2012-2010 Historische DOP 20cm Farbe landesweit
+  - 2013-2010_DOP_20_RGB
+    Title: 2013-2010 Historische DOP 20cm Farbe landesweit
+  - 2014-2010_DOP_20_RGB
+    Title: 2014-2010 Historische DOP 20cm Farbe landesweit
+  - 2015-2013_DOP_20_RGB
+    Title: 2015-2013 Historische DOP 20cm Farbe landesweit
+  - 2016-2014_DOP_20_RGB
+    Title: 2016-2014 Historische DOP 20cm Farbe landesweit
+  - 2017-2014_DOP_20_RGB
+    Title: 2017-2014 Historische DOP 20cm Farbe landesweit
+  - 2018-2016_DOP_20_RGB
+    Title: 2018-2016 Historische DOP 20cm Farbe landesweit
+  - 2019-2017_DOP_20_RGB
+    Title: 2019-2017 Historische DOP 20cm Farbe landesweit
+  - 2020-2018_DOP_20_RGB
+    Title: 2020-2018 Historische DOP 20cm Farbe landesweit
+  - 2021-2019_DOP_20_RGB
+    Title: 2021-2019 Historische DOP 20cm Farbe landesweit
+  - 2022-2019_DOP_20_RGB
+    Title: 2022-2019 Historische DOP 20cm Farbe landesweit
+  - 2023-2022_DOP_20_RGB
+    Title: 2023-2022 Historische DOP 20cm Farbe landesweit
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 14 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
+
+====================================================================================================
+SERVICE: BY_RGB_DOP20_historic
+====================================================================================================
+URL: https://www.ldbv.bayern.de/vermessung/luftbilder/recherchestation.html
+Current layer: None
+State: BY - Bayern
+Type: RGB
+Temporal coverage: historic
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: BY_RGB_DOP20_historic_1
+====================================================================================================
+URL: https://geoservices.bayern.de/od/wms/histdop/v1/histdop
+Current layer: None
+State: BY - Bayern
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 45
+
+📸 IMAGE LAYERS (1):
+  - DOP_historisch
+    Title: Digitale Orthophotos – historische (BVV)
+
+📅 YEARLY LAYERS (22):
+  - by_dop_2024_h
+    Title: DOP - 2024
+  - by_dop_2023_h
+    Title: DOP - 2023
+  - by_dop_2022_h
+    Title: DOP - 2022
+  - by_dop_2021_h
+    Title: DOP - 2021
+  - by_dop_2020_h
+    Title: DOP - 2020
+  - by_dop_2019_h
+    Title: DOP - 2019
+  - by_dop_2018_h
+    Title: DOP - 2018
+  - by_dop_2017_h
+    Title: DOP - 2017
+  - by_dop_2016_h
+    Title: DOP - 2016
+  - by_dop_2015_h
+    Title: DOP - 2015
+  - by_dop_2014_h
+    Title: DOP - 2014
+  - by_dop_2013_h
+    Title: DOP - 2013
+  - by_dop_2012_h
+    Title: DOP - 2012
+  - by_dop_2011_h
+    Title: DOP - 2011
+  - by_dop_2010_h
+    Title: DOP - 2010
+  - by_dop_2009_h
+    Title: DOP - 2009
+  - by_dop_2008_h
+    Title: DOP - 2008
+  - by_dop_2007_h
+    Title: DOP - 2007
+  - by_dop_2006_h
+    Title: DOP - 2006
+  - by_dop_2005_h
+    Title: DOP - 2005
+  - by_dop_2004_h
+    Title: DOP - 2004
+  - by_dop_2003_h
+    Title: DOP - 2003
+
+ℹ️  INFO/METADATA LAYERS (22):
+  - by_dop_2024_h_info
+    Title: Metadaten DOP - 2024
+  - by_dop_2023_h_info
+    Title: Metadaten DOP - 2023
+  - by_dop_2022_h_info
+    Title: Metadaten DOP - 2022
+  - by_dop_2021_h_info
+    Title: Metadaten DOP - 2021
+  - by_dop_2020_h_info
+    Title: Metadaten DOP - 2020
+  - by_dop_2019_h_info
+    Title: Metadaten DOP - 2019
+  - by_dop_2018_h_info
+    Title: Metadaten DOP - 2018
+  - by_dop_2017_h_info
+    Title: Metadaten DOP - 2017
+  - by_dop_2016_h_info
+    Title: Metadaten DOP - 2016
+  - by_dop_2015_h_info
+    Title: Metadaten DOP - 2015
+  - by_dop_2014_h_info
+    Title: Metadaten DOP - 2014
+  - by_dop_2013_h_info
+    Title: Metadaten DOP - 2013
+  - by_dop_2012_h_info
+    Title: Metadaten DOP - 2012
+  - by_dop_2011_h_info
+    Title: Metadaten DOP - 2011
+  - by_dop_2010_h_info
+    Title: Metadaten DOP - 2010
+  - by_dop_2009_h_info
+    Title: Metadaten DOP - 2009
+  - by_dop_2008_h_info
+    Title: Metadaten DOP - 2008
+  - by_dop_2007_h_info
+    Title: Metadaten DOP - 2007
+  - by_dop_2006_h_info
+    Title: Metadaten DOP - 2006
+  - by_dop_2005_h_info
+    Title: Metadaten DOP - 2005
+  - by_dop_2004_h_info
+    Title: Metadaten DOP - 2004
+  - by_dop_2003_h_info
+    Title: Metadaten DOP - 2003
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 22 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  22 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_historic
+====================================================================================================
+URL: https://isk.geobasis-bb.de/ows/aktualitaeten_wms
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 71
+
+📸 IMAGE LAYERS (5):
+  - liegenschaftskataster
+    Title: Liegenschaftskataster
+  - geotopographie
+    Title: Daten der Geotopographie
+  - historisches
+    Title: Historisches
+  - orthophotos_luftbilder
+    Title: Orthophotos und Luftbilder
+  - karten
+    Title: Karten
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (65):
+  - bb_lod2_info
+    Title: 3D-Gebäude LoD2 - Aktualitätsübersicht
+  - bb_als_info
+    Title: Laserscandaten - Aktualitätsübersicht
+  - bb_bdlm_info
+    Title: ATKIS-Basis-DLM - Aktualitätsübersicht
+  - bb_dgm-laserscan_info
+    Title: DGM (Laserscan) - Aktualitätsübersicht
+  - bb_dgm-nachbearb_info
+    Title: DGM (Photogrammetrische Nachbearbeitung) - Aktualitätsübersicht
+  - bb_bdom_info
+    Title: BDOM - Aktualitätsübersicht
+  - bb_dtk10_info
+    Title: DTK10 - Aktualitätsübersicht
+  - bb_dtk25_info
+    Title: DTK25 - Aktualitätsübersicht
+  - bb_dtk50_info
+    Title: DTK50 - Aktualitätsübersicht
+  - bb_dtk100_info
+    Title: DTK100 - Aktualitätsübersicht
+  - bb_bdom-20-22_info
+    Title: BDOM (2020-2022) - Aktualitätsübersicht
+  - bb_bdom-17-19_info
+    Title: BDOM (2017-2019) - Aktualitätsübersicht
+  - bb_dop-22-24_info
+    Title: DOP20rgbi (2022-2024) - Aktualitätsübersicht
+  - bb_dop-19-21_info
+    Title: DOP20rgbi (2019-2021) - Aktualitätsübersicht
+  - bb_dop-16-18_info
+    Title: DOP20rgbi (2016-2018) - Aktualitätsübersicht
+  - bb_dop-13-15_info
+    Title: DOP20rgbi (2013-2015) - Aktualitätsübersicht
+  - bb_dop-09-12_info
+    Title: DOP20rgbi (2009-2012) - Aktualitätsübersicht
+  - bb_als-08-12_info
+    Title: Laserscandaten (2008-2012) - Aktualitätsübersicht
+  - bb_dop-05-10_info
+    Title: DOP20c (2005-2010) - Aktualitätsübersicht
+  - bb_dop40g-01-09_info
+    Title: DOP40g (2001-2009) - Aktualitätsübersicht
+  - bb_dop100g-01-05_info
+    Title: DOP100g (2001-2005) - Aktualitätsübersicht
+  - bb_dop50g-92-97_info
+    Title: DOP50g (1992-1997) - Aktualitätsübersicht
+  - bb_dop100g-53_info
+    Title: DOP100g (1953) - Aktualitätsübersicht
+  - bb_dr25_info
+    Title: DR25 - Aktualitätsübersicht
+  - bb_dtk10-1986-2000_info
+    Title: DTK10 (1986-2000) - Aktualitätsübersicht
+  - bb_dtk10-1998-2010_info
+    Title: DTK10 (1998-2010) - Aktualitätsübersicht
+  - bb_dtk10-2015-2019_info
+    Title: DTK10 (2015-2019) - Aktualitätsübersicht
+  - bb_dtk10-2021-2024_info
+    Title: DTK10 (2021-2024) - Aktualitätsübersicht
+  - bb_dtk25-1989-1999_info
+    Title: DTK25 (1989-1999) - Aktualitätsübersicht
+  - bb_dtk25-2002-2011_info
+    Title: DTK25 (2002-2011) - Aktualitätsübersicht
+  - bb_dtk25-2015-2019_info
+    Title: DTK25 (2015-2019) - Aktualitätsübersicht
+  - bb_dtk25-2021-2024_info
+    Title: DTK25 (2021-2024) - Aktualitätsübersicht
+  - bb_dtsk25-1990-2001_info
+    Title: DTSK25 (1990-2001) - Aktualitätsübersicht
+  - bb_dtk50-1993-2005_info
+    Title: DTK50 (1993-2005) - Aktualitätsübersicht
+  - bb_dtk50-2001-2009_info
+    Title: DTK50 (2001-2009) - Aktualitätsübersicht
+  - bb_dtk50-2013-2019_info
+    Title: DTK50 (2013-2019) - Aktualitätsübersicht
+  - bb_dtk50-2020-2022_info
+    Title: DTK50 (2020-2022) - Aktualitätsübersicht
+  - bb_dtk100-1987-2004_info
+    Title: DTK100 (1987-2004) - Aktualitätsübersicht
+  - bb_dtk100-2008-2011_info
+    Title: DTK100 (2008-2011) - Aktualitätsübersicht
+  - bb_dtk100-2008-2019_info
+    Title: DTK100 (2008-2019) - Aktualitätsübersicht
+  - bb_dtk100-2020-2024_info
+    Title: DTK100 (2020-2024) - Aktualitätsübersicht
+  - bb_tk25as_info
+    Title: TK25 Ausgabe Staat - Aktualitätsübersicht
+  - bb_tk50as_info
+    Title: TK50 Ausgabe Staat - Aktualitätsübersicht
+  - bb_tk50av_info
+    Title: TK50 Ausgabe Volkswirtschaft - Aktualitätsübersicht
+  - bb_tk100as_info
+    Title: TK100 Ausgabe Staat - Aktualitätsübersicht
+  - bb_dgm-laserscan-14-21_info
+    Title: DGM (Laserscan) (2014-2021) - Aktualitätsübersicht
+  - bb_dgm-nachbearb-14-21_info
+    Title: DGM (Photogrammetrische Nachbearbeitung) (2014-2021) - Aktualitätsübersicht
+  - bb_dop_info
+    Title: DOP - Aktualitätsübersicht
+  - bb_sdop_info
+    Title: SDOP - Aktualitätsübersicht
+  - bb_dop10-11_info
+    Title: DOP10 (2011) - Aktualitätsübersicht
+  - bb_dop10-12_info
+    Title: DOP10 (2012) - Aktualitätsübersicht
+  - bb_dop10-13_info
+    Title: DOP10 (2013) - Aktualitätsübersicht
+  - bb_dop10-14_info
+    Title: DOP10 (2014) - Aktualitätsübersicht
+  - bb_dop10-15_info
+    Title: DOP10 (2015) - Aktualitätsübersicht
+  - bb_dop10-16_info
+    Title: DOP10 (2016) - Aktualitätsübersicht
+  - bb_dop10-17_info
+    Title: DOP10 (2017) - Aktualitätsübersicht
+  - bb_dop10-18_info
+    Title: DOP10 (2018) - Aktualitätsübersicht
+  - bb_dop10-19_info
+    Title: DOP10 (2019) - Aktualitätsübersicht
+  - bb_dop10-22_info
+    Title: DOP10 (2022) - Aktualitätsübersicht
+  - bb_dop10-23_info
+    Title: DOP10 (2023) - Aktualitätsübersicht
+  - bb_dop10-24_info
+    Title: DOP10 (2024) - Aktualitätsübersicht
+  - bb_tk10_info
+    Title: TK10 - Aktualitätsübersicht
+  - bb_tk25_info
+    Title: TK25 - Aktualitätsübersicht
+  - bb_tk50_info
+    Title: TK50 - Aktualitätsübersicht
+  - bb_tk100_info
+    Title: TK100 - Aktualitätsübersicht
+
+🔍 METADATA LAYERS (1):
+  - AKTUALITAETEN
+    Title: WMS BB Aktualitäten-LGB
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ℹ️  65 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+  🔍 1 metadata/aktualitaet layers found!
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_2005_2010
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2005-2010
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2005_2010_farbe
+    Title: DOP20c - 2005-2010 BB-BE
+  - dop20_bebb_2005_2010_graustufen
+    Title: DOP20g - 2005-2010 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_2009_2012
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2009-2012
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2009_2012_farbe
+    Title: DOP20c - 2009-2012 BB-BE
+  - dop20_bebb_2009_2012_graustufen
+    Title: DOP20g - 2009-2012 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_2013_2015
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2013-2015
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2013_2015_farbe
+    Title: DOP20c - 2013-2015 BB-BE
+  - dop20_bebb_2013_2015_grau
+    Title: DOP20g - 2013-2015 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_2016_2018
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2016-2018
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2016_2018_farbe
+    Title: DOP20c - 2016-2018 BB-BE
+  - dop20_bebb_2016_2018_graustufen
+    Title: DOP20g - 2016-2018 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BE_RGB_DOP20_2019_2021
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+Current layer: None
+State: BE - Berlin
+Type: RGB
+Temporal coverage: 2019-2021
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2019_2021_farbe
+    Title: DOP20c - 2019-2021 BB-BE
+  - dop20_bebb_2019_2021_graustufen
+    Title: DOP20g - 2019-2021 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_1953
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop100g_1953/service/wms
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 1953
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (1):
+  - bb_dop100g_1953
+    Title: DOP100g - 1953 BB
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 1 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_1992_1997
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 1992-1997
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (1):
+  - bb_dop50g_1992_1997
+    Title: DOP50g - 1992-1997 BB
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 1 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2001_2009
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop40g_2001_2009/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2001-2009
+
+TOTAL LAYERS: 1
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (1):
+  - bb_dop40g_2001_2009
+    Title: DOP40g - 2001-2009 BB
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 1 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2005_2010
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2005-2010
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2005_2010_farbe
+    Title: DOP20c - 2005-2010 BB-BE
+  - dop20_bebb_2005_2010_graustufen
+    Title: DOP20g - 2005-2010 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2009_2012
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2009-2012
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2009_2012_farbe
+    Title: DOP20c - 2009-2012 BB-BE
+  - dop20_bebb_2009_2012_graustufen
+    Title: DOP20g - 2009-2012 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2013_2015
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2013-2015
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2013_2015_farbe
+    Title: DOP20c - 2013-2015 BB-BE
+  - dop20_bebb_2013_2015_grau
+    Title: DOP20g - 2013-2015 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2016_2018
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2016-2018
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2016_2018_farbe
+    Title: DOP20c - 2016-2018 BB-BE
+  - dop20_bebb_2016_2018_graustufen
+    Title: DOP20g - 2016-2018 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: BB_RGB_DOP20_2019_2021
+====================================================================================================
+URL: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+Current layer: None
+State: BB - Brandenburg
+Type: RGB
+Temporal coverage: 2019-2021
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - dop20_bebb_2019_2021_farbe
+    Title: DOP20c - 2019-2021 BB-BE
+  - dop20_bebb_2019_2021_graustufen
+    Title: DOP20g - 2019-2021 BB-BE
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: HB_RGB_DOP20_historic
+====================================================================================================
+URL: http://gdi1.geo.bremen.de/mapproxy/bv_kat/service?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0
+Current layer: None
+State: HB - Bremen
+Type: RGB
+Temporal coverage: historic
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: HH_RGB_DOP20_historic
+====================================================================================================
+URL: https://metaver.de/trefferanzeige?docuuid=DD10AFD3-5530-4FD4-933D-5FC71D14B8C7#detail_links
+Current layer: None
+State: HH - Hamburg
+Type: RGB
+Temporal coverage: historic
+
+❌ Failed to retrieve layers
+
+====================================================================================================
+SERVICE: HE_RGB_DOP20_historic
+====================================================================================================
+URL: https://www.geoportal.hessen.de/mapbender/php/mod_showMetadata.php/../wms.php?layer_id=38491&PHPSESSID=2l9oroffsk2trpq61in9li24de&VERSION=1.1.1&withChilds=1
+Current layer: None
+State: HE - Hessen
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - he_hdop_info
+    Title: Hist. DOP Info 1952-67
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_HE_HistDOP (queryable: True)
+    Title: WMS_HE_HistDOP
+  - he_hdop (queryable: False)
+    Title: Hist. DOP 1952-67
+  - hdop040 (queryable: False)
+    Title: HDOP 040
+  - hdop320 (queryable: False)
+    Title: HDOP 320
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: MV_RGB_DOP20_1991
+====================================================================================================
+URL: https://www.geodaten-mv.de/dienste/dop1991_wms
+Current layer: None
+State: MV - Mecklenburg-Vorpommern
+Type: RGB
+Temporal coverage: 1991
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_MV_DOP_1991
+    Title: Orthophotos 1991 (40 cm)
+  - mv_dop1991
+    Title: Orthophotos 1991 (40cm)
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - mv_dop1991_info
+    Title: Orthophotos 1991 (40cm) Kachelschema
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: MV_RGB_DOP20_historic
+====================================================================================================
+URL: http://www.geodaten-mv.de/dienste/doparchiv_wms
+Current layer: None
+State: MV - Mecklenburg-Vorpommern
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 23
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (23):
+  - rgb2002
+    Title: DOP 2002
+  - rgb2003
+    Title: DOP 2003
+  - rgb2004
+    Title: DOP 2004
+  - rgb2005
+    Title: DOP 2005
+  - rgb2006
+    Title: DOP 2006
+  - rgb2007
+    Title: DOP 2007
+  - rgb2008
+    Title: DOP 2008
+  - rgb2009
+    Title: DOP 2009
+  - rgb2010
+    Title: DOP 2010
+  - rgb2011
+    Title: DOP 2011
+  - rgb2012
+    Title: DOP 2012
+  - rgb2013
+    Title: DOP 2013
+  - rgb2014
+    Title: DOP 2014
+  - rgb2015
+    Title: DOP 2015
+  - rgb2016
+    Title: DOP 2016
+  - rgb2017
+    Title: DOP 2017
+  - rgb2018
+    Title: DOP 2018
+  - rgb2019
+    Title: DOP 2019
+  - rgb2020
+    Title: DOP 2020
+  - rgb2021
+    Title: DOP 2021
+  - rgb2022
+    Title: DOP 2022
+  - rgb2023
+    Title: DOP 2023
+  - rgb2024
+    Title: DOP 2024
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 23 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: MV_RGB_DOP20_1953
+====================================================================================================
+URL: http://www.geodaten-mv.de/dienste/dop1953_wms
+Current layer: None
+State: MV - Mecklenburg-Vorpommern
+Type: RGB
+Temporal coverage: 1953
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_MV_DOP_1953
+    Title: Orthophotos 1953 (80 cm)
+  - mv_dop1953
+    Title: Orthophotos 1953 (80cm)
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - mv_dop1953_info
+    Title: Orthophotos 1953 (80cm) Kachelschema
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: NI_RGB_DOP20_historic
+====================================================================================================
+URL: https://opendata.lgln.niedersachsen.de/doorman/noauth/doph_wms
+Current layer: None
+State: NI - Niedersachsen
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 33
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (16):
+  - ni_dop40h_rgb_2005
+    Title: DOP40h rgb 2005
+  - ni_dop20h_rgb_2008
+    Title: DOP20h rgb 2008
+  - ni_dop20h_rgb_2009
+    Title: DOP20h rgb 2009
+  - ni_dop20h_rgb_2010
+    Title: DOP20h rgb 2010
+  - ni_dop20h_rgb_2011
+    Title: DOP20h rgb 2011
+  - ni_dop20h_rgb_2012
+    Title: DOP20h rgb 2012
+  - ni_dop20h_rgb_2013
+    Title: DOP20h rgb 2013
+  - ni_dop20h_rgb_2014
+    Title: DOP20h rgb 2014
+  - ni_dop20h_rgb_2015
+    Title: DOP20h rgb 2015
+  - ni_dop20h_rgb_2016
+    Title: DOP20h rgb 2016
+  - ni_dop20h_rgb_2017
+    Title: DOP20h rgb 2017
+  - ni_dop20h_rgb_2018
+    Title: DOP20h rgb 2018
+  - ni_dop20h_rgb_2019
+    Title: DOP20h rgb 2019
+  - ni_dop20h_rgb_2020
+    Title: DOP20h rgb 2020
+  - ni_dop20h_rgb_2021
+    Title: DOP20h rgb 2021
+  - ni_dop20h_rgb_2022
+    Title: DOP20h rgb 2022
+
+ℹ️  INFO/METADATA LAYERS (16):
+  - ni_dop40h_rgb_2005_info
+    Title: DOP40h rgb 2005 Info
+  - ni_dop20h_rgb_2008_info
+    Title: DOP20h rgb 2008 Info
+  - ni_dop20h_rgb_2009_info
+    Title: DOP20h rgb 2009 Info
+  - ni_dop20h_rgb_2010_info
+    Title: DOP20h rgb 2010 Info
+  - ni_dop20h_rgb_2011_info
+    Title: DOP20h rgb 2011 Info
+  - ni_dop20h_rgb_2012_info
+    Title: DOP20h rgb 2012 Info
+  - ni_dop20h_rgb_2013_info
+    Title: DOP20h rgb 2013 Info
+  - ni_dop20h_rgb_2014_info
+    Title: DOP20h rgb 2014 Info
+  - ni_dop20h_rgb_2015_info
+    Title: DOP20h rgb 2015 Info
+  - ni_dop20h_rgb_2016_info
+    Title: DOP20h rgb 2016 Info
+  - ni_dop20h_rgb_2017_info
+    Title: DOP20h rgb 2017 Info
+  - ni_dop20h_rgb_2018_info
+    Title: DOP20h rgb 2018 Info
+  - ni_dop20h_rgb_2019_info
+    Title: DOP20h rgb 2019 Info
+  - ni_dop20h_rgb_2020_info
+    Title: DOP20h rgb 2020 Info
+  - ni_dop20h_rgb_2021_info
+    Title: DOP20h rgb 2021 Info
+  - ni_dop20h_rgb_2022_info
+    Title: DOP20h rgb 2022 Info
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - WMS_NI_DOP20_Historisch (queryable: True)
+    Title: WMS NI DOP20-Historisch rgb
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 16 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  16 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: NW_RGB_DOP20_historic
+====================================================================================================
+URL: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+Current layer: None
+State: NW - Nordrhein-Westfalen
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 74
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (72):
+  - nw_hist_dop_1951
+    Title: Historische DOP 1951
+  - nw_hist_dop_1952
+    Title: Historische DOP 1952
+  - nw_hist_dop_1953
+    Title: Historische DOP 1953
+  - nw_hist_dop_1954
+    Title: Historische DOP 1954
+  - nw_hist_dop_1955
+    Title: Historische DOP 1955
+  - nw_hist_dop_1956
+    Title: Historische DOP 1956
+  - nw_hist_dop_1957
+    Title: Historische DOP 1957
+  - nw_hist_dop_1958
+    Title: Historische DOP 1958
+  - nw_hist_dop_1959
+    Title: Historische DOP 1959
+  - nw_hist_dop_1960
+    Title: Historische DOP 1960
+  - nw_hist_dop_1961
+    Title: Historische DOP 1961
+  - nw_hist_dop_1962
+    Title: Historische DOP 1962
+  - nw_hist_dop_1963
+    Title: Historische DOP 1963
+  - nw_hist_dop_1964
+    Title: Historische DOP 1964
+  - nw_hist_dop_1966
+    Title: Historische DOP 1966
+  - nw_hist_dop_1967
+    Title: Historische DOP 1967
+  - nw_hist_dop_1968
+    Title: Historische DOP 1968
+  - nw_hist_dop_1969
+    Title: Historische DOP 1969
+  - nw_hist_dop_1970
+    Title: Historische DOP 1970
+  - nw_hist_dop_1971
+    Title: Historische DOP 1971
+  - nw_hist_dop_1972
+    Title: Historische DOP 1972
+  - nw_hist_dop_1973
+    Title: Historische DOP 1973
+  - nw_hist_dop_1974
+    Title: Historische DOP 1974
+  - nw_hist_dop_1975
+    Title: Historische DOP 1975
+  - nw_hist_dop_1976
+    Title: Historische DOP 1976
+  - nw_hist_dop_1977
+    Title: Historische DOP 1977
+  - nw_hist_dop_1978
+    Title: Historische DOP 1978
+  - nw_hist_dop_1979
+    Title: Historische DOP 1979
+  - nw_hist_dop_1980
+    Title: Historische DOP 1980
+  - nw_hist_dop_1981
+    Title: Historische DOP 1981
+  - nw_hist_dop_1982
+    Title: Historische DOP 1982
+  - nw_hist_dop_1983
+    Title: Historische DOP 1983
+  - nw_hist_dop_1984
+    Title: Historische DOP 1984
+  - nw_hist_dop_1985
+    Title: Historische DOP 1985
+  - nw_hist_dop_1986
+    Title: Historische DOP 1986
+  - nw_hist_dop_1987
+    Title: Historische DOP 1987
+  - nw_hist_dop_1988
+    Title: Historische DOP 1988
+  - nw_hist_dop_1989
+    Title: Historische DOP 1989
+  - nw_hist_dop_1990
+    Title: Historische DOP 1990
+  - nw_hist_dop_1991
+    Title: Historische DOP 1991
+  - nw_hist_dop_1992
+    Title: Historische DOP 1992
+  - nw_hist_dop_1993
+    Title: Historische DOP 1993
+  - nw_hist_dop_1994
+    Title: Historische DOP 1994
+  - nw_hist_dop_1995
+    Title: Historische DOP 1995
+  - nw_hist_dop_1996
+    Title: Historische DOP 1996
+  - nw_hist_dop_1997
+    Title: Historische DOP 1997
+  - nw_hist_dop_1998
+    Title: Historische DOP 1998
+  - nw_hist_dop_1999
+    Title: Historische DOP 1999
+  - nw_hist_dop_2000
+    Title: Historische DOP 2000
+  - nw_hist_dop_2001
+    Title: Historische DOP 2001
+  - nw_hist_dop_2002
+    Title: Historische DOP 2002
+  - nw_hist_dop_2003
+    Title: Historische DOP 2003
+  - nw_hist_dop_2004
+    Title: Historische DOP 2004
+  - nw_hist_dop_2005
+    Title: Historische DOP 2005
+  - nw_hist_dop_2006
+    Title: Historische DOP 2006
+  - nw_hist_dop_2007
+    Title: Historische DOP 2007
+  - nw_hist_dop_2008
+    Title: Historische DOP 2008
+  - nw_hist_dop_2009
+    Title: Historische DOP 2009
+  - nw_hist_dop_2010
+    Title: Historische DOP 2010
+  - nw_hist_dop_2011
+    Title: Historische DOP 2011
+  - nw_hist_dop_2012
+    Title: Historische DOP 2012
+  - nw_hist_dop_2013
+    Title: Historische DOP 2013
+  - nw_hist_dop_2014
+    Title: Historische DOP 2014
+  - nw_hist_dop_2015
+    Title: Historische DOP 2015
+  - nw_hist_dop_2016
+    Title: Historische DOP 2016
+  - nw_hist_dop_2017
+    Title: Historische DOP 2017
+  - nw_hist_dop_2018
+    Title: Historische DOP 2018
+  - nw_hist_dop_2019
+    Title: Historische DOP 2019
+  - nw_hist_dop_2020
+    Title: Historische DOP 2020
+  - nw_hist_dop_2021
+    Title: Historische DOP 2021
+  - nw_hist_dop_2022
+    Title: Historische DOP 2022
+  - nw_hist_dop_2023
+    Title: Historische DOP 2023
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - nw_hist_dop_info
+    Title: Metadaten Historische DOP
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (1):
+  - WMS_NW_HIST_DOP (queryable: True)
+    Title: WMS NW HIST DOP
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 72 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: RP_RGB_DOP20_historic
+====================================================================================================
+URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=74145&withChilds=1
+Current layer: None
+State: RP - Rheinland-Pfalz
+Type: RGB
+Temporal coverage: historic
+
+TOTAL LAYERS: 63
+
+📸 IMAGE LAYERS (1):
+  - wms_rp_hist_dop20
+    Title: Luftbild RP historisch (Layer pro Jahr)
+
+📅 YEARLY LAYERS (62):
+  - rp_dop20_info_1994
+    Title: RP DOP20 Metadaten 1994
+  - rp_dop20_rgb_1994
+    Title: RP DOP20 Jahrgang 1994
+  - rp_dop20_info_1995
+    Title: RP DOP20 Metadaten 1995
+  - rp_dop20_rgb_1995
+    Title: RP DOP20 Jahrgang 1995
+  - rp_dop20_info_1996
+    Title: RP DOP20 Metadaten 1996
+  - rp_dop20_rgb_1996
+    Title: RP DOP20 Jahrgang 1996
+  - rp_dop20_info_1997
+    Title: RP DOP20 Metadaten 1997
+  - rp_dop20_rgb_1997
+    Title: RP DOP20 Jahrgang 1997
+  - rp_dop20_info_1998
+    Title: RP DOP20 Metadaten 1998
+  - rp_dop20_rgb_1998
+    Title: RP DOP20 Jahrgang 1998
+  - rp_dop20_info_1999
+    Title: RP DOP20 Metadaten 1999
+  - rp_dop20_rgb_1999
+    Title: RP DOP20 Jahrgang 1999
+  - rp_dop20_info_2000
+    Title: RP DOP20 Metadaten 2000
+  - rp_dop20_rgb_2000
+    Title: RP DOP20 Jahrgang 2000
+  - rp_dop20_info_2001
+    Title: RP DOP20 Metadaten 2001
+  - rp_dop20_rgb_2001
+    Title: RP DOP20 Jahrgang 2001
+  - rp_dop20_info_2002
+    Title: RP DOP20 Metadaten 2002
+  - rp_dop20_rgb_2002
+    Title: RP DOP20 Jahrgang 2002
+  - rp_dop20_info_2003
+    Title: RP DOP20 Metadaten 2003
+  - rp_dop20_rgb_2003
+    Title: RP DOP20 Jahrgang 2003
+  - rp_dop20_info_2004
+    Title: RP DOP20 Metadaten 2004
+  - rp_dop20_rgb_2004
+    Title: RP DOP20 Jahrgang 2004
+  - rp_dop20_info_2005
+    Title: RP DOP20 Metadaten 2005
+  - rp_dop20_rgb_2005
+    Title: RP DOP20 Jahrgang 2005
+  - rp_dop20_info_2006
+    Title: RP DOP20 Metadaten 2006
+  - rp_dop20_rgb_2006
+    Title: RP DOP20 Jahrgang 2006
+  - rp_dop20_info_2007
+    Title: RP DOP20 Metadaten 2007
+  - rp_dop20_rgb_2007
+    Title: RP DOP20 Jahrgang 2007
+  - rp_dop20_info_2008
+    Title: RP DOP20 Metadaten 2008
+  - rp_dop20_rgb_2008
+    Title: RP DOP20 Jahrgang 2008
+  - rp_dop20_info_2009
+    Title: RP DOP20 Metadaten 2009
+  - rp_dop20_rgb_2009
+    Title: RP DOP20 Jahrgang 2009
+  - rp_dop20_info_2010
+    Title: RP DOP20 Metadaten 2010
+  - rp_dop20_rgb_2010
+    Title: RP DOP20 Jahrgang 2010
+  - rp_dop20_info_2011
+    Title: RP DOP20 Metadaten 2011
+  - rp_dop20_rgb_2011
+    Title: RP DOP20 Jahrgang 2011
+  - rp_dop20_info_2012
+    Title: RP DOP20 Metadaten 2012
+  - rp_dop20_rgb_2012
+    Title: RP DOP20 Jahrgang 2012
+  - rp_dop20_info_2013
+    Title: RP DOP20 Metadaten 2013
+  - rp_dop20_rgb_2013
+    Title: RP DOP20 Jahrgang 2013
+  - rp_dop20_info_2014
+    Title: RP DOP20 Metadaten 2014
+  - rp_dop20_rgb_2014
+    Title: RP DOP20 Jahrgang 2014
+  - rp_dop20_info_2015
+    Title: RP DOP20 Metadaten 2015
+  - rp_dop20_rgb_2015
+    Title: RP DOP20 Jahrgang 2015
+  - rp_dop20_info_2016
+    Title: RP DOP20 Metadaten 2016
+  - rp_dop20_rgb_2016
+    Title: RP DOP20 Jahrgang 2016
+  - rp_dop20_info_2017
+    Title: RP DOP20 Metadaten 2017
+  - rp_dop20_rgb_2017
+    Title: RP DOP20 Jahrgang 2017
+  - rp_dop20_info_2018
+    Title: RP DOP20 Metadaten 2018
+  - rp_dop20_rgb_2018
+    Title: RP DOP20 Jahrgang 2018
+  - rp_dop20_info_2019
+    Title: RP DOP20 Metadaten 2019
+  - rp_dop20_rgb_2019
+    Title: RP DOP20 Jahrgang 2019
+  - rp_dop20_info_2020
+    Title: RP DOP20 Metadaten 2020
+  - rp_dop20_rgb_2020
+    Title: RP DOP20 Jahrgang 2020
+  - rp_dop20_info_2021
+    Title: RP DOP20 Metadaten 2021
+  - rp_dop20_rgb_2021
+    Title: RP DOP20 Jahrgang 2021
+  - rp_dop20_info_2022
+    Title: RP DOP20 Metadaten 2022
+  - rp_dop20_rgb_2022
+    Title: RP DOP20 Jahrgang 2022
+  - rp_dop20_info_2023
+    Title: RP DOP20 Metadaten 2023
+  - rp_dop20_rgb_2023
+    Title: RP DOP20 Jahrgang 2023
+  - rp_dop20_info_2024
+    Title: RP DOP20 Metadaten 2024
+  - rp_dop20_rgb_2024
+    Title: RP DOP20 Jahrgang 2024
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 62 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2022
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46337&VERSION=1.1.1&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2022
+
+TOTAL LAYERS: 5
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (0):
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop20_info
+    Title: SL DOP20info (2022)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (4):
+  - WMS_SL_DOP20 (queryable: True)
+    Title: WMS SL DOP20 (2022)
+  - sl_dop20_rgb (queryable: False)
+    Title: SL DOP20rgb (2022)
+  - sl_dop20_cir (queryable: False)
+    Title: SL DOP20cir (2022)
+  - sl_dop20_ir (queryable: False)
+    Title: SL DOP20ir (2022)
+
+💡 RECOMMENDATIONS:
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2021
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=44413&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2021
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2021
+    Title: WMS SL DOP20 (2021)
+  - sl_dop2021
+    Title: DOP 2021
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2021_info
+    Title: DOP 2021 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2020
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2020
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2020
+    Title: WMS SL DOP20 (2020)
+  - sl_dop2020
+    Title: DOP 2020
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2020_info
+    Title: DOP 2020 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2019
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42876&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2019
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2019
+    Title: WMS SL DOP20 (2019)
+  - sl_dop2019
+    Title: DOP 2019
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2019_info
+    Title: DOP 2019 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2018
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2018
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2018
+    Title: WMS SL DOP20 (2018)
+  - sl_dop2018
+    Title: DOP 2018
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2018_info
+    Title: DOP 2018 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2017
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2017
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2018
+    Title: WMS SL DOP20 (2018)
+  - sl_dop2018
+    Title: DOP 2018
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2018_info
+    Title: DOP 2018 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2016
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42768&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2016
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2016
+    Title: WMS SL DOP20 (2016)
+  - sl_dop2016
+    Title: DOP 2016
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2016_info
+    Title: DOP 2016 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2015
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2015
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2015
+    Title: WMS SL DOP20 (2015)
+  - sl_dop2015
+    Title: DOP 2015
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2015_info
+    Title: DOP 2015 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2014
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=41419&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2014
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2014
+    Title: WMS SL DOP20 (2014)
+  - sl_dop2014
+    Title: DOP 2014
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2014_info
+    Title: DOP 2014 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2013
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2013
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2013
+    Title: WMS SL DOP20 (2013)
+  - sl_dop2013
+    Title: DOP 2013
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2013_info
+    Title: DOP 2013 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2012
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=39050&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2012
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2012
+    Title: WMS SL DOP20 (2012)
+  - sl_dop2012
+    Title: DOP2012
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2012_info
+    Title: DOP2012 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2011
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2011
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2011
+    Title: WMS SL DOP20 (2011)
+  - sl_dop2011
+    Title: DOP2011
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2011_info
+    Title: DOP2011 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2010
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=35002&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2010
+
+TOTAL LAYERS: 3
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2010
+    Title: WMS SL DOP20 (2010)
+  - sl_dop2010
+    Title: DOP2010
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - sl_dop2010_info
+    Title: DOP2010 (Metadaten)
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2009
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2009
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - WMS_SL_DOP2009
+    Title: WMS SL DOP20 (2009)
+  - sl_dop2009
+    Title: DOP 2009
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2008
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2008
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - DOP2008
+    Title: WMS SL DOP20 (2008)
+  - Orthophoto 2008
+    Title: DOP2008
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2008
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2006
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2006
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - DOP2006
+    Title: WMS SL DOP40 (2006)
+  - Orthophoto 2006
+    Title: DOP2006
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2006
+
+====================================================================================================
+SERVICE: SL_RGB_DOP20_2003
+====================================================================================================
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36412&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+Current layer: None
+State: SL - Saarland
+Type: RGB
+Temporal coverage: 2003
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (2):
+  - DOP2003
+    Title: WMS SL DOP40 (2003)
+  - sl_dop2003
+    Title: DOP2003
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 2 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2021_2022
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2021_2022/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2021-2022
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - dop_2021_2022_pan
+    Title: DOP 2021-2022 PAN
+  - dop_2021_2022_cir
+    Title: DOP 2021-2022 CIR
+  - dop_2021_2022_rgb
+    Title: DOP 2021-2022 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2021_2022_info
+    Title: DOP 2021-2022 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2018_2020
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2018_2020/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2018-2020
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - dop_2018_2020_pan
+    Title: DOP 2018-2020 PAN
+  - dop_2018_2020_cir
+    Title: DOP 2018-2020 CIR
+  - dop_2018_2020_rgb
+    Title: DOP 2018-2020 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2018_2020_info
+    Title: DOP 2018-2020 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2015_2017
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2015_2017/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2015-2017
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - dop_2015_2017_pan
+    Title: DOP 2015-2017 PAN
+  - dop_2015_2017_cir
+    Title: DOP 2015-2017 CIR
+  - dop_2015_2017_rgb
+    Title: DOP 2015-2017 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2015_2017_info
+    Title: DOP 2015-2017 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2012_2014
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2012_2014/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2012-2014
+
+TOTAL LAYERS: 4
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (3):
+  - dop_2012_2014_pan
+    Title: DOP 2012-2014 PAN
+  - dop_2012_2014_cir
+    Title: DOP 2012-2014 CIR
+  - dop_2012_2014_rgb
+    Title: DOP 2012-2014 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2012_2014_info
+    Title: DOP 2012-2014 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 3 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2009_2011
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2009_2011/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2009-2011
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (1):
+  - dop_2009_2011_rgb
+    Title: DOP 2009-2011 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2009_2011_info
+    Title: DOP 2009-2011 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 1 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: SN_RGB_DOP20_2006_2008
+====================================================================================================
+URL: https://geodienste.sachsen.de/wms_geosn_dop_2006_2008/guest?Request=GetCapabilities&Service=WMS
+Current layer: None
+State: SN - Sachsen
+Type: RGB
+Temporal coverage: 2006-2008
+
+TOTAL LAYERS: 2
+
+📸 IMAGE LAYERS (0):
+
+📅 YEARLY LAYERS (1):
+  - dop_2006_2008_rgb
+    Title: DOP 2006-2008 RGB
+
+ℹ️  INFO/METADATA LAYERS (1):
+  - dop_2006_2008_info
+    Title: DOP 2006-2008 Metadaten
+
+🔍 METADATA LAYERS (0):
+
+📁 PARENT/GROUP LAYERS (0):
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 1 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 
+  ℹ️  1 info layers available for metadata!
+     These can be used as metadata_layer in service config.
+
+====================================================================================================
+SERVICE: TH_RGB_DOP20_1946
+====================================================================================================
+URL: https://wms.geo.admin.ch/?VERSION=1.3.0
+Current layer: None
+State: TH - Thüringen
+Type: RGB
+Temporal coverage: 1946
+
+TOTAL LAYERS: 1038
+
+📸 IMAGE LAYERS (849):
+  - ch.vbs.armee-kriegsdenkmaeler
+    Title: Armee- und Kriegsdenkmäler
+  - ch.vbs.armeelogistikcenter
+    Title: Armeelogistikcenter ALC
+  - ch.vbs.bundestankstellen-bebeco
+    Title: Tankstellen BEBECO
+  - ch.vbs.kataster-belasteter-standorte-militaer
+    Title: KbS Militär
+  - ch.vbs.kataster-belasteter-standorte-militaer
+    Title: KbS Militär
+  - ch.vbs.kataster-belasteter-standorte-militaer_v2_0.oereb
+    Title: KbS Militär V2.0 ÖREB
+  - ch.vbs.kataster-belasteter-standorte-militaer_v2_0.oereb
+    Title: KbS Militär V2.0 ÖREB
+  - ch.vbs.ladestationen
+    Title: Ladestationen der Bundesverwaltung
+  - ch.vbs.logistikraeume-armeelogistikcenter
+    Title: Logistikräume ALC
+  - ch.vbs.panzerverschiebungsrouten
+    Title: Panzerverschiebungsrouten
+  - ch.vbs.panzerverschiebungsrouten
+    Title: Panzerverschiebungsrouten
+  - ch.vbs.patrouilledesglaciers-a_rennen
+    Title: Patrouille des Glaciers (A Rennen)
+  - ch.vbs.patrouilledesglaciers-z_rennen
+    Title: Patrouille des Glaciers (Z Rennen)
+  - ch.vbs.retablierungsstellen
+    Title: Retablierungsstellen
+  - ch.vbs.sachplan-infrastruktur-militaer_anhoerung
+    Title: SPM Anhörung
+  - ch.vbs.sachplan-infrastruktur-militaer_anhoerung
+    Title: SPM Anhörung
+  - ch.vbs.sachplan-infrastruktur-militaer_kraft
+    Title: SP Militär
+  - ch.vbs.sachplan-infrastruktur-militaer_kraft
+    Title: SP Militär
+  - ch.vbs.schiessanzeigen
+    Title: Publizierte Schiessanzeigen und Gefahrenzonen
+  - ch.vbs.swissmilpilotschart
+    Title: SWISS MIL PILOTS CHART
+  - ch.vbs.territorialregionen
+    Title: Territorialdivisionen
+  - ch.vbs.territorialregionen
+    Title: Territorialdivisionen
+  - ch.vbs.waldschadenkarte
+    Title: Waldschadenkarte - Projektil
+  - ch.swisstopo.amtliches-gebaeudeadressverzeichnis
+    Title: Amtliches Gebäudeadressverzeichnis
+  - ch.swisstopo.bahnen-winter
+    Title: Bahnen/Skilifte Winter
+  - ch.swisstopo.bahnen-winter
+    Title: Bahnen/Skilifte Winter
+  - ch.swisstopo.digitales-hoehenmodell_25_reliefschattierung
+    Title: DHM25 Reliefschattierung
+  - ch.swisstopo.dreiecksvermaschung
+    Title: LV95 Dreiecksvermaschung
+  - ch.swisstopo.geoidmodell-ch1903
+    Title: Geoidmodell in CH1903
+  - ch.swisstopo.geoidmodell-ch1903
+    Title: Geoidmodell in CH1903
+  - ch.swisstopo.geoidmodell-etrs89
+    Title: Geoidmodell in ETRS89
+  - ch.swisstopo.geoidmodell-etrs89
+    Title: Geoidmodell in ETRS89
+  - ch.swisstopo.geologie-bohrungen_tiefer_500
+    Title: Tiefe Bohrungen
+  - ch.swisstopo.geologie-dosisleistung-terrestrisch
+    Title: Terrestrische Strahlung
+  - ch.swisstopo.geologie-eiszeit-lgm
+    Title: Letzteiszeitl. Max. (Vektor) 500
+  - ch.swisstopo.geologie-felslabore
+    Title: Felslabore
+  - ch.swisstopo.geologie-felsoberflaeche_hoehenmodell
+    Title: Höhenmodell der Felsoberfläche
+  - ch.swisstopo.geologie-felsoberflaeche_hoehenmodell
+    Title: Höhenmodell der Felsoberfläche
+  - ch.swisstopo.geologie-felsoberflaeche_hoehenmodell_hillshade
+    Title: Höhenmodell der Felsoberfläche - ch.swisstopo.geologie-felsoberflaeche_hoehenmodell
+  - ch.swisstopo.geologie-generalkarte-ggk200
+    Title: Geol. Generalkarte 200
+  - ch.swisstopo.geologie-geocover
+    Title: GeoCover - Vektordaten
+  - ch.swisstopo.geologie-geocover
+    Title: GeoCover - Vektordaten
+  - ch.swisstopo.geologie-geoevents_anfrage
+    Title: GeoEvents auf Anfrage
+  - ch.swisstopo.geologie-geoevents_demnaechst
+    Title: GeoEvents demnächst
+  - ch.swisstopo.geologie-geologische_3dmodelle
+    Title: Geologische 3D-Modelle
+  - ch.swisstopo.geologie-geologische_3dmodelle
+    Title: Geologische 3D-Modelle
+  - ch.swisstopo.geologie-geologischer_atlas
+    Title: Geologischer Atlas GA25
+  - ch.swisstopo.geologie-geologischer_atlas
+    Title: Geologischer Atlas GA25
+  - ch.swisstopo.geologie-geologischer_atlas_profile
+    Title: Geologische Profile GA25
+  - ch.swisstopo.geologie-geomol-isotherme_100
+    Title: Höhe 100 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-isotherme_100
+    Title: Höhe 100 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-isotherme_150
+    Title: Höhe 150 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-isotherme_150
+    Title: Höhe 150 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-isotherme_60
+    Title: Höhe 60 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-isotherme_60
+    Title: Höhe 60 °C-Isotherme
+  - ch.swisstopo.geologie-geomol-temperatur_top_muschelkalk
+    Title: Temperaturen Top Muschelkalk
+  - ch.swisstopo.geologie-geomol-temperatur_top_muschelkalk
+    Title: Temperaturen Top Muschelkalk
+  - ch.swisstopo.geologie-geomol-temperatur_top_omalm
+    Title: Temperaturen Top Oberer Malm
+  - ch.swisstopo.geologie-geomol-temperatur_top_omalm
+    Title: Temperaturen Top Oberer Malm
+  - ch.swisstopo.geologie-geomol-temperatur_top_omm
+    Title: Temperaturen Top OMM
+  - ch.swisstopo.geologie-geomol-temperatur_top_omm
+    Title: Temperaturen Top OMM
+  - ch.swisstopo.geologie-geomol-temperaturmodell_eingangsdaten
+    Title: Temperaturmodell - Daten
+  - ch.swisstopo.geologie-geomol-temperaturmodell_eingangsdaten
+    Title: Temperaturmodell - Daten
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_1000
+    Title: Temperaturen 1000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_1000
+    Title: Temperaturen 1000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_1500
+    Title: Temperaturen 1500 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_1500
+    Title: Temperaturen 1500 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_3000
+    Title: Temperaturen 3000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_3000
+    Title: Temperaturen 3000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_4000
+    Title: Temperaturen 4000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_4000
+    Title: Temperaturen 4000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_500
+    Title: Temperaturen 500 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_500
+    Title: Temperaturen 500 m Tiefe
+  - ch.swisstopo.geologie-geomorphologie
+    Title: Übersicht Geomorphologie
+  - ch.swisstopo.geologie-geosites
+    Title: Geosites
+  - ch.swisstopo.geologie-geotechnik-gk500-genese
+    Title: Entstehung der Gesteine 500
+  - ch.swisstopo.geologie-geotechnik-gk500-gesteinsklassierung
+    Title: Gesteinsgruppen 500
+  - ch.swisstopo.geologie-geotechnik-gk500-lithologie_hauptgruppen
+    Title: Lithologie 500
+  - ch.swisstopo.geologie-geotechnik-steine_historische_bauwerke
+    Title: Naturwerksteine an Bauwerken
+  - ch.swisstopo.geologie-geothermische_potenzialstudien_regional
+    Title: Geothermische Potenzialstudien
+  - ch.swisstopo.geologie-geotope_kantone_stand
+    Title: Stand kantonale Geotope
+  - ch.swisstopo.geologie-geowege
+    Title: Geowege
+  - ch.swisstopo.geologie-geowege
+    Title: Geowege
+  - ch.swisstopo.geologie-gesteinsdichte
+    Title: Dichte von Gesteinen
+  - ch.swisstopo.geologie-gletscherausdehnung
+    Title: Gletscherausdehnung
+  - ch.swisstopo.geologie-gletscherausdehnung
+    Title: Gletscherausdehnung
+  - ch.swisstopo.geologie-gletschermaechtigkeit
+    Title: Gletschermächtigkeit
+  - ch.swisstopo.geologie-gletschermaechtigkeit
+    Title: Gletschermächtigkeit
+  - ch.swisstopo.geologie-gravimetrischer_atlas.messpunkte
+    Title: Gravimetrische Messpunkte 100
+  - ch.swisstopo.geologie-hartsteinabbau
+    Title: Hartstein: Produktionsstandorte
+  - ch.swisstopo.geologie-hartsteinabbau
+    Title: Hartstein: Produktionsstandorte
+  - ch.swisstopo.geologie-hartsteinvorkommen
+    Title: Hartstein: Vorkommen
+  - ch.swisstopo.geologie-lockergestein_maechtigkeitsmodell
+    Title: Mächtigkeit des Lockergesteins
+  - ch.swisstopo.geologie-reflexionsseismik
+    Title: Reflexionsseismik
+  - ch.swisstopo.geologie-reflexionsseismik
+    Title: Reflexionsseismik
+  - ch.swisstopo.geologie-rohstoffe-kies_abbau_verarbeitung
+    Title: Kies und Sand
+  - ch.swisstopo.geologie-rohstoffe-kies_abbau_verarbeitung
+    Title: Kies und Sand
+  - ch.swisstopo.geologie-rohstoffe-ziegel_abbau
+    Title: Ziegeleirohstoffe
+  - ch.swisstopo.geologie-rohstoffe-ziegel_abbau
+    Title: Ziegeleirohstoffe
+  - ch.swisstopo.geologie-thermale_waesser
+    Title: Thermale Wässer
+  - ch.swisstopo.geologie-thermale_waesser
+    Title: Thermale Wässer
+  - ch.swisstopo.geologie-tiefengeothermie_projekte
+    Title: Tiefengeothermie-Projekte
+  - ch.swisstopo.geologie-tiefengeothermie_projekte
+    Title: Tiefengeothermie-Projekte
+  - ch.swisstopo.hangneigung-ueber_30
+    Title: Hangneigungsklassen ab 30°
+  - ch.swisstopo.hebungsraten
+    Title: Vertikalbewegungen
+  - ch.swisstopo.hebungsraten
+    Title: Vertikalbewegungen
+  - ch.swisstopo.hiks-dufour
+    Title: Dufourkarte Erstausgabe
+  - ch.swisstopo.hoheitsgrenze-landesvermessung
+    Title: Hoheitsgrenze der Schweiz
+  - ch.swisstopo.hoheitsgrenzpunkte-landesvermessung
+    Title: Grenzpunkte der Schweiz
+  - ch.swisstopo.landesschwerenetz
+    Title: Schweregrundnetz
+  - ch.swisstopo.lotabweichungen
+    Title: Lotabweichungen
+  - ch.swisstopo.lotabweichungen
+    Title: Lotabweichungen
+  - ch.swisstopo.lubis-bildstreifen
+    Title: Luftbildstreifen swisstopo
+  - ch.swisstopo.lubis-luftbilder-dritte-firmen
+    Title: Luftbilder Dritte
+  - ch.swisstopo.lubis-luftbilder-dritte-kantone
+    Title: Luftbilder Kantone
+  - ch.swisstopo.lubis-luftbilder_farbe
+    Title: Luftbilder swisstopo farbig
+  - ch.swisstopo.lubis-luftbilder_infrarot
+    Title: Luftbilder swisstopo infrarot
+  - ch.swisstopo.lubis-luftbilder_schraegaufnahmen
+    Title: Luftbilder swisstopo schräg
+  - ch.swisstopo.lubis-luftbilder_schraegaufnahmen
+    Title: Luftbilder swisstopo schräg
+  - ch.swisstopo.lubis-luftbilder_schwarzweiss
+    Title: Luftbilder swisstopo s/w
+  - ch.swisstopo.lubis-terrestrische_aufnahmen
+    Title: Terrestrische Aufnahmen swisstopo
+  - ch.swisstopo.lubis-terrestrische_aufnahmen
+    Title: Terrestrische Aufnahmen swisstopo
+  - ch.swisstopo.pixelkarte-farbe-pk100.noscale
+    Title: Landeskarte 1:100`000 | LK100
+  - ch.swisstopo.pixelkarte-farbe-pk200.noscale
+    Title: Landeskarte 1:200`000 | LK200
+  - ch.swisstopo.pixelkarte-farbe-pk25.noscale
+    Title: Landeskarte 1:25`000 | LK25
+  - ch.swisstopo.pixelkarte-farbe-pk50.noscale
+    Title: Landeskarte 1:50`000 | LK50
+  - ch.swisstopo.pixelkarte-farbe-pk500.noscale
+    Title: Landeskarte 1:500`000 | LK500
+  - ch.swisstopo.schneeschuhwandern
+    Title: Schneeschuhwandern
+  - ch.swisstopo.swissbathy3d-reliefschattierung
+    Title: swissBATHY3D Reliefschattierung
+  - ch.swisstopo.swissbathy3d-reliefschattierung
+    Title: swissBATHY3D Reliefschattierung
+  - ch.swisstopo.swisseo_s2-sr_v100
+    Title: swissEO S2-SR
+  - ch.swisstopo.swisseo_s2-sr_v100
+    Title: swissEO S2-SR
+  - ch.swisstopo.swisseo_vhi_v100
+    Title: swissEO VHI Wald
+  - ch.swisstopo.swisseo_vhi_v100_vegetation
+    Title: swissEO VHI Vegetation
+  - ch.swisstopo.swissnames3d
+    Title: Geografische Namen swissNAMES3D
+  - ch.swisstopo.swissnames3d
+    Title: Geografische Namen swissNAMES3D
+  - ch.swisstopo.swisstlm3d-eisenbahnnetz
+    Title: Eisenbahn swissTLM3D
+  - ch.swisstopo.swisstlm3d-gewaessernetz
+    Title: Gewässer swissTLM3D
+  - ch.swisstopo.swisstlm3d-gewaessernetz
+    Title: Gewässer swissTLM3D
+  - ch.swisstopo.swisstlm3d-strassen
+    Title: Strassen und Wege swissTLM3D
+  - ch.swisstopo.swisstlm3d-strassen
+    Title: Strassen und Wege swissTLM3D
+  - ch.swisstopo.swisstlm3d-uebrigerverkehr
+    Title: Seilbahnen swissTLM3D
+  - ch.swisstopo.swisstlm3d-wald
+    Title: Wald swissTLM3D
+  - ch.swisstopo.swisstlm3d-wanderwege
+    Title: Wanderwege
+  - ch.swisstopo.swisstne-base
+    Title: Basisnetz swissTNE
+  - ch.swisstopo.swisstne-base
+    Title: Basisnetz swissTNE
+  - ch.swisstopo.transformation-bezugsrahmen_hoehe
+    Title: HTRANS LHN95-LN02
+  - ch.swisstopo.transformation-bezugsrahmen_hoehe
+    Title: HTRANS LHN95-LN02
+  - ch.swisstopo.transformationsgenauigkeit
+    Title: LV95 Transformationsgenauigkeit
+  - ch.swisstopo.transformationsgenauigkeit
+    Title: LV95 Transformationsgenauigkeit
+  - ch.swisstopo.unterkuenfte-winter
+    Title: Unterkünfte Winter
+  - ch.swisstopo.vec200-adminboundaries-protectedarea
+    Title: Schutzgebiete swissTLMRegio
+  - ch.swisstopo.vec200-building
+    Title: Einzelgebäude gen. swissTLMRegio
+  - ch.swisstopo.vec200-hydrography
+    Title: Gewässernetz swissTLMRegio
+  - ch.swisstopo.vec200-hydrography
+    Title: Gewässernetz swissTLMRegio
+  - ch.swisstopo.vec200-landcover
+    Title: Bodenbedeckung swissTLMRegio
+  - ch.swisstopo.vec200-miscellaneous
+    Title: Einzelobjekte swissTLMRegio
+  - ch.swisstopo.vec200-miscellaneous
+    Title: Einzelobjekte swissTLMRegio
+  - ch.swisstopo.vec200-miscellaneous-geodpoint
+    Title: Höhenkoten swissTLMRegio
+  - ch.swisstopo.vec200-names-namedlocation
+    Title: Namen swissTLMRegio
+  - ch.swisstopo.vec200-transportation-oeffentliche-verkehr
+    Title: Öffentlicher Verkehr swissTLMRegio
+  - ch.swisstopo.vec200-transportation-airport
+    Title: ch.swisstopo.vec200-transportation-airport
+  - ch.swisstopo.vec200-transportation-railway
+    Title: ch.swisstopo.vec200-transportation-railway
+  - ch.swisstopo.vec200-transportation-terminal
+    Title: ch.swisstopo.vec200-transportation-terminal
+  - ch.swisstopo.vec200-transportation-runway
+    Title: ch.swisstopo.vec200-transportation-runway
+  - ch.swisstopo.vec200-transportation-ship-kursschiff_linie
+    Title: ch.swisstopo.vec200-transportation-ship-kursschiff_linie
+  - ch.swisstopo.vec200-transportation-strassennetz
+    Title: Strassennetz swissTLMRegio
+  - ch.swisstopo.vec200-transportation-road
+    Title: ch.swisstopo.vec200-transportation-road
+  - ch.swisstopo.vec200-transportation-ramp
+    Title: ch.swisstopo.vec200-transportation-ramp
+  - ch.swisstopo.vec200-transportation-trafficinfo
+    Title: ch.swisstopo.vec200-transportation-trafficinfo
+  - ch.swisstopo.vec200-transportation-interchange
+    Title: ch.swisstopo.vec200-transportation-interchange
+  - ch.swisstopo.vec200-transportation-ship-autofaehre
+    Title: ch.swisstopo.vec200-transportation-ship-autofaehre
+  - ch.swisstopo.vec200-transportation-customsoffice
+    Title: ch.swisstopo.vec200-transportation-customsoffice
+  - ch.swisstopo.vec25-anlagen
+    Title: Anlagen VECTOR25
+  - ch.swisstopo.vec25-einzelobjekte
+    Title: Einzelobjekte VECTOR25
+  - ch.swisstopo.vec25-einzelobjekte
+    Title: Einzelobjekte VECTOR25
+  - ch.swisstopo.vec25-gebaeude
+    Title: Gebäude VECTOR25
+  - ch.swisstopo.vec25-gewaessernetz_referenz
+    Title: Gewässernetz VECTOR25
+  - ch.swisstopo.vec25-heckenbaeume
+    Title: Hecken und Bäume VECTOR25
+  - ch.swisstopo.vec25-heckenbaeume
+    Title: Hecken und Bäume VECTOR25
+  - ch.swisstopo.vec25-primaerflaechen
+    Title: Primärflächen VECTOR25
+  - ch.swisstopo.verschiebungsvektoren-tsp1
+    Title: LV95 Verschiebungsvektoren TSP1
+  - ch.swisstopo.verschiebungsvektoren-tsp2
+    Title: LV95 Verschiebungsvektoren TSP2
+  - ch.swisstopo.fixpunkte-agnes
+    Title: AGNES
+  - ch.swisstopo.fixpunkte-hfp1
+    Title: Höhenfixpunkte HFP1
+  - ch.swisstopo.fixpunkte-hfp2
+    Title: Höhenfixpunkte HFP2
+  - ch.swisstopo.fixpunkte-lfp1
+    Title: Lagefixpunkte LFP1
+  - ch.swisstopo.fixpunkte-lfp2
+    Title: Lagefixpunkte LFP2
+  - ch.swisstopo.geologie-eiszeit-lgm-raster
+    Title: Letzteiszeitl. Max. (Karte) 500
+  - ch.swisstopo.geologie-geodaesie-bouguer_anomalien
+    Title: Bouguer-Anomalien 500
+  - ch.swisstopo.geologie-geodaesie-isostatische_anomalien
+    Title: Isostatische Anomalien 500
+  - ch.swisstopo.geologie-geologische_karte
+    Title: Geologie 500
+  - ch.swisstopo.geologie-geologische_karte
+    Title: Geologie 500
+  - ch.swisstopo.geologie-geophysik-aeromagnetische_karte_jura
+    Title: Aeromagnetik Mittelland/Jura 500
+  - ch.swisstopo.geologie-geophysik-aeromagnetische_karte_schweiz
+    Title: Aeromagnetik 500
+  - ch.swisstopo.geologie-geophysik-deklination
+    Title: Deklination 500
+  - ch.swisstopo.geologie-geophysik-geothermie
+    Title: Wärmestromdichte 500
+  - ch.swisstopo.geologie-geophysik-inklination
+    Title: Inklination 500
+  - ch.swisstopo.geologie-geophysik-totalintensitaet
+    Title: Magnetfeldstärke 500
+  - ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen
+    Title: Grundwasservorkommen 500
+  - ch.swisstopo.geologie-hydrogeologische_karte-grundwasservulnerabilitaet
+    Title: Grundwasservulnerabilität 500
+  - ch.swisstopo.geologie-tektonische_karte
+    Title: Tektonik 500
+  - ch.swisstopo.swissboundaries3d-bezirk-flaeche.fill
+    Title: Bezirksgrenzen
+  - ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill
+    Title: Gemeindegrenzen
+  - ch.swisstopo.swissboundaries3d-kanton-flaeche.fill
+    Title: Kantonsgrenzen
+  - ch.swisstopo.swissboundaries3d-land-flaeche.fill
+    Title: Landesgrenzen
+  - ch.swisstopo.amtliches-strassenverzeichnis
+    Title: Amtliches Strassenverzeichnis
+  - ch.swisstopo.amtliches-strassenverzeichnis
+    Title: Amtliches Strassenverzeichnis
+  - ch.swisstopo.geologie-rohstoffe-gebrochene_gesteine_abbau
+    Title: Felsgebrochene Gesteinskörnungen
+  - ch.swisstopo.geologie-rohstoffe-gips_abbau_verarbeitung
+    Title: Gips
+  - ch.swisstopo.geologie-rohstoffe-gips_abbau_verarbeitung
+    Title: Gips
+  - ch.swisstopo.geologie-rohstoffe-industrieminerale
+    Title: Weitere Industrieminerale
+  - ch.swisstopo.geologie-rohstoffe-kohlen_bitumen_erdgas
+    Title: Energierohstoffe
+  - ch.swisstopo.geologie-rohstoffe-naturwerksteine_abbau
+    Title: Naturwerksteine
+  - ch.swisstopo.geologie-rohstoffe-salz_abbau_verarbeitung
+    Title: Salz
+  - ch.swisstopo.geologie-rohstoffe-vererzungen
+    Title: Metallrohstoffe
+  - ch.swisstopo.geologie-rohstoffe-zement_abbau_verarbeitung
+    Title: Zementrohstoffe
+  - ch.swisstopo.geologie-rohstoffe-zement_abbau_verarbeitung
+    Title: Zementrohstoffe
+  - ch.swisstopo-vd.amtliche-vermessung
+    Title: OpenData-AV
+  - ch.swisstopo-vd.ortschaftenverzeichnis_plz
+    Title: Amtliches Ortschaftenverzeichnis
+  - ch.swisstopo-vd.spannungsarme-gebiete
+    Title: Spannungsarme Gebiete
+  - ch.swisstopo-vd.stand-oerebkataster
+    Title: Verfügbarkeit des ÖREB-Katasters
+  - ch.swisstopo-vd.stand-oerebkataster
+    Title: Verfügbarkeit des ÖREB-Katasters
+  - ch.swisstopo-karto.hangneigung
+    Title: Hangneigung ab 30°
+  - ch.swisstopo-karto.schneeschuhrouten
+    Title: Schneeschuhrouten
+  - ch.swisstopo-karto.schneeschuhrouten
+    Title: Schneeschuhrouten
+  - ch.swisstopo-karto.skitouren
+    Title: Skirouten
+  - ch.swisstopo-karto.skitouren
+    Title: Skirouten
+  - ch.sem.sachplan-asyl_anhoerung
+    Title: SPA Anhörung
+  - ch.sem.sachplan-asyl_anhoerung
+    Title: SPA Anhörung
+  - ch.sem.sachplan-asyl_kraft
+    Title: SP Asyl
+  - ch.sem.sachplan-asyl_kraft
+    Title: SP Asyl
+  - ch.sbfi.sachplan-cern_anhoerung
+    Title: Sachplan CERN Anhörung
+  - ch.sbfi.sachplan-cern_anhoerung
+    Title: Sachplan CERN Anhörung
+  - ch.pronatura.naturschutzgebiete
+    Title: Pro Natura Naturschutzgebiete
+  - ch.meteoschweiz.klimaszenarien-raumklima
+    Title: Klimaszenarien Raumklima
+  - ch.ensi.zonenplan-notfallschutz-kernanlagen
+    Title: Zonenpläne für den Notfallschutz
+  - ch.blw.alpprodukte
+    Title: Alpprodukte
+  - ch.blw.bergprodukte
+    Title: Bergprodukte
+  - ch.blw.bodeneignung-gruendigkeit
+    Title: Gründigkeit
+  - ch.blw.bodeneignung-kulturland
+    Title: Bodeneignung für Kulturland
+  - ch.blw.bodeneignung-kulturtyp
+    Title: Bodeneignung: Kulturtyp
+  - ch.blw.bodeneignung-naehrstoffspeichervermoegen
+    Title: Nährstoffspeichervermögen
+  - ch.blw.bodeneignung-skelettgehalt
+    Title: Skelettgehalt
+  - ch.blw.bodeneignung-vernaessung
+    Title: Vernässung
+  - ch.blw.bodeneignung-wasserdurchlaessigkeit
+    Title: Wasserdurchlässigkeit
+  - ch.blw.bodeneignung-wasserspeichervermoegen
+    Title: Wasserspeichervermögen
+  - ch.blw.erosion-quantitativ
+    Title: Erosionsrisiko Acker quantitativ
+  - ch.blw.feldblockkarte
+    Title: Feldblockkarte
+  - ch.blw.hanglagen-abschwemmung
+    Title: Hanglagen Abschwemmung
+  - ch.blw.klimaeignung-futterbau
+    Title: Klimaeignung Futterbau
+  - ch.blw.klimaeignung-getreidebau
+    Title: Klimaeignung Getreidebau
+  - ch.blw.klimaeignung-kartoffeln
+    Title: Klimaeignung Kartoffeln
+  - ch.blw.klimaeignung-koernermais
+    Title: Klimaeignung Körnermais
+  - ch.blw.klimaeignung-kulturland
+    Title: Klimaeignung Kulturland
+  - ch.blw.klimaeignung-spezialkulturen
+    Title: Klimaeignung Spezialkulturen
+  - ch.blw.klimaeignung-typ
+    Title: Klimaeignung Übersicht
+  - ch.blw.klimaeignung-zwischenfruchtbau
+    Title: Klimaeignung Zwischenfruchtbau
+  - ch.blw.landwirtschaftliche-nutzungsflaechen
+    Title: Nutzungsflächen
+  - ch.blw.milchmarktregionen
+    Title: Milchmarktregionen
+  - ch.blw.niederschlagshaushalt
+    Title: Niederschlagshaushalt
+  - ch.blw.steil_terrassenlagen_rebbau
+    Title: Rebflächen in Hanglagen
+  - ch.blw.ursprungsbezeichnungen-fleisch
+    Title: Fleischware
+  - ch.blw.ursprungsbezeichnungen-kaese
+    Title: Käse
+  - ch.blw.ursprungsbezeichnungen-konditoreiwaren
+    Title: Konditoreiware
+  - ch.blw.ursprungsbezeichnungen-pflanzen
+    Title: Pflanzliche Produkte
+  - ch.blw.ursprungsbezeichnungen-spirituosen
+    Title: Spirituosen
+  - ch.blw.landwirtschaftliche-zonengrenzen
+    Title: Landwirtschaftliche Zonengrenzen
+  - ch.blw.hang_steillagen
+    Title: Hanglagen
+  - ch.bfs.arbeitsmarktregionen
+    Title: Arbeitsmarktregionen und Arbeitsmarktgrossregionen
+  - ch.bfs.arealstatistik-bodenbedeckung
+    Title: Arealstatistik Bedeckung
+  - ch.bfs.arealstatistik-bodenbedeckung
+    Title: Arealstatistik Bedeckung
+  - ch.bfs.betriebszaehlungen-arbeitsstaetten
+    Title: Arbeitsstätten
+  - ch.bfs.betriebszaehlungen-beschaeftigte_vollzeitaequivalente
+    Title: Beschäftigte (VZÄ)
+  - ch.bfs.gebaeude_wohnungs_register_waermequelle_heizung
+    Title: GWR: Energie-/Wärmequelle Heizung
+  - ch.bfs.generalisierte-grenzen_agglomerationen_g1
+    Title: Administrative Grenzen G1, Agglomerationen
+  - ch.bfs.landschaftswandel
+    Title: Bilddokumentation Landschaftswandel
+  - ch.bfs.statistische-grundeinheiten_stufe1
+    Title: Statistische Grundeinheiten Stufe 1
+  - ch.bfs.statistische-grundeinheiten_stufe2
+    Title: Statistische Grundeinheiten Stufe 2
+  - ch.bfs.volkszaehlung-bevoelkerungsstatistik_einwohner
+    Title: Bevölkerung (Einwohner)
+  - ch.bfs.volkszaehlung-gebaeudestatistik_gebaeude
+    Title: Gebäude
+  - ch.bfs.volkszaehlung-gebaeudestatistik_wohnungen
+    Title: Wohnungen
+  - ch.bfs.gebaeude_wohnungs_register
+    Title: GWR: Gebäudestatus
+  - ch.bfs.arealstatistik
+    Title: Arealstatistik Standard
+  - ch.bfs.arealstatistik
+    Title: Arealstatistik Standard
+  - ch.bfe.abgeltung-wasserkraftnutzung
+    Title: Verzicht Wasserkraftnutzung
+  - ch.bfe.baulinien-starkstromanlagen_aenderung_v2_0.oereb
+    Title: Baulinien Starkstrom Änd. V2.0 ÖREB
+  - ch.bfe.baulinien-starkstromanlagen_v2_0.oereb
+    Title: Baulinien Starkstrom V2.0 ÖREB
+  - ch.bfe.biomasse-nicht-verholzt
+    Title: Nicht-verholzte Biomassen
+  - ch.bfe.biomasse-verholzt
+    Title: Verholzte Biomassen
+  - ch.bfe.elektrische-anlagen_ueber_36
+    Title: Elektrische Anlagen
+  - ch.bfe.elektrische-anlagen_ueber_36
+    Title: Elektrische Anlagen
+  - ch.bfe.elektrizitaetsproduktionsanlagen
+    Title: Elektrizitätsproduktionsanlagen
+  - ch.bfe.energieberatungsstellen
+    Title: Energieberatungsstellen
+  - ch.bfe.energieforschung
+    Title: Pilot- und Demonstrationsprojekte
+  - ch.bfe.energiestaedte
+    Title: Energiestädte
+  - ch.bfe.erneuerbarheizen
+    Title: Impulsberatung EFH und kleine MFH
+  - ch.bfe.erneuerbarheizen-mehrfamilienhaeuser
+    Title: Impulsberatung grosse MFH
+  - ch.bfe.fernwaerme-angebot
+    Title: Potenzial Wärmenutzung ARA
+  - ch.bfe.fernwaerme-nachfrage_industrie
+    Title: Wärme-/Kältenachfrage Industrie
+  - ch.bfe.fernwaerme-nachfrage_wohn_dienstleistungsgebaeude
+    Title: Wärme-/Kältenachfrage Wohnen und DL
+  - ch.bfe.grundwasserwaermenutzungspotential
+    Title: Grundwasserwärmenutzungspotenzial
+  - ch.bfe.kehrichtverbrennungsanlagen
+    Title: Kehrichtverbrennungsanlagen
+  - ch.bfe.kernkraftwerke
+    Title: Kernkraftwerke
+  - ch.bfe.kleinwasserkraftpotentiale
+    Title: Kleinwasserkraftpotentiale
+  - ch.bfe.komo-projekte
+    Title: Mobilitätsprojekte
+  - ch.bfe.ladebedarfswelt-fahrzeuge
+    Title: Ladebedarf: Steckerfahrzeuge
+  - ch.bfe.ladebedarfswelt-heimladeverfuegbarkeit_bequem
+    Title: Ladebedarf: Heimladeverfügbarkeit - Bequem
+  - ch.bfe.ladebedarfswelt-heimladeverfuegbarkeit_flexibel
+    Title: Ladebedarf: Heimladeverfügbarkeit - Flexibel
+  - ch.bfe.ladebedarfswelt-heimladeverfuegbarkeit_geplant
+    Title: Ladebedarf: Heimladeverfügbarkeit - Geplant
+  - ch.bfe.ladebedarfswelt-ladepunkte_bequem
+    Title: Ladebedarf: Ladepunkte - Bequem
+  - ch.bfe.ladebedarfswelt-ladepunkte_flexibel
+    Title: Ladebedarf: Ladepunkte - Flexibel
+  - ch.bfe.ladebedarfswelt-ladepunkte_geplant
+    Title: Ladebedarf: Ladepunkte - Geplant
+  - ch.bfe.ladebedarfswelt-strombedarf
+    Title: Ladebedarf: Strombedarf - Bequem
+  - ch.bfe.meteorologische-vereisung
+    Title: Vereisungshäufigkeit
+  - ch.bfe.minergiegebaeude
+    Title: Minergie
+  - ch.bfe.photovoltaik-grossanlagen
+    Title: Photovoltaik-Grossanlagen
+  - ch.bfe.photovoltaik-grossanlagen
+    Title: Photovoltaik-Grossanlagen
+  - ch.bfe.projektierungszonen-starkstromanlagen_aenderung_v2_0.oereb
+    Title: Projektierungszonen Starkstrom Änd. V2.0 ÖREB
+  - ch.bfe.projektierungszonen-starkstromanlagen_v2_0.oereb
+    Title: Projektierungszonen Starkstrom V2.0 ÖREB
+  - ch.bfe.sachplan-geologie-tiefenlager
+    Title: SP Geologische Tiefenlager
+  - ch.bfe.sachplan-geologie-tiefenlager
+    Title: SP Geologische Tiefenlager
+  - ch.bfe.sachplan-uebertragungsleitungen_anhoerung
+    Title: SÜL Anhörung
+  - ch.bfe.sachplan-uebertragungsleitungen_anhoerung
+    Title: SÜL Anhörung
+  - ch.bfe.sachplan-uebertragungsleitungen_kraft
+    Title: SP Übertragungsleitungen
+  - ch.bfe.sachplan-uebertragungsleitungen_kraft
+    Title: SP Übertragungsleitungen
+  - ch.bfe.solarenergie-eignung-daecher
+    Title: Solarenergie: Eignung Dächer
+  - ch.bfe.solarenergie-eignung-daecher
+    Title: Solarenergie: Eignung Dächer
+  - ch.bfe.solarenergie-eignung-fassaden
+    Title: Solarenergie: Eignung Fassaden
+  - ch.bfe.solarenergie-eignung-fassaden
+    Title: Solarenergie: Eignung Fassaden
+  - ch.bfe.solarenergie-einstrahlung_0_grad
+    Title: Solare Einstrahlung horizontal
+  - ch.bfe.solarenergie-einstrahlung_0_grad
+    Title: Solare Einstrahlung horizontal
+  - ch.bfe.solarenergie-einstrahlung_30_grad
+    Title: Solare Einstrahlung 30°Neigung Süd
+  - ch.bfe.solarenergie-einstrahlung_30_grad
+    Title: Solare Einstrahlung 30°Neigung Süd
+  - ch.bfe.solarenergie-einstrahlung_75_grad
+    Title: Solare Einstrahlung 75°Neigung Süd
+  - ch.bfe.solarenergie-einstrahlung_75_grad
+    Title: Solare Einstrahlung 75°Neigung Süd
+  - ch.bfe.solarenergie-einstrahlung_90_grad
+    Title: Solare Einstrahlung 90°Neigung Süd
+  - ch.bfe.solarenergie-einstrahlung_90_grad
+    Title: Solare Einstrahlung 90°Neigung Süd
+  - ch.bfe.statistik-wasserkraftanlagen
+    Title: Statistik Wasserkraft
+  - ch.bfe.stauanlagen-bundesaufsicht
+    Title: Stauanlagen
+  - ch.bfe.stauanlagen-bundesaufsicht
+    Title: Stauanlagen
+  - ch.bfe.thermische-netze
+    Title: Thermische Netze
+  - ch.bfe.waermepotential-gewaesser
+    Title: Potenzial Wärmenutzung Gewässer
+  - ch.bfe.waermepotential-gewaesser
+    Title: Potenzial Wärmenutzung Gewässer
+  - ch.bfe.windenergie-geschwindigkeit_h100
+    Title: Windgeschwindigkeit 100 m Höhe
+  - ch.bfe.windenergie-geschwindigkeit_h125
+    Title: Windgeschwindigkeit 125 m Höhe
+  - ch.bfe.windenergie-geschwindigkeit_h150
+    Title: Windgeschwindigkeit 150 m Höhe
+  - ch.bfe.windenergie-geschwindigkeit_h50
+    Title: Windgeschwindigkeit 50 m Höhe
+  - ch.bfe.windenergie-geschwindigkeit_h75
+    Title: Windgeschwindigkeit 75 m Höhe
+  - ch.bfe.windenergieanlagen
+    Title: Windenergieanlagen
+  - ch.bfe.biogasanlagen
+    Title: Biogasanlagen
+  - ch.bazl.baulinien-flughafenanlagen_v2_0.oereb
+    Title: Baulinien Flughäfen V2.0 ÖREB
+  - ch.bazl.bebaute-gebiete_luftfahrtrecht
+    Title: Bebaute Gebiete VIL
+  - ch.bazl.betriebe-stoerfallverordnung-zivilflugplaetze
+    Title: Betriebe zivile Flugplätze - StFV
+  - ch.bazl.betriebe-stoerfallverordnung-zivilflugplaetze
+    Title: Betriebe zivile Flugplätze - StFV
+  - ch.bazl.einschraenkungen-drohnen
+    Title: Einschränkungen für Drohnen
+  - ch.bazl.einschraenkungen-drohnen
+    Title: Einschränkungen für Drohnen
+  - ch.bazl.hindernisbegrenzungsflaechen-kataster
+    Title: Hindernisbegrenzungsflächen
+  - ch.bazl.hindernisbegrenzungsflaechen-kataster
+    Title: Hindernisbegrenzungsflächen
+  - ch.bazl.intrinsisches-bodenrisiko_sora
+    Title: SORA Bodenrisiko
+  - ch.bazl.kataster-belasteter-standorte-zivilflugplaetze
+    Title: KbS Zivilflugplätze
+  - ch.bazl.kataster-belasteter-standorte-zivilflugplaetze
+    Title: KbS Zivilflugplätze
+  - ch.bazl.kataster-belasteter-standorte-zivilflugplaetze_v2_0.oereb
+    Title: KbS Zivilflugplätze V2.0 ÖREB
+  - ch.bazl.kataster-belasteter-standorte-zivilflugplaetze_v2_0.oereb
+    Title: KbS Zivilflugplätze V2.0 ÖREB
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze
+    Title: Lärmbelastungskataster - Zivilflugplätze
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_erste-nachtstunde
+    Title: Lärmbelastung 1. Nachtstunde
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_helikopter
+    Title: Lärmbelastung Helikopter Lr
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_helikopter-maximalpegel
+    Title: Lärmbelastung Helikopter Lmax
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_klein-grossflugzeuge
+    Title: Lärmbelast. Klein- / Grossflugzeuge
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_kleinluftfahrzeuge
+    Title: Lärmbelastung Kleinluftfahrzeuge
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_letzte-nachtstunde
+    Title: Lärmbelastung letzte Nachtstunde
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_militaer-gesamt
+    Title: Lärmbelast. Militärflugpl. (gesamt)
+  - ch.bazl.laermbelastungskataster-zivilflugplaetze_zweite-nachtstunde
+    Title: Lärmbelastung 2. Nachtstunde
+  - ch.bazl.landschaftsruhezonen
+    Title: Landschaftsruhezonen
+  - ch.bazl.luftfahrthindernis
+    Title: Luftfahrthindernisse
+  - ch.bazl.luftfahrthindernis
+    Title: Luftfahrthindernisse
+  - ch.bazl.luftfahrthindernis-aenderungen
+    Title: Letzte Hindernisänderungen
+  - ch.bazl.luftfahrthindernis-aenderungen
+    Title: Letzte Hindernisänderungen
+  - ch.bazl.luftfahrtkarten-icao
+    Title: Luftfahrtkarte ICAO
+  - ch.bazl.projektierungszonen-flughafenanlagen
+    Title: Projektierungszonen Flughäfen
+  - ch.bazl.projektierungszonen-flughafenanlagen_aenderung_v2_0.oereb
+    Title: Projektierungszonen Flughäfen Änd. V2.0 ÖREB
+  - ch.bazl.projektierungszonen-flughafenanlagen_v2_0.oereb
+    Title: Projektierungszonen Flughäfen V2.0 ÖREB
+  - ch.bazl.reflektierende-flaechen_flugplaetze
+    Title: Reflektierende Flächen Flugplätze
+  - ch.bazl.sachplan-infrastruktur-luftfahrt_anhorung
+    Title: SIL Anhörung
+  - ch.bazl.sachplan-infrastruktur-luftfahrt_anhorung
+    Title: SIL Anhörung
+  - ch.bazl.sachplan-infrastruktur-luftfahrt_kraft
+    Title: SP Infrastruktur Luftfahrt
+  - ch.bazl.sachplan-infrastruktur-luftfahrt_kraft
+    Title: SP Infrastruktur Luftfahrt
+  - ch.bazl.schutzgebiete-aulav_liechtenstein
+    Title: Schutzgebiete Liechtenstein AuLaV
+  - ch.bazl.segelflugkarte
+    Title: Segelflugkarte
+  - ch.bazl.sicherheitszonenplan
+    Title: Sicherheitszonenplan
+  - ch.bazl.sicherheitszonenplan_aenderung_v2_0.oereb
+    Title: Sicherheitszonenplan Änd. V2.0 ÖREB
+  - ch.bazl.sicherheitszonenplan_v2_0.oereb
+    Title: Sicherheitszonenplan V2.0 ÖREB
+  - ch.bazl.wohngebiete-aulav
+    Title: Wohngebiete nach AuLaV
+  - ch.bazl.hindernisbegrenzungsflaechen-perimeter
+    Title: Begrenzungsflächen-Perimeter
+  - ch.bazl.luftfahrthindernis-klein
+    Title: Flugplatzhindernisse < 25 / 60 m
+  - ch.bazl.luftfahrthindernis-klein
+    Title: Flugplatzhindernisse < 25 / 60 m
+  - ch.bav.anlagen-schienengueterverkehr
+    Title: Anlagen Gütertransport Schiene
+  - ch.bav.baulinien-eisenbahnanlagen_v2_0.oereb
+    Title: Baulinien Eisenbahnen V2.0 ÖREB
+  - ch.bav.betriebe-stoerfallverordnung_eisenbahnanlagen
+    Title: Eisenbahnbetriebe StFV
+  - ch.bav.haltestellen-oev
+    Title: öV-Haltestellen
+  - ch.bav.haltestellen-oev
+    Title: öV-Haltestellen
+  - ch.bav.kataster-belasteter-standorte-oev
+    Title: KbS öV
+  - ch.bav.kataster-belasteter-standorte-oev
+    Title: KbS öV
+  - ch.bav.kataster-belasteter-standorte-oev_v2_0.oereb
+    Title: KbS öV V2.0 ÖREB
+  - ch.bav.kataster-belasteter-standorte-oev_v2_0.oereb
+    Title: KbS öV V2.0 ÖREB
+  - ch.bav.laermbelastung-eisenbahn_effektive_immissionen_nacht
+    Title: Eisenbahnlärm, tats. Immission N
+  - ch.bav.laermbelastung-eisenbahn_effektive_immissionen_tag
+    Title: Eisenbahnlärm, tats. Immission T
+  - ch.bav.laermbelastung-eisenbahn_festgelegte_emissionen_nacht
+    Title: Eisenbahnlärm, festgel. Emission N
+  - ch.bav.laermbelastung-eisenbahn_festgelegte_emissionen_tag
+    Title: Eisenbahnlärm, festgel. Emission T
+  - ch.bav.laermbelastung-eisenbahn_laermschutzwaende
+    Title: Eisenbahnlärm, Lärmschutzwände
+  - ch.bav.laermbelastung-eisenbahn_tatsaechliche_emissionen_nacht
+    Title: Eisenbahnlärm, tats. Emission N
+  - ch.bav.laermbelastung-eisenbahn_tatsaechliche_emissionen_tag
+    Title: Eisenbahnlärm, tats. Emission T
+  - ch.bav.laermbelastung-eisenbahn_zulaessige_immissionen_nacht
+    Title: Eisenbahnlärm, zuläss. Immission N
+  - ch.bav.laermbelastung-eisenbahn_zulaessige_immissionen_tag
+    Title: Eisenbahnlärm, zuläss. Immission T
+  - ch.bav.projektierungszonen-eisenbahnanlagen_v2_0.oereb
+    Title: Projektierungszonen Eisenbahnen V2.0 ÖREB
+  - ch.bav.sachplan-infrastruktur-schiene_anhorung
+    Title: SIS Anhörung
+  - ch.bav.sachplan-infrastruktur-schiene_anhorung
+    Title: SIS Anhörung
+  - ch.bav.sachplan-infrastruktur-schiene_ausgangslage
+    Title: SIS Ausgangslage
+  - ch.bav.sachplan-infrastruktur-schiene_ausgangslage
+    Title: SIS Ausgangslage
+  - ch.bav.sachplan-infrastruktur-schiene_kraft
+    Title: SP Infrastruktur Schiene
+  - ch.bav.sachplan-infrastruktur-schiene_kraft
+    Title: SP Infrastruktur Schiene
+  - ch.bav.sachplan-infrastruktur-schifffahrt_anhoerung
+    Title: SIF Anhörung
+  - ch.bav.sachplan-infrastruktur-schifffahrt_anhoerung
+    Title: SIF Anhörung
+  - ch.bav.sachplan-infrastruktur-schifffahrt_kraft
+    Title: SP Infrastruktur Schifffahrt
+  - ch.bav.sachplan-infrastruktur-schifffahrt_kraft
+    Title: SP Infrastruktur Schifffahrt
+  - ch.bav.sachplan-unterirdischer-guetertransport_anhoerung
+    Title: SUG Anhörung
+  - ch.bav.sachplan-unterirdischer-guetertransport_anhoerung
+    Title: SUG Anhörung
+  - ch.bav.sachplan-unterirdischer-guetertransport_kraft
+    Title: SP Unterirdischer Gütertransport
+  - ch.bav.sachplan-unterirdischer-guetertransport_kraft
+    Title: SP Unterirdischer Gütertransport
+  - ch.bav.schienennetz
+    Title: Schienennetz
+  - ch.bav.schienennetz
+    Title: Schienennetz
+  - ch.bav.seilbahnen-bundeskonzession
+    Title: Seilbahnen mit Bundeskonzession
+  - ch.bav.seilbahnen-bundeskonzession
+    Title: Seilbahnen mit Bundeskonzession
+  - ch.baspo.nationales-sportanlagenkonzept
+    Title: Sportanlagen NASAK
+  - ch.bakom.anbieter-eigenes_festnetz
+    Title: Anzahl Dienstanbieter
+  - ch.bakom.anschlussart-glasfaser
+    Title: Glasfaser FTTB/FTTH
+  - ch.bakom.anschlussart-koaxialkabel
+    Title: Koaxial-Kabel
+  - ch.bakom.anschlussart-kupferdraht
+    Title: Kupfer-Draht
+  - ch.bakom.downlink10
+    Title: Download >= 10 Mbit/s
+  - ch.bakom.downlink100
+    Title: Download >= 100 Mbit/s
+  - ch.bakom.downlink1000
+    Title: Download >= 1000 Mbit/s
+  - ch.bakom.downlink30
+    Title: Download >= 30 Mbit/s
+  - ch.bakom.downlink300
+    Title: Download >= 300 Mbit/s
+  - ch.bakom.downlink500
+    Title: Download >= 500 Mbit/s
+  - ch.bakom.mobilnetz-2g
+    Title: 2G - GSM / EDGE
+  - ch.bakom.mobilnetz-3g
+    Title: 3G - UMTS / HSPA
+  - ch.bakom.mobilnetz-4g
+    Title: 4G - LTE / LTE-A
+  - ch.bakom.mobilnetz-5g
+    Title: 5G - NR
+  - ch.bakom.notruf
+    Title: Notrufe per Gemeinde
+  - ch.bakom.notruf
+    Title: Notrufe per Gemeinde
+  - ch.bakom.notruf-112_festnetz
+    Title: 112 Festnetz
+  - ch.bakom.notruf-112_mobilnetz
+    Title: 112 Mobilnetz
+  - ch.bakom.notruf-112_zentral
+    Title: 112 Alarmzentralen
+  - ch.bakom.notruf-117_festnetz
+    Title: 117 Festnetz
+  - ch.bakom.notruf-117_mobilnetz
+    Title: 117 Mobilnetz
+  - ch.bakom.notruf-117_zentral
+    Title: 117 Alarmzentralen
+  - ch.bakom.notruf-118_festnetz
+    Title: 118 Festnetz
+  - ch.bakom.notruf-118_mobilnetz
+    Title: 118 Mobilnetz
+  - ch.bakom.notruf-118_zentral
+    Title: 118 Alarmzentralen
+  - ch.bakom.notruf-142_festnetz
+    Title: 142 Festnetz
+  - ch.bakom.notruf-142_mobilnetz
+    Title: 142 Mobilnetz
+  - ch.bakom.notruf-142_zentral
+    Title: 142 Alarmzentralen
+  - ch.bakom.notruf-143_festnetz
+    Title: 143 Festnetz
+  - ch.bakom.notruf-143_mobilnetz
+    Title: 143 Mobilnetz
+  - ch.bakom.notruf-143_zentral
+    Title: 143 Alarmzentralen
+  - ch.bakom.notruf-144_festnetz
+    Title: 144 Festnetz
+  - ch.bakom.notruf-144_mobilnetz
+    Title: 144 Mobilnetz
+  - ch.bakom.notruf-144_zentral
+    Title: 144 Alarmzentralen
+  - ch.bakom.notruf-145_festnetz
+    Title: 145 Festnetz
+  - ch.bakom.notruf-145_mobilnetz
+    Title: 145 Mobilnetz
+  - ch.bakom.notruf-145_zentral
+    Title: 145 Alarmzentralen
+  - ch.bakom.notruf-147_festnetz
+    Title: 147 Festnetz
+  - ch.bakom.notruf-147_mobilnetz
+    Title: 147 Mobilnetz
+  - ch.bakom.notruf-147_zentral
+    Title: 147 Alarmzentralen
+  - ch.bakom.radio-fernsehsender
+    Title: Radio- und Fernsehsender
+  - ch.bakom.richtfunkverbindungen
+    Title: Richtfunkstrecken
+  - ch.bakom.standorte-mobilfunkanlagen
+    Title: Mobilfunkanlagen
+  - ch.bakom.uplink1
+    Title: Upload >= 1 Mbit/s
+  - ch.bakom.uplink10
+    Title: Upload >= 10 Mbit/s
+  - ch.bakom.uplink100
+    Title: Upload >= 100 Mbit/s
+  - ch.bakom.uplink1000
+    Title: Upload >= 1000 Mbit/s
+  - ch.bakom.versorgungsgebiet-tv
+    Title: Versorgungsgebiete TV
+  - ch.bakom.versorgungsgebiet-ukw
+    Title: Versorgungsgebiete Radio
+  - ch.bak.bundesinventar-schuetzenswerte-ortsbilder
+    Title: ISOS - Ortsbildaufnahmen
+  - ch.bak.bundesinventar-schuetzenswerte-ortsbilder
+    Title: ISOS - Ortsbildaufnahmen
+  - ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos
+    Title: ISOS - Bilder
+  - ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos
+    Title: ISOS - Bilder
+  - ch.bak.halteplaetze-jenische_sinti_roma
+    Title: Plätze für Jenische, Sinti und Roma
+  - ch.bak.schutzgebiete-unesco_weltkulturerbe
+    Title: UNESCO-Welterbe Kulturstätten
+  - ch.bak.schutzgebiete-unesco_weltkulturerbe
+    Title: UNESCO-Welterbe Kulturstätten
+  - ch.bag.radioaktivitaet-atmosphaere
+    Title: Radioaktivität in der Atmosphäre
+  - ch.bag.radonkarte
+    Title: Radonkarte
+  - ch.bag.zecken-fsme-faelle
+    Title: FSME - Gemeldete Stichorte
+  - ch.bag.zecken-fsme-impfung
+    Title: FSME - Impfempfehlung
+  - ch.bafu.alpweiden-herdenschutzhunde
+    Title: Alpweiden mit Herdenschutzhunden
+  - ch.bafu.amphibienwanderung-verkehrskonflikte
+    Title: Amphibienwanderungen mit Konflikten
+  - ch.bafu.aquaprotect_050
+    Title: Überschwemmung Aquaprotect 50
+  - ch.bafu.aquaprotect_100
+    Title: Überschwemmung Aquaprotect 100
+  - ch.bafu.aquaprotect_250
+    Title: Überschwemmung Aquaprotect 250
+  - ch.bafu.aquaprotect_500
+    Title: Überschwemmung Aquaprotect 500
+  - ch.bafu.auen-ausserhalb_bundesinventar
+    Title: Auen ausserhalb Bundesinventar
+  - ch.bafu.auen-ausserhalb_bundesinventar_alpin
+    Title: Alpine Auen ausserhalb Bundesinv.
+  - ch.bafu.auen-vegetationskarten
+    Title: Auen Vegetationskarten
+  - ch.bafu.biogeographische_regionen
+    Title: Biogeographische Regionen
+  - ch.bafu.bundesinventare-amphibien_anhang4
+    Title: Amphibien Anhang 3
+  - ch.bafu.bundesinventare-auen_anhang2
+    Title: Auengebiete - Anhang 2
+  - ch.bafu.bundesinventare-auen_vegetation_alpin
+    Title: Vegetation alpine Auen
+  - ch.bafu.bundesinventare-trockenwiesen_trockenweiden
+    Title: Trockenwiesen und -weiden (TWW)
+  - ch.bafu.bundesinventare-trockenwiesen_trockenweiden_anhang2
+    Title: TWW Anhang 2
+  - ch.bafu.fauna-vernetzungsachsen_national
+    Title: Vernetzungssystem Wildtiere
+  - ch.bafu.fauna-wildtierkorridor_national
+    Title: Wildtierkorridore Überregional
+  - ch.bafu.fauna-wildtierpassagen
+    Title: Wildtierpassagen
+  - ch.bafu.feststoffe-geschiebemessnetz
+    Title: SOLID Bund, Geschiebe
+  - ch.bafu.fischerei-aeschen_kernzonen
+    Title: Äschen: Kernzonen
+  - ch.bafu.fischerei-aeschen_laichplaetze
+    Title: Äschen: Laichplätze
+  - ch.bafu.fischerei-aeschen_larvenhabitate
+    Title: Äschen: Larvenhabitate
+  - ch.bafu.fischerei-aeschen_verbreitungsgebiet
+    Title: Äschen: Verbreitungsgebiet
+  - ch.bafu.fischerei-krebspest
+    Title: Krebspest
+  - ch.bafu.fischerei-nasenlaichplaetze
+    Title: Nasenlaichplätze
+  - ch.bafu.fischerei-proliferative_nierenkrankheit
+    Title: PKD (Proliferative Nierenkrankheit)
+  - ch.bafu.flora-schwingrasen
+    Title: Schwingrasen
+  - ch.bafu.flora-verbreitungskarten
+    Title: Raster Verbreitungskarten
+  - ch.bafu.flora-weltensutter_atlas
+    Title: Atlas Welten&Sutter
+  - ch.bafu.flussordnungszahlen-strahler
+    Title: Flussordnung
+  - ch.bafu.gefaehrdungskarte-oberflaechenabfluss
+    Title: Gefährdungskarte Oberflächenabfluss
+  - ch.bafu.gefahren-baugrundklassen
+    Title: Seismische Baugrundklassen
+  - ch.bafu.gefahren-gefaehrdungszonen
+    Title: Erdbebenzonen SIA 261
+  - ch.bafu.gefahren-historische_erdbeben
+    Title: Historische Erdbeben
+  - ch.bafu.gefahren-spektral
+    Title: Spektrale Mikrozonierung
+  - ch.bafu.gefahren-waldbrand_praeventionsmassnahmen_kantone
+    Title: Waldbrandpräventionsmassnahmen
+  - ch.bafu.gefahren-waldbrand_warnung
+    Title: Waldbrandgefahr
+  - ch.bafu.geochemischer-bodenatlas_schweiz_antimon
+    Title: Antimon-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_arsen
+    Title: Arsen-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_blei
+    Title: Blei-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_cadmium
+    Title: Cadmium-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_calcium
+    Title: Calcium - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_chrom
+    Title: Chrom-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_cobalt
+    Title: Cobalt - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_eisen
+    Title: Eisen - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_kupfer
+    Title: Kupfer-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_magnesium
+    Title: Magnesium - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_mangan
+    Title: Mangan - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_molybdaen
+    Title: Molybdän - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_natrium
+    Title: Natrium - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_nickel
+    Title: Nickel-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_quecksilber
+    Title: Quecksilber-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_schwefel
+    Title: Schwefel - Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_thallium
+    Title: Thallium - Konzentration im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_uran
+    Title: Uran-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_vanadium
+    Title: Vanadium-Konzentrationen im Boden
+  - ch.bafu.geochemischer-bodenatlas_schweiz_zink
+    Title: Zink-Konzentrationen im Boden
+  - ch.bafu.gewaesser-uferbestockung
+    Title: Uferbestockung der Flüsse
+  - ch.bafu.gewaesser-uferbestockung_vegetation
+    Title: Bestockungskarte
+  - ch.bafu.gewaesserschutz-badewasserqualitaet
+    Title: Badegewässerqualität
+  - ch.bafu.gewaesserschutz-biologischer_zustand_diatomeen
+    Title: Kieselalgen (Diatomeen)
+  - ch.bafu.gewaesserschutz-biologischer_zustand_fische
+    Title: Fische
+  - ch.bafu.gewaesserschutz-biologischer_zustand_makrophyten
+    Title: Wasserpflanzen (Makrophyten)
+  - ch.bafu.gewaesserschutz-biologischer_zustand_makrozoobenthos
+    Title: Makrozoobenthos
+  - ch.bafu.gewaesserschutz-chemischer_zustand_ammonium
+    Title: Ammonium
+  - ch.bafu.gewaesserschutz-chemischer_zustand_doc
+    Title: Gelöster organ. Kohlenstoff (DOC)
+  - ch.bafu.gewaesserschutz-chemischer_zustand_nitrat
+    Title: Nitrat
+  - ch.bafu.gewaesserschutz-chemischer_zustand_nitrit
+    Title: Nitrit
+  - ch.bafu.gewaesserschutz-chemischer_zustand_phosphat
+    Title: Phosphat
+  - ch.bafu.gewaesserschutz-chemischer_zustand_phosphor_gesamt
+    Title: Gesamt-Phosphor
+  - ch.bafu.gewaesserschutz-diffuse_eintraege_gesamt_phosphor
+    Title: Diffuse Gesamt-Phosphoreinträge
+  - ch.bafu.gewaesserschutz-diffuse_eintraege_phosphor
+    Title: Diffuse gelöste Phosphoreinträge
+  - ch.bafu.gewaesserschutz-diffuse_eintraege_stickstoff
+    Title: Diffuse Gesamt-Stickstoffeinträge
+  - ch.bafu.gewaesserschutz-klaeranlagen_anteilq347
+    Title: ARA - Abwasserant. an Q347
+  - ch.bafu.gewaesserschutz-klaeranlagen_ausbaugroesse
+    Title: ARA - Ausbaugrösse (EGW)
+  - ch.bafu.gewaesserschutz-klaeranlagen_reinigungstyp
+    Title: ARA - Reinigungstyp
+  - ch.bafu.grundwasserkoerper
+    Title: Grundwasserkörper
+  - ch.bafu.hydrogeologie-markierversuche
+    Title: Markierversuche
+  - ch.bafu.hydrologie-daueruntersuchung_fliessgewaesser
+    Title: Messstandorte Gewässerzustand Bund
+  - ch.bafu.hydrologie-gewaesserzustandsmessstationen
+    Title: Messstandorte Gewässerzustand CH
+  - ch.bafu.hydrologie-hochwasserstatistik
+    Title: Hochwasserstatistik
+  - ch.bafu.hydrologie-niedrigwasserstatistik
+    Title: Niedrigwasserstatistik
+  - ch.bafu.hydrologie-q347
+    Title: Grundlagen zur Bestimmung Q347
+  - ch.bafu.hydrologie-untersuchungsgebiete
+    Title: HUG Hydro. Untersuchungsgebiete
+  - ch.bafu.hydrologie-untersuchungsgebiete_stationen
+    Title: HUG-Messstationen
+  - ch.bafu.hydrologie-wassertemperaturmessstationen
+    Title: Messstationen Wassertemperatur
+  - ch.bafu.hydrologischer-atlas_basisgebiete
+    Title: Basisgebiet
+  - ch.bafu.hydrologischer-atlas_bilanzgebiete
+    Title: Bilanzgebiet
+  - ch.bafu.hydrologischer-atlas_flussgebiete
+    Title: Flussgebiet
+  - ch.bafu.hydrologischer-atlas_kantonale-messstationen
+    Title: Kantonale und private Messstationen
+  - ch.bafu.hydroweb-messstationen_gefahren
+    Title: Hochwasser Gefahrenstufen
+  - ch.bafu.hydroweb-messstationen_grundwasser
+    Title: NAQUA-QUANT Messstellen
+  - ch.bafu.hydroweb-messstationen_grundwassertemperatur
+    Title: Grundwassertemperatur
+  - ch.bafu.hydroweb-messstationen_grundwasserzustand
+    Title: Grundwasserstände/Quellschüttungen
+  - ch.bafu.hydroweb-messstationen_temperatur
+    Title: Wassertemperatur der Flüsse
+  - ch.bafu.hydroweb-messstationen_vorhersage
+    Title: Hydrol. Stationen Vorhersagen
+  - ch.bafu.hydroweb-messstationen_zustand
+    Title: Lage Fliessgewässer und Seen
+  - ch.bafu.hydroweb-warnkarte_national
+    Title: Hochwasserwarnkarte
+  - ch.bafu.hydroweb-warnkarte_national
+    Title: Hochwasserwarnkarte
+  - ch.bafu.karst-ausdehnung_grundwasservorkommen
+    Title: Karstwasservorkommen
+  - ch.bafu.karst-einzugsgebiete
+    Title: Karst-Einzugsgebiete
+  - ch.bafu.karst-einzugsgebietseinheiten
+    Title: Karst-Einzugsgebietseinheiten
+  - ch.bafu.karst-quellen_schwinden
+    Title: Karstquellen und Schwinden
+  - ch.bafu.karst-unterirdische_fliesswege
+    Title: Unterirdische Fliesswege
+  - ch.bafu.klima-co2_ausstoss_gebaeude
+    Title: CO₂-Emissionen Gebäude (SIA 380/1)
+  - ch.bafu.landesforstinventar-kantone
+    Title: Kantone LFI
+  - ch.bafu.landesforstinventar-produktionsregionen
+    Title: Produktionsregionen LFI
+  - ch.bafu.landesforstinventar-schutzwaldregionen
+    Title: Schutzwaldregionen LFI
+  - ch.bafu.landesforstinventar-vegetationshoehenmodell
+    Title: Vegetationshöhe LFI
+  - ch.bafu.landesforstinventar-vegetationshoehenmodell_lidar
+    Title: Vegetationshöhe Lidar LFI
+  - ch.bafu.landesforstinventar-vegetationshoehenmodell_relief
+    Title: Oberflächenmodell LFI
+  - ch.bafu.landesforstinventar-vegetationshoehenmodell_relief_sentinel
+    Title: Reliefschattierung Sentinel LFI
+  - ch.bafu.landesforstinventar-vegetationshoehenmodell_sentinel
+    Title: Vegetationshöhe Sentinel LFI
+  - ch.bafu.landesforstinventar-waldmischungsgrad
+    Title: Waldmischungsgrad LFI
+  - ch.bafu.landesforstinventar-wirtschaftsregionen
+    Title: Wirtschaftsregionen LFI
+  - ch.bafu.lebensraumkarte-schweiz
+    Title: Lebensraumkarte
+  - ch.bafu.lebensraumkarte-schweiz
+    Title: Lebensraumkarte
+  - ch.bafu.mittlere-abfluesse
+    Title: Mittlere Abflüsse (m³/s) und Regime
+  - ch.bafu.mittlere-abfluesse_zukunft
+    Title: Mittlere Abflüsse in der Zukunft
+  - ch.bafu.moose
+    Title: Rote Liste Moose
+  - ch.bafu.nabelstationen
+    Title: Messstationen Luftqualität
+  - ch.bafu.naqua-grundwasser_nitrat
+    Title: Grundwasser: Nitrat
+  - ch.bafu.naqua-grundwasser_nitrat_p
+    Title: Grundwasser: Nitrat - ch.bafu.naqua-grundwasser_nitrat
+  - ch.bafu.naqua-grundwasser_nitrat_gwk
+    Title: Grundwasser: Nitrat - ch.bafu.naqua-grundwasser_nitrat
+  - ch.bafu.naqua-grundwasser_voc
+    Title: Grundwasser: VOC
+  - ch.bafu.naqua-grundwasser_voc_p
+    Title: Grundwasser: VOC - ch.bafu.naqua-grundwasser_voc
+  - ch.bafu.naqua-grundwasser_voc_gwk
+    Title: Grundwasser: VOC - ch.bafu.naqua-grundwasser_voc
+  - ch.bafu.neophyten-amerikanische_kermesbeere
+    Title: Amerikanische Kermesbeere
+  - ch.bafu.neophyten-amerikanischer_stinktierkohl
+    Title: Amerikanischer Stinktierkohl
+  - ch.bafu.neophyten-armenische_brombeere
+    Title: Armenische Brombeere
+  - ch.bafu.neophyten-aufrechtes_traubenkraut
+    Title: Aufrechtes Traubenkraut
+  - ch.bafu.neophyten-auslaeuferbildendes_fettkraut
+    Title: Ausläuferbildendes Fettkraut
+  - ch.bafu.neophyten-balfours_springkraut
+    Title: Balfours Springkraut
+  - ch.bafu.neophyten-bastard_staudenknoeterich
+    Title: Bastard-Staudenknöterich
+  - ch.bafu.neophyten-bastardindigo
+    Title: Bastardindigo
+  - ch.bafu.neophyten-besen_radmelde
+    Title: Besen-Radmelde
+  - ch.bafu.neophyten-blauglockenbaum
+    Title: Blauglockenbaum
+  - ch.bafu.neophyten-brasilianisches_tausendblatt
+    Title: Brasilianisches Tausendblatt
+  - ch.bafu.neophyten-carolina_nachtschatten
+    Title: Carolina-Nachtschatten
+  - ch.bafu.neophyten-chinesische_samtpappel
+    Title: Chinesische Samtpappel
+  - ch.bafu.neophyten-druesiges_springkraut
+    Title: Drüsiges Springkraut
+  - ch.bafu.neophyten-einjaehriges_berufkraut
+    Title: Einjähriges Berufkraut
+  - ch.bafu.neophyten-essbare_kermesbeere
+    Title: Essbare Kermesbeere
+  - ch.bafu.neophyten-essbares_zypergras
+    Title: Essbares Zypergras
+  - ch.bafu.neophyten-essigbaum
+    Title: Essigbaum
+  - ch.bafu.neophyten-felsen_greiskraut
+    Title: Felsen-Greiskraut
+  - ch.bafu.neophyten-fortunes_hanfpalme
+    Title: Fortunes Hanfpalme
+  - ch.bafu.neophyten-gestreiftes_suessgras
+    Title: Gestreiftes Süssgras
+  - ch.bafu.neophyten-gewoehnliche_jungfernrebe
+    Title: Gewöhnliche Jungfernrebe
+  - ch.bafu.neophyten-glattes_zackenschoetchen
+    Title: Glattes Zackenschötchen
+  - ch.bafu.neophyten-goetterbaum
+    Title: Götterbaum
+  - ch.bafu.neophyten-grossbluetiges_heusenkraut
+    Title: Grossblütiges Heusenkraut
+  - ch.bafu.neophyten-grosser_wassernabel
+    Title: Grosser Wassernabel
+  - ch.bafu.neophyten-haargurke
+    Title: Haargurke
+  - ch.bafu.neophyten-henrys_geissblatt
+    Title: Henrys Geissblatt
+  - ch.bafu.neophyten-herbst_traubenkirsche
+    Title: Herbst-Traubenkirsche
+  - ch.bafu.neophyten-igelgurke
+    Title: Igelgurke
+  - ch.bafu.neophyten-japanischer_staudenknoeterich
+    Title: Japanischer Staudenknöterich
+  - ch.bafu.neophyten-japanisches_geissblatt
+    Title: Japanisches Geissblatt
+  - ch.bafu.neophyten-kanadische_goldrute
+    Title: Kanadische Goldrute
+  - ch.bafu.neophyten-kanadische_wasserpest
+    Title: Kanadische Wasserpest
+  - ch.bafu.neophyten-karolina_haarnixe
+    Title: Karolina-Haarnixe
+  - ch.bafu.neophyten-kaukasus_fettkraut
+    Title: Kaukasus-Fettkraut
+  - ch.bafu.neophyten-kirschlorbeer
+    Title: Kirschlorbeer
+  - ch.bafu.neophyten-kletternder_giftsumach
+    Title: Kletternder Giftsumach
+  - ch.bafu.neophyten-kopoubohne
+    Title: Kopoubohne
+  - ch.bafu.neophyten-mahonie
+    Title: Mahonie
+  - ch.bafu.neophyten-nadelkraut
+    Title: Nadelkraut
+  - ch.bafu.neophyten-nuttalls_wasserpest
+    Title: Nuttalls Wasserpest
+  - ch.bafu.neophyten-portulak_heusenkraut
+    Title: Portulak-Heusenkraut
+  - ch.bafu.neophyten-riesenbaerenklau
+    Title: Riesenbärenklau
+  - ch.bafu.neophyten-robinie
+    Title: Robinie
+  - ch.bafu.neophyten-runzelblaettriger_schneeball
+    Title: Runzelblättriger Schneeball
+  - ch.bafu.neophyten-sachalin_staudenknoeterich
+    Title: Sachalin-Staudenknöterich
+  - ch.bafu.neophyten-schmetterlingsstrauch
+    Title: Schmetterlingsstrauch
+  - ch.bafu.neophyten-seidiger_hornstrauch
+    Title: Seidiger Hornstrauch
+  - ch.bafu.neophyten-spaetbluehende_goldrute
+    Title: Spätblühende Goldrute
+  - ch.bafu.neophyten-suedafrikanisches_greiskraut
+    Title: Südafrikanisches Greiskraut
+  - ch.bafu.neophyten-syrische_seidenpflanze
+    Title: Syrische Seidenpflanze
+  - ch.bafu.neophyten-topinambur
+    Title: Topinambur
+  - ch.bafu.neophyten-verlotscher_beifuss
+    Title: Verlotscher Beifuss
+  - ch.bafu.neophyten-vielaehriger_knoeterich
+    Title: Vielähriger Knöterich
+  - ch.bafu.neophyten-vielblaettrige_lupine
+    Title: Vielblättrige Lupine
+  - ch.bafu.oekomorphologie-f_abschnitte
+    Title: Ökomorphologie F - Abschnitte
+  - ch.bafu.oekomorphologie-f_abstuerze
+    Title: Ökomorphologie F - Abstürze
+  - ch.bafu.oekomorphologie-f_bauwerke
+    Title: Ökomorphologie F - Bauwerke
+  - ch.bafu.permafrost
+    Title: Permafrosthinweiskarte
+  - ch.bafu.schutzgebiete-aulav_auen
+    Title: Auengebiete AuLaV
+  - ch.bafu.schutzgebiete-aulav_auen
+    Title: Auengebiete AuLaV
+  - ch.bafu.schutzgebiete-aulav_jagdbanngebiete
+    Title: Jagdbanngebiete AuLaV
+  - ch.bafu.schutzgebiete-aulav_jagdbanngebiete
+    Title: Jagdbanngebiete AuLaV
+  - ch.bafu.schutzgebiete-aulav_moorlandschaften
+    Title: Moorlandschaften AuLaV
+  - ch.bafu.schutzgebiete-aulav_moorlandschaften
+    Title: Moorlandschaften AuLaV
+  - ch.bafu.schutzgebiete-aulav_uebrige
+    Title: Übrige Schutzgebiete AuLaV
+  - ch.bafu.schutzgebiete-aulav_uebrige
+    Title: Übrige Schutzgebiete AuLaV
+  - ch.bafu.schutzgebiete-biosphaerenreservate
+    Title: Biosphärenreservate
+  - ch.bafu.schutzgebiete-paerke_nationaler_bedeutung_perimeter
+    Title: Schweizer Pärke (Perimeter)
+  - ch.bafu.schutzgebiete-smaragd
+    Title: Smaragd
+  - ch.bafu.silvaprotect-hangmuren
+    Title: Hangmuren (SilvaProtect-CH)
+  - ch.bafu.silvaprotect-lawinen
+    Title: Lawinen (SilvaProtect-CH)
+  - ch.bafu.silvaprotect-murgang
+    Title: Murgang (SilvaProtect-CH)
+  - ch.bafu.silvaprotect-sturz
+    Title: Sturz (SilvaProtect-CH)
+  - ch.bafu.silvaprotect-uebersarung
+    Title: Übersarung (SilvaProtect-CH)
+  - ch.bafu.sturm-boeenspitzen_100
+    Title: Sturmgefährdung Böenspitzen 100
+  - ch.bafu.sturm-boeenspitzen_30
+    Title: Sturmgefährdung Böenspitzen 30
+  - ch.bafu.sturm-boeenspitzen_300
+    Title: Sturmgefährdung Böenspitzen 300
+  - ch.bafu.sturm-boeenspitzen_50
+    Title: Sturmgefährdung Böenspitzen 50
+  - ch.bafu.sturm-staudruck_100
+    Title: Sturmgefährdung Staudruck 100
+  - ch.bafu.sturm-staudruck_30
+    Title: Sturmgefährdung Staudruck 30
+  - ch.bafu.sturm-staudruck_300
+    Title: Sturmgefährdung Staudruck 300
+  - ch.bafu.sturm-staudruck_50
+    Title: Sturmgefährdung Staudruck 50
+  - ch.bafu.swissprtr
+    Title: Schadstoff-Freisetzungen (SwissPRTR)
+  - ch.bafu.tranquillity-gebiete
+    Title: Tranquillity Gebiete
+  - ch.bafu.tranquillity-karte
+    Title: Tranquillity Map
+  - ch.bafu.trockenheitsindex
+    Title: Trockenheitsindex
+  - ch.bafu.trockenheitswarnkarte
+    Title: Trockenheitswarnkarte
+  - ch.bafu.typisierung-fliessgewaesser
+    Title: Typisierung Fliessgewässer
+  - ch.bafu.unesco-weltnaturerbe
+    Title: UNESCO-Welterbe Naturstätten
+  - ch.bafu.vec25-seen
+    Title: Seen
+  - ch.bafu.wald-foehnhaeufigkeit_jahr
+    Title: Föhnhäufigkeit
+  - ch.bafu.wald-lufttemperatur_juli_2085_gering
+    Title: Lufttemperatur Juli 2085, RCP 2.6
+  - ch.bafu.wald-lufttemperatur_juli_2085_maessig
+    Title: Lufttemperatur Juli 2085, RCP 4.5
+  - ch.bafu.wald-lufttemperatur_juli_2085_stark
+    Title: Lufttemperatur Juli 2085, RCP 8.5
+  - ch.bafu.wald-niederschlag_april_august_2085_gering
+    Title: Niederschlag April-August 2085, RCP 2.6
+  - ch.bafu.wald-niederschlag_april_august_2085_maessig
+    Title: Niederschlag April-August 2085, RCP 4.5
+  - ch.bafu.wald-niederschlag_april_august_2085_stark
+    Title: Niederschlag April-August 2085, RCP 8.5
+  - ch.bafu.wald-niederschlag_sommer_2085_gering
+    Title: Niederschlag Sommer 2085, RCP 2.6
+  - ch.bafu.wald-niederschlag_sommer_2085_maessig
+    Title: Niederschlag Sommer 2085, RCP 4.5
+  - ch.bafu.wald-niederschlag_sommer_2085_stark
+    Title: Niederschlag Sommer 2085, RCP 8.5
+  - ch.bafu.wald-obere_waldgrenze
+    Title: Obere Waldgrenze
+  - ch.bafu.wald-standortsregionen
+    Title: Waldstandortsregionen
+  - ch.bafu.wald-tannenareale
+    Title: Tannenareale
+  - ch.bafu.wald-vegetationshoehenstufen_2085_trocken
+    Title: Höhenstufen 2085 trocken
+  - ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken
+    Title: Höhenstufen 2085 mässig trocken
+  - ch.bafu.wald-wasserverfuegbarkeit_boden
+    Title: Wasserverfügbarkeit im Boden
+  - ch.bafu.wald-wasserverfuegbarkeit_pflanzen
+    Title: Wasserverfügbarkeit für Pflanzen
+  - ch.bafu.waldreservate
+    Title: Waldreservate
+  - ch.bafu.waldschadenflaechen-lothar
+    Title: Sturmschaden Lothar
+  - ch.bafu.waldschadenflaechen-vivian
+    Title: Sturmschaden Vivian
+  - ch.bafu.wasser-gebietsauslaesse
+    Title: Gebietsauslässe
+  - ch.bafu.wasser-teileinzugsgebiete_2
+    Title: Teileinzugsgebiete 2 km²
+  - ch.bafu.wasser-teileinzugsgebiete_40
+    Title: Teileinzugsgebiete 40 km²
+  - ch.bafu.wasser-vorfluter
+    Title: Vorfluterabschnitte
+  - ch.bafu.wasserbau-querprofilmarken
+    Title: Querprofilachse
+  - ch.bafu.wasserbau-querprofilmarken
+    Title: Querprofilachse
+  - ch.bafu.wasserbau-vermessungsstrecken
+    Title: Vermessungsabschnitt
+  - ch.bafu.wrz-jagdbanngebiete_select
+    Title: Wildtierschutzgebiete
+  - ch.bafu.wrz-jagdbanngebiete_select
+    Title: Wildtierschutzgebiete
+  - ch.bafu.wrz-wildruhezonen_portal
+    Title: Wildruhezonen
+  - ch.bafu.wrz-wildruhezonen_portal
+    Title: Wildruhezonen
+  - ch.bafu.wasser-rueckgabe
+    Title: Wasserrückgabe
+  - ch.bafu.wasser-leitungen
+    Title: Zuleitung
+  - ch.bafu.wasser-entnahme
+    Title: Wasserentnahme
+  - ch.bafu.wasser-entnahme
+    Title: Wasserentnahme
+  - ch.bafu.schutzgebiete-schweizerischer_nationalpark
+    Title: Nationalpark
+  - ch.bafu.schutzgebiete-paerke_nationaler_bedeutung
+    Title: Schweizer Pärke (Zonierung)
+  - ch.bafu.schutzgebiete-ramsar
+    Title: Ramsar
+  - ch.bafu.hydrologie-hydromessstationen
+    Title: Hydrologische Messstationen
+  - ch.bafu.fauna-steinbockkolonien
+    Title: Steinbockkolonien
+  - ch.bafu.bundesinventare-vogelreservate
+    Title: Wasser- und Zugvogelreservate
+  - ch.bafu.bundesinventare-moorlandschaften
+    Title: Moorlandschaften
+  - ch.bafu.bundesinventare-jagdbanngebiete
+    Title: Jagdbanngebiete
+  - ch.bafu.bundesinventare-hochmoore
+    Title: Hochmoore
+  - ch.bafu.bundesinventare-flachmoore
+    Title: Flachmoore
+  - ch.bafu.bundesinventare-bln
+    Title: BLN
+  - ch.bafu.bundesinventare-auen
+    Title: Auengebiete
+  - ch.bafu.bundesinventare-amphibien_wanderobjekte
+    Title: Amphibien Wanderobjekte
+  - ch.bafu.bundesinventare-amphibien
+    Title: Amphibien Ortsfeste Objekte
+  - ch.bafu.gefahren-aktuelle_erdbeben
+    Title: Aktuelle Erdbeben
+  - ch.babs.kulturgueter
+    Title: KGS Inventar
+  - ch.babs.notfalltreffpunkte
+    Title: Notfalltreffpunkte NTP
+  - ch.astra.baulinien-nationalstrassen
+    Title: Baulinien Nationalstrassen
+  - ch.astra.baulinien-nationalstrassen
+    Title: Baulinien Nationalstrassen
+  - ch.astra.baulinien-nationalstrassen_aenderung_v2_0.oereb
+    Title: Baulinien Nationalstrassen Änd. V2.0 ÖREB
+  - ch.astra.baulinien-nationalstrassen_v2_0.oereb
+    Title: Baulinien Nationalstrassen V2.0 ÖREB
+  - ch.astra.hauptstrassennetz
+    Title: Hauptstrassennetz
+  - ch.astra.ivs-nat-verlaeufe
+    Title: IVS nationale Bed. hist. Verlauf
+  - ch.astra.konsultationsbereiche-nationalstrassen
+    Title: Konsultationsbereich Nationalstrassen
+  - ch.astra.konsultationsbereiche-nationalstrassen
+    Title: Konsultationsbereich Nationalstrassen
+  - ch.astra.mountainbikeland
+    Title: Mountainbikeland Schweiz
+  - ch.astra.mountainbikeland
+    Title: Mountainbikeland Schweiz
+  - ch.astra.mountainbikeland-sperrungen_umleitungen
+    Title: Sperrungen Mountainbike
+  - ch.astra.mountainbikeland-sperrungen_umleitungen
+    Title: Sperrungen Mountainbike
+  - ch.astra.nationalstrassenachsen
+    Title: Nationalstrassenachsen
+  - ch.astra.nationalstrassenachsen
+    Title: Nationalstrassenachsen
+  - ch.astra.projektierungszonen-nationalstrassen_v2_0.oereb
+    Title: Projektierungszonen Nationalstrassen V2 ÖREB
+  - ch.astra.sachplan-infrastruktur-strasse_anhoerung
+    Title: SIN Anhörung
+  - ch.astra.sachplan-infrastruktur-strasse_anhoerung
+    Title: SIN Anhörung
+  - ch.astra.sachplan-infrastruktur-strasse_kraft
+    Title: SP Infrastruktur Strasse
+  - ch.astra.sachplan-infrastruktur-strasse_kraft
+    Title: SP Infrastruktur Strasse
+  - ch.astra.schwerverunfallte-kanton_alkohol
+    Title: Unfälle pro Einwohner - Alkohol
+  - ch.astra.schwerverunfallte-kanton_geschwindigkeit
+    Title: Unfälle pro Einwohner - Geschwindig
+  - ch.astra.schwerverunfallte-kanton_jahresvergleich
+    Title: Unfälle im Jahresvergleich
+  - ch.astra.schwerverunfallte-kanton_pro_einwohner
+    Title: Unfälle pro Einwohner
+  - ch.astra.skatingland
+    Title: Skatingland Schweiz
+  - ch.astra.skatingland
+    Title: Skatingland Schweiz
+  - ch.astra.skatingland-sperrungen_umleitungen
+    Title: Sperrungen Skating
+  - ch.astra.skatingland-sperrungen_umleitungen
+    Title: Sperrungen Skating
+  - ch.astra.strassenverkehrszaehlung-uebergeordnet
+    Title: Verkehrszählung - übergeordnet
+  - ch.astra.unfaelle-personenschaeden_alle
+    Title: Unfälle mit Personenschaden
+  - ch.astra.unfaelle-personenschaeden_fahrraeder
+    Title: Unfälle mit Fahrradbeteiligung
+  - ch.astra.unfaelle-personenschaeden_fussgaenger
+    Title: Unfälle mit Fussgängerbeteiligung
+  - ch.astra.unfaelle-personenschaeden_getoetete
+    Title: Unfälle mit Getöteten
+  - ch.astra.unfaelle-personenschaeden_motorraeder
+    Title: Unfälle mit Motorradbeteiligung
+  - ch.astra.veloland
+    Title: Veloland Schweiz
+  - ch.astra.veloland
+    Title: Veloland Schweiz
+  - ch.astra.veloland-sperrungen_umleitungen
+    Title: Sperrungen Velo
+  - ch.astra.veloland-sperrungen_umleitungen
+    Title: Sperrungen Velo
+  - ch.astra.wanderland
+    Title: Wanderland
+  - ch.astra.wanderland
+    Title: Wanderland
+  - ch.astra.wanderland-sperrungen_umleitungen
+    Title: Sperrungen Wanderwege
+  - ch.astra.wanderland-sperrungen_umleitungen
+    Title: Sperrungen Wanderwege
+  - ch.astra.ivs-nat_wegbegleiter
+    Title: IVS Wegbegleiter
+  - ch.astra.ivs-nat_abgrenzungen
+    Title: IVS Abgrenzungen
+  - ch.astra.ivs-reg_loc
+    Title: IVS Regional und Lokal
+  - ch.astra.ivs-nat
+    Title: IVS National
+  - ch.armasuisse.natur-landschaft_armee
+    Title: NLA Naturwerte/ Lebensräume
+  - ch.armasuisse.natur-landschaft_armee
+    Title: NLA Naturwerte/ Lebensräume
+  - ch.are.alpenkonvention
+    Title: Alpenkonvention
+  - ch.are.belastung-personenverkehr-bahn_zukunft
+    Title: Personenverkehr Schiene 2050
+  - ch.are.belastung-personenverkehr-strasse_zukunft
+    Title: Personen-/Güterverkehr Strasse 2050
+  - ch.are.erreichbarkeit-miv
+    Title: Erreichbarkeit auf der Strasse
+  - ch.are.erreichbarkeit-oev
+    Title: Erreichbarkeit mit dem ÖV
+  - ch.are.reisezeit-agglomerationen-miv
+    Title: Reisezeit zu Agglos Strasse
+  - ch.are.reisezeit-agglomerationen-miv
+    Title: Reisezeit zu Agglos Strasse
+  - ch.are.reisezeit-agglomerationen-oev
+    Title: Reisezeit zu Agglos ÖV
+  - ch.are.reisezeit-agglomerationen-oev
+    Title: Reisezeit zu Agglos ÖV
+  - ch.are.siedlung
+    Title: Siedlung
+  - ch.are.solaranlagen-nutzungsaspekte
+    Title: Solar: Nutzungsaspekte
+  - ch.are.solaranlagen-pruefenswerte_gebiete
+    Title: Solar: Anteil prüfenswerter Gebiete
+  - ch.are.solaranlagen-pruefenswerte_gebiete_vektor
+    Title: Solar: Prüfenswerte Gebiete
+  - ch.are.solaranlagen-schutzinteressen
+    Title: Solar: Schutzinteressen
+  - ch.are.windenergie-bundesinteressen
+    Title: Wind: Bundesinteressen
+  - ch.are.agglomerationsverkehr
+    Title: Städte und Agglomerationen BeSA
+  - ch.are.bauzonen
+    Title: Bauzonen Schweiz (harmonisiert)
+  - ch.are.belastung-personenverkehr-bahn
+    Title: Personenverkehr Schiene
+  - ch.are.belastung-personenverkehr-strasse
+    Title: Personen-/Güterverkehr Strasse
+  - ch.are.gueteklassen_oev
+    Title: ÖV-Güteklassen ARE
+  - ch.are.landschaftstypen
+    Title: Landschaftstypologie Schweiz
+  - ch.are.landschaftstypen
+    Title: Landschaftstypologie Schweiz
+  - ch.are.reisezeit-miv
+    Title: Reisezeit zu Zentren Strasse
+  - ch.are.reisezeit-miv
+    Title: Reisezeit zu Zentren Strasse
+  - ch.are.reisezeit-oev
+    Title: Reisezeit zu Zentren ÖV
+  - ch.are.reisezeit-oev
+    Title: Reisezeit zu Zentren ÖV
+  - ch.are.wohnungsinventar-zweitwohnungsanteil
+    Title: Wohnungsinventar
+  - ch.agroscope.abschaetzung-organische_boeden
+    Title: Organische Böden CH 2024
+  - ch.agroscope.amphibien-ausbreitungskarten_alytes_obstetricans
+    Title: Ausbreitungskarte Alytes obstericans
+  - ch.agroscope.amphibien-ausbreitungskarten_bombia_variegata
+    Title: Ausbreitungskarte Bombia variegata
+  - ch.agroscope.amphibien-ausbreitungskarten_epidalea_calamita
+    Title: Ausbreitungskarte Epidalea calamita
+  - ch.agroscope.amphibien-ausbreitungskarten_hyla_arborea
+    Title: Ausbreitungskarte Hyla arborea
+  - ch.agroscope.amphibien-ausbreitungskarten_triturus_cristatus
+    Title: Ausbreitungskarte Triturus cristatus
+  - ch.agroscope.amphibien-bedeutung_parzellen
+    Title: Bedeutung Parzellen Amphibien
+  - ch.agroscope.feuchtflaechenpotential-kulturlandschaft
+    Title: Feuchtflächenpotential Agrarland
+  - ch.agroscope.fokuskarte-voegel
+    Title: Fokuskarte Vögel
+  - ch.agroscope.korridore-feuchtgebietsarten_qualitaet
+    Title: Feuchtgebietskorridore - Qualität
+
+📅 YEARLY LAYERS (43):
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_2000
+    Title: Temperaturen 2000 m Tiefe
+  - ch.swisstopo.geologie-geomol-temperaturverteilung_2000
+    Title: Temperaturen 2000 m Tiefe
+  - ch.swisstopo.swissimage-product_1946
+    Title: SWISSIMAGE HIST 1946
+  - ch.meteoschweiz.klimanormwerte-niederschlag_1961_1990
+    Title: Niederschlag 1961-1990 (Klimanormwerte)
+  - ch.meteoschweiz.klimanormwerte-sonnenscheindauer_1961_1990
+    Title: Sonnenscheindauer 1961-1990 (Klimanormwerte)
+  - ch.meteoschweiz.klimanormwerte-temperatur_1961_1990
+    Title: Temperatur 1961-1990 (Klimanormwerte)
+  - ch.bfe.energiestaedte-2000watt-areale
+    Title: 2000-Watt-Areale
+  - ch.bfe.energiestaedte-2000watt-areale
+    Title: 2000-Watt-Areale
+  - ch.bafu.vec25-gewaessernetz_2000
+    Title: Gewässernetz 1:2 Mio.
+  - ch.bafu.wald-kontinentalitaet_jahr_1000m_1981_2010
+    Title: Kontinentalität 1000 m 1995
+  - ch.bafu.wald-kontinentalitaet_juli_1000m_1981_2010
+    Title: Kontinentalität 1000 m Juli 1995
+  - ch.bafu.wald-lufttemperatur_juli_1961_1990
+    Title: Lufttemperatur Juli 1961-1990
+  - ch.bafu.wald-lufttemperatur_juli_1981_2010
+    Title: Lufttemperatur Juli 1981-2010
+  - ch.bafu.wald-relative_luftfeuchte_jahr_1981_2010
+    Title: Rel. Luftfeuchte Jahr, 1981-2010
+  - ch.bafu.wald-relative_luftfeuchte_juli_1981_2010
+    Title: Rel. Luftfeuchte Juli, 1981-2010
+  - ch.bafu.wald-vegetationshoehenstufen_1975
+    Title: Höhenstufen 1975
+  - ch.swisstopo.rapidmapping.rgb/2024-001-PPDB
+    Title: RM 2024-001-PPDB
+  - ch.swisstopo.rapidmapping.alpha/2024-002-MISOX
+    Title: RM-FloodingGR-RGBa-20240622
+  - ch.swisstopo.rapidmapping.rgb/2024-002-PPDB
+    Title: RM 2024-002-PPDB
+  - ch.swisstopo.rapidmapping.cir/2024-003-FlutEX
+    Title: FlutEx
+  - ch.swisstopo.rapidmapping.rgb/2024-003-FlutEX
+    Title: FlutEx
+  - ch.swisstopo.rapidmapping.alpha/2024-003-WALLIS
+    Title: RM-FloodingVS-RGBa-20240624
+  - ch.swisstopo.rapidmapping.alpha/2024-004-TICINO
+    Title: RM-FloodTI-Bavona-RGBa-20240630
+  - ch.swisstopo.rapidmapping.alpha/2024-004-WALLIS
+    Title: RM-FloodingVS2-RGBa-20240624
+  - ch.swisstopo.rapidmapping.alpha/2024-005-WALLIS
+    Title: RM-FloodingVS3-RGBa-20240624
+  - ch.swisstopo.rapidmapping.alpha/2024-006-TICINO
+    Title: RM-FloodTI-Cevio2-RGBa-20240630
+  - ch.swisstopo.rapidmapping.alpha/2024-006-WALLIS
+    Title: RM-FloodingVS4-RGBa-20240624
+  - ch.swisstopo.rapidmapping.alpha/2024-007-TICINO
+    Title: RM-FloodTI-Peccia-RGBa-20240630
+  - ch.swisstopo.rapidmapping.alpha/2024-007-WALLIS
+    Title: RM-FloodingVS5-RGBa-20240624
+  - ch.swisstopo.rapidmapping.cir/2024-009-TICINO
+    Title: RM-FloodTI-RGBN-20240702
+  - ch.swisstopo.rapidmapping.rgb/2024-009-TICINO
+    Title: RM-FloodTI-RGBN-20240702
+  - ch.swisstopo.rapidmapping.cir/2024-009-WALLIS
+    Title: RM-FloodingVS-RGBN-20240704
+  - ch.swisstopo.rapidmapping.rgb/2024-009-WALLIS
+    Title: RM-FloodingVS-RGBN-20240704
+  - ch.swisstopo.rapidmapping.rgb/2024-010-TICINO
+    Title: RM-FloodingTI-RGB-20240702
+  - ch.swisstopo.rapidmapping.rgb/2024-010-WALLIS
+    Title: RM-FloodingVS-RGB-20240704
+  - ch.swisstopo.rapidmapping.cir/2024-011-MISOX
+    Title: RM-FloodingGR-RGBN-20240628
+  - ch.swisstopo.rapidmapping.rgb/2024-011-MISOX
+    Title: RM-FloodingGR-RGBN-20240628
+  - ch.swisstopo.rapidmapping.rgb/2024-011-WALLIS
+    Title: RM-FloodingVS-RGB-20240704
+  - ch.swisstopo.rapidmapping.rgb/2024-012-MISOX
+    Title: RM-FloodingGR-RGB-25cm-20240628
+  - ch.swisstopo.rapidmapping.rgb/2025-001-PPDB
+    Title: RM-2025-001-PPDB
+  - ch.swisstopo.rapidmapping.rgb/2025-002-BLATTEN
+    Title: RM_VS_20250519_QOF_RGB_BLATTEN
+  - ch.swisstopo.rapidmapping.rgb/2025-007-BLATTEN
+    Title: RM_VS_20250530_QOF_RGB_BLATTEN
+  - ch.swisstopo.rapidmapping.rgb/2025-011-BLATTEN
+    Title: RM_VS_20250530_OF_RGB_BLATTEN
+
+ℹ️  INFO/METADATA LAYERS (0):
+
+🔍 METADATA LAYERS (35):
+  - ch.swisstopo.geologie-generalkarte-ggk200.metadata
+    Title: Einteilung GGK 200 Raster
+  - ch.swisstopo.geologie-geocover.metadata
+    Title: Einteilung GeoCover
+  - ch.swisstopo.geologie-geologischer_atlas.metadata
+    Title: Einteilung GA25 Raster
+  - ch.swisstopo.geologie-spezialkarten_schweiz.metadata
+    Title: Einteilung GSK Raster
+  - ch.swisstopo.geologie-spezialkarten_schweiz.metadata
+    Title: Einteilung GSK Raster
+  - ch.swisstopo.geologie-spezialkarten_schweiz_vector.metadata
+    Title: Einteilung GSK Vektor
+  - ch.swisstopo.hiks-dufour.metadata
+    Title: Einteilung Dufourkarte Raster
+  - ch.swisstopo.hiks-dufour.metadata
+    Title: Einteilung Dufourkarte Raster
+  - ch.swisstopo.hiks-siegfried-ta25.metadata
+    Title: Einteilung Siegfriedkarte 25 Raster
+  - ch.swisstopo.hiks-siegfried-ta25.metadata
+    Title: Einteilung Siegfriedkarte 25 Raster
+  - ch.swisstopo.hiks-siegfried-ta50.metadata
+    Title: Einteilung Siegfriedkarte 50 Raster
+  - ch.swisstopo.hiks-siegfried-ta50.metadata
+    Title: Einteilung Siegfriedkarte 50 Raster
+  - ch.swisstopo.hiks-siegfried.metadata
+    Title: Einteilung Siegfriedkarte 25/50 Raster
+  - ch.swisstopo.hiks-siegfried.metadata
+    Title: Einteilung Siegfriedkarte 25/50 Raster
+  - ch.swisstopo.images-swissimage-dop10.metadata
+    Title: Einteilung SWISSIMAGE 10 cm Raster
+  - ch.swisstopo.images-swissimage-dop10.metadata
+    Title: Einteilung SWISSIMAGE 10 cm Raster
+  - ch.swisstopo.pixelkarte-pk100.metadata
+    Title: Einteilung Landeskarte 100 Raster
+  - ch.swisstopo.pixelkarte-pk100.metadata
+    Title: Einteilung Landeskarte 100 Raster
+  - ch.swisstopo.pixelkarte-pk200.metadata
+    Title: Einteilung Landeskarte 200 Raster
+  - ch.swisstopo.pixelkarte-pk200.metadata
+    Title: Einteilung Landeskarte 200 Raster
+  - ch.swisstopo.pixelkarte-pk25.metadata
+    Title: Einteilung Landeskarte 25 Raster
+  - ch.swisstopo.pixelkarte-pk25.metadata
+    Title: Einteilung Landeskarte 25 Raster
+  - ch.swisstopo.pixelkarte-pk50.metadata
+    Title: Einteilung Landeskarte 50 Raster
+  - ch.swisstopo.pixelkarte-pk50.metadata
+    Title: Einteilung Landeskarte 50 Raster
+  - ch.swisstopo.swisssurface3d-raster.metadata
+    Title: Einteilung swissSURFACE3D Raster
+  - ch.swisstopo.swisssurface3d-raster.metadata
+    Title: Einteilung swissSURFACE3D Raster
+  - ch.swisstopo.swisssurface3d.metadata
+    Title: Einteilung swissSURFACE3D LiDAR
+  - ch.swisstopo.swisssurface3d.metadata
+    Title: Einteilung swissSURFACE3D LiDAR
+  - ch.swisstopo.swissimage-product.metadata
+    Title: Einteilung SWISSIMAGE Zeitreise
+  - ch.swisstopo.swissimage-product.metadata
+    Title: Einteilung SWISSIMAGE Zeitreise
+  - ch.swisstopo-vd.geometa-periodische_nachfuehrung
+    Title: Periodische Nachführung
+  - ch.swisstopo-vd.geometa-gemeinde
+    Title: Gemeindeinformationen - AV
+  - ch.swisstopo-vd.geometa-standav
+    Title: Stand der amtlichen Vermessung
+  - ch.swisstopo-vd.geometa-grundbuch
+    Title: Grundbuchinformationen
+  - ch.swisstopo-vd.geometa-nfgeom
+    Title: Nachführungsgeometer/in
+
+📁 PARENT/GROUP LAYERS (111):
+  - ch.vbs.grunddispositiv-zeus (queryable: False)
+    Title: Zeus Karte
+  - ch.vbs.milairspacechart (queryable: False)
+    Title: Mil Airspace Chart
+  - ch.vbs.sperr-gefahrenzonenkarte (queryable: False)
+    Title: Sperr- und Gefahrenzonenkarte
+  - ch.swisstopo.geologie-bodenunruhe (queryable: False)
+    Title: Anthrop. Bodenunruhe CH
+  - ch.swisstopo.geologie-gravimetrischer_atlas (queryable: False)
+    Title: Gravimetrischer Atlas 100
+  - ch.swisstopo.hiks-siegfried (queryable: False)
+    Title: Siegfriedkarte
+  - ch.swisstopo.koordinatenaenderung (queryable: False)
+    Title: LV95 Koordinatenänderung
+  - ch.swisstopo.landeskarte-farbe-10 (queryable: False)
+    Title: Landeskarte 1:10`000 (farbig)
+  - ch.swisstopo.landeskarte-grau-10 (queryable: False)
+    Title: Landeskarte 1:10`000 (grau)
+  - ch.swisstopo.leichte-basiskarte_reliefschattierung (queryable: False)
+    Title: Leichte Basiskarte Relief
+  - ch.swisstopo.leichte-basiskarte_reliefschattierung (queryable: False)
+    Title: Leichte Basiskarte Relief
+  - ch.swisstopo.pixelkarte-farbe (queryable: False)
+    Title: Landeskarten (farbig)
+  - ch.swisstopo.pixelkarte-farbe-winter (queryable: False)
+    Title: Landeskarte Winter
+  - ch.swisstopo.pixelkarte-grau (queryable: False)
+    Title: Landeskarten (grau)
+  - ch.swisstopo.strassenkarte-200 (queryable: False)
+    Title: Strassenkarte 1:200`000
+  - ch.swisstopo.swissalti3d-reliefschattierung (queryable: False)
+    Title: swissALTI3D multidirektionales Relief
+  - ch.swisstopo.swissalti3d-reliefschattierung_monodirektional (queryable: False)
+    Title: swissALTI3D monodirektionales Relief
+  - ch.swisstopo.swissaltiregio-reliefschattierung_monodirektional (queryable: False)
+    Title: swissALTIRegio monodirektionales Relief
+  - ch.swisstopo.swissaltiregio-reliefschattierung_multidirektional (queryable: False)
+    Title: swissALTIRegio multidirektionales Relief
+  - ch.swisstopo.swissimage (queryable: False)
+    Title: SWISSIMAGE Hintergrund
+  - ch.swisstopo.images-spotimage (queryable: False)
+    Title: ch.swisstopo.images-spotimage
+  - ch.swisstopo.images-swissimage (queryable: False)
+    Title: ch.swisstopo.images-swissimage
+  - ch.swisstopo.swissimage-product (queryable: False)
+    Title: SWISSIMAGE Zeitreise
+  - ch.swisstopo.swissimage-product_mask (queryable: False)
+    Title: SWISSIMAGE Zeitreise - ch.swisstopo.swissimage-product
+  - ch.swisstopo.swissimage-product (queryable: False)
+    Title: SWISSIMAGE Zeitreise
+  - ch.swisstopo.swisssurface3d-reliefschattierung-multidirektional (queryable: False)
+    Title: swissSURFACE3D Raster multidirektionales Relief
+  - ch.swisstopo.swisssurface3d-reliefschattierung_monodirektional (queryable: False)
+    Title: swissSURFACE3D Raster monodirektionales Relief
+  - ch.swisstopo.swisstlm3d-karte-farbe (queryable: False)
+    Title: Karte swissTLM (farbig)
+  - ch.swisstopo.swisstlm3d-karte-grau (queryable: False)
+    Title: Karte swissTLM (grau)
+  - ch.swisstopo.images-landsat25 (queryable: False)
+    Title: Landsat Mosaik 25
+  - ch.swisstopo.pixelkarte-farbe-pk1000.noscale (queryable: False)
+    Title: Landeskarte 1:1 Million | LK1000
+  - ch.swisstopo.pixelkarte-grau-pk1000.noscale (queryable: False)
+    Title: Landeskarte 1:1 Million (grau)
+  - ch.meteoschweiz.hagelgefaehrdung-korngroesse_100_jahre (queryable: False)
+    Title: Hagelgefährdung (Korngrösse) 100 J.
+  - ch.meteoschweiz.hagelgefaehrdung-korngroesse_10_jahre (queryable: False)
+    Title: Hagelgefährdung (Korngrösse), 10 J.
+  - ch.meteoschweiz.hagelgefaehrdung-korngroesse_20_jahre (queryable: False)
+    Title: Hagelgefährdung (Korngrösse), 20 J.
+  - ch.meteoschweiz.hagelgefaehrdung-korngroesse_50_jahre (queryable: False)
+    Title: Hagelgefährdung (Korngrösse), 50 J.
+  - ch.meteoschweiz.klimanormwerte-niederschlag_aktuelle_periode (queryable: False)
+    Title: Niederschlag 1991-2020 (Klimanormwerte)
+  - ch.meteoschweiz.klimanormwerte-sonnenscheindauer_aktuelle_periode (queryable: False)
+    Title: Sonnenscheindauer 1991-2020 (Klimanormwerte)
+  - ch.meteoschweiz.klimanormwerte-temperatur_aktuelle_periode (queryable: False)
+    Title: Temperatur 1991-2020 (Klimanormwerte)
+  - org.epsg.grid_2056 (queryable: False)
+    Title: Koordinatennetz CH1903+/LV95
+  - org.epsg.grid_2056 (queryable: False)
+    Title: Koordinatennetz CH1903+/LV95
+  - org.epsg.grid_21781 (queryable: False)
+    Title: Koordinatennetz CH1903/LV03
+  - org.epsg.grid_21781 (queryable: False)
+    Title: Koordinatennetz CH1903/LV03
+  - org.epsg.grid_4326 (queryable: False)
+    Title: Koordinatennetz WGS84
+  - org.epsg.grid_4326 (queryable: False)
+    Title: Koordinatennetz WGS84
+  - ch.blw.bewaesserungsbeduerftigkeit (queryable: False)
+    Title: Bewässerungsbedürftigkeit
+  - ch.blw.erosion (queryable: False)
+    Title: Erosionsrisiko Acker qualitativ
+  - ch.blw.erosion-fliesswegkarte (queryable: False)
+    Title: Fliesswegkarte
+  - ch.blw.gewaesseranschlusskarte (queryable: False)
+    Title: Gewässeranschluss
+  - ch.blw.gewaesseranschlusskarte-direkt (queryable: False)
+    Title: Gewässeranschluss erweitert
+  - ch.bfs.erreichbarkeit-apotheken (queryable: False)
+    Title: Erreichbarkeit von Apotheken
+  - ch.bfs.erreichbarkeit-restaurants (queryable: False)
+    Title: Erreichbarkeit von Restaurants
+  - ch.bfe.rohrleitungen-konsultationsbereiche (queryable: False)
+    Title: Konsultationsbereiche Rohrleitungen
+  - ch.bfe.rohrleitungen-konsultationsbereiche (queryable: False)
+    Title: Konsultationsbereiche Rohrleitungen
+  - ch.bfe.windenergie-potenzialgebiete (queryable: False)
+    Title: Windpotenzialgebiete
+  - ch.bfe.windenergie-potenzialgebiete (queryable: False)
+    Title: Windpotenzialgebiete
+  - ch.bav.lage-stoerfallverordnung_eisenbahnanlagen (queryable: False)
+    Title: Eisenbahnstrecken StFV
+  - ch.bav.lage-stoerfallverordnung_eisenbahnanlagen (queryable: False)
+    Title: Eisenbahnstrecken StFV
+  - ch.bag.zeckenstichmodell (queryable: False)
+    Title: Zeckenmodell
+  - ch.bafu.erosion-gruenland_bodenabtrag_apr (queryable: False)
+    Title: Erosionsrisiko Dauergrünland April
+  - ch.bafu.erosion-gruenland_bodenabtrag_aug (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Aug.
+  - ch.bafu.erosion-gruenland_bodenabtrag_dez (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Dez.
+  - ch.bafu.erosion-gruenland_bodenabtrag_feb (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Feb.
+  - ch.bafu.erosion-gruenland_bodenabtrag_jan (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Jan.
+  - ch.bafu.erosion-gruenland_bodenabtrag_jul (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Juli
+  - ch.bafu.erosion-gruenland_bodenabtrag_jun (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Juni
+  - ch.bafu.erosion-gruenland_bodenabtrag_mai (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Mai
+  - ch.bafu.erosion-gruenland_bodenabtrag_mrz (queryable: False)
+    Title: Erosionsrisiko Dauergrünland März
+  - ch.bafu.erosion-gruenland_bodenabtrag_nov (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Nov.
+  - ch.bafu.erosion-gruenland_bodenabtrag_okt (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Okt.
+  - ch.bafu.erosion-gruenland_bodenabtrag_sep (queryable: False)
+    Title: Erosionsrisiko Dauergrünland Sep.
+  - ch.bafu.gefahren-basiskarte (queryable: False)
+    Title: Basiskarte GIN
+  - ch.bafu.gefahren-basiskarte (queryable: False)
+    Title: Basiskarte GIN
+  - ch.bafu.hydrogeologie-uebersichtskarte (queryable: False)
+    Title: Übersichtskarte Hydrogeologie
+  - ch.bafu.hydrogeologie-uebersichtskarte (queryable: False)
+    Title: Übersichtskarte Hydrogeologie
+  - ch.bafu.hydrogeologische-karte_100 (queryable: False)
+    Title: Hydrogeologische Karte 100
+  - ch.bafu.laerm-bahnlaerm_nacht (queryable: False)
+    Title: Eisenbahnlärm Nacht
+  - ch.bafu.laerm-bahnlaerm_nacht (queryable: False)
+    Title: Eisenbahnlärm Nacht
+  - ch.bafu.laerm-bahnlaerm_tag (queryable: False)
+    Title: Eisenbahnlärm Tag
+  - ch.bafu.laerm-bahnlaerm_tag (queryable: False)
+    Title: Eisenbahnlärm Tag
+  - ch.bafu.laerm-strassenlaerm_nacht (queryable: False)
+    Title: Strassenverkehrslärm Nacht
+  - ch.bafu.laerm-strassenlaerm_nacht (queryable: False)
+    Title: Strassenverkehrslärm Nacht
+  - ch.bafu.laerm-strassenlaerm_tag (queryable: False)
+    Title: Strassenverkehrslärm Tag
+  - ch.bafu.laerm-strassenlaerm_tag (queryable: False)
+    Title: Strassenverkehrslärm Tag
+  - ch.bafu.luftreinhaltung-ammoniakkonzentration (queryable: False)
+    Title: Ammoniakkonzentration
+  - ch.bafu.luftreinhaltung-feinstaub_pm10 (queryable: False)
+    Title: Feinstaub PM10
+  - ch.bafu.luftreinhaltung-feinstaub_pm2_5 (queryable: False)
+    Title: Feinstaub PM2.5
+  - ch.bafu.luftreinhaltung-ozon (queryable: False)
+    Title: Ozon mp98 Oᴣ
+  - ch.bafu.luftreinhaltung-schwefeldioxid (queryable: False)
+    Title: Schwefeldioxid SO₂
+  - ch.bafu.luftreinhaltung-stickstoff_kritischer_eintrag (queryable: False)
+    Title: CLN Überschreitung
+  - ch.bafu.luftreinhaltung-stickstoffdeposition (queryable: False)
+    Title: Stickstoffdeposition
+  - ch.bafu.luftreinhaltung-stickstoffdioxid (queryable: False)
+    Title: Stickstoffdioxid NO₂
+  - ch.bafu.niederschlagserosivitaet-apr (queryable: False)
+    Title: Niederschlagserosivität April
+  - ch.bafu.niederschlagserosivitaet-aug (queryable: False)
+    Title: Niederschlagserosivität Aug.
+  - ch.bafu.niederschlagserosivitaet-dez (queryable: False)
+    Title: Niederschlagserosivität Dez.
+  - ch.bafu.niederschlagserosivitaet-feb (queryable: False)
+    Title: Niederschlagserosivität Feb.
+  - ch.bafu.niederschlagserosivitaet-jan (queryable: False)
+    Title: Niederschlagserosivität Jan.
+  - ch.bafu.niederschlagserosivitaet-jul (queryable: False)
+    Title: Niederschlagserosivität Juli
+  - ch.bafu.niederschlagserosivitaet-jun (queryable: False)
+    Title: Niederschlagserosivität Juni
+  - ch.bafu.niederschlagserosivitaet-mai (queryable: False)
+    Title: Niederschlagserosivität Mai
+  - ch.bafu.niederschlagserosivitaet-mrz (queryable: False)
+    Title: Niederschlagserosivität März
+  - ch.bafu.niederschlagserosivitaet-nov (queryable: False)
+    Title: Niederschlagserosivität Nov.
+  - ch.bafu.niederschlagserosivitaet-okt (queryable: False)
+    Title: Niederschlagserosivität Okt.
+  - ch.bafu.niederschlagserosivitaet-sep (queryable: False)
+    Title: Niederschlagserosivität Sep.
+  - ch.bafu.ren-wald (queryable: False)
+    Title: REN  Wald
+  - ch.bafu.ren-trockenstandorte (queryable: False)
+    Title: REN  Trockenstandort
+  - ch.bafu.ren-fliessgewaesser_seen (queryable: False)
+    Title: REN  Fliessgewässer / Seen
+  - ch.bafu.ren-feuchtgebiete (queryable: False)
+    Title: REN  Feuchtgebiet
+  - ch.bafu.ren-extensive_landwirtschaftsgebiete (queryable: False)
+    Title: REN  Extensives Landwirtschaftsgebiet
+  - ch.astra.ivs-gelaendekarte (queryable: False)
+    Title: IVS Geländekarte
+  - ch.agroscope.korridore-feuchtgebietsarten_bereiche (queryable: False)
+    Title: Feuchtgebietskorridore - Bereiche
+
+💡 RECOMMENDATIONS:
+  ⚠️  This service has 43 yearly layers!
+     Consider creating separate service entries for each year.
+     Years available: 2024, 2025
+  🔍 35 metadata/aktualitaet layers found!

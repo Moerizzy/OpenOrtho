@@ -1,6 +1,8 @@
 """
 Automatic WMS downloader that detects which services are needed for a given area
 and orchestrates downloads across multiple WMS services.
+
+Now uses the centralized WMS catalog (wms_services.yaml) instead of hardcoded mappings.
 """
 
 import geopandas as gpd
@@ -15,6 +17,7 @@ from orthophotos_downloader.data_scraping.image_download import (
     ImageDownloader,
     AreaDataset,
 )
+from orthophotos_downloader.wms_catalog import WMSCatalogManager
 
 logger = logging.getLogger(__name__)
 
@@ -23,46 +26,9 @@ class AutoOrthophotoDownloader:
     """
     Automatically detects which WMS services are needed for a given area
     and downloads orthophotos from all relevant services.
+    
+    Uses the centralized WMS catalog for service discovery.
     """
-
-    # Mapping of German federal state codes to their corresponding WMS downloader classes
-    STATE_TO_RGB_DOWNLOADER = {
-        "BW": "BW_RGB_Dop20_ImageDownloader",
-        "BY": "BY_RGB_Dop20_ImageDownloader",
-        "BE": "BE_RGB_Dop20_ImageDownloader",
-        "BB": "BB_RGB_Dop20_ImageDownloader",
-        "HB": "HB_RGB_Dop20_ImageDownloader",
-        "HH": "HH_RGB_Dop20_ImageDownloader",
-        "HE": "HE_RGB_Dop20_ImageDownloader",
-        "MV": "MV_RGB_Dop20_ImageDownloader",
-        "NI": "NI_RGB_Dop20_ImageDownloader",
-        "NW": "NW_RGB_Dop20_ImageDownloader",
-        "RP": "RP_RGB_Dop20_ImageDownloader",
-        "SL": "SL_RGB_Dop20_ImageDownloader",
-        "SN": "SN_RGB_Dop20_ImageDownloader",
-        "ST": "ST_RGB_Dop20_ImageDownloader",
-        "SH": "SH_RGB_Dop20_ImageDownloader",
-        "TH": "TH_RGB_Dop20_ImageDownloader",
-    }
-
-    STATE_TO_CIR_DOWNLOADER = {
-        "BW": "BW_CIR_Dop20_ImageDownloader",
-        "BY": "BY_CIR_Dop20_ImageDownloader",
-        "BE": "BE_CIR_Dop20_ImageDownloader",
-        "BB": "BB_CIR_Dop20_ImageDownloader",
-        "HB": "HB_CIR_Dop20_ImageDownloader",
-        "HH": "HH_CIR_Dop20_ImageDownloader",
-        "HE": "HE_CIR_Dop20_ImageDownloader",
-        "MV": "MV_CIR_Dop20_ImageDownloader",
-        "NI": "NI_CIR_Dop20_ImageDownloader",
-        "NW": "NW_CIR_Dop20_ImageDownloader",
-        "RP": "RP_CIR_Dop20_ImageDownloader",
-        "SL": "SL_CIR_Dop20_ImageDownloader",
-        "SN": "SN_CIR_Dop20_ImageDownloader",
-        "ST": "ST_CIR_Dop20_ImageDownloader",
-        "SH": "SH_CIR_Dop20_ImageDownloader",
-        "TH": "TH_CIR_Dop20_ImageDownloader",
-    }
 
     def __init__(self, grid_spacing: int, german_states_url: Optional[str] = None, extract_metadata: bool = True):
         """
@@ -80,6 +46,7 @@ class AutoOrthophotoDownloader:
         )
         self.extract_metadata = extract_metadata
         self._states_gdf = None
+        self._catalog = WMSCatalogManager()  # Initialize WMS catalog
 
     def _load_german_states(self) -> GeoDataFrame:
         """Load German federal states geometry data."""
@@ -145,7 +112,7 @@ class AutoOrthophotoDownloader:
 
     def _get_downloader_class(self, state_code: str, image_type: str = "RGB"):
         """
-        Get the appropriate downloader class for a state and image type.
+        Get the appropriate downloader class for a state and image type using the WMS catalog.
 
         Args:
             state_code: The federal state code (e.g., "BY", "BW")
@@ -154,19 +121,40 @@ class AutoOrthophotoDownloader:
         Returns:
             The downloader class
         """
-        if image_type == "RGB":
-            downloader_mapping = self.STATE_TO_RGB_DOWNLOADER
-        elif image_type == "CIR":
-            downloader_mapping = self.STATE_TO_CIR_DOWNLOADER
-        else:
+        if image_type not in ["RGB", "CIR"]:
             raise ValueError("image_type must be 'RGB' or 'CIR'")
 
-        if state_code not in downloader_mapping:
+        # Query catalog for matching service
+        services = self._catalog.filter_services(
+            state_code=state_code,
+            image_type=image_type
+        )
+        
+        if not services:
             raise ValueError(
-                f"No {image_type} downloader available for state: {state_code}"
+                f"No {image_type} service available for state: {state_code} in catalog"
             )
-
-        downloader_class_name = downloader_mapping[state_code]
+        
+        # Use the first matching service
+        service = services[0]
+        
+        # Build downloader class name from service ID
+        # Convention: StateCode_ImageType_Dop{resolution}_ImageDownloader
+        # e.g., BY_RGB_Dop20_ImageDownloader
+        
+        # Special case mappings where class name doesn't match resolution
+        # NW uses Dop20 class name even though it has 0.1m (DOP10) resolution
+        special_cases = {
+            ('NW', 'RGB'): 'NW_RGB_Dop20_ImageDownloader',
+            ('NW', 'CIR'): 'NW_CIR_Dop20_ImageDownloader',
+        }
+        
+        key = (state_code, image_type)
+        if key in special_cases:
+            downloader_class_name = special_cases[key]
+        else:
+            resolution_str = str(int(service.resolution * 100))  # 0.2 -> "20", 0.1 -> "10"
+            downloader_class_name = f"{state_code}_{image_type}_Dop{resolution_str}_ImageDownloader"
 
         # Dynamically import the downloader class
         try:
@@ -174,9 +162,12 @@ class AutoOrthophotoDownloader:
                 "orthophotos_downloader.data_scraping.wms_germany"
             )
             downloader_class = getattr(mod, downloader_class_name)
+            logger.debug(f"Loaded downloader class: {downloader_class_name} for service {service.id}")
             return downloader_class
         except (ImportError, AttributeError) as e:
-            raise ImportError(f"Could not import {downloader_class_name}: {e}")
+            raise ImportError(
+                f"Could not import {downloader_class_name} for service {service.id}: {e}"
+            )
 
     def download_images_auto(
         self,

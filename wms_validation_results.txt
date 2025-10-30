@@ -1,0 +1,873 @@
+WMS SERVICE VALIDATION RESULTS
+====================================================================================================
+
+
+OK (80 services)
+----------------------------------------------------------------------------------------------------
+
+BW_RGB_DOP20_current
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_C?
+  Status: Found 1 layers
+  Layers (1):
+    - IMAGES_DOP_20_RGB
+
+BW_CIR_DOP20_current
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_CIR
+  Status: Found 1 layers
+  Layers (1):
+    - IMAGES_DOP_20_CIR
+
+BY_RGB_DOP20_current
+  State: BY
+  URL: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+  Status: Found 5 layers
+  Layers (5):
+    - DOP20
+    - by_dop20c
+    - by_dop20g
+    - by_dop20cir
+    - by_dop20_info
+
+BY_CIR_DOP20_current
+  State: BY
+  URL: https://geoservices.bayern.de/od/wms/dop/v1/dop20?
+  Status: Found 5 layers
+  Layers (5):
+    - DOP20
+    - by_dop20c
+    - by_dop20g
+    - by_dop20cir
+    - by_dop20_info
+
+BY_RGB_DOP40_current
+  State: BY
+  URL: https://geoservices.bayern.de/od/wms/dop/v1/dop40?
+  Status: Found 4 layers
+  Layers (4):
+    - DOP40
+    - by_dop40c
+    - by_dop40g
+    - by_dop40_info
+
+BE_RGB_DOP20_current
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+  Status: Found 1 layers
+  Layers (1):
+    - bebb_dop20c
+
+BE_CIR_DOP20_current
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+  Status: Found 1 layers
+  Layers (1):
+    - bb_dop20cir
+
+BB_RGB_DOP20_current
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms
+  Status: Found 1 layers
+  Layers (1):
+    - bebb_dop20c
+
+BB_CIR_DOP20_current
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20cir/service/wms
+  Status: Found 1 layers
+  Layers (1):
+    - bb_dop20cir
+
+HB_RGB_DOP20_2023
+  State: HB
+  URL: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  Status: Found 3 layers
+  Layers (3):
+    - DOP20 2023 Land Bremen
+    - DOP20_2023_HB
+    - DOP20_2023_BHV
+
+BHV_RGB_DOP20_2023
+  State: HB
+  URL: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  Status: Found 3 layers
+  Layers (3):
+    - DOP20 2023 Land Bremen
+    - DOP20_2023_HB
+    - DOP20_2023_BHV
+
+HE_RGB_DOP20_current
+  State: HE
+  URL: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+  Status: Found 12 layers
+  Layers (12):
+    - wms_he_dop
+    - he_dop20_rgb
+    - el_dop320_rgb
+    - el_dop5000_rgb
+    - he_dop_rgb
+    - el_alk_tk
+    - he_dop_alk_t
+    - he_dop_rgb_info
+    - he_dop20_cir
+    - el_dop320_cir
+    ... and 2 more
+
+HE_CIR_DOP20_current
+  State: HE
+  URL: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
+  Status: Found 12 layers
+  Layers (12):
+    - wms_he_dop
+    - he_dop20_rgb
+    - el_dop320_rgb
+    - el_dop5000_rgb
+    - he_dop_rgb
+    - el_alk_tk
+    - he_dop_alk_t
+    - he_dop_rgb_info
+    - he_dop20_cir
+    - el_dop320_cir
+    ... and 2 more
+
+MV_RGB_DOP20_current
+  State: MV
+  URL: https://www.geodaten-mv.de/dienste/adv_dop
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_MV_DOP
+    - mv_dop
+    - mv_dop_info
+
+MV_CIR_DOP20_current
+  State: MV
+  URL: https://www.geodaten-mv.de/dienste/gdimv_dopcir
+  Status: Found 3 layers
+  Layers (3):
+    - gdimv_dopcir_wms
+    - gdimv_dopcir
+    - gdimv_dopcir_metadaten
+
+NI_RGB_DOP20_current
+  State: NI
+  URL: https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_NI_DOP20
+    - ni_dop20
+    - ni_dop20_info
+
+NW_RGB_DOP_current
+  State: NW
+  URL: https://www.wms.nrw.de/geobasis/wms_nw_dop
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_NW_DOP
+    - nw_dop_utm_info
+    - nw_dop_rgb
+    - nw_dop_cir
+    - nw_dop_nir
+
+NW_CIR_DOP_current
+  State: NW
+  URL: https://www.wms.nrw.de/geobasis/wms_nw_dop
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_NW_DOP
+    - nw_dop_utm_info
+    - nw_dop_rgb
+    - nw_dop_cir
+    - nw_dop_nir
+
+RP_RGB_DOP20_current
+  State: RP
+  URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?layer_id=54775&withChilds=1&
+  Status: Found 18 layers
+  Layers (18):
+    - OWS.07131011
+    - FPLAN.07131011
+    - FPLAN.377.0
+    - FPLAN.382.0
+    - FPLAN.07131011.0
+    - BPLAN.07131011
+    - BPlan.07131011.12.0
+    - BPlan.07131011.12.1
+    - BPlan.07131011.13.0
+    - BPlan.07131011.13.3
+    ... and 8 more
+
+RP_CIR_DOP20_current
+  State: RP
+  URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=38922&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - OGC:WMS
+    - rp_dopcir
+    - rp_dopcir_metadaten
+
+SL_RGB_DOP20_current
+  State: SL
+  URL: https://geoportal.saarland.de/freewms/truedop?
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_SL_TrueDOP20
+    - sl_dop20_rgb
+    - sl_dop20_cir
+    - sl_dop20_ir
+    - sl_dop_info
+
+SL_CIR_DOP20_current
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_SL_TrueDOP20
+    - sl_dop20_rgb
+    - sl_dop20_cir
+    - sl_dop20_ir
+    - sl_dop_info
+
+SN_RGB_DOP20_current
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop-rgb/guest?
+  Status: Found 2 layers
+  Layers (2):
+    - sn_dop_020
+    - sn_dop_020_info
+
+SN_CIR_DOP20_current
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?
+  Status: Found 2 layers
+  Layers (2):
+    - sn_dop_020_cir
+    - sn_dop_020_info
+
+SH_RGB_DOP20_current
+  State: SH
+  URL: https://dienste.gdi-sh.de/WMS_SH_DOP20col_OpenGBD?
+  Status: Found 1 layers
+  Layers (1):
+    - sh_dop20_rgb
+
+TH_RGB_DOP20_current
+  State: TH
+  URL: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+  Status: Found 4 layers
+  Layers (4):
+    - th_dop20cir
+    - th_dop20pan
+    - th_dop
+    - th_dop_info
+
+TH_CIR_DOP20_current
+  State: TH
+  URL: https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP20
+  Status: Found 4 layers
+  Layers (4):
+    - th_dop20cir
+    - th_dop20pan
+    - th_dop
+    - th_dop_info
+
+BW_RGB_DOP20_historic
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_TIME
+  Status: Found 1 layers
+  Layers (1):
+    - Time
+
+BW_RGB_DOP20_1960_1969
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1960-1969
+  Status: Found 10 layers
+  Layers (10):
+    - 1960
+    - 1961
+    - 1962
+    - 1963
+    - 1964
+    - 1965
+    - 1966
+    - 1967
+    - 1968
+    - 1969
+
+BW_RGB_DOP20_1970_1979
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1970-1979?
+  Status: Found 10 layers
+  Layers (10):
+    - 1970
+    - 1971
+    - 1972
+    - 1973
+    - 1974
+    - 1975
+    - 1976
+    - 1977
+    - 1978
+    - 1979
+
+BW_RGB_DOP20_1980
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1980-1989?
+  Status: Found 10 layers
+  Layers (10):
+    - 1980
+    - 1981
+    - 1982
+    - 1983
+    - 1984
+    - 1985
+    - 1986
+    - 1987
+    - 1988
+    - 1989
+
+BW_RGB_DOP20_1990
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_1990-1999?
+  Status: Found 10 layers
+  Layers (10):
+    - 1990
+    - 1991
+    - 1992
+    - 1993
+    - 1994
+    - 1995
+    - 1996
+    - 1997
+    - 1998
+    - 1999
+
+BW_RGB_DOP20_2000
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_HIST_DOP_2010-2019?
+  Status: Found 10 layers
+  Layers (10):
+    - 2010
+    - 2011
+    - 2012
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+
+BW_RGB_DOP20_historic_1
+  State: BW
+  URL: https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_HIST_DOP_20_RGB
+  Status: Found 14 layers
+  Layers (14):
+    - 2010-2007_DOP_20_RGB
+    - 2011-2008_DOP_20_RGB
+    - 2012-2010_DOP_20_RGB
+    - 2013-2010_DOP_20_RGB
+    - 2014-2010_DOP_20_RGB
+    - 2015-2013_DOP_20_RGB
+    - 2016-2014_DOP_20_RGB
+    - 2017-2014_DOP_20_RGB
+    - 2018-2016_DOP_20_RGB
+    - 2019-2017_DOP_20_RGB
+    ... and 4 more
+
+BY_RGB_DOP20_historic_1
+  State: BY
+  URL: https://geoservices.bayern.de/od/wms/histdop/v1/histdop
+  Status: Found 45 layers
+  Layers (45):
+    - DOP_historisch
+    - by_dop_2024_h
+    - by_dop_2024_h_info
+    - by_dop_2023_h
+    - by_dop_2023_h_info
+    - by_dop_2022_h
+    - by_dop_2022_h_info
+    - by_dop_2021_h
+    - by_dop_2021_h_info
+    - by_dop_2020_h
+    ... and 35 more
+
+BE_RGB_DOP20_historic
+  State: BE
+  URL: https://isk.geobasis-bb.de/ows/aktualitaeten_wms
+  Status: Found 71 layers
+  Layers (71):
+    - AKTUALITAETEN
+    - liegenschaftskataster
+    - bb_lod2_info
+    - geotopographie
+    - bb_als_info
+    - bb_bdlm_info
+    - bb_dgm-laserscan_info
+    - bb_dgm-nachbearb_info
+    - bb_bdom_info
+    - bb_dtk10_info
+    ... and 61 more
+
+BE_RGB_DOP20_2005_2010
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2005_2010_farbe
+    - dop20_bebb_2005_2010_graustufen
+
+BE_RGB_DOP20_2009_2012
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2009_2012_farbe
+    - dop20_bebb_2009_2012_graustufen
+
+BE_RGB_DOP20_2013_2015
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2013_2015_farbe
+    - dop20_bebb_2013_2015_grau
+
+BE_RGB_DOP20_2016_2018
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2016_2018_farbe
+    - dop20_bebb_2016_2018_graustufen
+
+BE_RGB_DOP20_2019_2021
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2019_2021_farbe
+    - dop20_bebb_2019_2021_graustufen
+
+BB_RGB_DOP20_1953
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop100g_1953/service/wms
+  Status: Found 1 layers
+  Layers (1):
+    - bb_dop100g_1953
+
+BB_RGB_DOP20_1992_1997
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms?
+  Status: Found 1 layers
+  Layers (1):
+    - bb_dop50g_1992_1997
+
+BB_RGB_DOP20_2001_2009
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop40g_2001_2009/service/wms?
+  Status: Found 1 layers
+  Layers (1):
+    - bb_dop40g_2001_2009
+
+BB_RGB_DOP20_2005_2010
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2005_2010/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2005_2010_farbe
+    - dop20_bebb_2005_2010_graustufen
+
+BB_RGB_DOP20_2009_2012
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2009_2012/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2009_2012_farbe
+    - dop20_bebb_2009_2012_graustufen
+
+BB_RGB_DOP20_2013_2015
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2013_2015_farbe
+    - dop20_bebb_2013_2015_grau
+
+BB_RGB_DOP20_2016_2018
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2016_2018_farbe
+    - dop20_bebb_2016_2018_graustufen
+
+BB_RGB_DOP20_2019_2021
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?
+  Status: Found 2 layers
+  Layers (2):
+    - dop20_bebb_2019_2021_farbe
+    - dop20_bebb_2019_2021_graustufen
+
+HE_RGB_DOP20_historic
+  State: HE
+  URL: https://www.geoportal.hessen.de/mapbender/php/mod_showMetadata.php/../wms.php?layer_id=38491&PHPSESSID=2l9oroffsk2trpq61in9li24de&VERSION=1.1.1&withChilds=1
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_HE_HistDOP
+    - he_hdop
+    - hdop040
+    - hdop320
+    - he_hdop_info
+
+MV_RGB_DOP20_1991
+  State: MV
+  URL: https://www.geodaten-mv.de/dienste/dop1991_wms
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_MV_DOP_1991
+    - mv_dop1991
+    - mv_dop1991_info
+
+MV_RGB_DOP20_historic
+  State: MV
+  URL: http://www.geodaten-mv.de/dienste/doparchiv_wms
+  Status: Found 23 layers
+  Layers (23):
+    - rgb2002
+    - rgb2003
+    - rgb2004
+    - rgb2005
+    - rgb2006
+    - rgb2007
+    - rgb2008
+    - rgb2009
+    - rgb2010
+    - rgb2011
+    ... and 13 more
+
+MV_RGB_DOP20_1953
+  State: MV
+  URL: http://www.geodaten-mv.de/dienste/dop1953_wms
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_MV_DOP_1953
+    - mv_dop1953
+    - mv_dop1953_info
+
+NI_RGB_DOP20_historic
+  State: NI
+  URL: https://opendata.lgln.niedersachsen.de/doorman/noauth/doph_wms
+  Status: Found 33 layers
+  Layers (33):
+    - WMS_NI_DOP20_Historisch
+    - ni_dop40h_rgb_2005
+    - ni_dop40h_rgb_2005_info
+    - ni_dop20h_rgb_2008
+    - ni_dop20h_rgb_2008_info
+    - ni_dop20h_rgb_2009
+    - ni_dop20h_rgb_2009_info
+    - ni_dop20h_rgb_2010
+    - ni_dop20h_rgb_2010_info
+    - ni_dop20h_rgb_2011
+    ... and 23 more
+
+NW_RGB_DOP20_historic
+  State: NW
+  URL: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+  Status: Found 74 layers
+  Layers (74):
+    - WMS_NW_HIST_DOP
+    - nw_hist_dop_info
+    - nw_hist_dop_1951
+    - nw_hist_dop_1952
+    - nw_hist_dop_1953
+    - nw_hist_dop_1954
+    - nw_hist_dop_1955
+    - nw_hist_dop_1956
+    - nw_hist_dop_1957
+    - nw_hist_dop_1958
+    ... and 64 more
+
+RP_RGB_DOP20_historic
+  State: RP
+  URL: https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=74145&withChilds=1
+  Status: Found 63 layers
+  Layers (63):
+    - wms_rp_hist_dop20
+    - rp_dop20_info_1994
+    - rp_dop20_rgb_1994
+    - rp_dop20_info_1995
+    - rp_dop20_rgb_1995
+    - rp_dop20_info_1996
+    - rp_dop20_rgb_1996
+    - rp_dop20_info_1997
+    - rp_dop20_rgb_1997
+    - rp_dop20_info_1998
+    ... and 53 more
+
+SL_RGB_DOP20_2022
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46337&VERSION=1.1.1&withChilds=1
+  Status: Found 5 layers
+  Layers (5):
+    - WMS_SL_DOP20
+    - sl_dop20_rgb
+    - sl_dop20_cir
+    - sl_dop20_ir
+    - sl_dop20_info
+
+SL_RGB_DOP20_2021
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=44413&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2021
+    - sl_dop2021
+    - sl_dop2021_info
+
+SL_RGB_DOP20_2020
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2020
+    - sl_dop2020
+    - sl_dop2020_info
+
+SL_RGB_DOP20_2019
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42876&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2019
+    - sl_dop2019
+    - sl_dop2019_info
+
+SL_RGB_DOP20_2018
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2018
+    - sl_dop2018
+    - sl_dop2018_info
+
+SL_RGB_DOP20_2017
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2018
+    - sl_dop2018
+    - sl_dop2018_info
+
+SL_RGB_DOP20_2016
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42768&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2016
+    - sl_dop2016
+    - sl_dop2016_info
+
+SL_RGB_DOP20_2015
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2015
+    - sl_dop2015
+    - sl_dop2015_info
+
+SL_RGB_DOP20_2014
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=41419&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2014
+    - sl_dop2014
+    - sl_dop2014_info
+
+SL_RGB_DOP20_2013
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2013
+    - sl_dop2013
+    - sl_dop2013_info
+
+SL_RGB_DOP20_2012
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=39050&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2012
+    - sl_dop2012
+    - sl_dop2012_info
+
+SL_RGB_DOP20_2011
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2011
+    - sl_dop2011
+    - sl_dop2011_info
+
+SL_RGB_DOP20_2010
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=35002&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 3 layers
+  Layers (3):
+    - WMS_SL_DOP2010
+    - sl_dop2010
+    - sl_dop2010_info
+
+SL_RGB_DOP20_2009
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 2 layers
+  Layers (2):
+    - WMS_SL_DOP2009
+    - sl_dop2009
+
+SL_RGB_DOP20_2008
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 2 layers
+  Layers (2):
+    - DOP2008
+    - Orthophoto 2008
+
+SL_RGB_DOP20_2006
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 2 layers
+  Layers (2):
+    - DOP2006
+    - Orthophoto 2006
+
+SL_RGB_DOP20_2003
+  State: SL
+  URL: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36412&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
+  Status: Found 2 layers
+  Layers (2):
+    - DOP2003
+    - sl_dop2003
+
+SN_RGB_DOP20_2021_2022
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2021_2022/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 4 layers
+  Layers (4):
+    - dop_2021_2022_pan
+    - dop_2021_2022_cir
+    - dop_2021_2022_rgb
+    - dop_2021_2022_info
+
+SN_RGB_DOP20_2018_2020
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2018_2020/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 4 layers
+  Layers (4):
+    - dop_2018_2020_pan
+    - dop_2018_2020_cir
+    - dop_2018_2020_rgb
+    - dop_2018_2020_info
+
+SN_RGB_DOP20_2015_2017
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2015_2017/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 4 layers
+  Layers (4):
+    - dop_2015_2017_pan
+    - dop_2015_2017_cir
+    - dop_2015_2017_rgb
+    - dop_2015_2017_info
+
+SN_RGB_DOP20_2012_2014
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2012_2014/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 4 layers
+  Layers (4):
+    - dop_2012_2014_pan
+    - dop_2012_2014_cir
+    - dop_2012_2014_rgb
+    - dop_2012_2014_info
+
+SN_RGB_DOP20_2009_2011
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2009_2011/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 2 layers
+  Layers (2):
+    - dop_2009_2011_rgb
+    - dop_2009_2011_info
+
+SN_RGB_DOP20_2006_2008
+  State: SN
+  URL: https://geodienste.sachsen.de/wms_geosn_dop_2006_2008/guest?Request=GetCapabilities&Service=WMS
+  Status: Found 2 layers
+  Layers (2):
+    - dop_2006_2008_rgb
+    - dop_2006_2008_info
+
+TH_RGB_DOP20_1946
+  State: TH
+  URL: https://wms.geo.admin.ch/?VERSION=1.3.0
+  Status: Found 1038 layers
+  Layers (1038):
+    - ch.vbs.armee-kriegsdenkmaeler
+    - ch.vbs.armeelogistikcenter
+    - ch.vbs.bundestankstellen-bebeco
+    - ch.vbs.grunddispositiv-zeus
+    - ch.vbs.kataster-belasteter-standorte-militaer
+    - ch.vbs.kataster-belasteter-standorte-militaer
+    - ch.vbs.kataster-belasteter-standorte-militaer_v2_0.oereb
+    - ch.vbs.kataster-belasteter-standorte-militaer_v2_0.oereb
+    - ch.vbs.ladestationen
+    - ch.vbs.logistikraeume-armeelogistikcenter
+    ... and 1028 more
+
+WARNING (0 services)
+----------------------------------------------------------------------------------------------------
+
+ERROR (7 services)
+----------------------------------------------------------------------------------------------------
+
+HH_RGB_DOP20_current
+  State: HH
+  URL: https://geodienste.hamburg.de/HH_WMS_DOP
+  Status: Request failed: 404 Client Error: Not Found for url: https://geodienste.hamburg.de/HH_WMS_DOP?SERVICE=WMS&REQUEST=Ge
+
+HH_CIR_DOP20_current
+  State: HH
+  URL: https://geodienste.hamburg.de/HH_WMS_DOP
+  Status: Request failed: 404 Client Error: Not Found for url: https://geodienste.hamburg.de/HH_WMS_DOP?SERVICE=WMS&REQUEST=Ge
+
+ST_RGB_DOP20_current
+  State: ST
+  URL: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS/guest?
+  Status: Request failed: 403 Client Error: 403 for url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_
+
+BKG_RGB_DOP20_current
+  State: DE
+  URL: https://sg.geodatenzentrum.de/wms_dop__{uuid}?
+  Status: Request failed: 403 Client Error:  for url: https://sg.geodatenzentrum.de/wms_dop__%7Buuid%7D?SERVICE=WMS&REQUEST=Ge
+
+BY_RGB_DOP20_historic
+  State: BY
+  URL: https://www.ldbv.bayern.de/vermessung/luftbilder/recherchestation.html
+  Status: XML parse error: mismatched tag: line 31, column 2
+
+HB_RGB_DOP20_historic
+  State: HB
+  URL: http://gdi1.geo.bremen.de/mapproxy/bv_kat/service?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0
+  Status: Request failed: HTTPConnectionPool(host='gdi1.geo.bremen.de', port=80): Max retries exceeded with url: /mapproxy/bv_
+
+HH_RGB_DOP20_historic
+  State: HH
+  URL: https://metaver.de/trefferanzeige?docuuid=DD10AFD3-5530-4FD4-933D-5FC71D14B8C7#detail_links
+  Status: XML parse error: mismatched tag: line 54, column 2

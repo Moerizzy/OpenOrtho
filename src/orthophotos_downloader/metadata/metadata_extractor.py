@@ -3,6 +3,8 @@ Metadata extraction for orthophoto tiles.
 
 This module provides functionality to extract metadata (resolution, date, quality)
 from WMS services and downloaded GeoTIFF files.
+
+Metadata service configurations are loaded from the central WMS catalog.
 """
 
 import json
@@ -27,97 +29,57 @@ class TileMetadataExtractor:
     - Resolution: From GeoTIFF file
     - Acquisition date: From WMS GetFeatureInfo
     - Quality indicators: From WMS or GeoTIFF tags
+    
+    Metadata service configurations are loaded from the WMS catalog.
     """
     
-    # State-specific metadata layer mapping
-    METADATA_LAYERS = {
-        'BY': 'by_dop20_info',      # Bayern
-        'BW': None,                   # Baden-Württemberg (dedicated metadata service)
-        'BE': None,                   # Berlin (dedicated metadata service)
-        'BB': None,                   # Brandenburg (dedicated metadata service)
-        'HB': None,                   # Bremen
-        'HH': None,                   # Hamburg
-        'HE': 'wms_he_dop',          # Hessen (dedicated metadata service)
-        'MV': 'mv_dop_info',         # Mecklenburg-Vorpommern
-        'NI': 'ni_dop20_info',       # Niedersachsen
-        'NW': 'nw_dop_utm_info',     # Nordrhein-Westfalen
-        'RP': 'rp_dop20_info',       # Rheinland-Pfalz
-        'SL': None,                   # Saarland (dedicated metadata service)
-        'SN': 'sn_dop_020_info',     # Sachsen
-        'ST': None,                   # Sachsen-Anhalt
-        'SH': 'DOP20',               # Schleswig-Holstein (dedicated metadata service)
-        'TH': 'th_dop_info',         # Thüringen
-    }
-    
-    # States with dedicated metadata WMS services (different URL than image service)
-    METADATA_SERVICES = {
-        'BE': {
-            'url': 'https://isk.geobasis-bb.de/ows/aktualitaeten_wms?',
-            'layer': 'bb_dop_info',
-            'description': 'Berlin dedicated metadata service with orthophoto info (shared with Brandenburg)',
-            'extra_params': {},
-            'info_format': 'text/plain',
-        },
-        'BB': {
-            'url': 'https://isk.geobasis-bb.de/ows/aktualitaeten_wms?',
-            'layer': 'bb_dop_info',
-            'description': 'Brandenburg dedicated metadata service with orthophoto info (shared with Berlin)',
-            'extra_params': {},
-            'info_format': 'text/plain',
-        },
-        'BW': {
-            'url': 'https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ATKIS_DOP_20_Bildflugkacheln_Aktualitaet?',
-            'layer': 'verm:v_dop_20_bildflugkacheln',
-            'description': 'Baden-Württemberg dedicated metadata service with flight info',
-            'extra_params': {'FORMAT': 'image/png'},  # Required by BW WMS
-        },
-        'HE': {
-            'url': 'https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&',
-            'layer': 'wms_he_dop',
-            'description': 'Dedicated Hessen metadata service with detailed acquisition info',
-            'extra_params': {},
-        },
-        'NI': {
-            'url': 'https://opendata.lgln.niedersachsen.de/doorman/noauth/dop_wms?language=ger&',
-            'layer': 'ni_dop20_info',
-            'description': 'Niedersachsen metadata service returning HTML',
-            'extra_params': {'FORMAT': 'image/png', 'STYLES': ''},  # Required by NI WMS
-            'info_format': 'text/html',  # Returns HTML instead of text/plain
-        },
-        'SH': {
-            'url': 'https://service.gdi-sh.de/WMS_SH_MD_DOP?',
-            'layer': 'DOP20',
-            'description': 'Schleswig-Holstein dedicated metadata WMS service',
-            'extra_params': {},
-        },
-        'SL': {
-            'url': 'https://geoportal.saarland.de/freewms/truedop?',
-            'layer': 'sl_dop_info',
-            'description': 'Saarland metadata service',
-            'extra_params': {'STYLES': ''},  # Required by SL WMS
-            'info_format': 'text/html',  # Returns HTML instead of text/plain
-        },
-        'ST': {
-            'url': 'https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_Kacheluebersicht/guest?',
-            'layer': 'Aktualität_der_Orthophotos41668',
-            'description': 'Sachsen-Anhalt metadata service',
-            'extra_params': {},
-            'info_format': 'text/html',  # Returns HTML instead of text/plain
-        },
-        # Add more states here as they are discovered
-    }
-    
-    def __init__(self, wms_url: str, state_code: str):
+    def __init__(self, wms_url: str, state_code: str, wms_service: Optional[Any] = None):
         """
         Initialize metadata extractor.
         
         Args:
             wms_url: Base URL of the WMS service
             state_code: Two-letter state code (e.g., 'BY', 'NW')
+            wms_service: Optional WMSService object from catalog (preferred method)
         """
         self.wms_url = wms_url
         self.state_code = state_code
-        self.metadata_layer = self.METADATA_LAYERS.get(state_code)
+        self.wms_service = wms_service
+        
+        # Load metadata configuration from catalog if WMSService provided
+        if wms_service and hasattr(wms_service, 'metadata') and wms_service.metadata:
+            self.metadata_config = wms_service.metadata
+        else:
+            # Fallback: try to load from catalog by state code
+            self.metadata_config = self._load_metadata_config_from_catalog()
+    
+    def _load_metadata_config_from_catalog(self) -> Dict[str, Any]:
+        """
+        Load metadata configuration from WMS catalog for this state.
+        
+        Returns:
+            Dictionary with metadata service configuration, or empty dict if not found
+        """
+        try:
+            # Lazy import to avoid circular dependency
+            from orthophotos_downloader.wms_catalog import WMSCatalogManager
+            
+            catalog = WMSCatalogManager()
+            services = catalog.filter_services(state_code=self.state_code)
+            
+            if services:
+                # Use first service for this state (they share metadata config)
+                service = services[0]
+                if hasattr(service, 'metadata'):
+                    logger.debug(f"Loaded metadata config for {self.state_code} from catalog")
+                    return service.metadata
+            
+            logger.debug(f"No metadata config found for {self.state_code} in catalog")
+            return {}
+            
+        except Exception as e:
+            logger.warning(f"Failed to load metadata config from catalog: {e}")
+            return {}
         
     def extract_tile_metadata(
         self, 
@@ -181,9 +143,8 @@ class TileMetadataExtractor:
             metadata['geotiff_error'] = str(e)
         
         # 2. Query WMS for acquisition date and quality
-        # Query if state has a metadata layer OR has a dedicated metadata service
-        has_metadata_source = self.metadata_layer is not None or self.state_code in self.METADATA_SERVICES
-        if has_metadata_source:
+        # Query if state has metadata configuration in catalog
+        if self.metadata_config and self.metadata_config.get('metadata_layer'):
             try:
                 wms_metadata = self._query_wms_metadata(center_x, center_y, crs)
                 metadata.update(wms_metadata)
@@ -296,19 +257,23 @@ class TileMetadataExtractor:
         Returns:
             Dictionary with acquisition date and quality info
         """
-        # Check if this state has a dedicated metadata service
-        wms_url = self.wms_url
-        layer = self.metadata_layer
-        info_format = 'text/plain'
-        extra_params = {}
+        # Use metadata configuration from catalog
+        if not self.metadata_config:
+            logger.debug(f"No metadata configuration available for {self.state_code}")
+            return {'error': 'No metadata service configured for this state'}
         
-        if self.state_code in self.METADATA_SERVICES:
-            metadata_service = self.METADATA_SERVICES[self.state_code]
-            wms_url = metadata_service['url']
-            layer = metadata_service['layer']
-            info_format = metadata_service.get('info_format', 'text/plain')
-            extra_params = metadata_service.get('extra_params', {})
-            logger.debug(f"Using dedicated metadata service for {self.state_code}")
+        # Get metadata service URL (or use image service if same)
+        wms_url = self.metadata_config.get('metadata_service_url', self.wms_url)
+        layer = self.metadata_config.get('metadata_layer')
+        info_format = self.metadata_config.get('metadata_info_format', 'text/plain')
+        extra_params = self.metadata_config.get('metadata_extra_params', {})
+        wms_version = self.metadata_config.get('metadata_wms_version', '1.3.0')
+        
+        if not layer:
+            logger.debug(f"No metadata layer configured for {self.state_code}")
+            return {'error': 'No metadata layer configured'}
+        
+        logger.debug(f"Using metadata service for {self.state_code}: {wms_url}, layer: {layer}")
         
         # Create bounding box around center point (1000m x 1000m)
         buffer = 500
@@ -319,10 +284,7 @@ class TileMetadataExtractor:
             center_y + buffer
         ]
         
-        # Build GetFeatureInfo request
-        # Try WMS 1.1.1 first (more widely supported for metadata), or 1.3.0 if needed
-        wms_version = '1.3.0' if self.state_code in ['NI', 'SH', 'MV', 'BE', 'BB'] else '1.1.1'
-        
+        # Build GetFeatureInfo request based on WMS version
         if wms_version == '1.1.1':
             params = {
                 'SERVICE': 'WMS',
@@ -352,10 +314,10 @@ class TileMetadataExtractor:
                 'I': 128,
                 'J': 128,
                 'INFO_FORMAT': info_format,
-                'STYLES': '',  # Required by some services (e.g., MV)
+                'STYLES': '',  # Required by some services
             }
         
-        # Add any state-specific extra parameters
+        # Add any state-specific extra parameters from catalog
         params.update(extra_params)
         
         try:
