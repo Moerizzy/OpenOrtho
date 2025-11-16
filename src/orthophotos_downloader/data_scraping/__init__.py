@@ -1,6 +1,7 @@
 from .auto_downloader import AutoOrthophotoDownloader, auto_download_orthophotos
 from .image_download import ImageDownloader, ExtendedWebMapService, AreaDataset, Image
-from .wms_germany import *
+from .generic_downloader import WMSServiceDownloader
+from .file_downloader import FileServiceDownloader
 
 __all__ = [
     'AutoOrthophotoDownloader',
@@ -8,5 +9,7 @@ __all__ = [
     'ImageDownloader',
     'ExtendedWebMapService',
     'AreaDataset',
-    'Image'
+    'Image',
+    'WMSServiceDownloader',
+    'FileServiceDownloader'
 ]

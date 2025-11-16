@@ -1,5 +1,5 @@
 version: '1.0'
-last_updated: '2025-10-29'
+last_updated: '2025-10-31'
 services:
 - id: BW_RGB_DOP20_current
   state_code: BW
@@ -203,134 +203,986 @@ services:
       (shared with Berlin)
     metadata_info_format: text/plain
     metadata_wms_version: 1.3.0
-- id: HB_RGB_DOP20023_2023
+- id: HB_RGB_DOP10_2025
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2025'
+  temporal_coverage: '2025'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2025_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2025
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2023
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2023'
+  temporal_coverage: '2023'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2023_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2023
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2021
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2021'
+  temporal_coverage: '2021'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2021_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2021
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2019
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2019'
+  temporal_coverage: '2019'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2019_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2019
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2017
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2017'
+  temporal_coverage: '2017'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2017_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2017
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP20_2015
   state_code: HB
   state_name: Bremen
   type: RGB
   resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  year: '2015'
+  temporal_coverage: '2015'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20 2023 Land Bremen
+  layer_name: dop20_2015_HB
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremen city
-  description: Bremen DOP20 RGB 2023 - Year 2023
+  description: Bremen DOP20 RGB 2015
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: HB_RGB_DOP20023_2023
+- id: HB_RGB_DOP10_2012
   state_code: HB
   state_name: Bremen
   type: RGB
-  resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  resolution: 0.1
+  year: '2012'
+  temporal_coverage: '2012'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20_2023_HB
+  layer_name: dop10_2012_HB
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremen city
-  description: Bremen DOP20 RGB 2023 - Year 2023
+  description: Bremen DOP10 RGB 2012
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: HB_RGB_DOP20023_2023
+- id: HB_RGB_DOP10_2009
   state_code: HB
   state_name: Bremen
   type: RGB
-  resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  resolution: 0.1
+  year: '2009'
+  temporal_coverage: '2009'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20_2023_BHV
+  layer_name: dop10_2009_HB
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremen city
-  description: Bremen DOP20 RGB 2023 - Year 2023
+  description: Bremen DOP10 RGB 2009
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: BHV_RGB_DOP20023_2023
+- id: HB_RGB_DOP10_2008
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2008'
+  temporal_coverage: '2008'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2008_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2008
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2005
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2005'
+  temporal_coverage: '2005'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2005_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2005
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_DOP10_2002
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.1
+  year: '2002'
+  temporal_coverage: '2002'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2002_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen DOP10 RGB 2002
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP10_2025
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.1
+  year: '2025'
+  temporal_coverage: '2025'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2025_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP10 RGB 2025
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP10_2023
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.1
+  year: '2023'
+  temporal_coverage: '2023'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2023_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP10 RGB 2023
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP10_2021
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.1
+  year: '2021'
+  temporal_coverage: '2021'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2021_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP10 RGB 2021
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP20_2018
   state_code: HB
   state_name: Bremen (Bremerhaven)
   type: RGB
   resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  year: '2018'
+  temporal_coverage: '2018'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20 2023 Land Bremen
+  layer_name: dop20_2018_BHV
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremerhaven city
-  description: Bremerhaven DOP20 RGB 2023 - Year 2023
+  description: Bremerhaven DOP20 RGB 2018
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: BHV_RGB_DOP20023_2023
+- id: BHV_RGB_DOP20_2015
   state_code: HB
   state_name: Bremen (Bremerhaven)
   type: RGB
   resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  year: '2015'
+  temporal_coverage: '2015'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20_2023_HB
+  layer_name: dop20_2015_BHV
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremerhaven city
-  description: Bremerhaven DOP20 RGB 2023 - Year 2023
+  description: Bremerhaven DOP20 RGB 2015
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: BHV_RGB_DOP20023_2023
+- id: BHV_RGB_DOP10_2012
   state_code: HB
   state_name: Bremen (Bremerhaven)
   type: RGB
-  resolution: 0.2
-  year: '2023'
-  temporal_coverage: '2023'
-  url: https://geodienste.bremen.de/wms_dop20_2023?VERSION=1.3.0
+  resolution: 0.1
+  year: '2012'
+  temporal_coverage: '2012'
+  url: https://geodienste.bremen.de/wms_dop_lb
   version: 1.3.0
-  layer_name: DOP20_2023_BHV
+  layer_name: dop10_2012_BHV
   crs: EPSG:25832
-  format: image/tiff
+  format: image/png
   availability: Bremerhaven city
-  description: Bremerhaven DOP20 RGB 2023 - Year 2023
+  description: Bremerhaven DOP10 RGB 2012
   direct_download: false
   source: Landesamt GeoInformation Bremen
-- id: HH_RGB_DOP20_current
+- id: BHV_RGB_DOP10_2010
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.1
+  year: '2010'
+  temporal_coverage: '2010'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2010_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP10 RGB 2010
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP25_2008
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.25
+  year: '2008'
+  temporal_coverage: '2008'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop25_2008_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP25 RGB 2008
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP10_2007
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.1
+  year: '2007'
+  temporal_coverage: '2007'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop10_2007_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP10 RGB 2007
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_DOP12_5_2004
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.125
+  year: '2004'
+  temporal_coverage: '2004'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: dop12_5_2004_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven DOP12.5 RGB 2004
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1997
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1997'
+  temporal_coverage: '1997'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1997_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1997
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1991
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1991'
+  temporal_coverage: '1991'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1991_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1991
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1987
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1987'
+  temporal_coverage: '1987'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1987_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1987
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1982
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1982'
+  temporal_coverage: '1982'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1982_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1982
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1978
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1978'
+  temporal_coverage: '1978'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1978_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1978
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1974
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1974'
+  temporal_coverage: '1974'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1974_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1974
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1972
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1972'
+  temporal_coverage: '1972'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1972_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1972
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1968
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1968'
+  temporal_coverage: '1968'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1968_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1968
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1962
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1962'
+  temporal_coverage: '1962'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1962_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1962
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1956
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1956'
+  temporal_coverage: '1956'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1956_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1956
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HB_RGB_Luftbild_1951
+  state_code: HB
+  state_name: Bremen
+  type: RGB
+  resolution: 0.5
+  year: '1951'
+  temporal_coverage: '1951'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1951_HB
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremen city
+  description: Bremen Historic Aerial Photo 1951
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_2000
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '2000'
+  temporal_coverage: '2000'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_2000_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 2000
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1990
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1990'
+  temporal_coverage: '1990'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1990_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1990
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1981
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1981'
+  temporal_coverage: '1981'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1981_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1981
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1971
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1971'
+  temporal_coverage: '1971'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1971_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1971
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1961
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1961'
+  temporal_coverage: '1961'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1961_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1961
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1953
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1953'
+  temporal_coverage: '1953'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1953_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1953
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1945
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1945'
+  temporal_coverage: '1945'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1945_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1945
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: BHV_RGB_Luftbild_1937
+  state_code: HB
+  state_name: Bremen (Bremerhaven)
+  type: RGB
+  resolution: 0.5
+  year: '1937'
+  temporal_coverage: '1937'
+  url: https://geodienste.bremen.de/wms_dop_lb
+  version: 1.3.0
+  layer_name: luftbild_1937_BHV
+  crs: EPSG:25832
+  format: image/png
+  availability: Bremerhaven city
+  description: Bremerhaven Historic Aerial Photo 1937
+  direct_download: false
+  source: Landesamt GeoInformation Bremen
+- id: HH_RGB_DOP20_2024
   state_code: HH
   state_name: Hamburg
   type: RGB
   resolution: 0.2
-  year: latest
-  temporal_coverage: 2020-current
-  url: https://geodienste.hamburg.de/HH_WMS_DOP
+  year: '2024'
+  temporal_coverage: '2024'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
   version: 1.3.0
-  layer_name: 1
+  layer_name: dop_zeitreihe_belaubt
   crs: EPSG:25832
   format: image/png
   availability: state-wide
-  description: Hamburg DOP20 RGB - Latest imagery
+  description: Hamburg DOP20 RGB 2024 (leafed)
   direct_download: false
   source: Landesbetrieb Geoinformation und Vermessung Hamburg
-- id: HH_CIR_DOP20_current
+  wms_time: '2024'
+- id: HH_RGB_DOP20_2023
   state_code: HH
   state_name: Hamburg
-  type: CIR
+  type: RGB
   resolution: 0.2
-  year: latest
-  temporal_coverage: 2020-current
-  url: https://geodienste.hamburg.de/HH_WMS_DOP
+  year: '2023'
+  temporal_coverage: '2023'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
   version: 1.3.0
-  layer_name: 4
+  layer_name: dop_zeitreihe_belaubt
   crs: EPSG:25832
   format: image/png
   availability: state-wide
-  description: Hamburg DOP20 CIR - Latest imagery
+  description: Hamburg DOP20 RGB 2023 (leafed)
   direct_download: false
   source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2023'
+- id: HH_RGB_DOP20_2022
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2022'
+  temporal_coverage: '2022'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2022 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2022'
+- id: HH_RGB_DOP20_2021
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2021'
+  temporal_coverage: '2021'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2021 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2021'
+- id: HH_RGB_DOP20_2020
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2020'
+  temporal_coverage: '2020'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2020 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2020'
+- id: HH_RGB_DOP20_2019
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2019'
+  temporal_coverage: '2019'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2019 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2019'
+- id: HH_RGB_DOP20_2018
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2018'
+  temporal_coverage: '2018'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2018 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2018'
+- id: HH_RGB_DOP20_2017
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2017'
+  temporal_coverage: '2017'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2017 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2017'
+- id: HH_RGB_DOP20_2016
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2016'
+  temporal_coverage: '2016'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2016 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2016'
+- id: HH_RGB_DOP20_2015
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2015'
+  temporal_coverage: '2015'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2015 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2015'
+- id: HH_RGB_DOP20_2014
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2014'
+  temporal_coverage: '2014'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2014 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2014'
+- id: HH_RGB_DOP20_2013
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2013'
+  temporal_coverage: '2013'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2013 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2013'
+- id: HH_RGB_DOP20_2012
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2012'
+  temporal_coverage: '2012'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2012 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2012'
+- id: HH_RGB_DOP20_2011
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2011'
+  temporal_coverage: '2011'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2011 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2011'
+- id: HH_RGB_DOP20_2010
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2010'
+  temporal_coverage: '2010'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2010 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2010'
+- id: HH_RGB_DOP20_2009
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2009'
+  temporal_coverage: '2009'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2009 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2009'
+- id: HH_RGB_DOP20_2008
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2008'
+  temporal_coverage: '2008'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2008 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2008'
+- id: HH_RGB_DOP20_2007
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2007'
+  temporal_coverage: '2007'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2007 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2007'
+- id: HH_RGB_DOP20_2006
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2006'
+  temporal_coverage: '2006'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2006 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2006'
+- id: HH_RGB_DOP20_2005
+  state_code: HH
+  state_name: Hamburg
+  type: RGB
+  resolution: 0.2
+  year: '2005'
+  temporal_coverage: '2005'
+  url: https://geodienste.hamburg.de/wms_dop_zeitreihe_belaubt
+  version: 1.3.0
+  layer_name: dop_zeitreihe_belaubt
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Hamburg DOP20 RGB 2005 (leafed)
+  direct_download: false
+  source: Landesbetrieb Geoinformation und Vermessung Hamburg
+  wms_time: '2005'
 - id: HE_RGB_DOP20_current
   state_code: HE
   state_name: Hessen
@@ -340,7 +1192,7 @@ services:
   temporal_coverage: 2017-current
   url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
   version: 1.1.1
-  layer_name: dop20
+  layer_name: he_dop20_rgb
   crs: EPSG:25832
   format: image/tiff
   availability: state-wide
@@ -362,7 +1214,7 @@ services:
   temporal_coverage: 2017-current
   url: https://www.gds-srv.hessen.de/cgi-bin/lika-services/ogc-free-images.ows?language=ger&
   version: 1.1.1
-  layer_name: dop20cir
+  layer_name: he_dop20_cir
   crs: EPSG:25832
   format: image/tiff
   availability: state-wide
@@ -375,6 +1227,94 @@ services:
     metadata_description: Dedicated Hessen metadata service with detailed acquisition
       info
     metadata_wms_version: 1.3.0
+- id: MV_RGBI_DOP20_files
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGBI
+  resolution: 0.2
+  year: latest
+  url: https://www.geodaten-mv.de/dienste/adv_dop
+  version: 1.1.1
+  layer_name: mv_dop
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Mecklenburg-Vorpommern DOP20 RGBI - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für innere Verwaltung Mecklenburg-Vorpommern
+  files:
+    index_type: atom
+    atom_feed_url: https://www.geodaten-mv.de/dienste/dop20_atom?type=dataset&id=f94d17fa-b29b-41f7-a4b8-6e10f1aae38e
+    default_extension: tif
+    product_code: dop20rgbi
+    grid_size: 1000
+- id: MV_RGB_DOP20_files
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: latest
+  url: https://www.geodaten-mv.de/dienste/adv_dop
+  version: 1.1.1
+  layer_name: mv_dop
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Mecklenburg-Vorpommern DOP20 RGB - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für innere Verwaltung Mecklenburg-Vorpommern
+  files:
+    index_type: atom
+    atom_feed_url: https://www.geodaten-mv.de/dienste/dop20_atom?type=dataset&id=k34d45fr-f78c-44g7-n2b6-6f67k7ahl92g
+    default_extension: tif
+    product_code: dop20rgb
+    grid_size: 1000
+- id: MV_RGB_DOP20_wcs
+  state_code: MV
+  state_name: Mecklenburg-Vorpommern
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2021-current
+  url: https://www.geodaten-mv.de/dienste/inspire_oi_dop_wcs
+  version: 2.0.1
+  crs: EPSG:25833
+  format: image/geotiff
+  availability: state-wide
+  description: Mecklenburg-Vorpommern DOP20 RGB via INSPIRE WCS (0.25 m)
+  direct_download: true
+  source: Landesamt für innere Verwaltung Mecklenburg-Vorpommern
+  files:
+    index_type: wcs
+    wcs_url: https://www.geodaten-mv.de/dienste/inspire_oi_dop_wcs
+    wcs_coverage: mv_dop20
+    wcs_format: image/geotiff
+    grid_size: 1000
+    default_extension: tif
+    wcs_max_pixels: 4000
+- id: HE_RGB_DOP20_wcs
+  state_code: HE
+  state_name: Hessen
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2021-current
+  url: https://inspire-hessen.de/raster/dop20/ows
+  version: 2.0.1
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Hessen DOP20 RGB via INSPIRE WCS (direct download)
+  direct_download: true
+  source: Hessische Verwaltung für Bodenmanagement und Geoinformation
+  files:
+    index_type: wcs
+    wcs_url: https://inspire-hessen.de/raster/dop20/ows
+    wcs_coverage: he_dop20
+    wcs_format: image/tiff
+    grid_size: 1000
+    default_extension: tif
+    wcs_max_pixels: 5000
 - id: MV_RGB_DOP20_current
   state_code: MV
   state_name: Mecklenburg-Vorpommern
@@ -529,7 +1469,7 @@ services:
   temporal_coverage: 2018-current
   url: https://geoportal.saarland.de/freewms/truedop?
   version: 1.1.1
-  layer_name: TrueDOP
+  layer_name: sl_dop20_rgb
   crs: EPSG:25832
   format: image/png
   availability: state-wide
@@ -553,7 +1493,7 @@ services:
   temporal_coverage: 2018-current
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46302&VERSION=1.1.1&withChilds=1
   version: 1.1.1
-  layer_name: DOP_CIR
+  layer_name: sl_dop20_cir
   crs: EPSG:25832
   format: image/png
   availability: state-wide
@@ -567,6 +1507,50 @@ services:
     metadata_extra_params: *id002
     metadata_info_format: text/html
     metadata_wms_version: 1.1.1
+- id: SL_RGB_DOP20_2023
+  state_code: SL
+  state_name: Saarland
+  type: RGB
+  resolution: 0.2
+  year: '2023'
+  temporal_coverage: '2023'
+  url: https://geoportal.saarland.de/freewms/dop2023?
+  version: 1.3.0
+  layer_name: sl_dop20_rgb
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Saarland DOP20 RGB - 2023 imagery
+  direct_download: false
+  source: Landesamt für Vermessung, Geoinformation und Landentwicklung Saarland
+  metadata:
+    metadata_service_url: https://geoportal.saarland.de/freewms/dop2023?
+    metadata_layer: sl_dop20_info
+    metadata_description: Saarland metadata layer for DOP20 2023
+    metadata_info_format: text/html
+    metadata_wms_version: 1.3.0
+- id: SL_CIR_DOP20_2023
+  state_code: SL
+  state_name: Saarland
+  type: CIR
+  resolution: 0.2
+  year: '2023'
+  temporal_coverage: '2023'
+  url: https://geoportal.saarland.de/freewms/dop2023?
+  version: 1.3.0
+  layer_name: sl_dop20_cir
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Saarland DOP20 CIR - 2023 imagery
+  direct_download: false
+  source: Landesamt für Vermessung, Geoinformation und Landentwicklung Saarland
+  metadata:
+    metadata_service_url: https://geoportal.saarland.de/freewms/dop2023?
+    metadata_layer: sl_dop20_info
+    metadata_description: Saarland metadata layer for DOP20 2023
+    metadata_info_format: text/html
+    metadata_wms_version: 1.3.0
 - id: SN_RGB_DOP20_current
   state_code: SN
   state_name: Sachsen
@@ -614,13 +1598,13 @@ services:
   resolution: 0.2
   year: latest
   temporal_coverage: 2019-current
-  url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS/guest?
-  version: 1.1.1
-  layer_name: ST_DOP_WMS_P_LSA
+  url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?
+  version: 1.3.0
+  layer_name: lsa_lvermgeo_dop20_2
   crs: EPSG:25832
   format: image/png
   availability: state-wide
-  description: Sachsen-Anhalt DOP20 RGB - Latest imagery
+  description: Sachsen-Anhalt DOP20 RGB - Latest imagery via Open Data WMS
   direct_download: false
   source: Landesamt für Vermessung und Geoinformation Sachsen-Anhalt
   metadata:
@@ -628,7 +1612,34 @@ services:
     metadata_layer: Aktualität_der_Orthophotos41668
     metadata_description: Sachsen-Anhalt metadata service
     metadata_info_format: text/html
-    metadata_wms_version: 1.1.1
+    metadata_wms_version: 1.3.0
+- id: ST_RGB_DOP20_atom
+  state_code: ST
+  state_name: Sachsen-Anhalt
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2020-current
+  url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?
+  version: 1.3.0
+  layer_name: lsa_lvermgeo_dop20_2
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Sachsen-Anhalt DOP20 RGB - Direct download via INSPIRE Atom feed
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Sachsen-Anhalt
+  metadata:
+    metadata_service_url: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_Kacheluebersicht/guest?
+    metadata_layer: Aktualität_der_Orthophotos41668
+    metadata_description: Sachsen-Anhalt metadata service
+    metadata_info_format: text/html
+    metadata_wms_version: 1.3.0
+  files:
+    index_type: atom
+    atom_feed_url: https://geodatenportal.sachsen-anhalt.de/arcgisinspire/rest/directories/web/INSPIRE_ALKIS/ALKIS_OI_DOP20_MapServer/datasetoi.xml
+    default_extension: tif
+    grid_size: 2000
 - id: SH_RGB_DOP20_current
   state_code: SH
   state_name: Schleswig-Holstein
@@ -650,6 +1661,167 @@ services:
     metadata_layer: DOP20
     metadata_description: Schleswig-Holstein dedicated metadata WMS service
     metadata_wms_version: 1.1.1
+- id: SH_RGB_DOP20_2021
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGB
+  resolution: 0.2
+  year: 2021
+  temporal_coverage: '2021'
+  url: https://dienste.gdi-sh.de/WMS_SH_DOP20col_hist_OpenGBD?
+  version: 1.3.0
+  layer_name: SH_DOP20_1
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGB 2021 - Historic imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+- id: SH_RGB_DOP20_2020
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGB
+  resolution: 0.2
+  year: 2020
+  temporal_coverage: '2020'
+  url: https://dienste.gdi-sh.de/WMS_SH_DOP20col_hist_OpenGBD?
+  version: 1.3.0
+  layer_name: SH_DOP20_2
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGB 2020 - Historic imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+- id: SH_RGB_DOP20_2019
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGB
+  resolution: 0.2
+  year: 2019
+  temporal_coverage: '2019'
+  url: https://dienste.gdi-sh.de/WMS_SH_DOP20col_hist_OpenGBD?
+  version: 1.3.0
+  layer_name: SH_DOP20_3
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGB 2019 - Historic imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+- id: SH_RGB_DOP20_2018
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGB
+  resolution: 0.2
+  year: 2018
+  temporal_coverage: '2018'
+  url: https://dienste.gdi-sh.de/WMS_SH_DOP20col_hist_OpenGBD?
+  version: 1.3.0
+  layer_name: SH_DOP20_4
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGB 2018 - Historic imagery
+  direct_download: false
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+- id: SH_RGBI_DOP20_current
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGBI
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2021-current
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGBI - Latest imagery via WCS download
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  files:
+    index_type: wcs
+    wcs_url: https://dienste.gdi-sh.de/WCS_SH_DOP20col_OpenGBD
+    wcs_coverage: 2
+    wcs_format: image/GeoTIFF
+    grid_size: 1000
+    default_extension: tif
+    wcs_max_pixels: 4000
+- id: SH_RGBI_DOP20_2024
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGBI
+  resolution: 0.2
+  year: '2024'
+  temporal_coverage: '2024'
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGBI 2024 - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  files:
+    index_type: atom
+    atom_feed_url: https://service.gdi-sh.de/SH_OpenGBD/feeds/DOP20/DOP20.xml
+    product_code: dop20rgbi
+    grid_size: 1000
+    default_extension: tif
+- id: SH_RGBI_DOP20_2023
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGBI
+  resolution: 0.2
+  year: '2023'
+  temporal_coverage: '2023'
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGBI 2023 - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  files:
+    index_type: atom
+    atom_feed_url: https://service.gdi-sh.de/SH_OpenGBD/feeds/DOP20/DOP20.xml
+    product_code: dop20rgbi
+    grid_size: 1000
+    default_extension: tif
+- id: SH_RGBI_DOP20_2022
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGBI
+  resolution: 0.2
+  year: '2022'
+  temporal_coverage: '2022'
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGBI 2022 - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  files:
+    index_type: atom
+    atom_feed_url: https://service.gdi-sh.de/SH_OpenGBD/feeds/DOP20/DOP20.xml
+    product_code: dop20rgbi
+    grid_size: 1000
+    default_extension: tif
+- id: SH_RGBI_DOP20_2021
+  state_code: SH
+  state_name: Schleswig-Holstein
+  type: RGBI
+  resolution: 0.2
+  year: '2021'
+  temporal_coverage: '2021'
+  crs: EPSG:25832
+  format: image/tiff
+  availability: state-wide
+  description: Schleswig-Holstein DOP20 RGBI 2021 - Direct download via Atom feed
+  direct_download: true
+  source: Landesamt für Vermessung und Geoinformation Schleswig-Holstein
+  files:
+    index_type: atom
+    atom_feed_url: https://service.gdi-sh.de/SH_OpenGBD/feeds/DOP20/DOP20.xml
+    product_code: dop20rgbi
+    grid_size: 1000
+    default_extension: tif
 - id: TH_RGB_DOP20_current
   state_code: TH
   state_name: Thüringen
@@ -2566,6 +3738,244 @@ services:
   requires_auth: false
   temporal_coverage: '2019'
   metadata: *id011
+- id: BE_RGB_DOP25_2004
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.25
+  year: '2004'
+  url: https://gdi.berlin.de/services/wms/dop_2004
+  version: 1.3.0
+  layer_name: dop_2004
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2004 (DOP25RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2004'
+- id: BE_RGB_DOP20_2007
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2007'
+  url: https://gdi.berlin.de/services/wms/dop_2007
+  version: 1.3.0
+  layer_name: dop_2007
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2007 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2007'
+- id: BE_RGB_DOP20_2009
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2009'
+  url: https://gdi.berlin.de/services/wms/dop_2009
+  version: 1.3.0
+  layer_name: dop_2009
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2009 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2009'
+- id: BE_RGB_DOP20_2011
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2011'
+  url: https://gdi.berlin.de/services/wms/dop_2011
+  version: 1.3.0
+  layer_name: dop_2011
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2011 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2011'
+- id: BE_RGB_DOP20_2014
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2014'
+  url: https://gdi.berlin.de/services/wms/dop_2014
+  version: 1.3.0
+  layer_name: dop_2014
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2014 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2014'
+- id: BE_RGB_DOP20_2016
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2016'
+  url: https://gdi.berlin.de/services/wms/dop_2016
+  version: 1.3.0
+  layer_name: dop_2016
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2016 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2016'
+- id: BE_RGBI_DOP20_2017
+  state_code: BE
+  state_name: Berlin
+  type: RGBI
+  resolution: 0.2
+  year: '2017'
+  url: https://gdi.berlin.de/services/wms/dop_2017
+  version: 1.3.0
+  layer_name: dop_2017
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2017 (DOP20RGBI)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2017'
+- id: BE_RGB_DOP20_2018
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2018'
+  url: https://gdi.berlin.de/services/wms/dop_2018
+  version: 1.3.0
+  layer_name: dop_2018
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2018 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2018'
+- id: BE_RGB_DOP20_2019
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2019'
+  url: https://gdi.berlin.de/services/wms/dop_2019
+  version: 1.3.0
+  layer_name: dop_2019
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2019 (DOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2019'
+- id: BE_RGB_TrueDOP20_2020_summer
+  state_code: BE
+  state_name: Berlin
+  type: RGB
+  resolution: 0.2
+  year: '2020'
+  url: https://gdi.berlin.de/services/wms/truedop_2020
+  version: 1.3.0
+  layer_name: truedop_2020
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital TrueOrthophotos 2020 Summer (TrueDOP20RGB)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2020'
+- id: BE_RGBI_DOP20_2021
+  state_code: BE
+  state_name: Berlin
+  type: RGBI
+  resolution: 0.2
+  year: '2021'
+  url: https://gdi.berlin.de/services/wms/dop_2021
+  version: 1.3.0
+  layer_name: dop_2021
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital Color Orthophotos 2021 (DOP20RGBI)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2021'
+- id: BE_RGBI_TrueDOP20_2022
+  state_code: BE
+  state_name: Berlin
+  type: RGBI
+  resolution: 0.2
+  year: '2022'
+  url: https://gdi.berlin.de/services/wms/truedop_2022
+  version: 1.3.0
+  layer_name: truedop_2022
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital TrueOrthophotos 2022 (TrueDOP20RGBI)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2022'
+- id: BE_RGBI_TrueDOP20_2023
+  state_code: BE
+  state_name: Berlin
+  type: RGBI
+  resolution: 0.2
+  year: '2023'
+  url: https://gdi.berlin.de/services/wms/truedop_2023
+  version: 1.3.0
+  layer_name: truedop_2023
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital TrueOrthophotos 2023 (TrueDOP20RGBI)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2023'
+- id: BE_RGBI_TrueDOP20_2024
+  state_code: BE
+  state_name: Berlin
+  type: RGBI
+  resolution: 0.2
+  year: '2024'
+  url: https://gdi.berlin.de/services/wms/truedop_2024
+  version: 1.3.0
+  layer_name: truedop_2024
+  crs: EPSG:25832
+  format: image/png
+  availability: historic
+  description: Digital TrueOrthophotos 2024 (TrueDOP20RGBI)
+  direct_download: false
+  source: Berlin Open Data Portal
+  requires_auth: false
+  temporal_coverage: '2024'
 - id: BB_RGB_DOP20953_1953
   state_code: BB
   state_name: Brandenburg
@@ -3457,10 +4867,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2012
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2012'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2012.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2012_info
     metadata_description: Metadata for 2012
@@ -3477,10 +4893,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2013
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2013'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2013.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2013_info
     metadata_description: Metadata for 2013
@@ -3497,10 +4919,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2014
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2014'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2014.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2014_info
     metadata_description: Metadata for 2014
@@ -3517,10 +4945,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2015
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2015'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2015.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2015_info
     metadata_description: Metadata for 2015
@@ -3537,10 +4971,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2016
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2016'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2016.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2016_info
     metadata_description: Metadata for 2016
@@ -3557,10 +4997,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2017
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2017'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2017.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2017_info
     metadata_description: Metadata for 2017
@@ -3577,10 +5023,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2018
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2018'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2018.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2018_info
     metadata_description: Metadata for 2018
@@ -3597,10 +5049,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2019
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2019'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2019.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2019_info
     metadata_description: Metadata for 2019
@@ -3617,10 +5075,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2020
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2020'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2020.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2020_info
     metadata_description: Metadata for 2020
@@ -3637,10 +5101,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2021
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2021'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2021.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2021_info
     metadata_description: Metadata for 2021
@@ -3657,10 +5127,16 @@ services:
   format: image/png
   availability: historic
   description: WMS_NI_DOP20_Historisch - Year 2022
-  direct_download: false
+  direct_download: true
   source: Niedersachsen - Historic
   requires_auth: false
   temporal_coverage: '2022'
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    format: GeoTIFF
+    description: Direct file downloads via GeoJSON index. Files filtered to year 2022.
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
   metadata:
     metadata_layer: ni_dop20h_rgb_2022_info
     metadata_description: Metadata for 2022
@@ -3668,28 +5144,41 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1951'
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1951
+    crs: EPSG:25832
+    format: image/png
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1951/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1951.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+    format: image/jp2
+    tile_index_url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1951/epsg_31466/dop_j2w.zip
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
   layer_name: nw_hist_dop_1951
   crs: EPSG:25832
   format: image/png
   availability: historic
-  description: WMS NW HIST DOP - Year 1951
-  direct_download: false
+  description: NW Historic DOP 1951 - 40cm panchromatic (WMS + direct file download)
   source: Nordrhein-Westfalen - Historic
   requires_auth: false
   temporal_coverage: '1951'
   metadata: &id017
-    metadata_layer: null
+    metadata_layer: nw_hist_dop_info
     metadata_description: WMS NW HIST DOP - metadata layer
     metadata_wms_version: 1.3.0
+  direct_download: true
 - id: NW_RGB_DOP20_1952
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1952'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3707,7 +5196,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1953'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3725,7 +5214,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1954'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3743,7 +5232,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1955'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3761,7 +5250,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1956'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3779,7 +5268,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1957'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3797,7 +5286,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1958'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3815,7 +5304,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1959'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3833,7 +5322,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1960'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3851,7 +5340,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1961'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3869,7 +5358,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1962'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3887,7 +5376,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1963'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3905,7 +5394,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1964'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3923,7 +5412,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1966'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3941,7 +5430,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1967'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3959,7 +5448,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1968'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3977,7 +5466,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1969'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -3995,7 +5484,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1970'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4013,7 +5502,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1971'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4031,7 +5520,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1972'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4049,7 +5538,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1973'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4067,7 +5556,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1974'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4085,7 +5574,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1975'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4103,7 +5592,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1976'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4121,7 +5610,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1977'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4139,7 +5628,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1978'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4157,7 +5646,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1979'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4175,7 +5664,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1980'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4193,7 +5682,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1981'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4211,7 +5700,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1982'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4229,7 +5718,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1983'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4247,7 +5736,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1984'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4265,7 +5754,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1985'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4283,7 +5772,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1986'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4301,7 +5790,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1987'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4319,7 +5808,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1988'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4337,7 +5826,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1989'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4355,7 +5844,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1990'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4373,7 +5862,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1991'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4391,7 +5880,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1992'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4409,7 +5898,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1993'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4427,7 +5916,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1994'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4445,7 +5934,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1995'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4463,7 +5952,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1996'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4481,7 +5970,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1997'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4499,7 +5988,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1998'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4517,7 +6006,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '1999'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4535,7 +6024,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '2000'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4553,7 +6042,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '2001'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4571,7 +6060,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '2002'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4589,7 +6078,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '2003'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4607,7 +6096,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.4
   year: '2004'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4625,7 +6114,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.3
   year: '2005'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4643,7 +6132,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.3
   year: '2006'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4661,7 +6150,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.3
   year: '2007'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4679,7 +6168,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.3
   year: '2008'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4697,7 +6186,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.3
   year: '2009'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4715,7 +6204,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2010'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4733,7 +6222,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2011'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4751,7 +6240,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2012'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4769,7 +6258,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2013'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4787,7 +6276,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2014'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4805,7 +6294,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2015'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4823,7 +6312,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2016'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4841,7 +6330,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2017'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4859,7 +6348,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2018'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4877,7 +6366,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2019'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4895,7 +6384,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2020'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4913,7 +6402,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2021'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4931,7 +6420,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2022'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -4949,7 +6438,7 @@ services:
   state_code: NW
   state_name: Nordrhein-Westfalen
   type: RGB
-  resolution: 0.2
+  resolution: 0.1
   year: '2023'
   url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
   version: 1.3.0
@@ -6082,43 +7571,6 @@ services:
   requires_auth: false
   temporal_coverage: '2024'
   metadata: *id018
-- id: SL_RGB_DOP20_2022
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2022'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=46337&VERSION=1.1.1&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP20
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2022)
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2022'
-- id: SL_RGB_DOP20021_2021
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2021'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=44413&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2021
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2021) - Year 2021
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2021'
-  metadata:
-    metadata_layer: sl_dop2021_info
-    metadata_description: Metadata for 2021
 - id: SL_RGB_DOP20021_2021
   state_code: SL
   state_name: Saarland
@@ -6147,26 +7599,6 @@ services:
   year: '2020'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2020
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2020) - Year 2020
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2020'
-  metadata:
-    metadata_layer: sl_dop2020_info
-    metadata_description: Metadata for 2020
-- id: SL_RGB_DOP20020_2020
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2020'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43491&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2020
   crs: EPSG:25832
   format: image/png
@@ -6179,26 +7611,6 @@ services:
   metadata:
     metadata_layer: sl_dop2020_info
     metadata_description: Metadata for 2020
-- id: SL_RGB_DOP20019_2019
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2019'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42876&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2019
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2019) - Year 2019
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2019'
-  metadata:
-    metadata_layer: sl_dop2019_info
-    metadata_description: Metadata for 2019
 - id: SL_RGB_DOP20019_2019
   state_code: SL
   state_name: Saarland
@@ -6227,51 +7639,11 @@ services:
   year: '2018'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2018
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2018) - Year 2018
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2018'
-  metadata:
-    metadata_layer: sl_dop2018_info
-    metadata_description: Metadata for 2018
-- id: SL_RGB_DOP20018_2018
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2018'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2018
   crs: EPSG:25832
   format: image/png
   availability: historic
   description: WMS SL DOP20 (2018) - Year 2018
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2018'
-  metadata:
-    metadata_layer: sl_dop2018_info
-    metadata_description: Metadata for 2018
-- id: SL_RGB_DOP20017_2018
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2018'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=43866&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2018
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2017) - Year 2018
   direct_download: false
   source: Saarland - Historic
   requires_auth: false
@@ -6299,26 +7671,6 @@ services:
   metadata:
     metadata_layer: sl_dop2018_info
     metadata_description: Metadata for 2018
-- id: SL_RGB_DOP20016_2016
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2016'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42768&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2016
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2016) - Year 2016
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2016'
-  metadata:
-    metadata_layer: sl_dop2016_info
-    metadata_description: Metadata for 2016
 - id: SL_RGB_DOP20016_2016
   state_code: SL
   state_name: Saarland
@@ -6347,26 +7699,6 @@ services:
   year: '2015'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2015
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2015) - Year 2015
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2015'
-  metadata:
-    metadata_layer: sl_dop2015_info
-    metadata_description: Metadata for 2015
-- id: SL_RGB_DOP20015_2015
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2015'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=42653&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2015
   crs: EPSG:25832
   format: image/png
@@ -6379,26 +7711,6 @@ services:
   metadata:
     metadata_layer: sl_dop2015_info
     metadata_description: Metadata for 2015
-- id: SL_RGB_DOP20014_2014
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2014'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=41419&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2014
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2014) - Year 2014
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2014'
-  metadata:
-    metadata_layer: sl_dop2014_info
-    metadata_description: Metadata for 2014
 - id: SL_RGB_DOP20014_2014
   state_code: SL
   state_name: Saarland
@@ -6427,26 +7739,6 @@ services:
   year: '2013'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2013
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2013) - Year 2013
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2013'
-  metadata:
-    metadata_layer: sl_dop2013_info
-    metadata_description: Metadata for 2013
-- id: SL_RGB_DOP20013_2013
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2013'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=40284&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2013
   crs: EPSG:25832
   format: image/png
@@ -6459,26 +7751,6 @@ services:
   metadata:
     metadata_layer: sl_dop2013_info
     metadata_description: Metadata for 2013
-- id: SL_RGB_DOP20012_2012
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2012'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=39050&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2012
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2012) - Year 2012
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2012'
-  metadata:
-    metadata_layer: sl_dop2012_info
-    metadata_description: Metadata for 2012
 - id: SL_RGB_DOP20012_2012
   state_code: SL
   state_name: Saarland
@@ -6507,26 +7779,6 @@ services:
   year: '2011'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2011
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2011) - Year 2011
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2011'
-  metadata:
-    metadata_layer: sl_dop2011_info
-    metadata_description: Metadata for 2011
-- id: SL_RGB_DOP20011_2011
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2011'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=38322&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2011
   crs: EPSG:25832
   format: image/png
@@ -6539,26 +7791,6 @@ services:
   metadata:
     metadata_layer: sl_dop2011_info
     metadata_description: Metadata for 2011
-- id: SL_RGB_DOP20010_2010
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2010'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=35002&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: WMS_SL_DOP2010
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2010) - Year 2010
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2010'
-  metadata:
-    metadata_layer: sl_dop2010_info
-    metadata_description: Metadata for 2010
 - id: SL_RGB_DOP20010_2010
   state_code: SL
   state_name: Saarland
@@ -6587,23 +7819,6 @@ services:
   year: '2009'
   url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
   version: 1.3.0
-  layer_name: WMS_SL_DOP2009
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2009) - Year 2009
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2009'
-- id: SL_RGB_DOP20009_2009
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2009'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36415&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
   layer_name: sl_dop2009
   crs: EPSG:25832
   format: image/png
@@ -6613,91 +7828,6 @@ services:
   source: Saarland - Historic
   requires_auth: false
   temporal_coverage: '2009'
-- id: SL_RGB_DOP20008_2008
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2008'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: DOP2008
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2008) - Year 2008
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2008'
-- id: SL_RGB_DOP20008_2008
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2008'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31304&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: Orthophoto 2008
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2008) - Year 2008
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2008'
-- id: SL_RGB_DOP20006_2006
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2006'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: DOP2006
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2006) - Year 2006
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2006'
-- id: SL_RGB_DOP20006_2006
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2006'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=31111&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: Orthophoto 2006
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2006) - Year 2006
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2006'
-- id: SL_RGB_DOP20003_2003
-  state_code: SL
-  state_name: Saarland
-  type: RGB
-  resolution: 0.2
-  year: '2003'
-  url: https://geoportal.saarland.de/mapbender/php/wms.php?layer_id=36412&REQUEST=GetCapabilities&VERSION=1.1.1&SERVICE=WMS&withChilds=1
-  version: 1.3.0
-  layer_name: DOP2003
-  crs: EPSG:25832
-  format: image/png
-  availability: historic
-  description: WMS SL DOP20 (2003) - Year 2003
-  direct_download: false
-  source: Saarland - Historic
-  requires_auth: false
-  temporal_coverage: '2003'
 - id: SL_RGB_DOP20003_2003
   state_code: SL
   state_name: Saarland
@@ -7714,3 +8844,1727 @@ services:
   source: Thüringen - Historic
   requires_auth: false
   temporal_coverage: '2025'
+- id: NW_RGB_DOP40_1951
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1951
+  temporal_coverage: '1951'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1951
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1951/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1951.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1952
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1952
+  temporal_coverage: '1952'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1952
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1952/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1952.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1953
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1953
+  temporal_coverage: '1953'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1953
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1953/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1953.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1954
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1954
+  temporal_coverage: '1954'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1954
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1954/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1954.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1955
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1955
+  temporal_coverage: '1955'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1955
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1955/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1955.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1956
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1956
+  temporal_coverage: '1956'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1956
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1956/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1956.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1957
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1957
+  temporal_coverage: '1957'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1957
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1957/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1957.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1958
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1958
+  temporal_coverage: '1958'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1958
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1958/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1958.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1959
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1959
+  temporal_coverage: '1959'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1959
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1959/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1959.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1960
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1960
+  temporal_coverage: '1960'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1960
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1960/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1960.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1961
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1961
+  temporal_coverage: '1961'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1961
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1961/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1961.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1962
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1962
+  temporal_coverage: '1962'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1962
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1962/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1962.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1963
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1963
+  temporal_coverage: '1963'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1963
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1963/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1963.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1964
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1964
+  temporal_coverage: '1964'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1964
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1964/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1964.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1966
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1966
+  temporal_coverage: '1966'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1966
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1966/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1966.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1967
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1967
+  temporal_coverage: '1967'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1967
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1967/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1967.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1968
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1968
+  temporal_coverage: '1968'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1968
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1968/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1968.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1969
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1969
+  temporal_coverage: '1969'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1969
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1969/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1969.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1970
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1970
+  temporal_coverage: '1970'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1970
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1970/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1970.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1971
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1971
+  temporal_coverage: '1971'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1971
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1971/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1971.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1972
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1972
+  temporal_coverage: '1972'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1972
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1972/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1972.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1973
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1973
+  temporal_coverage: '1973'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1973
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1973/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1973.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1974
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1974
+  temporal_coverage: '1974'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1974
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1974/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1974.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1975
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1975
+  temporal_coverage: '1975'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1975
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1975/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1975.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1976
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1976
+  temporal_coverage: '1976'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1976
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1976/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1976.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1977
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1977
+  temporal_coverage: '1977'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1977
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1977/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1977.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1978
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1978
+  temporal_coverage: '1978'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1978
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1978/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1978.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1979
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1979
+  temporal_coverage: '1979'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1979
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1979/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1979.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1980
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1980
+  temporal_coverage: '1980'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1980
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1980/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1980.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1981
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1981
+  temporal_coverage: '1981'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1981
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1981/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1981.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1982
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1982
+  temporal_coverage: '1982'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1982
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1982/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1982.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1983
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1983
+  temporal_coverage: '1983'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1983
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1983/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1983.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1984
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1984
+  temporal_coverage: '1984'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1984
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1984/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1984.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1985
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1985
+  temporal_coverage: '1985'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1985
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1985/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1985.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1986
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1986
+  temporal_coverage: '1986'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1986
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1986/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1986.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1987
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1987
+  temporal_coverage: '1987'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1987
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1987/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1987.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1988
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1988
+  temporal_coverage: '1988'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1988
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1988/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1988.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1989
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1989
+  temporal_coverage: '1989'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1989
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1989/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1989.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1990
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1990
+  temporal_coverage: '1990'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1990
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1990/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1990.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1991
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1991
+  temporal_coverage: '1991'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1991
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1991/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1991.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1992
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1992
+  temporal_coverage: '1992'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1992
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1992/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1992.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1993
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1993
+  temporal_coverage: '1993'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1993 (30cm resolution)
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1993
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1993/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1993.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1994
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1994
+  temporal_coverage: '1994'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1994
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1994/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1994.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1995
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1995
+  temporal_coverage: '1995'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1995
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1995/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1995.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1996
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1996
+  temporal_coverage: '1996'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1996
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1996/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1996.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1997
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1997
+  temporal_coverage: '1997'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1997
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1997/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1997.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1998
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1998
+  temporal_coverage: '1998'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1998
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1998/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1998.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_1999
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 1999
+  temporal_coverage: '1999'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_1999
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_1999/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_1999.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_2000
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 2000
+  temporal_coverage: '2000'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2000
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2000/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_2000.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP40_2001
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.4
+  year: 2001
+  temporal_coverage: '2001'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2001
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2001/epsg_31466/
+    pattern: dop40pan_{x}_{y}_2_nw_2001.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP30_2002
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2002
+  temporal_coverage: '2002'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2002
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2002/epsg_31466/
+    pattern: dop30rgb_{x}_{y}_2_nw_2002.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP30_2003
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2003
+  temporal_coverage: '2003'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2003
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2003
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2003/epsg_31466/
+    pattern: dop30rgb_{x}_{y}_2_nw_2003.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP30_2004
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2004
+  temporal_coverage: '2004'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2004
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2004
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2004/epsg_31466/
+    pattern: dop30rgb_{x}_{y}_2_nw_2004.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP30_2005
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2005
+  temporal_coverage: '2005'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2005
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2005
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2005/epsg_31466/
+    pattern: dop30rgb_{x}_{y}_2_nw_2005.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP30_2006
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2006
+  temporal_coverage: '2006'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2006
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2006
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2006/epsg_31466/
+    pattern: dop30rgb_{x}_{y}_2_nw_2006.jp2
+    grid_size: 2000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP10_2007
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.1
+  year: 2007
+  temporal_coverage: '2007'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2007
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2007
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2007/epsg_31466/
+    pattern: dop10rgb_{x}_{y}_2_nw_2007.jp2
+    grid_size: 1000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP10_2008
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.1
+  year: 2008
+  temporal_coverage: '2008'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2008
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2008
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2008/epsg_31466/
+    pattern: dop10rgb_{x}_{y}_2_nw_2008.jp2
+    grid_size: 1000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGB_DOP10_2009
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.3
+  year: 2009
+  temporal_coverage: '2009'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2009
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2009
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2009/epsg_31466/
+    pattern: dop10rgb_{x}_{y}_2_nw_2009.jp2
+    grid_size: 1000
+    crs: EPSG:31466
+  direct_download: true
+- id: NW_RGBI_DOP10_2010
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2010
+  temporal_coverage: '2010'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2010
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2010
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2010/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2010.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2011
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2011
+  temporal_coverage: '2011'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2011
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2011
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2011/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2011.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2012
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2012
+  temporal_coverage: '2012'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2012
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2012
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2012/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2012.jp2
+    grid_size: 2000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2013
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2013
+  temporal_coverage: '2013'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2013
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2013
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2013/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2013.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2014
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2014
+  temporal_coverage: '2014'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2014
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2014
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2014/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2014.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2015
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2015
+  temporal_coverage: '2015'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2015
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2015
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2015/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2015.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2016
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2016
+  temporal_coverage: '2016'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 1951
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2016
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2016/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2016.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2017
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2017
+  temporal_coverage: '2017'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2017
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2017
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2017/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2017.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2018
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2018
+  temporal_coverage: '2018'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2018
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2018
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2018/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2018.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2019
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2019
+  temporal_coverage: '2019'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2019
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2019
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2019/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2019.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2020
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2020
+  temporal_coverage: '2020'
+  crs: EPSG:25832
+  format: image/jpeg
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2020
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2020
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2020/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2020.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2021
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGB
+  resolution: 0.1
+  year: 2021
+  temporal_coverage: '2021'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2021
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2021
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2021/epsg_25832/
+    pattern: dop10rgb_32_{x}_{y}_1_nw_2021.jp2
+    grid_size: 2000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_2022
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2022
+  temporal_coverage: '2022'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2002
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2022
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2022/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2022.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBi_DOP10_2023
+  state_code: NW
+  state_name: Nordrhein-Westfalen
+  type: RGBI
+  resolution: 0.1
+  year: 2023
+  temporal_coverage: '2023'
+  crs: EPSG:25832
+  format: image/jp2
+  availability: state-wide
+  description: Nordrhein-Westfalen historic orthophotos 2023
+  source: NRW Geobasis - OpenGeodata.NRW
+  wms:
+    url: https://www.wms.nrw.de/geobasis/wms_nw_hist_dop
+    version: 1.3.0
+    layer_name: nw_hist_dop_2023
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/hist/hist_dop/hist_dop_jp2_f10/hist_dop_2023/epsg_25832/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_2023.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+  direct_download: true
+- id: NW_RGBI_DOP10_CURRENT
+  state_code: NW
+  state_name: North Rhine-Westphalia
+  type: RGBI
+  resolution: 0.1
+  year: latest
+  temporal_coverage: 2023-current
+  url: https://www.wms.nrw.de/geobasis/wms_nw_dop
+  version: 1.3.0
+  layer_name: nw_dop_rgb
+  crs: EPSG:25832
+  format: image/png
+  availability: state-wide
+  description: NRW DOP10 RGBI - Current orthophotos (10cm resolution, rolling updates)
+  direct_download: true
+  source: OpenGeodata.NRW
+  files:
+    url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/akt/dop/dop_jp2_f10/
+    pattern: dop10rgbi_32_{x}_{y}_1_nw_*.jp2
+    grid_size: 1000
+    crs: EPSG:25832
+    year_wildcard: true
+    metadata:
+      url: https://www.opengeodata.nrw.de/produkte/geobasis/lusat/akt/dop/dop_jp2_f10/dop_meta.zip
+      format: csv
+      encoding: utf-8
+      delimiter: ;
+      tile_column: Kachelname
+      date_column: Aktualitaet
+      flight_column: Bildflugnummer
+      sensor_column: Kamera_Sensor
+      vegetation_column: Belaubungszustand
+- id: BB_RGBI_DOP20_CURRENT
+  state_code: BB
+  state_name: Brandenburg
+  type: RGBI
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2022-current
+  url: null
+  direct_download: true
+  source: GeoBasis-DE / LGB
+  license: Datenlizenz Deutschland Namensnennung 2.0
+  metadata_url: https://geoportal.brandenburg.de/
+  viewer_url: https://bb-viewer.geobasis-bb.de/?layerIDs=237,9001,9000,357,159
+  files:
+    url: https://data.geobasis-bb.de/geobasis/daten/dop/rgbi_tif/
+    pattern: dop_{x}-{y}.zip
+    grid_size: 1000
+    crs: EPSG:5650
+    format: TIFF/TFW
+    description: RGBI DOP20 - 20cm resolution with infrared channel, TIFF format
+- id: BB_RGB_DOP20_CURRENT
+  state_code: BB
+  state_name: Brandenburg
+  type: RGB
+  resolution: 0.2
+  year: latest
+  temporal_coverage: 2022-current
+  url: null
+  direct_download: true
+  source: GeoBasis-DE / LGB
+  license: Datenlizenz Deutschland Namensnennung 2.0
+  metadata_url: https://geoportal.brandenburg.de/
+  viewer_url: https://bb-viewer.geobasis-bb.de/?layerIDs=237,9001,9000,357,159
+  files:
+    url: https://data.geobasis-bb.de/geobasis/daten/dop/rgb_jpg/
+    pattern: dop_{x}-{y}.zip
+    grid_size: 1000
+    crs: EPSG:5650
+    format: JPEG
+    description: RGB DOP20 - 20cm resolution, JPEG format
+- id: NI_RGB_DOP20_GEOJSON
+  name: Niedersachsen DOP20 RGB (GeoJSON Index)
+  state_code: NI
+  state_name: Niedersachsen / Lower Saxony
+  type: RGB
+  resolution: 0.2
+  crs: EPSG:25832
+  format: image/tiff
+  year: 2012-2025
+  direct_download: true
+  files:
+    base_url: https://dop20-rgb.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    pattern: '{tile_id}/{date}/dop{resolution}rgb_{zone}_{x}_{y}_{variant}_ni_{date}.tif'
+    format: GeoTIFF
+    description: 'Tile-based downloads. Can be indexed via optional GeoJSON file (see
+      geojson_url). Direct URLs: properties.rgb or properties.rgbi'
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
+- id: NI_RGBI_DOP20_GEOJSON
+  name: Niedersachsen DOP20 RGBI (GeoJSON Index)
+  state_code: NI
+  state_name: Niedersachsen / Lower Saxony
+  type: RGBI
+  resolution: 0.2
+  crs: EPSG:25832
+  format: image/tiff
+  year: 2012-2025
+  direct_download: true
+  files:
+    base_url: https://dop20-rgbi.opengeodata.lgln.niedersachsen.de/
+    index_type: geojson
+    pattern: '{tile_id}/{date}/dop{resolution}rgbi_{zone}_{x}_{y}_{variant}_ni_{date}.tif'
+    format: GeoTIFF
+    description: 'Tile-based downloads. Can be indexed via optional GeoJSON file (see
+      geojson_url). Direct URLs: properties.rgb or properties.rgbi'
+    geojson_url: https://arcgis-geojson.s3.eu-de.cloud-object-storage.appdomain.cloud/dop20/lgln-opengeodata-dop20.geojson
+- id: RP_RGB_DOP20_CURRENT
+  name: Rheinland-Pfalz DOP20 RGB
+  state_code: RP
+  state_name: Rheinland-Pfalz / Rhineland-Palatinate
+  type: RGB
+  resolution: 0.2
+  crs: EPSG:25832
+  format: image/jp2
+  year: 2022-2025
+  direct_download: true
+  files:
+    base_url: https://geobasis-rlp.de/data/dop20rgb/current/jp2/
+    pattern: dop20rgb_{zone}_{x}_{y}_{variant}_rp_{year}.jp2
+    format: JPEG2000
+    world_file: dop20rgb_{zone}_{x}_{y}_{variant}_rp_{year}.j2w
+    metadata: https://geobasis-rlp.de/data/dop20rgb/current/metadata/dop20rgb_{zone}_{x}_{y}_{variant}_rp_{year}_meta.xml
+- id: RP_RGBI_DOP20_CURRENT
+  name: Rheinland-Pfalz DOP20 RGBI
+  state_code: RP
+  state_name: Rheinland-Pfalz / Rhineland-Palatinate
+  type: RGBI
+  resolution: 0.2
+  crs: EPSG:25832
+  format: image/jp2
+  year: 2022-2025
+  direct_download: true
+  files:
+    base_url: https://geobasis-rlp.de/data/dop20rgbi/current/jp2/
+    pattern: dop20rgbi_{zone}_{x}_{y}_{variant}_rp_{year}.jp2
+    format: JPEG2000
+    world_file: dop20rgbi_{zone}_{x}_{y}_{variant}_rp_{year}.j2w
+    metadata: https://geobasis-rlp.de/data/dop20rgbi/current/metadata/dop20rgbi_{zone}_{x}_{y}_{variant}_rp_{year}_meta.xml

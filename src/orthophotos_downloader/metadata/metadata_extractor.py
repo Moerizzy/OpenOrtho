@@ -147,12 +147,55 @@ class TileMetadataExtractor:
         if self.metadata_config and self.metadata_config.get('metadata_layer'):
             try:
                 wms_metadata = self._query_wms_metadata(center_x, center_y, crs)
-                metadata.update(wms_metadata)
+                
+                # Check for year mismatch (NRW historic issue)
+                # For NRW historic services, the metadata layer returns whichever year
+                # has coverage at this location, which may not be the requested year
+                if wms_metadata.get('metadata_year_mismatch'):
+                    # Keep the WMS metadata (resolution, photometry, etc.) but use service year
+                    logger.info(
+                        f"Metadata year mismatch detected: WMS returned year "
+                        f"{wms_metadata.get('extracted_year')}, but service year is "
+                        f"{self.wms_service.year}. Using service year for acquisition_date."
+                    )
+                    # Use service year as the authoritative source
+                    metadata['acquisition_date'] = f"{self.wms_service.year}-01-01"
+                    metadata['acquisition_year'] = str(self.wms_service.year)
+                    metadata['date_source'] = 'service_configuration'
+                    
+                    # Keep WMS-extracted date as reference (actual data at this location)
+                    metadata['wms_extracted_date'] = wms_metadata.get('acquisition_date')
+                    metadata['wms_extracted_year'] = wms_metadata.get('extracted_year')
+                    
+                    # Keep other useful WMS metadata
+                    for key in ['resolution', 'photometry', 'ground_resolution', 'quality_info']:
+                        if key in wms_metadata:
+                            metadata[key] = wms_metadata[key]
+                else:
+                    # No mismatch - use WMS metadata as-is
+                    metadata.update(wms_metadata)
+                    
             except Exception as e:
                 logger.warning(f"Failed to query WMS metadata: {e}")
                 metadata['wms_error'] = str(e)
         else:
             metadata['wms_metadata'] = 'Not available for this state'
+            
+            # Fallback: Use year from service configuration if available
+            # This helps services like Hamburg that have year-specific layers but no metadata service
+            if self.wms_service and hasattr(self.wms_service, 'year') and self.wms_service.year:
+                year = self.wms_service.year
+                # Convert year to acquisition date (use January 1st as default)
+                if isinstance(year, str) and year.isdigit():
+                    metadata['acquisition_date'] = f"{year}-01-01"
+                    metadata['acquisition_year'] = year
+                    metadata['date_source'] = 'service_configuration'
+                    logger.debug(f"Using year from service configuration: {year}")
+                elif isinstance(year, int):
+                    metadata['acquisition_date'] = f"{year}-01-01"
+                    metadata['acquisition_year'] = str(year)
+                    metadata['date_source'] = 'service_configuration'
+                    logger.debug(f"Using year from service configuration: {year}")
         
         return metadata
     
@@ -249,13 +292,19 @@ class TileMetadataExtractor:
         Uses dedicated metadata service if available for the state,
         otherwise queries the standard WMS service.
         
+        For NRW historic services: The metadata layer returns data for ALL years,
+        but only for years that have actual coverage at the queried point. This
+        means the returned metadata may be for a different year than the service year
+        if the service year doesn't have coverage at this specific location.
+        
         Args:
             center_x: X coordinate of query point
             center_y: Y coordinate of query point
             crs: Coordinate reference system
             
         Returns:
-            Dictionary with acquisition date and quality info
+            Dictionary with acquisition date and quality info.
+            For NRW historic, may include 'metadata_year_mismatch' warning.
         """
         # Use metadata configuration from catalog
         if not self.metadata_config:
@@ -264,16 +313,28 @@ class TileMetadataExtractor:
         
         # Get metadata service URL (or use image service if same)
         wms_url = self.metadata_config.get('metadata_service_url', self.wms_url)
-        layer = self.metadata_config.get('metadata_layer')
+        metadata_layer = self.metadata_config.get('metadata_layer')
         info_format = self.metadata_config.get('metadata_info_format', 'text/plain')
         extra_params = self.metadata_config.get('metadata_extra_params', {})
         wms_version = self.metadata_config.get('metadata_wms_version', '1.3.0')
         
-        if not layer:
+        if not metadata_layer:
             logger.debug(f"No metadata layer configured for {self.state_code}")
             return {'error': 'No metadata layer configured'}
         
-        logger.debug(f"Using metadata service for {self.state_code}: {wms_url}, layer: {layer}")
+        # For services with both image layer and metadata layer, query both
+        # This is needed for NRW historic where metadata layer needs to know which year
+        if self.wms_service and hasattr(self.wms_service, 'layer_name'):
+            # Query both the image layer and metadata layer together
+            layers = f"{self.wms_service.layer_name},{metadata_layer}"
+            query_layers = metadata_layer  # Only query metadata layer for info
+            year_info = f" (year: {self.wms_service.year})" if hasattr(self.wms_service, 'year') else ""
+            logger.debug(f"Querying metadata for {self.state_code}: layers={layers}, query_layers={query_layers}{year_info}")
+        else:
+            # Fallback: just query metadata layer
+            layers = metadata_layer
+            query_layers = metadata_layer
+            logger.debug(f"Querying metadata for {self.state_code}: layer={layers}")
         
         # Create bounding box around center point (1000m x 1000m)
         buffer = 500
@@ -290,8 +351,8 @@ class TileMetadataExtractor:
                 'SERVICE': 'WMS',
                 'REQUEST': 'GetFeatureInfo',
                 'VERSION': '1.1.1',
-                'LAYERS': layer,
-                'QUERY_LAYERS': layer,
+                'LAYERS': layers,
+                'QUERY_LAYERS': query_layers,
                 'SRS': crs,  # WMS 1.1.1 uses SRS instead of CRS
                 'BBOX': ','.join(map(str, bbox)),
                 'WIDTH': 256,
@@ -299,14 +360,15 @@ class TileMetadataExtractor:
                 'X': 128,  # WMS 1.1.1 uses X/Y instead of I/J
                 'Y': 128,
                 'INFO_FORMAT': info_format,
+                'FEATURE_COUNT': '50',  # Request multiple features (for NRW historic multi-year responses)
             }
         else:  # WMS 1.3.0
             params = {
                 'SERVICE': 'WMS',
                 'REQUEST': 'GetFeatureInfo',
                 'VERSION': '1.3.0',
-                'LAYERS': layer,
-                'QUERY_LAYERS': layer,
+                'LAYERS': layers,
+                'QUERY_LAYERS': query_layers,
                 'CRS': crs,
                 'BBOX': ','.join(map(str, bbox)),
                 'WIDTH': 256,
@@ -315,6 +377,7 @@ class TileMetadataExtractor:
                 'J': 128,
                 'INFO_FORMAT': info_format,
                 'STYLES': '',  # Required by some services
+                'FEATURE_COUNT': '50',  # Request multiple features (for NRW historic multi-year responses)
             }
         
         # Add any state-specific extra parameters from catalog
@@ -324,8 +387,45 @@ class TileMetadataExtractor:
             response = requests.get(wms_url, params=params, timeout=10)
             response.raise_for_status()
             
+            # Log response for debugging (truncated if too long)
+            response_preview = response.text[:500] if len(response.text) > 500 else response.text
+            logger.debug(f"WMS metadata response received ({len(response.text)} chars): {response_preview}...")
+            
             # Parse response
-            return self._parse_wms_response(response.text)
+            parsed_metadata = self._parse_wms_response(response.text)
+            
+            # Check if we got useful metadata
+            if parsed_metadata and 'acquisition_date' in parsed_metadata:
+                logger.debug(f"Successfully extracted acquisition_date: {parsed_metadata['acquisition_date']}")
+                
+                # For NRW historic: Check if the extracted year matches the service year
+                if self.wms_service and hasattr(self.wms_service, 'year'):
+                    service_year = str(self.wms_service.year)
+                    extracted_date = parsed_metadata['acquisition_date']
+                    
+                    # Skip year matching for non-numeric years (latest, current, year ranges)
+                    # These always return the most current data available
+                    is_numeric_year = service_year.isdigit()
+                    
+                    if is_numeric_year and service_year not in extracted_date:
+                        # Year mismatch - metadata is for different year
+                        # This is expected for NRW historic when the queried location doesn't have
+                        # coverage for the specific service year
+                        logger.warning(
+                            f"Metadata year mismatch for {self.state_code}: "
+                            f"service year={service_year}, extracted date={extracted_date}. "
+                            f"This location may not have coverage for year {service_year}."
+                        )
+                        parsed_metadata['metadata_year_mismatch'] = True
+                        parsed_metadata['service_year'] = service_year
+                        parsed_metadata['extracted_year'] = extracted_date[:4]
+                        
+            elif parsed_metadata:
+                logger.debug(f"Metadata extracted but no acquisition_date found. Keys: {list(parsed_metadata.keys())}")
+            else:
+                logger.debug("No metadata could be parsed from response")
+                
+            return parsed_metadata
             
         except requests.exceptions.RequestException as e:
             logger.debug(f"WMS query failed: {e}")
@@ -471,6 +571,52 @@ class TileMetadataExtractor:
         
         return metadata
     
+    def _parse_nrw_feature(self, feature_text: str) -> Dict[str, Any]:
+        """
+        Parse a single NRW feature from GetFeatureInfo response.
+        
+        Args:
+            feature_text: Text of one feature section
+            
+        Returns:
+            Dictionary with extracted metadata
+        """
+        import re
+        from datetime import datetime
+        
+        metadata = {}
+        
+        # Extract Bildflugdatum (flight date) - already in YYYY-MM-DD format
+        date_match = re.search(r"Bildflugdatum\s*=\s*'([^']+)'", feature_text)
+        if date_match:
+            date_str = date_match.group(1)
+            try:
+                # NRW uses YYYY-MM-DD format
+                if re.match(r'\d{4}-\d{2}-\d{2}', date_str):
+                    metadata['acquisition_date'] = date_str
+                    metadata['flight_date'] = date_str
+                    metadata['wms_bildflugdatum'] = date_str
+            except Exception as e:
+                logger.debug(f"Failed to parse NRW date '{date_str}': {e}")
+        
+        # Extract resolution
+        resolution_match = re.search(r"Bodenauflösung Originalbild \[m/Pixel\]\s*=\s*'([^']+)'", feature_text)
+        if resolution_match:
+            metadata['resolution'] = resolution_match.group(1)
+            metadata['quality_info'] = f"Bodenauflösung = {resolution_match.group(1)}"
+        
+        # Extract photometry (RGB, RGBI, PAN, etc.)
+        photo_match = re.search(r"Photometrie\s*=\s*'([^']+)'", feature_text)
+        if photo_match:
+            metadata['photometry'] = photo_match.group(1)
+        
+        # Extract original tile path
+        tile_match = re.search(r"Download der Originalkachel\s*=\s*'([^']+)'", feature_text)
+        if tile_match:
+            metadata['wms_originalkachel'] = tile_match.group(1)
+        
+        return metadata
+    
     def _parse_wms_response(self, response_text: str) -> Dict[str, Any]:
         """
         Parse WMS GetFeatureInfo response to extract date and quality.
@@ -478,6 +624,9 @@ class TileMetadataExtractor:
         Different states return different formats, so we try multiple parsing strategies.
         Dates are converted to ISO format (YYYY-MM-DD).
         Handles both plain text and HTML responses.
+        
+        Special handling for NRW historic: Response contains multiple features (one per year).
+        We need to find the feature matching the service's year.
         """
         import re
         from datetime import datetime
@@ -487,6 +636,45 @@ class TileMetadataExtractor:
         # Check if response is HTML (Niedersachsen returns HTML)
         if '<html' in response_text.lower() or '<table' in response_text.lower():
             return self._parse_html_response(response_text)
+        
+        # Special handling for multi-feature responses (NRW historic)
+        # Response may contain multiple "Feature XXX:" sections, one per available year
+        # We need to find the one matching our service's year
+        if 'Feature ' in response_text and self.wms_service and hasattr(self.wms_service, 'year'):
+            year_to_find = str(self.wms_service.year)
+            
+            # Split response into individual features
+            features = re.split(r'Feature \d+:', response_text)
+            
+            # Try to find matching feature by year in multiple ways:
+            # 1. By download path (contains year in filename)
+            # 2. By flight date field (Bildflugdatum contains year)
+            best_match = None
+            
+            for feature_text in features:
+                if not feature_text.strip():
+                    continue
+                    
+                # Method 1: Check download path if available
+                download_match = re.search(r"Download der Originalkachel\s*=\s*'([^']+)'", feature_text)
+                if download_match:
+                    download_path = download_match.group(1)
+                    # Check if the path contains hist_dop_YYYY or _YYYY. in filename
+                    if f'hist_dop_{year_to_find}/' in download_path or f'_nw_{year_to_find}.' in download_path:
+                        logger.debug(f"Found matching feature by download path for year {year_to_find}")
+                        return self._parse_nrw_feature(feature_text)
+                
+                # Method 2: Check Bildflugdatum (flight date) field
+                date_match = re.search(r"Bildflugdatum\s*=\s*'([^']+)'", feature_text)
+                if date_match:
+                    date_str = date_match.group(1)
+                    # Extract year from date (format: YYYY-MM-DD)
+                    if date_str.startswith(year_to_find):
+                        logger.debug(f"Found matching feature by Bildflugdatum for year {year_to_find}")
+                        return self._parse_nrw_feature(feature_text)
+            
+            # If no exact match found, fall through to regular parsing
+            logger.debug(f"No matching feature found for year {year_to_find} in multi-feature response")
         
         # Strategy 1: Look for state-specific date fields with various formats
         date_patterns = [

@@ -14,7 +14,9 @@ logger = logging.getLogger(__name__)
 
 class WMSService:
     """
-    Represents a single WMS service entry from the catalog.
+    Represents a single orthophoto service entry from the catalog.
+    
+    Supports both WMS delivery and direct file downloads.
     
     Attributes:
         id: Unique identifier
@@ -24,15 +26,27 @@ class WMSService:
         resolution: Resolution in meters
         year: Year or 'latest'
         temporal_coverage: Time period covered
-        url: WMS service URL
-        version: WMS version
+        
+        # WMS delivery
+        url: WMS service URL (legacy - maps to wms_url)
+        wms_url: WMS service URL
+        version: WMS version (legacy - maps to wms_version)
+        wms_version: WMS version
         layer_name: Layer name
         crs: Coordinate reference system
         format: Image format
+        
+        # File delivery
+        files_url: Base URL for direct file downloads
+        files_pattern: Filename pattern (e.g., "dop40pan_{x}_{y}_2_nw_1951.jp2")
+        files_grid_size: Tile grid size in meters (e.g., 2000 for 2km tiles)
+        files_crs: CRS of file coordinates (may differ from WMS CRS)
+        files_format: File format (e.g., "image/jp2")
+        tile_index_url: Optional URL to tile index shapefile/metadata
+        
+        # Common metadata
         availability: Coverage description
         description: Human-readable description
-        direct_download: Whether direct tile downloads are available
-        tile_url_pattern: URL pattern for direct downloads
         source: Source organization
         requires_auth: Whether authentication is required
         auth_type: Type of authentication required
@@ -40,7 +54,7 @@ class WMSService:
     """
     
     def __init__(self, **kwargs):
-        """Initialize WMS service from catalog entry."""
+        """Initialize service from catalog entry."""
         self.id = kwargs.get('id')
         self.state_code = kwargs.get('state_code')
         self.state_name = kwargs.get('state_name')
@@ -48,20 +62,74 @@ class WMSService:
         self.resolution = float(kwargs.get('resolution', 0))
         self.year = kwargs.get('year')
         self.temporal_coverage = kwargs.get('temporal_coverage')
-        self.url = kwargs.get('url')
-        self.version = kwargs.get('version')
-        self.layer_name = kwargs.get('layer_name')
-        self.crs = kwargs.get('crs')
-        self.format = kwargs.get('format')
+        
+        # WMS configuration - support both nested and flat structure
+        wms_config = kwargs.get('wms', {})
+        self.wms_url = wms_config.get('url') or kwargs.get('url')
+        self.wms_version = wms_config.get('version') or kwargs.get('version')
+        self.layer_name = wms_config.get('layer_name') or kwargs.get('layer_name')
+        self.crs = wms_config.get('crs') or kwargs.get('crs')
+        self.format = wms_config.get('format') or kwargs.get('format')
+        
+        # File delivery configuration
+        files_config = kwargs.get('files', {})
+        self.files_url = files_config.get('url') or files_config.get('base_url')  # Support both 'url' and 'base_url'
+        self.files_pattern = files_config.get('pattern')
+        self.files_grid_size = files_config.get('grid_size')
+        self.files_crs = files_config.get('crs') or self.crs  # Default to same as WMS
+        self.files_format = files_config.get('format') or self.format
+        self.tile_index_url = files_config.get('tile_index_url')
+        self.files_metadata = files_config.get('metadata', {})  # Metadata configuration
+        self.files_index_type = files_config.get('index_type')  # e.g., 'geojson' for GeoJSON-indexed services
+        self.files_geojson_url = files_config.get('geojson_url')  # URL to GeoJSON index file
+        self.files_atom_feed_url = files_config.get('atom_feed_url')  # Atom feed providing tile links
+        self.files_product_code = files_config.get('product_code')
+        self.files_default_extension = files_config.get('default_extension')
+        self.files_wcs_url = files_config.get('wcs_url')
+        self.files_wcs_coverage = files_config.get('wcs_coverage')
+        self.files_wcs_format = files_config.get('wcs_format') or 'image/tiff'
+        self.files_wcs_max_pixels = files_config.get('wcs_max_pixels')
+        
+        # Common metadata
         self.availability = kwargs.get('availability')
         self.description = kwargs.get('description')
-        self.direct_download = kwargs.get('direct_download', False)
-        self.tile_url_pattern = kwargs.get('tile_url_pattern')
         self.source = kwargs.get('source')
         self.requires_auth = kwargs.get('requires_auth', False)
         self.auth_type = kwargs.get('auth_type')
-        # Metadata configuration (for metadata extraction)
         self.metadata = kwargs.get('metadata', {})
+        
+        # Legacy compatibility properties
+        self.url = self.wms_url  # Backward compatibility
+        self.version = self.wms_version  # Backward compatibility
+        
+    def has_wms(self) -> bool:
+        """Check if WMS delivery is available."""
+        return bool(self.wms_url and self.layer_name)
+    
+    def has_files(self) -> bool:
+        """Check if direct file delivery is available."""
+        # Traditional grid-based file delivery
+        if self.files_url and self.files_pattern:
+            return True
+        # GeoJSON-indexed file delivery
+        if self.files_geojson_url:
+            return True
+        # Atom feed-based delivery
+        if self.files_atom_feed_url:
+            return True
+        # WCS-based delivery
+        if self.files_index_type == 'wcs' and self.files_wcs_url and self.files_wcs_coverage:
+            return True
+        return False
+    
+    def get_delivery_methods(self) -> List[str]:
+        """Get list of available delivery methods."""
+        methods = []
+        if self.has_wms():
+            methods.append('wms')
+        if self.has_files():
+            methods.append('files')
+        return methods
         
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary representation."""

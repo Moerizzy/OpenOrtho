@@ -1,14 +1,19 @@
 """
-Unit tests for German state WMS downloaders.
-Tests all state-specific downloader classes.
+DEPRECATED: Unit tests for German state WMS downloaders.
+
+These tests are for the old architecture with individual downloader classes.
+The system now uses WMSServiceDownloader (generic_downloader.py) instead.
+
+See test_auto_downloader_catalog.py for tests of the new system.
 """
 
 import pytest
-from orthophotos_downloader.data_scraping import wms_germany
+
+pytestmark = pytest.mark.skip(reason="Deprecated - system now uses WMSServiceDownloader instead of individual classes")
 
 
 class TestStateDownloaders:
-    """Test all German state downloader classes."""
+    """DEPRECATED: Test all German state downloader classes."""
 
     # List of all expected RGB downloaders
     RGB_DOWNLOADERS = [

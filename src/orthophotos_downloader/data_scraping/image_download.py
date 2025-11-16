@@ -245,7 +245,8 @@ class ImageDownloader:
 
     def __init__(self, wms: ExtendedWebMapService, grid_spacing: int, 
                  state_code: Optional[str] = None, 
-                 extract_metadata: bool = True):
+                 extract_metadata: bool = True,
+                 max_workers: int = 4):
         """
         Initialize the ImageDownloader object.
 
@@ -254,6 +255,7 @@ class ImageDownloader:
             grid_spacing: The spacing between grid points (i.e. height and width of grid tiles) in meters.
             state_code: Optional German state code (e.g., 'BY', 'NW') for metadata extraction.
             extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
+            max_workers: Maximum number of parallel download threads (default: 4).
 
         Raises:
             ValueError: If `grid_spacing` is not a multiple of the resolution of the provided WMS.
@@ -265,6 +267,7 @@ class ImageDownloader:
         # the width and height in pixels are defined by the resolution of the dataset
         self.width_px: int = int(self.grid_spacing / self.wms.resolution)
         self.height_px: int = int(self.grid_spacing / self.wms.resolution)
+        self.max_workers = max_workers
         
         # Metadata extraction setup
         self.state_code = state_code
@@ -420,9 +423,11 @@ class ImageDownloader:
         result_obj = AreaDataset(area_name, area_polygon, buffer_size, out_path)
         images = []
 
-        logger.info(f"Downloading {len(grid)} images for {area_name}...")
+        logger.info(f"Downloading {len(grid)} images for {area_name} using {self.max_workers} parallel workers...")
 
-        for i, tile in enumerate(grid.itertuples()):
+        def download_tile_worker(tile_data):
+            """Worker function for parallel tile download."""
+            i, tile = tile_data
             logger.info(f"Start downloading image {i + 1} of {len(grid)}...")
             start_time = perf_counter()
 
@@ -432,45 +437,48 @@ class ImageDownloader:
             filename = f"{filename_prefix}_32_{ulx}_{uly}.{file_extension}"
             img_path = Path(out_path) / filename
             try:
-                images.append(
-                    ImageDownloader.download_single_image(
-                        img_path=img_path,
-                        bounding_box=tile.geometry,
-                        wms=self.wms,
-                        width_px=self.width_px,
-                        height_px=self.height_px,
-                        mask=mask,
-                        driver=driver,
-                        metadata_extractor=self.metadata_extractor,
-                        stac_generator=self.stac_generator,
-                    )
+                image = ImageDownloader.download_single_image(
+                    img_path=img_path,
+                    bounding_box=tile.geometry,
+                    wms=self.wms,
+                    width_px=self.width_px,
+                    height_px=self.height_px,
+                    mask=mask,
+                    driver=driver,
+                    metadata_extractor=self.metadata_extractor,
+                    stac_generator=self.stac_generator,
                 )
                 logger.info(
                     f"Finished downloading image {i+1} in {perf_counter() - start_time:.2f} seconds.\n"
                 )
+                return image
 
-            # when the image download fails, create an empty image instance to prevent the loop from breaking
-            # because of a single failed image download
+            # when the image download fails, create an empty image instance
             except Exception as e:
                 logger.error(
-                    f"Error downloading image {i+1}. Append empty image to images list..."
+                    f"Error downloading image {i+1}. Creating empty image entry..."
                 )
                 logger.exception(e)
-                images.append(
-                    Image(
-                        image_path=None,
-                        mask_path=None,
-                        upper_left_x=tile.geometry.bounds[0],
-                        upper_left_y=tile.geometry.bounds[3],
-                        download_time=perf_counter() - start_time,
-                        width_m=self.grid_spacing,
-                        height_m=self.grid_spacing,
-                        width_px=self.width_px,
-                        height_px=self.height_px,
-                        resolution_m=self.wms.resolution,
-                        crs=self.wms.crs,
-                    )
+                return Image(
+                    image_path=None,
+                    mask_path=None,
+                    upper_left_x=tile.geometry.bounds[0],
+                    upper_left_y=tile.geometry.bounds[3],
+                    download_time=perf_counter() - start_time,
+                    width_m=self.grid_spacing,
+                    height_m=self.grid_spacing,
+                    width_px=self.width_px,
+                    height_px=self.height_px,
+                    resolution_m=self.wms.resolution,
+                    crs=self.wms.crs,
                 )
+
+        # Use ThreadPoolExecutor for parallel downloads
+        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            # Create list of (index, tile) tuples for the worker
+            tile_data = list(enumerate(grid.itertuples()))
+            # Execute downloads in parallel
+            images = list(executor.map(download_tile_worker, tile_data))
 
         result_obj.images = images
         return result_obj

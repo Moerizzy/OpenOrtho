@@ -1,0 +1,284 @@
+====================================================================================================
+ENHANCED WMS SERVICE VALIDATION
+====================================================================================================
+
+Testing 477 services from catalog...
+
+  1/477 BW_RGB_DOP20_current                (BW)... ✅ Found 1 layers
+  2/477 BW_CIR_DOP20_current                (BW)... ✅ Found 1 layers
+  3/477 BY_RGB_DOP20_current                (BY)... ✅ Found 5 layers
+  4/477 BY_CIR_DOP20_current                (BY)... ✅ Found 5 layers
+  5/477 BY_RGB_DOP40_current                (BY)... ✅ Found 4 layers
+  6/477 BE_RGB_DOP20_current                (BE)... ✅ Found 1 layers
+  7/477 BE_CIR_DOP20_current                (BE)... ✅ Found 1 layers
+  8/477 BB_RGB_DOP20_current                (BB)... ✅ Found 1 layers
+  9/477 BB_CIR_DOP20_current                (BB)... ✅ Found 1 layers
+ 10/477 HB_RGB_DOP20023_2023                (HB)... ✅ Found 3 layers
+ 11/477 HB_RGB_DOP20023_2023                (HB)... ✅ Found 3 layers
+ 12/477 HB_RGB_DOP20023_2023                (HB)... ✅ Found 3 layers
+ 13/477 BHV_RGB_DOP20023_2023               (HB)... ✅ Found 3 layers
+ 14/477 BHV_RGB_DOP20023_2023               (HB)... ✅ Found 3 layers
+ 15/477 BHV_RGB_DOP20023_2023               (HB)... ✅ Found 3 layers
+ 16/477 HH_RGB_DOP20_current                (HH)... ❌ Request failed: 404 Client Error: Not Found for url: https://geodienste.hamburg.de/HH_WMS_DOP?SE
+ 17/477 HH_CIR_DOP20_current                (HH)... ❌ Request failed: 404 Client Error: Not Found for url: https://geodienste.hamburg.de/HH_WMS_DOP?SE
+ 18/477 HE_RGB_DOP20_current                (HE)... ✅ Found 12 layers
+ 19/477 HE_CIR_DOP20_current                (HE)... ✅ Found 12 layers
+ 20/477 MV_RGB_DOP20_current                (MV)... ✅ Found 3 layers
+ 21/477 MV_CIR_DOP20_current                (MV)... ✅ Found 3 layers
+ 22/477 NI_RGB_DOP20_current                (NI)... ❌ XML parse error: unclosed token: line 59, column 16
+ 23/477 NW_RGB_DOP_current                  (NW)... ✅ Found 5 layers
+ 24/477 NW_CIR_DOP_current                  (NW)... ✅ Found 5 layers
+ 25/477 RP_RGB_DOP20_current                (RP)... ⚠️  Layer "rp_dop" not found (18 layers available)
+ 26/477 RP_CIR_DOP20_current                (RP)... ⚠️  Layer "DOP_CIR" not found (3 layers available)
+ 27/477 SL_RGB_DOP20_current                (SL)... ✅ Found 5 layers
+ 28/477 SL_CIR_DOP20_current                (SL)... ✅ Found 5 layers
+ 29/477 SN_RGB_DOP20_current                (SN)... ⚠️  Service responds but no layers found
+ 30/477 SN_CIR_DOP20_current                (SN)... ⚠️  Service responds but no layers found
+ 31/477 ST_RGB_DOP20_current                (ST)... ❌ Request failed: 403 Client Error: 403 for url: https://www.geodatenportal.sachsen-anhalt.de/wss/
+ 32/477 SH_RGB_DOP20_current                (SH)... ✅ Found 1 layers
+ 33/477 TH_RGB_DOP20_current                (TH)... ✅ Found 4 layers
+ 34/477 TH_CIR_DOP20_current                (TH)... ✅ Found 4 layers
+ 35/477 BKG_RGB_DOP20_current               (DE)... ❌ Request failed: 403 Client Error:  for url: https://sg.geodatenzentrum.de/wms_dop__%7Buuid%7D?SE
+ 36/477 BW_RGB_DOP20_historic               (BW)... ✅ Found 1 layers
+ 37/477 BW_RGB_DOP20960969_1960             (BW)... ✅ Found 10 layers
+ 38/477 BW_RGB_DOP20960969_1961             (BW)... ✅ Found 10 layers
+ 39/477 BW_RGB_DOP20960969_1962             (BW)... ✅ Found 10 layers
+ 40/477 BW_RGB_DOP20960969_1963             (BW)... ✅ Found 10 layers
+ 41/477 BW_RGB_DOP20960969_1964             (BW)... ✅ Found 10 layers
+ 42/477 BW_RGB_DOP20960969_1965             (BW)... ✅ Found 10 layers
+ 43/477 BW_RGB_DOP20960969_1966             (BW)... ✅ Found 10 layers
+ 44/477 BW_RGB_DOP20960969_1967             (BW)... ✅ Found 10 layers
+ 45/477 BW_RGB_DOP20960969_1968             (BW)... ✅ Found 10 layers
+ 46/477 BW_RGB_DOP20960969_1969             (BW)... ✅ Found 10 layers
+ 47/477 BW_RGB_DOP20970979_1970             (BW)... ✅ Found 10 layers
+ 48/477 BW_RGB_DOP20970979_1971             (BW)... ✅ Found 10 layers
+ 49/477 BW_RGB_DOP20970979_1972             (BW)... ✅ Found 10 layers
+ 50/477 BW_RGB_DOP20970979_1973             (BW)... ✅ Found 10 layers
+ 51/477 BW_RGB_DOP20970979_1974             (BW)... ✅ Found 10 layers
+ 52/477 BW_RGB_DOP20970979_1975             (BW)... ✅ Found 10 layers
+ 53/477 BW_RGB_DOP20970979_1976             (BW)... ✅ Found 10 layers
+ 54/477 BW_RGB_DOP20970979_1977             (BW)... ✅ Found 10 layers
+ 55/477 BW_RGB_DOP20970979_1978             (BW)... ✅ Found 10 layers
+ 56/477 BW_RGB_DOP20970979_1979             (BW)... ✅ Found 10 layers
+ 57/477 BW_RGB_DOP20980_1980                (BW)... ✅ Found 10 layers
+ 58/477 BW_RGB_DOP20980_1981                (BW)... ✅ Found 10 layers
+ 59/477 BW_RGB_DOP20980_1982                (BW)... ✅ Found 10 layers
+ 60/477 BW_RGB_DOP20980_1983                (BW)... ✅ Found 10 layers
+ 61/477 BW_RGB_DOP20980_1984                (BW)... ✅ Found 10 layers
+ 62/477 BW_RGB_DOP20980_1985                (BW)... ✅ Found 10 layers
+ 63/477 BW_RGB_DOP20980_1986                (BW)... ✅ Found 10 layers
+ 64/477 BW_RGB_DOP20980_1987                (BW)... ✅ Found 10 layers
+ 65/477 BW_RGB_DOP20980_1988                (BW)... ✅ Found 10 layers
+ 66/477 BW_RGB_DOP20980_1989                (BW)... ✅ Found 10 layers
+ 67/477 BW_RGB_DOP20990_1990                (BW)... ✅ Found 10 layers
+ 68/477 BW_RGB_DOP20990_1991                (BW)... ✅ Found 10 layers
+ 69/477 BW_RGB_DOP20990_1992                (BW)... ✅ Found 10 layers
+ 70/477 BW_RGB_DOP20990_1993                (BW)... ✅ Found 10 layers
+ 71/477 BW_RGB_DOP20990_1994                (BW)... ✅ Found 10 layers
+ 72/477 BW_RGB_DOP20990_1995                (BW)... ✅ Found 10 layers
+ 73/477 BW_RGB_DOP20990_1996                (BW)... ✅ Found 10 layers
+ 74/477 BW_RGB_DOP20990_1997                (BW)... ✅ Found 10 layers
+ 75/477 BW_RGB_DOP20990_1998                (BW)... ✅ Found 10 layers
+ 76/477 BW_RGB_DOP20990_1999                (BW)... ✅ Found 10 layers
+ 77/477 BW_RGB_DOP20000_2010                (BW)... ✅ Found 10 layers
+ 78/477 BW_RGB_DOP20000_2011                (BW)... ✅ Found 10 layers
+ 79/477 BW_RGB_DOP20000_2012                (BW)... ✅ Found 10 layers
+ 80/477 BW_RGB_DOP20000_2013                (BW)... ✅ Found 10 layers
+ 81/477 BW_RGB_DOP20000_2014                (BW)... ✅ Found 10 layers
+ 82/477 BW_RGB_DOP20000_2015                (BW)... ✅ Found 10 layers
+ 83/477 BW_RGB_DOP20000_2016                (BW)... ✅ Found 10 layers
+ 84/477 BW_RGB_DOP20000_2017                (BW)... ✅ Found 10 layers
+ 85/477 BW_RGB_DOP20000_2018                (BW)... ✅ Found 10 layers
+ 86/477 BW_RGB_DOP20000_2019                (BW)... ✅ Found 10 layers
+ 87/477 BW_RGB_DOP20_2010                   (BW)... ✅ Found 14 layers
+ 88/477 BW_RGB_DOP20_2011                   (BW)... ✅ Found 14 layers
+ 89/477 BW_RGB_DOP20_2012                   (BW)... ✅ Found 14 layers
+ 90/477 BW_RGB_DOP20_2013                   (BW)... ✅ Found 14 layers
+ 91/477 BW_RGB_DOP20_2014                   (BW)... ✅ Found 14 layers
+ 92/477 BW_RGB_DOP20_2015                   (BW)... ✅ Found 14 layers
+ 93/477 BW_RGB_DOP20_2016                   (BW)... ✅ Found 14 layers
+ 94/477 BW_RGB_DOP20_2017                   (BW)... ✅ Found 14 layers
+ 95/477 BW_RGB_DOP20_2018                   (BW)... ✅ Found 14 layers
+ 96/477 BW_RGB_DOP20_2019                   (BW)... ✅ Found 14 layers
+ 97/477 BW_RGB_DOP20_2020                   (BW)... ✅ Found 14 layers
+ 98/477 BW_RGB_DOP20_2021                   (BW)... ✅ Found 14 layers
+ 99/477 BW_RGB_DOP20_2022                   (BW)... ✅ Found 14 layers
+100/477 BW_RGB_DOP20_2023                   (BW)... ✅ Found 14 layers
+101/477 BY_RGB_DOP20_historic               (BY)... ❌ XML parse error: mismatched tag: line 31, column 2
+102/477 BY_RGB_DOP20_2024                   (BY)... ✅ Found 45 layers
+103/477 BY_RGB_DOP20_2023                   (BY)... ✅ Found 45 layers
+104/477 BY_RGB_DOP20_2022                   (BY)... ✅ Found 45 layers
+105/477 BY_RGB_DOP20_2021                   (BY)... ✅ Found 45 layers
+106/477 BY_RGB_DOP20_2020                   (BY)... ✅ Found 45 layers
+107/477 BY_RGB_DOP20_2019                   (BY)... ✅ Found 45 layers
+108/477 BY_RGB_DOP20_2018                   (BY)... ✅ Found 45 layers
+109/477 BY_RGB_DOP20_2017                   (BY)... ✅ Found 45 layers
+110/477 BY_RGB_DOP20_2016                   (BY)... ✅ Found 45 layers
+111/477 BY_RGB_DOP20_2015                   (BY)... ✅ Found 45 layers
+112/477 BY_RGB_DOP20_2014                   (BY)... ✅ Found 45 layers
+113/477 BY_RGB_DOP20_2013                   (BY)... ✅ Found 45 layers
+114/477 BY_RGB_DOP20_2012                   (BY)... ✅ Found 45 layers
+115/477 BY_RGB_DOP20_2011                   (BY)... ✅ Found 45 layers
+116/477 BY_RGB_DOP20_2010                   (BY)... ✅ Found 45 layers
+117/477 BY_RGB_DOP20_2009                   (BY)... ✅ Found 45 layers
+118/477 BY_RGB_DOP20_2008                   (BY)... ✅ Found 45 layers
+119/477 BY_RGB_DOP20_2007                   (BY)... ✅ Found 45 layers
+120/477 BY_RGB_DOP20_2006                   (BY)... ✅ Found 45 layers
+121/477 BY_RGB_DOP20_2005                   (BY)... ✅ Found 45 layers
+122/477 BY_RGB_DOP20_2004                   (BY)... ✅ Found 45 layers
+123/477 BY_RGB_DOP20_2003                   (BY)... ✅ Found 45 layers
+124/477 BE_RGB_DOP20_historic               (BE)... ✅ Found 71 layers
+125/477 BE_RGB_DOP20005010_2005             (BE)... ✅ Found 2 layers
+126/477 BE_RGB_DOP20005010_2005             (BE)... ✅ Found 2 layers
+127/477 BE_RGB_DOP20009012_2009             (BE)... ✅ Found 2 layers
+128/477 BE_RGB_DOP20009012_2009             (BE)... ✅ Found 2 layers
+129/477 BE_RGB_DOP20013015_2013             (BE)... ✅ Found 2 layers
+130/477 BE_RGB_DOP20013015_2013             (BE)... ✅ Found 2 layers
+131/477 BE_RGB_DOP20016018_2016             (BE)... ✅ Found 2 layers
+132/477 BE_RGB_DOP20016018_2016             (BE)... ✅ Found 2 layers
+133/477 BE_RGB_DOP20019021_2019             (BE)... ✅ Found 2 layers
+134/477 BE_RGB_DOP20019021_2019             (BE)... ✅ Found 2 layers
+135/477 BB_RGB_DOP20953_1953                (BB)... ✅ Found 1 layers
+136/477 BB_RGB_DOP20992997_1992             (BB)... ✅ Found 1 layers
+137/477 BB_RGB_DOP20001009_2001             (BB)... ✅ Found 1 layers
+138/477 BB_RGB_DOP20005010_2005             (BB)... ✅ Found 2 layers
+139/477 BB_RGB_DOP20005010_2005             (BB)... ✅ Found 2 layers
+140/477 BB_RGB_DOP20009012_2009             (BB)... ✅ Found 2 layers
+141/477 BB_RGB_DOP20009012_2009             (BB)... ✅ Found 2 layers
+142/477 BB_RGB_DOP20013015_2013             (BB)... ✅ Found 2 layers
+143/477 BB_RGB_DOP20013015_2013             (BB)... ✅ Found 2 layers
+144/477 BB_RGB_DOP20016018_2016             (BB)... ✅ Found 2 layers
+145/477 BB_RGB_DOP20016018_2016             (BB)... ✅ Found 2 layers
+146/477 BB_RGB_DOP20019021_2019             (BB)... ✅ Found 2 layers
+147/477 BB_RGB_DOP20019021_2019             (BB)... ✅ Found 2 layers
+148/477 HB_RGB_DOP20_historic               (HB)... ❌ Request failed: HTTPConnectionPool(host='gdi1.geo.bremen.de', port=80): Max retries exceeded wit
+149/477 HH_RGB_DOP20_historic               (HH)... ❌ XML parse error: mismatched tag: line 54, column 2
+150/477 HE_RGB_DOP20_historic               (HE)... ✅ Found 5 layers
+151/477 MV_RGB_DOP20991_1991                (MV)... ✅ Found 3 layers
+152/477 MV_RGB_DOP20991_1991                (MV)... ✅ Found 3 layers
+153/477 MV_RGB_DOP20_2002                   (MV)... ✅ Found 23 layers
+154/477 MV_RGB_DOP20_2003                   (MV)... ✅ Found 23 layers
+155/477 MV_RGB_DOP20_2004                   (MV)... ✅ Found 23 layers
+156/477 MV_RGB_DOP20_2005                   (MV)... ✅ Found 23 layers
+157/477 MV_RGB_DOP20_2006                   (MV)... ✅ Found 23 layers
+158/477 MV_RGB_DOP20_2007                   (MV)... ✅ Found 23 layers
+159/477 MV_RGB_DOP20_2008                   (MV)... ✅ Found 23 layers
+160/477 MV_RGB_DOP20_2009                   (MV)... ✅ Found 23 layers
+161/477 MV_RGB_DOP20_2010                   (MV)... ✅ Found 23 layers
+162/477 MV_RGB_DOP20_2011                   (MV)... ✅ Found 23 layers
+163/477 MV_RGB_DOP20_2012                   (MV)... ✅ Found 23 layers
+164/477 MV_RGB_DOP20_2013                   (MV)... ✅ Found 23 layers
+165/477 MV_RGB_DOP20_2014                   (MV)... ✅ Found 23 layers
+166/477 MV_RGB_DOP20_2015                   (MV)... ✅ Found 23 layers
+167/477 MV_RGB_DOP20_2016                   (MV)... ✅ Found 23 layers
+168/477 MV_RGB_DOP20_2017                   (MV)... ✅ Found 23 layers
+169/477 MV_RGB_DOP20_2018                   (MV)... ✅ Found 23 layers
+170/477 MV_RGB_DOP20_2019                   (MV)... ✅ Found 23 layers
+171/477 MV_RGB_DOP20_2020                   (MV)... ✅ Found 23 layers
+172/477 MV_RGB_DOP20_2021                   (MV)... ✅ Found 23 layers
+173/477 MV_RGB_DOP20_2022                   (MV)... ✅ Found 23 layers
+174/477 MV_RGB_DOP20_2023                   (MV)... ✅ Found 23 layers
+175/477 MV_RGB_DOP20_2024                   (MV)... ✅ Found 23 layers
+176/477 MV_RGB_DOP20953_1953                (MV)... ✅ Found 3 layers
+177/477 MV_RGB_DOP20953_1953                (MV)... ✅ Found 3 layers
+178/477 NI_RGB_DOP20_2005                   (NI)... ✅ Found 33 layers
+179/477 NI_RGB_DOP20_2008                   (NI)... ✅ Found 33 layers
+180/477 NI_RGB_DOP20_2009                   (NI)... ✅ Found 33 layers
+181/477 NI_RGB_DOP20_2010                   (NI)... ✅ Found 33 layers
+182/477 NI_RGB_DOP20_2011                   (NI)... ✅ Found 33 layers
+183/477 NI_RGB_DOP20_2012                   (NI)... ✅ Found 33 layers
+184/477 NI_RGB_DOP20_2013                   (NI)... ✅ Found 33 layers
+185/477 NI_RGB_DOP20_2014                   (NI)... ✅ Found 33 layers
+186/477 NI_RGB_DOP20_2015                   (NI)... ✅ Found 33 layers
+187/477 NI_RGB_DOP20_2016                   (NI)... ✅ Found 33 layers
+188/477 NI_RGB_DOP20_2017                   (NI)... ✅ Found 33 layers
+189/477 NI_RGB_DOP20_2018                   (NI)... ✅ Found 33 layers
+190/477 NI_RGB_DOP20_2019                   (NI)... ✅ Found 33 layers
+191/477 NI_RGB_DOP20_2020                   (NI)... ✅ Found 33 layers
+192/477 NI_RGB_DOP20_2021                   (NI)... ✅ Found 33 layers
+193/477 NI_RGB_DOP20_2022                   (NI)... ✅ Found 33 layers
+194/477 NW_RGB_DOP20_1951                   (NW)... ✅ Found 74 layers
+195/477 NW_RGB_DOP20_1952                   (NW)... ✅ Found 74 layers
+196/477 NW_RGB_DOP20_1953                   (NW)... ✅ Found 74 layers
+197/477 NW_RGB_DOP20_1954                   (NW)... ✅ Found 74 layers
+198/477 NW_RGB_DOP20_1955                   (NW)... ✅ Found 74 layers
+199/477 NW_RGB_DOP20_1956                   (NW)... ✅ Found 74 layers
+200/477 NW_RGB_DOP20_1957                   (NW)... ✅ Found 74 layers
+201/477 NW_RGB_DOP20_1958                   (NW)... ✅ Found 74 layers
+202/477 NW_RGB_DOP20_1959                   (NW)... ✅ Found 74 layers
+203/477 NW_RGB_DOP20_1960                   (NW)... ✅ Found 74 layers
+204/477 NW_RGB_DOP20_1961                   (NW)... ✅ Found 74 layers
+205/477 NW_RGB_DOP20_1962                   (NW)... ✅ Found 74 layers
+206/477 NW_RGB_DOP20_1963                   (NW)... ✅ Found 74 layers
+207/477 NW_RGB_DOP20_1964                   (NW)... ✅ Found 74 layers
+208/477 NW_RGB_DOP20_1966                   (NW)... ✅ Found 74 layers
+209/477 NW_RGB_DOP20_1967                   (NW)... ✅ Found 74 layers
+210/477 NW_RGB_DOP20_1968                   (NW)... ✅ Found 74 layers
+211/477 NW_RGB_DOP20_1969                   (NW)... ✅ Found 74 layers
+212/477 NW_RGB_DOP20_1970                   (NW)... ✅ Found 74 layers
+213/477 NW_RGB_DOP20_1971                   (NW)... ✅ Found 74 layers
+214/477 NW_RGB_DOP20_1972                   (NW)... ✅ Found 74 layers
+215/477 NW_RGB_DOP20_1973                   (NW)... ✅ Found 74 layers
+216/477 NW_RGB_DOP20_1974                   (NW)... ✅ Found 74 layers
+217/477 NW_RGB_DOP20_1975                   (NW)... ✅ Found 74 layers
+218/477 NW_RGB_DOP20_1976                   (NW)... ✅ Found 74 layers
+219/477 NW_RGB_DOP20_1977                   (NW)... ✅ Found 74 layers
+220/477 NW_RGB_DOP20_1978                   (NW)... ✅ Found 74 layers
+221/477 NW_RGB_DOP20_1979                   (NW)... ✅ Found 74 layers
+222/477 NW_RGB_DOP20_1980                   (NW)... ✅ Found 74 layers
+223/477 NW_RGB_DOP20_1981                   (NW)... ✅ Found 74 layers
+224/477 NW_RGB_DOP20_1982                   (NW)... ✅ Found 74 layers
+225/477 NW_RGB_DOP20_1983                   (NW)... ✅ Found 74 layers
+226/477 NW_RGB_DOP20_1984                   (NW)... ✅ Found 74 layers
+227/477 NW_RGB_DOP20_1985                   (NW)... ✅ Found 74 layers
+228/477 NW_RGB_DOP20_1986                   (NW)... ✅ Found 74 layers
+229/477 NW_RGB_DOP20_1987                   (NW)... ✅ Found 74 layers
+230/477 NW_RGB_DOP20_1988                   (NW)... ✅ Found 74 layers
+231/477 NW_RGB_DOP20_1989                   (NW)... ✅ Found 74 layers
+232/477 NW_RGB_DOP20_1990                   (NW)... ✅ Found 74 layers
+233/477 NW_RGB_DOP20_1991                   (NW)... ✅ Found 74 layers
+234/477 NW_RGB_DOP20_1992                   (NW)... ✅ Found 74 layers
+235/477 NW_RGB_DOP20_1993                   (NW)... ✅ Found 74 layers
+236/477 NW_RGB_DOP20_1994                   (NW)... ✅ Found 74 layers
+237/477 NW_RGB_DOP20_1995                   (NW)... ✅ Found 74 layers
+238/477 NW_RGB_DOP20_1996                   (NW)... ✅ Found 74 layers
+239/477 NW_RGB_DOP20_1997                   (NW)... ✅ Found 74 layers
+240/477 NW_RGB_DOP20_1998                   (NW)... ✅ Found 74 layers
+241/477 NW_RGB_DOP20_1999                   (NW)... ✅ Found 74 layers
+242/477 NW_RGB_DOP20_2000                   (NW)... ✅ Found 74 layers
+243/477 NW_RGB_DOP20_2001                   (NW)... ✅ Found 74 layers
+244/477 NW_RGB_DOP20_2002                   (NW)... ✅ Found 74 layers
+245/477 NW_RGB_DOP20_2003                   (NW)... ✅ Found 74 layers
+246/477 NW_RGB_DOP20_2004                   (NW)... ✅ Found 74 layers
+247/477 NW_RGB_DOP20_2005                   (NW)... ✅ Found 74 layers
+248/477 NW_RGB_DOP20_2006                   (NW)... ✅ Found 74 layers
+249/477 NW_RGB_DOP20_2007                   (NW)... ✅ Found 74 layers
+250/477 NW_RGB_DOP20_2008                   (NW)... ✅ Found 74 layers
+251/477 NW_RGB_DOP20_2009                   (NW)... ✅ Found 74 layers
+252/477 NW_RGB_DOP20_2010                   (NW)... ✅ Found 74 layers
+253/477 NW_RGB_DOP20_2011                   (NW)... ✅ Found 74 layers
+254/477 NW_RGB_DOP20_2012                   (NW)... ✅ Found 74 layers
+255/477 NW_RGB_DOP20_2013                   (NW)... ✅ Found 74 layers
+256/477 NW_RGB_DOP20_2014                   (NW)... ✅ Found 74 layers
+257/477 NW_RGB_DOP20_2015                   (NW)... ✅ Found 74 layers
+258/477 NW_RGB_DOP20_2016                   (NW)... ✅ Found 74 layers
+259/477 NW_RGB_DOP20_2017                   (NW)... ✅ Found 74 layers
+260/477 NW_RGB_DOP20_2018                   (NW)... ✅ Found 74 layers
+261/477 NW_RGB_DOP20_2019                   (NW)... ✅ Found 74 layers
+262/477 NW_RGB_DOP20_2020                   (NW)... ✅ Found 74 layers
+263/477 NW_RGB_DOP20_2021                   (NW)... ✅ Found 74 layers
+264/477 NW_RGB_DOP20_2022                   (NW)... ✅ Found 74 layers
+265/477 NW_RGB_DOP20_2023                   (NW)... ✅ Found 74 layers
+266/477 RP_RGB_DOP20_1994                   (RP)... ✅ Found 63 layers
+267/477 RP_RGB_DOP20_1994                   (RP)... ✅ Found 63 layers
+268/477 RP_RGB_DOP20_1995                   (RP)... ✅ Found 63 layers
+269/477 RP_RGB_DOP20_1995                   (RP)... ✅ Found 63 layers
+270/477 RP_RGB_DOP20_1996                   (RP)... ✅ Found 63 layers
+271/477 RP_RGB_DOP20_1996                   (RP)... ✅ Found 63 layers
+272/477 RP_RGB_DOP20_1997                   (RP)... ✅ Found 63 layers
+273/477 RP_RGB_DOP20_1997                   (RP)... ✅ Found 63 layers
+274/477 RP_RGB_DOP20_1998                   (RP)... ✅ Found 63 layers
+275/477 RP_RGB_DOP20_1998                   (RP)... ✅ Found 63 layers
+276/477 RP_RGB_DOP20_1999                   (RP)... ✅ Found 63 layers
+277/477 RP_RGB_DOP20_1999                   (RP)... ✅ Found 63 layers
+278/477 RP_RGB_DOP20_2000                   (RP)... 

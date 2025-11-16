@@ -1,0 +1,7 @@
+Metadaten bei historischem file Download sind nicht korrekt (NRW)
+Daten in YAML Falsch bezogen auf historischen Download NRW
+Extraction metadaten 2022 funktioniert auch nicht
+
+Einstellung für ausgegebene Auflösung einstellen
+Lizenzen der Dienste vermerken
+Nach weiteren Atom Feed screenen

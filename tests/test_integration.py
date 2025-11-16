@@ -9,12 +9,10 @@ from pathlib import Path
 from shapely.geometry import box
 import geopandas as gpd
 
-from orthophotos_downloader.data_scraping.wms_germany import (
-    BY_RGB_Dop20_ImageDownloader,
-    BY_CIR_Dop20_ImageDownloader,
-)
+from orthophotos_downloader.data_scraping.generic_downloader import WMSServiceDownloader
 from orthophotos_downloader.data_scraping.image_download import RGBIImageDownloader
 from orthophotos_downloader import AutoOrthophotoDownloader
+from orthophotos_downloader.wms_catalog import WMSCatalogManager
 
 
 class TestActualDownloads:
@@ -25,7 +23,11 @@ class TestActualDownloads:
     def test_small_rgb_download_bavaria(self):
         """Test actual RGB download from Bavaria (100m x 100m)."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            downloader = BY_RGB_Dop20_ImageDownloader(grid_spacing=100)
+            # Get BY RGB service from catalog
+            catalog = WMSCatalogManager()
+            service = catalog.filter_services(state_code='BY', image_type='RGB', year='latest')[0]
+            
+            downloader = WMSServiceDownloader(service=service, grid_spacing=100)
 
             # Very small area in Munich
             bbox = box(691000, 5334000, 691100, 5334100)
@@ -49,7 +51,11 @@ class TestActualDownloads:
     def test_small_cir_download_bavaria(self):
         """Test actual CIR download from Bavaria (100m x 100m)."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            downloader = BY_CIR_Dop20_ImageDownloader(grid_spacing=100)
+            # Get BY CIR service from catalog
+            catalog = WMSCatalogManager()
+            service = catalog.filter_services(state_code='BY', image_type='CIR', year='latest')[0]
+            
+            downloader = WMSServiceDownloader(service=service, grid_spacing=100)
 
             # Very small area in Munich
             bbox = box(691000, 5334000, 691100, 5334100)
@@ -71,8 +77,13 @@ class TestActualDownloads:
     def test_rgbi_download_bavaria(self):
         """Test actual RGBI download and merge (100m x 100m)."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            rgb_downloader = BY_RGB_Dop20_ImageDownloader(grid_spacing=100)
-            cir_downloader = BY_CIR_Dop20_ImageDownloader(grid_spacing=100)
+            # Get BY RGB and CIR services from catalog
+            catalog = WMSCatalogManager()
+            rgb_service = catalog.filter_services(state_code='BY', image_type='RGB', year='latest')[0]
+            cir_service = catalog.filter_services(state_code='BY', image_type='CIR', year='latest')[0]
+            
+            rgb_downloader = WMSServiceDownloader(service=rgb_service, grid_spacing=100)
+            cir_downloader = WMSServiceDownloader(service=cir_service, grid_spacing=100)
 
             rgbi_downloader = RGBIImageDownloader(
                 rgb_downloader=rgb_downloader, cir_downloader=cir_downloader
@@ -119,7 +130,11 @@ class TestActualDownloads:
     def test_multiple_tiles_download(self):
         """Test downloading multiple tiles (500m x 500m area, 100m tiles)."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            downloader = BY_RGB_Dop20_ImageDownloader(grid_spacing=100)
+            # Get BY RGB service from catalog
+            catalog = WMSCatalogManager()
+            service = catalog.filter_services(state_code='BY', image_type='RGB', year='latest')[0]
+            
+            downloader = WMSServiceDownloader(service=service, grid_spacing=100)
 
             # 500m x 500m area = 25 tiles of 100m x 100m
             bbox = box(691000, 5334000, 691500, 5334500)
@@ -146,7 +161,11 @@ class TestDownloadErrorHandling:
     def test_invalid_coordinates(self):
         """Test that invalid coordinates are handled gracefully."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            downloader = BY_RGB_Dop20_ImageDownloader(grid_spacing=100)
+            # Get BY RGB service from catalog
+            catalog = WMSCatalogManager()
+            service = catalog.filter_services(state_code='BY', image_type='RGB', year='latest')[0]
+            
+            downloader = WMSServiceDownloader(service=service, grid_spacing=100)
 
             # Coordinates outside Germany
             bbox = box(0, 0, 100, 100)

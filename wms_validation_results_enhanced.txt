@@ -1,0 +1,34 @@
+ENHANCED SERVICE VALIDATION RESULTS
+====================================================================================================
+
+Total services: 2 (filtered from 559)
+OK: 2
+WARNING: 0
+ERROR: 0
+Layer mismatches: 0
+
+
+ERROR (0 services)
+----------------------------------------------------------------------------------------------------
+
+WARNING (0 services)
+----------------------------------------------------------------------------------------------------
+
+OK (2 services)
+----------------------------------------------------------------------------------------------------
+
+ST_RGB_DOP20_current
+  State: ST
+  URL: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?
+  Mode: WMS
+  Status: Found 2 layers
+  Specified layer: lsa_lvermgeo_dop20_2
+  Layer found: True
+
+
+ST_RGB_DOP20_atom
+  State: ST
+  URL: https://geodatenportal.sachsen-anhalt.de/arcgisinspire/rest/directories/web/INSPIRE_ALKIS/ALKIS_OI_DOP20_MapServer/datasetoi.xml
+  Mode: ATOM
+  Status: Found 5473 tiles
+

@@ -2,11 +2,10 @@
 Automatic WMS downloader that detects which services are needed for a given area
 and orchestrates downloads across multiple WMS services.
 
-Now uses the centralized WMS catalog (wms_services.yaml) instead of hardcoded mappings.
+Uses the centralized WMS catalog (wms_services.yaml) and generic WMSServiceDownloader.
 """
 
 import geopandas as gpd
-import importlib
 import logging
 from typing import List, Dict, Optional, Union, Tuple
 from pathlib import Path
@@ -17,7 +16,10 @@ from orthophotos_downloader.data_scraping.image_download import (
     ImageDownloader,
     AreaDataset,
 )
+from orthophotos_downloader.data_scraping.generic_downloader import WMSServiceDownloader
+from orthophotos_downloader.data_scraping.file_downloader import FileServiceDownloader
 from orthophotos_downloader.wms_catalog import WMSCatalogManager
+from orthophotos_downloader.wms_catalog.catalog_manager import WMSService
 
 logger = logging.getLogger(__name__)
 
@@ -30,14 +32,29 @@ class AutoOrthophotoDownloader:
     Uses the centralized WMS catalog for service discovery.
     """
 
-    def __init__(self, grid_spacing: int, german_states_url: Optional[str] = None, extract_metadata: bool = True):
+    def __init__(
+        self,
+        grid_spacing: int,
+        german_states_url: Optional[str] = None,
+        extract_metadata: bool = False,
+        year: Union[str, int, None] = None,
+        delivery_method: str = 'auto',
+        max_workers: int = 4
+    ):
         """
-        Initialize the AutoOrthophotoDownloader.
+        Initialize the automatic orthophoto downloader.
 
         Args:
-            grid_spacing: The grid spacing in meters for the image download.
+            grid_spacing: The grid spacing in meters for image downloads.
             german_states_url: URL to German federal states GeoJSON. If None, uses default.
             extract_metadata: Whether to extract metadata and create STAC items for downloaded tiles.
+            year: Specific year to download (e.g., 2023, '2021', 'latest'). If None, uses 'latest'.
+            delivery_method: How to download data:
+                - 'auto': Prefer files if available, fallback to WMS
+                - 'files': Force direct file downloads (error if not available)
+                - 'wms': Force WMS downloads (error if not available)
+            max_workers: Maximum number of parallel download threads (default: 4).
+                Higher values can speed up downloads but may overload the server.
         """
         self.grid_spacing = grid_spacing
         self.german_states_url = (
@@ -45,8 +62,18 @@ class AutoOrthophotoDownloader:
             or "https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/2_bundeslaender/4_niedrig.geo.json"
         )
         self.extract_metadata = extract_metadata
+        self.year = str(year) if year is not None else 'latest'
+        self.delivery_method = delivery_method
+        self.max_workers = max_workers
         self._states_gdf = None
         self._catalog = WMSCatalogManager()  # Initialize WMS catalog
+        
+        # Validate delivery method
+        if delivery_method not in ['auto', 'files', 'wms']:
+            raise ValueError(
+                f"Invalid delivery_method '{delivery_method}'. "
+                f"Must be 'auto', 'files', or 'wms'"
+            )
 
     def _load_german_states(self) -> GeoDataFrame:
         """Load German federal states geometry data."""
@@ -110,63 +137,145 @@ class AutoOrthophotoDownloader:
         )
         return intersecting_states
 
-    def _get_downloader_class(self, state_code: str, image_type: str = "RGB"):
+    def _get_downloader_class(self, state_code: str, image_type: str) -> Tuple[type, WMSService]:
         """
-        Get the appropriate downloader class for a state and image type using the WMS catalog.
+        Get the appropriate downloader class and service for a state and image type.
 
         Args:
             state_code: The federal state code (e.g., "BY", "BW")
-            image_type: "RGB" or "CIR"
+            image_type: "RGB", "CIR", or "RGBI"
 
         Returns:
-            The downloader class
+            Tuple of (downloader class, service)
         """
-        if image_type not in ["RGB", "CIR"]:
-            raise ValueError("image_type must be 'RGB' or 'CIR'")
+        if image_type not in ["RGB", "CIR", "RGBI"]:
+            raise ValueError("image_type must be 'RGB', 'CIR', or 'RGBI'")
 
-        # Query catalog for matching service
+        # Query catalog for matching service with year filter
         services = self._catalog.filter_services(
             state_code=state_code,
-            image_type=image_type
+            image_type=image_type,
+            year=self.year
         )
         
         if not services:
             raise ValueError(
-                f"No {image_type} service available for state: {state_code} in catalog"
+                f"No {image_type} service available for state {state_code}, year {self.year} in catalog.\n"
+                f"  • Try using year='latest' for current orthophotos\n"
+                f"  • Use ServiceDiscovery.get_available_years() to check available years\n"
+                f"  • Run: python scripts/discover_services.py --bbox 'minx,miny,maxx,maxy' --list-years"
             )
         
-        # Use the first matching service
-        service = services[0]
+        # Reorder services based on desired delivery method
+        preferred_services = services
+        if self.delivery_method == 'files':
+            file_services = [s for s in services if s.has_files()]
+            if file_services:
+                preferred_services = file_services
+        elif self.delivery_method == 'wms':
+            wms_services = [s for s in services if s.has_wms()]
+            if wms_services:
+                preferred_services = wms_services
+        else:  # auto
+            file_services = [s for s in services if s.has_files()]
+            if file_services:
+                preferred_services = file_services
         
-        # Build downloader class name from service ID
-        # Convention: StateCode_ImageType_Dop{resolution}_ImageDownloader
-        # e.g., BY_RGB_Dop20_ImageDownloader
+        # Use the first matching service after preference ordering
+        service = preferred_services[0]
         
-        # Special case mappings where class name doesn't match resolution
-        # NW uses Dop20 class name even though it has 0.1m (DOP10) resolution
-        special_cases = {
-            ('NW', 'RGB'): 'NW_RGB_Dop20_ImageDownloader',
-            ('NW', 'CIR'): 'NW_CIR_Dop20_ImageDownloader',
-        }
+        logger.info(f"Using service: {service.id} (year: {service.year}, layer: {service.layer_name})")
         
-        key = (state_code, image_type)
-        if key in special_cases:
-            downloader_class_name = special_cases[key]
-        else:
-            resolution_str = str(int(service.resolution * 100))  # 0.2 -> "20", 0.1 -> "10"
-            downloader_class_name = f"{state_code}_{image_type}_Dop{resolution_str}_ImageDownloader"
+        # Determine which downloader to use based on delivery_method
+        downloader_class = self._choose_downloader_class(service)
+        
+        return downloader_class, service
+    
+    def _choose_downloader_class(self, service: WMSService) -> type:
+        """
+        Choose the appropriate downloader class based on delivery_method and service capabilities.
+        
+        Args:
+            service: WMSService object
+            
+        Returns:
+            Downloader class (WMSServiceDownloader or FileServiceDownloader)
+        """
+        if self.delivery_method == 'files':
+            # Force file delivery
+            if not service.has_files():
+                raise ValueError(
+                    f"Service {service.id} does not support file delivery.\n"
+                    f"  Available methods: {service.get_delivery_methods()}\n"
+                    f"  Try delivery_method='wms' or 'auto'"
+                )
+            logger.info(f"Using FileServiceDownloader for {service.id}")
+            return FileServiceDownloader
+            
+        elif self.delivery_method == 'wms':
+            # Force WMS delivery
+            if not service.has_wms():
+                raise ValueError(
+                    f"Service {service.id} does not support WMS delivery.\n"
+                    f"  Available methods: {service.get_delivery_methods()}\n"
+                    f"  Try delivery_method='files' or 'auto'"
+                )
+            logger.info(f"Using WMSServiceDownloader for {service.id}")
+            return WMSServiceDownloader
+            
+        else:  # 'auto'
+            # Prefer files if available, fallback to WMS
+            if service.has_files():
+                logger.info(f"Auto-selecting FileServiceDownloader for {service.id} (files available)")
+                return FileServiceDownloader
+            elif service.has_wms():
+                logger.info(f"Auto-selecting WMSServiceDownloader for {service.id} (WMS only)")
+                return WMSServiceDownloader
+            else:
+                raise ValueError(
+                    f"Service {service.id} has no delivery methods available!\n"
+                    f"  This is a catalog configuration error."
+                )
 
-        # Dynamically import the downloader class
-        try:
-            mod = importlib.import_module(
-                "orthophotos_downloader.data_scraping.wms_germany"
+    def _instantiate_downloader(
+        self,
+        downloader_class: type,
+        service: WMSService,
+        layer_override: Optional[str] = None
+    ):
+        """
+        Instantiate a downloader with consistent parameters, including max_workers support.
+
+        Args:
+            downloader_class: Downloader class to instantiate.
+            service: Service configuration to bind to the downloader.
+            layer_override: Optional override for the service's layer name.
+
+        Returns:
+            An initialized downloader instance.
+        """
+        if downloader_class == WMSServiceDownloader:
+            return downloader_class(
+                service=service,
+                grid_spacing=self.grid_spacing,
+                extract_metadata=self.extract_metadata,
+                layer_name_override=layer_override,
+                max_workers=self.max_workers
             )
-            downloader_class = getattr(mod, downloader_class_name)
-            logger.debug(f"Loaded downloader class: {downloader_class_name} for service {service.id}")
-            return downloader_class
-        except (ImportError, AttributeError) as e:
-            raise ImportError(
-                f"Could not import {downloader_class_name} for service {service.id}: {e}"
+        elif downloader_class == FileServiceDownloader:
+            return downloader_class(
+                service=service,
+                grid_spacing=self.grid_spacing,
+                extract_metadata=self.extract_metadata,
+                max_workers=self.max_workers
+            )
+        else:
+            # Fallback for custom downloaders that follow the same signature
+            return downloader_class(
+                service=service,
+                grid_spacing=self.grid_spacing,
+                extract_metadata=self.extract_metadata,
+                max_workers=self.max_workers
             )
 
     def download_images_auto(
@@ -206,11 +315,24 @@ class AutoOrthophotoDownloader:
             logger.info(f"Processing {state_name} ({state_code})...")
 
             try:
-                # Get the appropriate downloader class
-                downloader_class = self._get_downloader_class(state_code, image_type)
+                # Get the appropriate downloader class and service info
+                downloader_class, service = self._get_downloader_class(state_code, image_type)
 
-                # Instantiate the downloader with metadata extraction enabled
-                downloader = downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
+                # Determine layer name override for historic or fixed-year services
+                layer_override = (
+                    service.layer_name
+                    if service.year not in ['latest', 'current']
+                    else None
+                )
+                if layer_override:
+                    logger.info(f"Using layer {layer_override} for year {service.year}")
+
+                # Instantiate the downloader with consistent parameters
+                downloader = self._instantiate_downloader(
+                    downloader_class=downloader_class,
+                    service=service,
+                    layer_override=layer_override
+                )
 
                 # Create GeoSeries for the intersection
                 intersection_gs = gpd.GeoSeries([intersection_geom], crs="EPSG:25832")
@@ -220,8 +342,11 @@ class AutoOrthophotoDownloader:
                 state_out_path.mkdir(parents=True, exist_ok=True)
 
                 # Download images for this state's portion
-                # Use the filename_prefix if provided, otherwise use image_type
-                file_prefix = filename_prefix if filename_prefix else image_type
+                # Use the filename_prefix if provided, otherwise use image_type with year
+                if filename_prefix:
+                    file_prefix = filename_prefix
+                else:
+                    file_prefix = f"{image_type}_{service.year}"
 
                 result = downloader.download_images_from_polygon(
                     area_name=f"{area_name}_{state_name}",
@@ -318,15 +443,105 @@ class AutoOrthophotoDownloader:
             logger.info(f"Processing RGBI for {state_name} ({state_code})...")
 
             try:
-                # Get RGB and CIR downloader classes
-                rgb_downloader_class = self._get_downloader_class(state_code, "RGB")
-                cir_downloader_class = self._get_downloader_class(state_code, "CIR")
+                # Try direct RGBI service first (prefer file downloads when available)
+                rgbi_services = self._catalog.filter_services(
+                    state_code=state_code,
+                    image_type="RGBI",
+                    year=self.year
+                )
 
-                # Instantiate the downloaders with metadata extraction enabled
-                rgb_downloader = rgb_downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
-                cir_downloader = cir_downloader_class(grid_spacing=self.grid_spacing, extract_metadata=self.extract_metadata)
+                rgbi_service = rgbi_services[0] if rgbi_services else None
 
-                # Create RGBI downloader
+                if rgbi_service and self.delivery_method in ['auto', 'files'] and rgbi_service.has_files():
+                    logger.info(
+                        "Using file delivery for RGBI in %s (%s) via service %s",
+                        state_name,
+                        state_code,
+                        rgbi_service.id
+                    )
+
+                    rgbi_downloader = self._instantiate_downloader(
+                        downloader_class=FileServiceDownloader,
+                        service=rgbi_service
+                    )
+
+                    intersection_gs = gpd.GeoSeries([intersection_geom], crs="EPSG:25832")
+                    state_out_path = out_path / f"{state_name.replace('/', '_')}"
+                    state_out_path.mkdir(parents=True, exist_ok=True)
+
+                    result = rgbi_downloader.download_images_from_polygon(
+                        area_name=f"{area_name}_{state_name}",
+                        area_polygon=intersection_gs,
+                        out_path=state_out_path,
+                        filename_prefix=f"RGBI_{rgbi_service.year}"
+                    )
+
+                    results[state_name] = result
+                    logger.info(
+                        f"✅ {state_name}: {len(result.images)} RGBI images downloaded via file service"
+                    )
+                    continue
+
+                if self.delivery_method == 'files':
+                    raise ValueError(
+                        f"RGBI file delivery not available for {state_name} ({state_code}) in year {self.year}.\n"
+                        f"  Available delivery methods: {rgbi_service.get_delivery_methods()}"
+                        if rgbi_service else
+                        f"No RGBI service found for {state_name} ({state_code}) in year {self.year}."
+                    )
+
+                # Fallback to WMS composition using RGB + CIR services
+                rgb_services = self._catalog.filter_services(
+                    state_code=state_code,
+                    image_type="RGB",
+                    year=self.year
+                )
+                cir_services = self._catalog.filter_services(
+                    state_code=state_code,
+                    image_type="CIR",
+                    year=self.year
+                )
+
+                if not rgb_services or not cir_services:
+                    raise ValueError(
+                        f"Cannot build RGBI imagery for {state_name} ({state_code}) in year {self.year}:\n"
+                        f"  RGB services found: {len(rgb_services)}\n"
+                        f"  CIR services found: {len(cir_services)}"
+                    )
+
+                rgb_service = rgb_services[0]
+                cir_service = cir_services[0]
+
+                if not rgb_service.has_wms() or not cir_service.has_wms():
+                    raise ValueError(
+                        f"RGBI WMS composition requires RGB and CIR WMS endpoints.\n"
+                        f"  RGB has WMS: {rgb_service.has_wms()}\n"
+                        f"  CIR has WMS: {cir_service.has_wms()}"
+                    )
+
+                rgb_layer_override = (
+                    rgb_service.layer_name
+                    if rgb_service.year not in ['latest', 'current']
+                    else None
+                )
+                cir_layer_override = (
+                    cir_service.layer_name
+                    if cir_service.year not in ['latest', 'current']
+                    else None
+                )
+
+                rgb_downloader = self._instantiate_downloader(
+                    downloader_class=WMSServiceDownloader,
+                    service=rgb_service,
+                    layer_override=rgb_layer_override
+                )
+                cir_downloader = self._instantiate_downloader(
+                    downloader_class=WMSServiceDownloader,
+                    service=cir_service,
+                    layer_override=cir_layer_override
+                )
+
+                # Create RGBI downloader for WMS composition
                 rgbi_downloader = RGBIImageDownloader(rgb_downloader, cir_downloader)
 
                 # Create GeoSeries for the intersection

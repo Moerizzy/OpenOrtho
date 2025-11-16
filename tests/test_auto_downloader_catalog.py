@@ -25,28 +25,34 @@ class TestAutoDownloaderWithCatalog:
         assert isinstance(downloader._catalog, WMSCatalogManager)
     
     def test_get_downloader_class_uses_catalog(self):
-        """Verify _get_downloader_class queries catalog"""
+        """Verify _get_downloader_class queries catalog and returns generic downloader"""
         downloader = AutoOrthophotoDownloader(grid_spacing=1000)
         
-        # Test RGB downloader for Bayern
-        rgb_class = downloader._get_downloader_class('BY', 'RGB')
-        assert rgb_class.__name__ == 'BY_RGB_Dop20_ImageDownloader'
+        # Test RGB downloader for Bayern - should return tuple (class, service)
+        rgb_class, rgb_service = downloader._get_downloader_class('BY', 'RGB')
+        assert rgb_class.__name__ == 'WMSServiceDownloader'
+        assert rgb_service.state_code == 'BY'
+        assert rgb_service.type == 'RGB'
         
         # Test CIR downloader for Bayern
-        cir_class = downloader._get_downloader_class('BY', 'CIR')
-        assert cir_class.__name__ == 'BY_CIR_Dop20_ImageDownloader'
+        cir_class, cir_service = downloader._get_downloader_class('BY', 'CIR')
+        assert cir_class.__name__ == 'WMSServiceDownloader'
+        assert cir_service.state_code == 'BY'
+        assert cir_service.type == 'CIR'
     
     def test_get_downloader_class_different_resolutions(self):
-        """Verify downloader class handles different resolutions"""
+        """Verify downloader returns correct service with different resolutions"""
         downloader = AutoOrthophotoDownloader(grid_spacing=1000)
         
         # Bayern DOP20 (0.2m resolution)
-        by_class = downloader._get_downloader_class('BY', 'RGB')
-        assert 'Dop20' in by_class.__name__
+        by_class, by_service = downloader._get_downloader_class('BY', 'RGB')
+        assert by_class.__name__ == 'WMSServiceDownloader'
+        assert by_service.resolution == 0.2
         
         # NW DOP10 (0.1m resolution)
-        nw_class = downloader._get_downloader_class('NW', 'RGB')
-        assert 'Dop10' in nw_class.__name__
+        nw_class, nw_service = downloader._get_downloader_class('NW', 'RGB')
+        assert nw_class.__name__ == 'WMSServiceDownloader'
+        assert nw_service.resolution == 0.1
     
     def test_get_downloader_class_invalid_state(self):
         """Verify error handling for invalid state"""
@@ -59,7 +65,7 @@ class TestAutoDownloaderWithCatalog:
         """Verify error handling for invalid image type"""
         downloader = AutoOrthophotoDownloader(grid_spacing=1000)
         
-        with pytest.raises(ValueError, match="must be 'RGB' or 'CIR'"):
+        with pytest.raises(ValueError, match="must be 'RGB', 'CIR', or 'RGBI'"):
             downloader._get_downloader_class('BY', 'INVALID')
     
     def test_all_catalog_states_have_downloaders(self):

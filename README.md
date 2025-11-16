@@ -4,10 +4,13 @@ Python library for downloading orthophotos from German WMS services with automat
 
 ## Features
 
+- **547 WMS services** across all 16 German federal states
+- **517 historic orthophotos** dating back to 1937 (Bremerhaven)
+- **Direct file downloads** available for 5 states (uncompressed, highest quality)
 - Automatically detects which German state(s) your area falls into
 - RGB, CIR (Color Infrared), and RGBI (4-band merged)
-- Supports all 16 German federal states
-- 📊 Automatic STAC metadata generation for each downloaded tile
+- 📊 Automatic STAC metadata generation with acquisition dates for each tile
+- Supports both WMS streaming and direct file delivery
 
 ## Quick Start
 
@@ -42,47 +45,30 @@ downloader.download_rgb_images_auto(
 
 ## Coverage by Federal State
 
-| Bundesland             | RGB | CIR | Metadata |
-|------------------------|:---:|:---:|:--------:|
-| Baden-Württemberg      |  ✅   | ✅    | ✅       |
-| Bayern                 | ✅  | ✅  | ✅       |
-| Berlin                 |  ✅   |  ✅   | ✅       |
-| Brandenburg            | ✅  | ✅  | ✅       |
-| Bremen                 | ✅  |  ❌   | ❌       |
-| Hamburg                |   ❌  |   ❌  | ❌       |
-| Hessen                 | ✅  | ✅  | ✅       |
-| Mecklenburg-Vorpommern | ✅  | ✅  | ✅       |
-| Niedersachsen          | ✅  | ❌    | ✅       |
-| Nordrhein-Westfalen    | ✅  | ✅  | ✅       |
-| Rheinland-Pfalz        | ✅  | ✅  | ✅       |
-| Saarland               | ✅  | ✅  | ✅       |
-| Sachsen                | ✅  | ✅  | ✅       |
-| Sachsen-Anhalt         | ✅  | ❌    | ✅       |
-| Schleswig-Holstein     | ✅  | ❌    | ✅       |
-| Thüringen              | ✅  | ✅  | ✅       |
+| State                  | RGB | CIR | RGBI | Historic | File Downloads |
+|------------------------|:---:|:---:|:----:|:--------:|:--------------:|
+| Baden-Württemberg      | ✅  | ✅  | ✅   | ✅ (1960-2023) | ❌ |
+| Bayern                 | ✅  | ✅  | ✅   | ✅ (2003-2024) | ✅ |
+| Berlin                 | ✅  | ✅  | ✅   | ✅ (2004-2024) | ❌ |
+| Brandenburg            | ✅  | ✅  | ✅   | ✅ (1953-2021) | ✅ |
+| Bremen                 | ✅  | ❌  | ❌   | ✅ (1937-2025) | ❌ |
+| Hamburg                | ✅  | ❌  | ❌   | ✅ (2005-2024) | ❌ |
+| Hessen                 | ✅  | ✅  | ✅   | ✅ (2007-2024) | ❌ |
+| Mecklenburg-Vorpommern | ✅  | ✅  | ✅   | ✅ (1953-2024) | ❌ |
+| Niedersachsen          | ✅  | ❌  | ❌   | ✅ (2005-2022) | ✅ |
+| Nordrhein-Westfalen    | ✅  | ✅  | ✅   | ✅ (1951-2023) | ✅ |
+| Rheinland-Pfalz        | ✅  | ✅  | ✅   | ✅ (1994-2023) | ✅ |
+| Saarland               | ✅  | ✅  | ✅   | ✅ (1999-2022) | ❌ |
+| Sachsen                | ✅  | ✅  | ✅   | ✅ (1992-2022) | ❌ |
+| Sachsen-Anhalt         | ✅  | ❌  | ❌   | ✅ (2014-2024) | ❌ |
+| Schleswig-Holstein     | ✅  | ❌  | ❌   | ✅ (2018-2021) | ❌ |
+| Thüringen              | ✅  | ✅  | ✅   | ✅ (1992-2023) | ❌ |
+
+**File Downloads:** Uncompressed files via direct download (Brandenburg, Bayern, Niedersachsen, Nordrhein-Westfalen, Rheinland-Pfalz)
+
+**Historic Services:** 517 historic orthophoto services dating back to 1937 (Bremerhaven), with automatic acquisition date extraction from metadata
 
 **Metadata includes:** Acquisition date, tile number, flight information, ground resolution, and more (varies by state).
-
-## Image Quality by State
-
-| Bundesland             | Compression | No Compression |
-|------------------------|:-----------:|:--------------:|
-| Baden-Württemberg      |    ✅       |             |
-| Bayern                 |           |      ✅        |
-| Berlin                 |     ✅      |              |
-| Brandenburg            |     ✅     |              |
-| Bremen                 |    ✅       |      ✅        |
-| Hamburg                |    ✅       |      ✅        |
-| Hessen                 |    ✅       |             |
-| Mecklenburg-Vorpommern |    ✅       |              |
-| Niedersachsen          |    ✅       |              |
-| Nordrhein-Westfalen    |    ✅       |      ✅        | -> Orginal 10 GSD
-| Rheinland-Pfalz        |    ✅       |              |
-| Saarland               |    ✅       |      ✅        |
-| Sachsen                |    ✅       |      ✅        |
-| Sachsen-Anhalt         |    ✅       |      ✅        |
-| Schleswig-Holstein     |    ✅       |              |
-| Thüringen              |    ✅       |      ✅        |
 
 ## Requirements
 
