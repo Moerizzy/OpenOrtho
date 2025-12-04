@@ -1,8 +1,8 @@
 ENHANCED SERVICE VALIDATION RESULTS
 ====================================================================================================
 
-Total services: 2 (filtered from 559)
-OK: 2
+Total services: 3 (filtered from 562)
+OK: 3
 WARNING: 0
 ERROR: 0
 Layer mismatches: 0
@@ -14,21 +14,32 @@ ERROR (0 services)
 WARNING (0 services)
 ----------------------------------------------------------------------------------------------------
 
-OK (2 services)
+OK (3 services)
 ----------------------------------------------------------------------------------------------------
 
-ST_RGB_DOP20_current
-  State: ST
-  URL: https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?
+BB_RGB_DOP20022024_2022
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2022_2024/service/wms
   Mode: WMS
-  Status: Found 2 layers
-  Specified layer: lsa_lvermgeo_dop20_2
+  Status: Found 3 layers
+  Specified layer: dop20_bebb_2022_2024_farbe
   Layer found: True
 
 
-ST_RGB_DOP20_atom
-  State: ST
-  URL: https://geodatenportal.sachsen-anhalt.de/arcgisinspire/rest/directories/web/INSPIRE_ALKIS/ALKIS_OI_DOP20_MapServer/datasetoi.xml
-  Mode: ATOM
-  Status: Found 5473 tiles
+BB_CIR_DOP20022024_2022
+  State: BB
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2022_2024/service/wms
+  Mode: WMS
+  Status: Found 3 layers
+  Specified layer: dop20_bb_2022_2024_cir
+  Layer found: True
+
+
+BE_RGB_DOP20022024_2022
+  State: BE
+  URL: https://isk.geobasis-bb.de/mapproxy/dop20_2022_2024/service/wms
+  Mode: WMS
+  Status: Found 3 layers
+  Specified layer: dop20_bebb_2022_2024_farbe
+  Layer found: True
 
